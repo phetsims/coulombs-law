@@ -1,0 +1,16 @@
+{
+  "name": "coulombs-law",
+  "version": "1.0.0-dev.1",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phetsims/coulombs-law.git"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-eslint": "~19.0.0"
+  },
+  "phet": {
+    "requirejsNamespace": "COULOMBS_LAW"
+  }
+}
