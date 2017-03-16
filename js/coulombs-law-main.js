@@ -29,7 +29,7 @@ define( function( require ) {
   };
 
   SimLauncher.launch( function() {
-    var sim = new Sim( coulombsLawTitleString, [ new CoulombsLawScreen() ], simOptions );
+    var sim = new Sim( coulombsLawTitleString, [ new CoulombsLawScreen(), new CoulombsLawScreen() ], simOptions );
     sim.start();
   } );
 } );

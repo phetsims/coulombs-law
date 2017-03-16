@@ -14,6 +14,10 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawModel = require( 'COULOMBS_LAW/coulombs-law/model/CoulombsLawModel' );
   var CoulombsLawScreenView = require( 'COULOMBS_LAW/coulombs-law/view/CoulombsLawScreenView' );
+  var Tandem = require( 'TANDEM/Tandem' );
+
+  // constants
+  var tandem = Tandem.createRootTandem();
 
   /**
    * @constructor
@@ -24,9 +28,11 @@ define( function( require ) {
       backgroundColorProperty: new Property( 'white' )
     };
 
+    var coulombsLawScreenTandem = tandem.createTandem( 'coulombsLawScreen' );
+
     Screen.call( this,
-      function() { return new CoulombsLawModel(); },
-      function( model ) { return new CoulombsLawScreenView( model ); },
+      function() { return new CoulombsLawModel( coulombsLawScreenTandem.createTandem( 'model' ) ); },
+      function( model ) { return new CoulombsLawScreenView( model, coulombsLawScreenTandem.createTandem( 'view' ) ); },
       options
     );
   }
