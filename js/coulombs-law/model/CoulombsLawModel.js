@@ -9,8 +9,18 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var Charge = require( 'COULOMBS_LAW/model/Charge' );
+  var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  var Property = require( 'AXON/Property' );
+  var Range = require( 'DOT/Range' );
+  var Vector2 = require( 'DOT/Vector2' );
+  var InverseSquareLawModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/InverseSquareLawModel' );
+  var TVector2 = require( 'DOT/TVector2' );
+  var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
 
+  // phet-io modules
+  // var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
   /**
    * @constructor
    */
@@ -48,17 +58,12 @@ define( function( require ) {
 
   coulombsLaw.register( 'CoulombsLawModel', CoulombsLawModel );
 
-  return inherit( Object, CoulombsLawModel, {
+  return inherit( InverseSquareLawModel, CoulombsLawModel, {
 
     // @public resets the model
     reset: function() {
-      //TODO reset things here
-    },
-
-    //TODO Called by the animation loop. Optional, so if your model has no animation, please delete this.
-    // @public
-    step: function( dt ) {
-      //TODO Handle model animation here.
+      this.rulerPositionProperty.reset();
+      InverseSquareLawModel.prototype.reset.call( this );
     }
   } );
 } );
