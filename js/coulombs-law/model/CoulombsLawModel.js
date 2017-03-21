@@ -9,7 +9,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
-  var Charge = require( 'COULOMBS_LAW/model/Charge' );
+  var Charge = require( 'COULOMBS_LAW/coulombs-law/model/Charge' );
   var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var Property = require( 'AXON/Property' );
