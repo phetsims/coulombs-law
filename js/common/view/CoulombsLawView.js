@@ -17,7 +17,7 @@ define( function( require ) {
    * @param {CoulombsLawModel} coulombsLawModel
    * @constructor
    */
-  function CoulombsLawScreenView( coulombsLawModel ) {
+  function CoulombsLawView( coulombsLawModel ) {
 
     ScreenView.call( this );
 
@@ -29,12 +29,17 @@ define( function( require ) {
       right:  this.layoutBounds.maxX - 10,
       bottom: this.layoutBounds.maxY - 10
     } );
-    this.addChild( resetAllButton );
+
+    // var charge1 = new ChargeNode();
+    // var charge2 = new ChargeNode();
+    // var ruler = 
+
+    this.setChildren( [resetAllButton] );
   }
 
-  coulombsLaw.register( 'CoulombsLawScreenView', CoulombsLawScreenView );
+  coulombsLaw.register( 'CoulombsLawView', CoulombsLawView );
 
-  return inherit( ScreenView, CoulombsLawScreenView, {
+  return inherit( ScreenView, CoulombsLawView, {
 
     //TODO Called by the animation loop. Optional, so if your view has no animation, please delete this.
     // @public

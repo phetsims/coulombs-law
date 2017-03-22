@@ -9,12 +9,16 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var CoulombsLawScreen = require( 'COULOMBS_LAW/coulombs-law/CoulombsLawScreen' );
+  var CLMacroScreen = require( 'COULOMBS_LAW/macro/CLMacroScreen' );
+  var CLAtomicScreen = require( 'COULOMBS_LAW/atomic/CLAtomicScreen' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
+  var Tandem = require( 'TANDEM/Tandem' );
 
   // strings
   var coulombsLawTitleString = require( 'string!COULOMBS_LAW/coulombs-law.title' );
+
+  var tandem = Tandem.createRootTandem();
 
   var simOptions = {
     credits: {
@@ -28,8 +32,13 @@ define( function( require ) {
     }
   };
 
+  var screens = [
+    new CLMacroScreen( tandem.createTandem( 'macroScreen' ) ),
+    new CLAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
+  ];
+
   SimLauncher.launch( function() {
-    var sim = new Sim( coulombsLawTitleString, [ new CoulombsLawScreen(), new CoulombsLawScreen() ], simOptions );
+    var sim = new Sim( coulombsLawTitleString, screens, simOptions );
     sim.start();
   } );
 } );
