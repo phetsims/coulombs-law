@@ -8,10 +8,10 @@
   "atomic": {
     "value": "Atomic Scale"
   },
-  "force-description-pattern-target_source": {
-    "value": "Force on {0} by {1}"
+  "charge1": {
+    "value": "q1"
   },
-  "force-description-pattern-target_source_value": {
-    "value": "Force on {0} by {1} = {2} N"
+  "charge2": {
+    "value": "q2"
   }
 }

@@ -11,6 +11,9 @@
     "grunt-eslint": "~19.0.0"
   },
   "phet": {
-    "requirejsNamespace": "COULOMBS_LAW"
+    "requirejsNamespace": "COULOMBS_LAW",
+    "phetLibs": [
+      "inverse-square-law-common"
+    ]
   }
 }
