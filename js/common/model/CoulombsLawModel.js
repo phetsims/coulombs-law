@@ -33,14 +33,14 @@ define( function( require ) {
 
     // set initial charge values
     
-    var chargeValue1 = 2; // charge in nC
-    var chargeValue2 =2; // charge in nC
+    var chargeValue1 = 2E-9; // charge in Coulombs
+    var chargeValue2 = 2E-9; // charge in Coulombs
 
-    var position1 = -2; // initial position from center in cm
-    var position2 = 2; // initial position from center in cm
+    var position1 = -2E-2; // initial position from center in m
+    var position2 = 2E-2; // initial position from center in m
 
-    var minChargeValue = -10; // in nC
-    var maxChargeValue = 10; // in nC
+    var minChargeValue = -10E-9; // in Coulombs
+    var maxChargeValue = 10E-9; // in Coulombs
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 
