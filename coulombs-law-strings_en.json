@@ -9,9 +9,15 @@
     "value": "Atomic Scale"
   },
   "charge1": {
-    "value": "q1"
+    "value": "Charge 1"
   },
   "charge2": {
+    "value": "Charge 2"
+  },
+  "charge1Abbreviated": {
+    "value": "q1"
+  },
+  "charge2Abbreviated": {
     "value": "q2"
   }
 }

@@ -37,12 +37,7 @@ define( function( require ) {
 
     options = _.extend( {
       label: 'This Charge',
-      otherMassName: 'Other Charge',
-      direction: 'left', //direction mass
-      arrowColor: '#66f', //color vertical line
-      y: 250,
-      forceArrowHeight: 150, // arrow height
-      forceReadoutDecimalPlaces: 12, // number of decimal places in force readout
+      otherObjectName: 'Other Charge',
       snapToNearest: null // {number} if present, charge node will snap to the nearest snapToNearest on drag
     }, options );
 
@@ -61,12 +56,14 @@ define( function( require ) {
 
     // the arrow node, scaled by model ranges and values
     var arrowForceRange = new RangeWithValue( ( 6.0e-9 ), ( 4.1e-6 ) ); // empirically determined for linear mapping of pull objects
-    var forceArrowNode = new ISLForceArrowNode( charge1String, arrowForceRange, layoutBounds, tandem.createTandem( 'forceArrowNode' ) );
+    var forceArrowNode = new ISLForceArrowNode( charge1String, 
+                                                arrowForceRange, 
+                                                layoutBounds, 
+                                                tandem.createTandem( 'forceArrowNode' ), {
+                                                  scientificNotationMode: true
+                                                } );
     
-    ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullerPusherNode, forceArrowNode, tandem.createTandem( 'chargeNode1' ), {
-      label: charge1String,
-      otherObjectName: charge2String
-    } );
+    ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullerPusherNode, forceArrowNode, tandem.createTandem( 'chargeNode1' ), options );
   }
 
   coulombsLaw.register( 'ChargeNode', ChargeNode );

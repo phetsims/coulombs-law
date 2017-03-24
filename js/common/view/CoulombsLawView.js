@@ -16,6 +16,16 @@ define( function( require ) {
   var Vector2 = require( 'DOT/Vector2' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
 
+
+  // strings
+  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
+  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
+  var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
+  var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
+
+  // constants
+  var CHARGE_NODE_Y_POSITION = 300;
+
   /**
    * @param {CoulombsLawModel} coulombsLawModel
    * @constructor
@@ -43,12 +53,36 @@ define( function( require ) {
       50
     );
 
-    var chargeNode = new ChargeNode( coulombsLawModel, coulombsLawModel.object1, this.layoutBounds, modelViewTransform, tandem.createTandem( 'chargeNode1' ) );
-    this.addChild( chargeNode );
-
-    // var charge1 = new ChargeNode();
-    // var charge2 = new ChargeNode();
-    // var ruler = 
+    var chargeNode1 = new ChargeNode( 
+      coulombsLawModel, 
+      coulombsLawModel.object1, 
+      this.layoutBounds, 
+      modelViewTransform, 
+      tandem.createTandem( 'chargeNode1' ), 
+      {
+        label: charge1AbbreviatedString,
+        otherObjectLabel: charge2AbbreviatedString,
+        direction: 'left',
+        arrowColor: '#66f',
+        y: CHARGE_NODE_Y_POSITION,
+        forceArrowHeight: 125
+      } );
+    var chargeNode2 = new ChargeNode( 
+      coulombsLawModel, 
+      coulombsLawModel.object2, 
+      this.layoutBounds, 
+      modelViewTransform, 
+      tandem.createTandem( 'chargeNode2' ), 
+      {
+        label: charge2AbbreviatedString,
+        otherObjectLabel: charge1AbbreviatedString,
+        direction: 'right',
+        arrowColor: '#f66',
+        y: CHARGE_NODE_Y_POSITION,
+        forceArrowHeight: 125
+      } );
+    this.addChild( chargeNode1 );
+    this.addChild( chargeNode2 );
 
   }
 
