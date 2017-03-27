@@ -9,6 +9,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var ISLRuler = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLRuler' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
@@ -18,13 +19,13 @@ define( function( require ) {
 
 
   // strings
-  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
-  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
+  // var charge1String = require( 'string!COULOMBS_LAW/charge1' );
+  // var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 300;
+  var CHARGE_NODE_Y_POSITION = 400;
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -67,6 +68,7 @@ define( function( require ) {
         y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 125
       } );
+
     var chargeNode2 = new ChargeNode( 
       coulombsLawModel, 
       coulombsLawModel.object2, 
@@ -81,9 +83,19 @@ define( function( require ) {
         y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 125
       } );
+
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
 
+
+    var coulombsLawRuler = new ISLRuler(
+      coulombsLawModel,
+      this.layoutBounds.width,
+      this.layoutBounds.height,
+      tandem.createTandem( 'coulombsLawRuler' )
+    );
+
+    this.addChild( coulombsLawRuler );
   }
 
   coulombsLaw.register( 'CoulombsLawView', CoulombsLawView );

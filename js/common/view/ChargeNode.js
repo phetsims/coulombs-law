@@ -14,7 +14,7 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   // var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var PullerPusherNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/PullerPusherNode' );
+  // var PullerPusherNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/PullerPusherNode' );
   var ISLForceArrowNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLForceArrowNode' );
   var RangeWithValue = require('DOT/RangeWithValue'); 
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
@@ -22,11 +22,11 @@ define( function( require ) {
 
   // strings
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
-  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
+  // var charge2String = require( 'string!COULOMBS_LAW/charge2' );
 
   /**
    * @param {CoulombsLawbModel} model
-   * @param {ChargeModel} massModel
+   * @param {ChargeModel} chargeModel
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
    * @param {Tandem} tandem
@@ -52,7 +52,7 @@ define( function( require ) {
     var pullForceRange = new RangeWithValue( ( 0.5e-10 ), ( 1.1e-6 ) ); // empirically determined for linear mapping of pull objects
 
     // the puller/pusher robot    
-    var pullerPusherNode = new PullerPusherNode( pullForceRange, tandem.createTandem( 'puller1' ) );
+    // var pullerPusherNode = new PullerPusherNode( pullForceRange, tandem.createTandem( 'puller1' ), options );
 
     // the arrow node, scaled by model ranges and values
     var arrowForceRange = new RangeWithValue( ( 6.0e-9 ), ( 4.1e-6 ) ); // empirically determined for linear mapping of pull objects
@@ -61,9 +61,9 @@ define( function( require ) {
                                                 layoutBounds, 
                                                 tandem.createTandem( 'forceArrowNode' ), {
                                                   scientificNotationMode: true
-                                                } );
+                                                }, options );
     
-    ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullerPusherNode, forceArrowNode, tandem.createTandem( 'chargeNode1' ), options );
+    ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, forceArrowNode, tandem.createTandem( 'chargeNode1' ), options );
   }
 
   coulombsLaw.register( 'ChargeNode', ChargeNode );
