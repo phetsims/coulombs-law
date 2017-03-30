@@ -15,7 +15,7 @@ define( function( require ) {
   // var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
   var inherit = require( 'PHET_CORE/inherit' );
   // var PullerPusherNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/PullerPusherNode' );
-  var ISLForceArrowNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLForceArrowNode' );
+  // var ISLForceArrowNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLForceArrowNode' );
   var RangeWithValue = require('DOT/RangeWithValue'); 
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
   var ObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ObjectNode');
@@ -38,6 +38,7 @@ define( function( require ) {
     options = _.extend( {
       label: 'This Charge',
       otherObjectName: 'Other Charge',
+      scientificNotationMode: true,
       snapToNearest: null // {number} if present, charge node will snap to the nearest snapToNearest on drag
     }, options );
 
@@ -47,23 +48,13 @@ define( function( require ) {
     // @private
     this.objectModel = chargeObjectModel;
 
-    // the puller/pusher robots
     // functions that determine scaling of the arrow readout and the corrent image to represent
     var pullForceRange = new RangeWithValue( ( 0.5e-10 ), ( 1.1e-6 ) ); // empirically determined for linear mapping of pull objects
 
-    // the puller/pusher robot    
-    // var pullerPusherNode = new PullerPusherNode( pullForceRange, tandem.createTandem( 'puller1' ), options );
-
     // the arrow node, scaled by model ranges and values
-    var arrowForceRange = new RangeWithValue( ( 6.0e-9 ), ( 4.1e-6 ) ); // empirically determined for linear mapping of pull objects
-    var forceArrowNode = new ISLForceArrowNode( charge1String, 
-                                                arrowForceRange, 
-                                                layoutBounds, 
-                                                tandem.createTandem( 'forceArrowNode' ), {
-                                                  scientificNotationMode: true
-                                                }, options );
+    var arrowForceRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) ); // empirically determined for linear mapping of pull objects
     
-    ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, forceArrowNode, tandem.createTandem( 'chargeNode1' ), options );
+    ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, arrowForceRange, tandem.createTandem( 'chargeNode1' ), options );
   }
 
   coulombsLaw.register( 'ChargeNode', ChargeNode );

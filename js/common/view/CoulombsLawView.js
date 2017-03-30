@@ -8,8 +8,13 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var Bounds2 = require( 'DOT/Bounds2' );
+  var CoulombsLawQueryParameters = require( 'COULOMBS_LAW/common/CoulombsLawQueryParameters' );
+  var HSlider = require( 'SUN/HSlider' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var Image = require( 'SCENERY/nodes/Image' );
   var ISLRuler = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLRuler' );
+  var Property = require( 'AXON/Property' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
@@ -19,13 +24,17 @@ define( function( require ) {
 
 
   // strings
-  // var charge1String = require( 'string!COULOMBS_LAW/charge1' );
-  // var charge2String = require( 'string!COULOMBS_LAW/charge2' );
+  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
+  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 400;
+  var CHARGE_NODE_Y_POSITION = 200;
+  var MOCKUP = CoulombsLawQueryParameters.mockup;
+
+  // images
+  var backgroundImage = require( 'image!COULOMBS_LAW/image06.png' );
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -33,7 +42,7 @@ define( function( require ) {
    */
   function CoulombsLawView( coulombsLawModel, tandem ) {
 
-    ScreenView.call( this );
+    ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) }  );
 
     // Reset All button
     var resetAllButton = new ResetAllButton( {
@@ -61,9 +70,10 @@ define( function( require ) {
       modelViewTransform, 
       tandem.createTandem( 'chargeNode1' ), 
       {
+        title: charge1String,
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
-        direction: 'left',
+        defaultDirection: 'left',
         arrowColor: '#66f',
         y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 125
@@ -76,12 +86,13 @@ define( function( require ) {
       modelViewTransform, 
       tandem.createTandem( 'chargeNode2' ), 
       {
+        title: charge2String,
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,
-        direction: 'right',
+        defaultDirection: 'right',
         arrowColor: '#f66',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 125
+        forceArrowHeight: 175
       } );
 
     this.addChild( chargeNode1 );
@@ -96,6 +107,20 @@ define( function( require ) {
     );
 
     this.addChild( coulombsLawRuler );
+
+    //------------------------------------------------
+    // debugging
+    //------------------------------------------------
+
+    if ( MOCKUP ) {
+      //Show the mock-up and a slider to change its transparency
+      var mockupOpacityProperty = new Property( 0.00 );
+      var mockImage = new Image( backgroundImage, { pickable: false } );
+      mockImage.scale( this.layoutBounds.width / mockImage.width, this.layoutBounds.height / mockImage.height );
+      mockupOpacityProperty.linkAttribute( mockImage, 'opacity' );
+      this.addChild( mockImage );
+      this.addChild( new HSlider( mockupOpacityProperty, { min: 0, max: 1 }, { top: 10, left: 10 } ) );
+    }
   }
 
   coulombsLaw.register( 'CoulombsLawView', CoulombsLawView );

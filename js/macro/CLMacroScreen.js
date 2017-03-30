@@ -28,7 +28,7 @@ define( function( require ) {
   function CLMacroScreen() {
 
     var options = {
-      backgroundColorProperty: new Property( 'white' ),
+      backgroundColorProperty: new Property( 'black' ),
       name: macroString
     };
 

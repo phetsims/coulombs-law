@@ -26,15 +26,15 @@ define( function( require ) {
    */
   function CoulombsLawModel( tandem, options ) {
 
-    this.rulerPositionProperty = new Property( new Vector2( 120, 270 ), {
+    this.rulerPositionProperty = new Property( new Vector2( 130, 140), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
       phetioValueType: TVector2
     } ); // @public
 
     // set initial charge values
     
-    var chargeValue1 = 2E-9; // charge in Coulombs
-    var chargeValue2 = 2E-9; // charge in Coulombs
+    var chargeValue1 = 10E-9; // charge in Coulombs
+    var chargeValue2 = 10E-9; // charge in Coulombs
 
     var position1 = -2E-2; // initial position from center in m
     var position2 = 2E-2; // initial position from center in m
