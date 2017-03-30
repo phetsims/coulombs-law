@@ -21,7 +21,7 @@ define( function( require ) {
   var ObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ObjectNode');
 
   // strings
-  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
+  // var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   // var charge2String = require( 'string!COULOMBS_LAW/charge2' );
 
   /**
