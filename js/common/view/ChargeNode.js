@@ -12,10 +12,7 @@ define( function( require ) {
 
   // modules
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  // var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
   var inherit = require( 'PHET_CORE/inherit' );
-  // var PullerPusherNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/PullerPusherNode' );
-  // var ISLForceArrowNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLForceArrowNode' );
   var RangeWithValue = require('DOT/RangeWithValue'); 
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
   var ObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ObjectNode');
@@ -55,6 +52,8 @@ define( function( require ) {
     var arrowForceRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) ); // empirically determined for linear mapping of pull objects
     
     ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, arrowForceRange, tandem.createTandem( 'chargeNode1' ), options );
+
+
   }
 
   coulombsLaw.register( 'ChargeNode', ChargeNode );

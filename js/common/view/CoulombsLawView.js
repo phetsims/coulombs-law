@@ -30,7 +30,7 @@ define( function( require ) {
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 200;
+  var CHARGE_NODE_Y_POSITION = 225;
   var MOCKUP = CoulombsLawQueryParameters.mockup;
 
   // images
@@ -97,7 +97,6 @@ define( function( require ) {
 
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
-
 
     var coulombsLawRuler = new ISLRuler(
       coulombsLawModel,
