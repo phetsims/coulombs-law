@@ -14,6 +14,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Image = require( 'SCENERY/nodes/Image' );
   var ISLRuler = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLRuler' );
+  var ISLCheckboxPanel = require ('INVERSE_SQUARE_LAW_COMMON/view/ISLCheckboxPanel' );
   var Property = require( 'AXON/Property' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
@@ -28,6 +29,8 @@ define( function( require ) {
   var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
+  var showValuesString = require( 'string!COULOMBS_LAW/showValues' );
+  var scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
 
   // constants
   var CHARGE_NODE_Y_POSITION = 225;
@@ -104,6 +107,28 @@ define( function( require ) {
       this.layoutBounds.height,
       tandem.createTandem( 'coulombsLawRuler' )
     );
+
+    // construct checkbox parameter lists
+
+    var checkboxParameters = [];
+
+    checkboxParameters.push({
+      content: showValuesString,
+      property: coulombsLawModel.showValuesProperty,
+      textTandemLabel: 'showValuesText',      // tandem for the label
+      checkboxTandemLabel: 'showValuesCheckbox'    // tande name for checkbox node (see VerticalCheckboxGroup)
+    });
+
+    checkboxParameters.push({
+      content: scientificNotationString,
+      property: coulombsLawModel.scientificNotationProperty,
+      textTandemLabel: 'scientificNotationText',
+      checkboxTandemLabel: 'scientificNotationCheckbox'
+    });
+
+    var coulombsLawParameterCheckbox = new ISLCheckboxPanel( checkboxParameters, tandem.createTandem( 'coulombsLawParameterCheckbox' ) );
+
+    this.addChild( coulombsLawParameterCheckbox );
 
     this.addChild( coulombsLawRuler );
 

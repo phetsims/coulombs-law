@@ -20,7 +20,7 @@ define( function( require ) {
   var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
 
   // phet-io modules
-  // var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
+  var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
   /**
    * @constructor
    */
@@ -52,6 +52,11 @@ define( function( require ) {
 
     var leftBoundary = InverseSquareLawCommonConstants.LEFT_OBJECT_BOUNDARY;
     var rightBoundary = InverseSquareLawCommonConstants.RIGHT_OBJECT_BOUNDARY;
+
+    this.scientificNotationProperty = new Property( true, {
+      tandem: tandem.createTandem( 'scientificNotation' ),
+      phetioValueType: TBoolean 
+    } );
 
     InverseSquareLawModel.call( this, InverseSquareLawCommonConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );
   }

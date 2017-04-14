@@ -19,5 +19,11 @@
   },
   "charge2Abbreviated": {
     "value": "q2"
+  },
+  "showValues": {
+    "value": "Show Values"
+  },
+  "scientificNotation": {
+    "value": "Scientific Notation"
   }
 }

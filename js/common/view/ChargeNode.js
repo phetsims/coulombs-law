@@ -42,6 +42,8 @@ define( function( require ) {
     // @private
     this.modelViewTransform = modelViewTransform;
 
+    this.model = model;
+
     // @private
     this.objectModel = chargeObjectModel;
 
@@ -53,7 +55,7 @@ define( function( require ) {
     
     ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, arrowForceRange, tandem.createTandem( 'chargeNode1' ), options );
 
-
+    this.model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
   }
 
   coulombsLaw.register( 'ChargeNode', ChargeNode );
@@ -66,6 +68,10 @@ define( function( require ) {
       this.objectCircle.fill = new RadialGradient( -radius * 0.6, -radius * 0.6, 1, -radius * 0.6, -radius * 0.6, radius )
         .addColorStop( 0, baseColor.colorUtilsBrighter( 0.5 ).toCSS() )
         .addColorStop( 1, baseColor.toCSS() );
+    }, 
+    redrawForce: function () {
+      this.arrowNode.scientificNotationMode = this.model.scientificNotationProperty.get();
+      ObjectNode.prototype.redrawForce.call( this );      
     }
   } );
 } );
