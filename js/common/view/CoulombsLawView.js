@@ -47,13 +47,16 @@ define( function( require ) {
 
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) }  );
 
+    var rightAlignment = this.layoutBounds.maxX - 10;
+    var bottomAlignment = this.layoutBounds.maxY - 10;
+
     // Reset All button
     var resetAllButton = new ResetAllButton( {
       listener: function() {
         coulombsLawModel.reset();
       },
-      right:  this.layoutBounds.maxX - 10,
-      bottom: this.layoutBounds.maxY - 10
+      right:  rightAlignment,
+      bottom: bottomAlignment
     } );
     this.addChild( resetAllButton );
 
@@ -126,7 +129,12 @@ define( function( require ) {
       checkboxTandemLabel: 'scientificNotationCheckbox'
     });
 
-    var coulombsLawParameterCheckbox = new ISLCheckboxPanel( checkboxParameters, tandem.createTandem( 'coulombsLawParameterCheckbox' ) );
+    var coulombsLawParameterCheckbox = new ISLCheckboxPanel( checkboxParameters,
+                                                             tandem.createTandem( 'coulombsLawParameterCheckbox' ),
+                                                             {
+                                                              right: rightAlignment,
+                                                              bottom: bottomAlignment - 75
+                                                             } );
 
     this.addChild( coulombsLawParameterCheckbox );
 
