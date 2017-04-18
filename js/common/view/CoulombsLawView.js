@@ -9,6 +9,7 @@ define( function( require ) {
 
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
+  var Color = require( 'SCENERY/util/Color' );
   var CoulombsLawQueryParameters = require( 'COULOMBS_LAW/common/CoulombsLawQueryParameters' );
   var HSlider = require( 'SUN/HSlider' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -19,6 +20,7 @@ define( function( require ) {
   var ScreenView = require( 'JOIST/ScreenView' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
+  var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
   var Vector2 = require( 'DOT/Vector2' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
@@ -35,6 +37,8 @@ define( function( require ) {
   // constants
   var CHARGE_NODE_Y_POSITION = 225;
   var MOCKUP = CoulombsLawQueryParameters.mockup;
+  var SLIDER_COLOR = new Color( 'indigo' );
+  var UNIT_STRING = 'nC';
 
   // images
   var backgroundImage = require( 'image!COULOMBS_LAW/image06.png' );
@@ -103,6 +107,36 @@ define( function( require ) {
 
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
+
+    var charge1Control = new ChargeControl(
+      charge1String,
+      UNIT_STRING,
+      coulombsLawModel.object1.valueProperty,
+      coulombsLawModel.object1.valueRange,
+      SLIDER_COLOR,
+      tandem.createTandem( 'charge2Control' ),
+      {
+        right: rightAlignment - 400,
+        bottom: bottomAlignment
+      }
+    );
+
+    this.addChild( charge1Control );
+
+    var charge2Control = new ChargeControl(
+      charge2String,
+      UNIT_STRING,
+      coulombsLawModel.object2.valueProperty,
+      coulombsLawModel.object2.valueRange,
+      SLIDER_COLOR,
+      tandem.createTandem( 'charge2Control' ),
+      {
+        right: rightAlignment - 200,
+        bottom: bottomAlignment
+      }
+    );
+
+    this.addChild( charge2Control );
 
     var coulombsLawRuler = new ISLRuler(
       coulombsLawModel,
