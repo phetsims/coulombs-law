@@ -36,7 +36,7 @@ define( function( require ) {
       label: 'This Charge',
       otherObjectName: 'Other Charge',
       scientificNotationMode: true,
-      snapToNearest: null // {number} if present, charge node will snap to the nearest snapToNearest on drag
+      snapToNearest: 0.1 // in meters, charges will snap to the nearest 0.1 meters in model coordinates
     }, options );
 
     // @private
