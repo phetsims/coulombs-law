@@ -23,8 +23,9 @@ define( function( require ) {
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
   var Vector2 = require( 'DOT/Vector2' );
+  var InverseSquareLawGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/InverseSquareLawGridNode' );
+  var ISLQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLQueryParameters' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-
 
   // strings
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
@@ -37,6 +38,7 @@ define( function( require ) {
   // constants
   var CHARGE_NODE_Y_POSITION = 225;
   var MOCKUP = CoulombsLawQueryParameters.mockup;
+  var SHOW_GRID = ISLQueryParameters.showGrid;
   var SLIDER_COLOR = new Color( 'indigo' );
   var UNIT_STRING = 'nC';
 
@@ -186,6 +188,13 @@ define( function( require ) {
       mockupOpacityProperty.linkAttribute( mockImage, 'opacity' );
       this.addChild( mockImage );
       this.addChild( new HSlider( mockupOpacityProperty, { min: 0, max: 1 }, { top: 10, left: 10 } ) );
+    }
+
+    if ( SHOW_GRID ) {
+      var gridNode = new InverseSquareLawGridNode( 7.8, -7.8, 0.1, this.layoutBounds, modelViewTransform, {
+        stroke: 'rgba( 250, 250, 250, 0.6 )'
+      } );
+      this.addChild( gridNode );
     }
   }
 
