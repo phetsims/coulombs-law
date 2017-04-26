@@ -11,13 +11,16 @@ define( function( require ) {
 
   // modules
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  var Dimension2 = require( 'DOT/Dimension2' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ObjectControl = require('INVERSE_SQUARE_LAW_COMMON/view/ObjectControl');
   var Property = require( 'AXON/Property' );
   var Range = require( 'DOT/Range' );
 
   // constants
-  var SCALE_FACTOR = 1E9;
+  var SCALE_FACTOR = 1E9;// constants
+  var TRACK_SIZE = new Dimension2( 132, 0.25 );
+  var THUMB_SIZE = new Dimension2( 10, 18 );
 
   /**
    * @param {string} titleString
@@ -28,6 +31,21 @@ define( function( require ) {
    * @constructor
    */
   function ChargeControl( titleString, unitString, objectProperty, valueRange, thumbColor, tandem, options ) {
+
+    options = _.extend( {
+      align: 'center',
+      // maxWidth: 275,
+      // minWidth: 275,
+      // maxHeight: 89,
+      arrowButtonScale: 0.5,
+      thumbSize: THUMB_SIZE,
+      trackSize: TRACK_SIZE,
+      titleFontSize: 16,
+      valueFontSize: 12,
+      valueXMargin: 4,
+      valueYMargin: 2,
+      additionalTicks: [{value: 0, tandemLabel: 'majorTickZeroLabel'}]
+    }, options );
 
     // create intermeidate property
     // scales between C and nC

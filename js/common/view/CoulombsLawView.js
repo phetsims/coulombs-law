@@ -108,36 +108,6 @@ define( function( require ) {
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
 
-    var charge1Control = new ChargeControl(
-      charge1String,
-      UNIT_STRING,
-      coulombsLawModel.object1.valueProperty,
-      coulombsLawModel.object1.valueRange,
-      SLIDER_COLOR,
-      tandem.createTandem( 'charge2Control' ),
-      {
-        right: rightAlignment - 400,
-        bottom: bottomAlignment
-      }
-    );
-
-    this.addChild( charge1Control );
-
-    var charge2Control = new ChargeControl(
-      charge2String,
-      UNIT_STRING,
-      coulombsLawModel.object2.valueProperty,
-      coulombsLawModel.object2.valueRange,
-      SLIDER_COLOR,
-      tandem.createTandem( 'charge2Control' ),
-      {
-        right: rightAlignment - 200,
-        bottom: bottomAlignment
-      }
-    );
-
-    this.addChild( charge2Control );
-
     var coulombsLawRuler = new ISLRuler(
       coulombsLawModel,
       this.layoutBounds.width,
@@ -173,6 +143,36 @@ define( function( require ) {
     this.addChild( coulombsLawParameterCheckbox );
 
     this.addChild( coulombsLawRuler );
+
+    var charge1Control = new ChargeControl(
+      charge1String,
+      UNIT_STRING,
+      coulombsLawModel.object1.valueProperty,
+      coulombsLawModel.object1.valueRange,
+      SLIDER_COLOR,
+      tandem.createTandem( 'charge2Control' ),
+      {
+        right: rightAlignment - 380,
+        top: coulombsLawParameterCheckbox.top
+      }
+    );
+
+    this.addChild( charge1Control );
+
+    var charge2Control = new ChargeControl(
+      charge2String,
+      UNIT_STRING,
+      coulombsLawModel.object2.valueProperty,
+      coulombsLawModel.object2.valueRange,
+      SLIDER_COLOR,
+      tandem.createTandem( 'charge2Control' ),
+      {
+        right: rightAlignment - 180,
+        top: coulombsLawParameterCheckbox.top
+      }
+    );
+
+    this.addChild( charge2Control );
 
     //------------------------------------------------
     // debugging
