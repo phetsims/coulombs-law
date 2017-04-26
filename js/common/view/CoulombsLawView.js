@@ -114,7 +114,10 @@ define( function( require ) {
       coulombsLawModel,
       this.layoutBounds.width,
       this.layoutBounds.height,
-      tandem.createTandem( 'coulombsLawRuler' )
+      modelViewTransform,
+      tandem.createTandem( 'coulombsLawRuler' ), {
+        snapToNearest: 0.1 // in model coordinates
+      }
     );
 
     // construct checkbox parameter lists
@@ -192,7 +195,7 @@ define( function( require ) {
 
     if ( SHOW_GRID ) {
       var gridNode = new InverseSquareLawGridNode( 7.8, -7.8, 0.1, this.layoutBounds, modelViewTransform, {
-        stroke: 'rgba( 250, 250, 250, 0.6 )'
+        stroke: 'rgba( 250, 100, 100, 0.6 )'
       } );
       this.addChild( gridNode );
     }
