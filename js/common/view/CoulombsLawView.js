@@ -142,7 +142,7 @@ define( function( require ) {
     var coulombsLawParameterCheckbox = new ISLCheckboxPanel( checkboxParameters,
                                                              tandem.createTandem( 'coulombsLawParameterCheckbox' ),
                                                              {
-                                                              fill: "#EDEDED",
+                                                              fill: '#EDEDED',
                                                               right: rightAlignment,
                                                               bottom: bottomAlignment - 73
                                                              } );
