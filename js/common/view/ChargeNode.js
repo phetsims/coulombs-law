@@ -48,7 +48,7 @@ define( function( require ) {
     this.objectModel = chargeObjectModel;
 
     // functions that determine scaling of the arrow readout and the corrent image to represent
-    var pullForceRange = new RangeWithValue( ( 0.5e-10 ), ( 1.1e-6 ) ); // empirically determined for linear mapping of pull objects
+    var pullForceRange = new RangeWithValue( ( -5e-7 ), ( 5e-7 ) ); // empirically determined for linear mapping of pull objects
 
     // the arrow node, scaled by model ranges and values
     var arrowForceRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) ); // empirically determined for linear mapping of pull objects

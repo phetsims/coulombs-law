@@ -61,6 +61,7 @@ define( function( require ) {
       listener: function() {
         coulombsLawModel.reset();
       },
+      radius: 18,
       right:  rightAlignment,
       bottom: bottomAlignment
     } );
@@ -141,8 +142,9 @@ define( function( require ) {
     var coulombsLawParameterCheckbox = new ISLCheckboxPanel( checkboxParameters,
                                                              tandem.createTandem( 'coulombsLawParameterCheckbox' ),
                                                              {
+                                                              fill: "#EDEDED",
                                                               right: rightAlignment,
-                                                              bottom: bottomAlignment - 75
+                                                              bottom: bottomAlignment - 73
                                                              } );
 
     this.addChild( coulombsLawParameterCheckbox );
@@ -157,7 +159,7 @@ define( function( require ) {
       SLIDER_COLOR,
       tandem.createTandem( 'charge2Control' ),
       {
-        right: rightAlignment - 380,
+        right: rightAlignment - 387,
         top: coulombsLawParameterCheckbox.top
       }
     );
@@ -172,7 +174,7 @@ define( function( require ) {
       SLIDER_COLOR,
       tandem.createTandem( 'charge2Control' ),
       {
-        right: rightAlignment - 180,
+        right: rightAlignment - 193,
         top: coulombsLawParameterCheckbox.top
       }
     );
