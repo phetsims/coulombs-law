@@ -26,7 +26,7 @@ define( function( require ) {
    */
   function CoulombsLawModel( tandem, options ) {
 
-    this.rulerPositionProperty = new Property( new Vector2( 130, 140), {
+    this.rulerPositionProperty = new Property( new Vector2( 0, 0 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
       phetioValueType: TVector2
     } ); // @public
