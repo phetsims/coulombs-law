@@ -89,7 +89,8 @@ define( function( require ) {
         defaultDirection: 'left',
         arrowColor: '#66f',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 125
+        forceArrowHeight: 125,
+        arrowAttractNegative: true
       } );
 
     var chargeNode2 = new ChargeNode( 
@@ -105,7 +106,8 @@ define( function( require ) {
         defaultDirection: 'right',
         arrowColor: '#f66',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 175
+        forceArrowHeight: 175,
+        arrowAttractNegative: true
       } );
 
     this.addChild( chargeNode1 );
