@@ -12,7 +12,7 @@ define( function( require ) {
   var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawModel = require( 'COULOMBS_LAW/common/model/CoulombsLawModel' );
+  var CoulombsLawMacroModel = require( 'COULOMBS_LAW/macro/model/CoulombsLawMacroModel' );
   var CoulombsLawView = require( 'COULOMBS_LAW/common/view/CoulombsLawView' );
   var Tandem = require( 'TANDEM/Tandem' );
 
@@ -35,7 +35,7 @@ define( function( require ) {
     var macroScreenTandem = tandem.createTandem( 'coulombsLawMacroScreen' );
 
     Screen.call( this,
-      function() { return new CoulombsLawModel( macroScreenTandem.createTandem( 'model' ) ); },
+      function() { return new CoulombsLawMacroModel( macroScreenTandem.createTandem( 'model' ) ); },
       function( model ) { return new CoulombsLawView( model, macroScreenTandem.createTandem( 'view' ) ); },
       options
     );

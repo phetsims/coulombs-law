@@ -13,7 +13,6 @@ define( function( require ) {
   var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var Property = require( 'AXON/Property' );
-  var Range = require( 'DOT/Range' );
   var Vector2 = require( 'DOT/Vector2' );
   var InverseSquareLawModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/InverseSquareLawModel' );
   var TVector2 = require( 'DOT/TVector2' );
@@ -24,31 +23,20 @@ define( function( require ) {
   /**
    * @constructor
    */
-  function CoulombsLawModel( tandem, options ) {
+  function CoulombsLawCommonModel( charge1Value, charge2Value, charge1Position, charge2Position, valueRange, tandem, options ) {
+
+    console.log(tandem);  
 
     this.rulerPositionProperty = new Property( new Vector2( -5.2, 1.75 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
       phetioValueType: TVector2
     } ); // @public
 
-    // set initial charge values
-    
-    var chargeValue1 = 2E-9; // charge in Coulombs
-    var chargeValue2 = 2E-9; // charge in Coulombs
-
-    var position1 = -2E-2; // initial position from center in m
-    var position2 = 2E-2; // initial position from center in m
-
-    var minChargeValue = -10E-9; // in Coulombs
-    var maxChargeValue = 10E-9; // in Coulombs
-
-    var valueRange = new Range( minChargeValue, maxChargeValue );
-
     var baseColor1 = new Color( '#00f' );
     var baseColor2 = new Color( '#f00' );
 
-    var charge1 = new Charge( chargeValue1, position1, valueRange, baseColor1, tandem, options );
-    var charge2 = new Charge( chargeValue2, position2, valueRange, baseColor2, tandem, options );
+    var charge1 = new Charge( charge1Value, charge1Position, valueRange, baseColor1, tandem, options );
+    var charge2 = new Charge( charge2Value, charge2Position, valueRange, baseColor2, tandem, options );
 
     var leftBoundary = InverseSquareLawCommonConstants.LEFT_OBJECT_BOUNDARY;
     var rightBoundary = InverseSquareLawCommonConstants.RIGHT_OBJECT_BOUNDARY;
@@ -61,9 +49,9 @@ define( function( require ) {
     InverseSquareLawModel.call( this, InverseSquareLawCommonConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );
   }
 
-  coulombsLaw.register( 'CoulombsLawModel', CoulombsLawModel );
+  coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );
 
-  return inherit( InverseSquareLawModel, CoulombsLawModel, {
+  return inherit( InverseSquareLawModel, CoulombsLawCommonModel, {
 
     // @public resets the model
     reset: function() {
