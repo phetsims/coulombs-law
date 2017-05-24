@@ -39,7 +39,7 @@ define( function( require ) {
   var CHARGE_NODE_Y_POSITION = 225;
   var MOCKUP = CoulombsLawQueryParameters.mockup;
   var SHOW_GRID = ISLQueryParameters.showGrid;
-  var SLIDER_COLOR = new Color( 'indigo' );
+  var SLIDER_THUMB_COLOR = new Color( 'indigo' );
   var UNIT_STRING = 'nC';
 
   // images
@@ -90,7 +90,7 @@ define( function( require ) {
         arrowColor: '#66f',
         y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 125,
-        arrowAttractNegative: true
+        attractNegative: true
       } );
 
     var chargeNode2 = new ChargeNode( 
@@ -107,7 +107,7 @@ define( function( require ) {
         arrowColor: '#f66',
         y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 175,
-        arrowAttractNegative: true
+        attractNegative: true
       } );
 
     this.addChild( chargeNode1 );
@@ -158,7 +158,7 @@ define( function( require ) {
       UNIT_STRING,
       coulombsLawModel.object1.valueProperty,
       coulombsLawModel.object1.valueRange,
-      SLIDER_COLOR,
+      SLIDER_THUMB_COLOR,
       tandem.createTandem( 'charge2Control' ),
       {
         right: rightAlignment - 387,
@@ -173,7 +173,7 @@ define( function( require ) {
       UNIT_STRING,
       coulombsLawModel.object2.valueProperty,
       coulombsLawModel.object2.valueRange,
-      SLIDER_COLOR,
+      SLIDER_THUMB_COLOR,
       tandem.createTandem( 'charge2Control' ),
       {
         right: rightAlignment - 193,
