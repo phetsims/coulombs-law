@@ -13,7 +13,7 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawMacroModel = require( 'COULOMBS_LAW/macro/model/CoulombsLawMacroModel' );
-  var CoulombsLawView = require( 'COULOMBS_LAW/common/view/CoulombsLawView' );
+  var CoulombsLawMacroView = require( 'COULOMBS_LAW/macro/view/CoulombsLawMacroView' );
   var Tandem = require( 'TANDEM/Tandem' );
 
   // constants
@@ -36,7 +36,7 @@ define( function( require ) {
 
     Screen.call( this,
       function() { return new CoulombsLawMacroModel( macroScreenTandem.createTandem( 'model' ) ); },
-      function( model ) { return new CoulombsLawView( model, macroScreenTandem.createTandem( 'view' ) ); },
+      function( model ) { return new CoulombsLawMacroView( model, macroScreenTandem.createTandem( 'view' ) ); },
       options
     );
   }

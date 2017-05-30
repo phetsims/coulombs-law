@@ -40,7 +40,6 @@ define( function( require ) {
   var MOCKUP = CoulombsLawQueryParameters.mockup;
   var SHOW_GRID = ISLQueryParameters.showGrid;
   var SLIDER_THUMB_COLOR = new Color( 'indigo' );
-  var UNIT_STRING = 'nC';
 
   // images
   var backgroundImage = require( 'image!COULOMBS_LAW/image06.png' );
@@ -49,7 +48,7 @@ define( function( require ) {
    * @param {CoulombsLawModel} coulombsLawModel
    * @constructor
    */
-  function CoulombsLawView( coulombsLawModel, tandem ) {
+  function CoulombsLawCommonView( coulombsLawModel, scaleFactor, unitString, tandem ) {
 
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) }  );
 
@@ -155,10 +154,11 @@ define( function( require ) {
 
     var charge1Control = new ChargeControl(
       charge1String,
-      UNIT_STRING,
+      unitString,
       coulombsLawModel.object1.valueProperty,
       coulombsLawModel.object1.valueRange,
       SLIDER_THUMB_COLOR,
+      scaleFactor,
       tandem.createTandem( 'charge2Control' ),
       {
         right: rightAlignment - 387,
@@ -170,10 +170,11 @@ define( function( require ) {
 
     var charge2Control = new ChargeControl(
       charge2String,
-      UNIT_STRING,
+      unitString,
       coulombsLawModel.object2.valueProperty,
       coulombsLawModel.object2.valueRange,
       SLIDER_THUMB_COLOR,
+      scaleFactor,
       tandem.createTandem( 'charge2Control' ),
       {
         right: rightAlignment - 193,
@@ -205,9 +206,9 @@ define( function( require ) {
     }
   }
 
-  coulombsLaw.register( 'CoulombsLawView', CoulombsLawView );
+  coulombsLaw.register( 'CoulombsLawCommonView', CoulombsLawCommonView );
 
-  return inherit( ScreenView, CoulombsLawView, {
+  return inherit( ScreenView, CoulombsLawCommonView, {
 
     //TODO Called by the animation loop. Optional, so if your view has no animation, please delete this.
     // @public

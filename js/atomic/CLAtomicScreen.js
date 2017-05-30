@@ -13,7 +13,7 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawAtomicModel = require( 'COULOMBS_LAW/atomic/model/CoulombsLawAtomicModel' );
-  var CoulombsLawView = require( 'COULOMBS_LAW/common/view/CoulombsLawView' );
+  var CoulombsLawAtomicView = require( 'COULOMBS_LAW/atomic/view/CoulombsLawAtomicView' );
   var Tandem = require( 'TANDEM/Tandem' );
 
   // constants
@@ -34,9 +34,11 @@ define( function( require ) {
 
     var atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
 
+    // debugger;
+
     Screen.call( this,
       function() { return new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ); },
-      function( model ) { return new CoulombsLawView( model, atomicScreenTandem.createTandem( 'view' ) ); },
+      function( model ) { return new CoulombsLawAtomicView( model, atomicScreenTandem.createTandem( 'view' ) ); },
       options
     );
   }

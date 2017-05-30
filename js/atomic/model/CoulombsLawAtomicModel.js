@@ -13,21 +13,27 @@ define( function( require ) {
   var CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
   var Range = require( 'DOT/Range' );
 
+  // constants
+  var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
+
   /**
    * @constructor
    */
   function CoulombsLawAtomicModel( tandem, options ) {
 
+    // conversion factor for atomic units
+    var e = InverseSquareLawCommonConstants.coulombsPerAtomicUnit;
+
     // set initial charge values
     
-    var chargeValue1 = 2E-9; // charge in Coulombs
-    var chargeValue2 = 2E-9; // charge in Coulombs
+    var chargeValue1 = e; // charge in Coulombs
+    var chargeValue2 = -e; // charge in Coulombs
 
-    var position1 = -2E-2; // initial position from center in m
-    var position2 = 2E-2; // initial position from center in m
+    var position1 = -2E-11; // initial position from center in m
+    var position2 = 2E-11; // initial position from center in m
 
-    var minChargeValue = -10E-9; // in Coulombs
-    var maxChargeValue = 10E-9; // in Coulombs
+    var minChargeValue = -10 * e; // in Coulombs
+    var maxChargeValue = 10 * e; // in Coulombs
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 

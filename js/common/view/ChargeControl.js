@@ -18,7 +18,6 @@ define( function( require ) {
   var Range = require( 'DOT/Range' );
 
   // constants
-  var SCALE_FACTOR = 1E9;// constants
   var TRACK_SIZE = new Dimension2( 132, 0.25 );
   var THUMB_SIZE = new Dimension2( 10, 18 );
 
@@ -30,7 +29,7 @@ define( function( require ) {
    * @param {Tandem} tandem
    * @constructor
    */
-  function ChargeControl( titleString, unitString, objectProperty, valueRange, thumbColor, tandem, options ) {
+  function ChargeControl( titleString, unitString, objectProperty, valueRange, thumbColor, scaleFactor, tandem, options ) {
 
     options = _.extend( {
       align: 'center',
@@ -47,17 +46,17 @@ define( function( require ) {
       additionalTicks: [{value: 0, tandemLabel: 'majorTickZeroLabel'}]
     }, options );
 
-    // create intermeidate property
-    // scales between C and nC
+    // create intermediate property
+    // scales between C and nC or e
 
     // varies between -10 and 10
-    var chargeControlProperty = new Property( objectProperty.get() * SCALE_FACTOR );
+    var chargeControlProperty = new Property( objectProperty.get() * scaleFactor );
 
     chargeControlProperty.link( function( value ) {
-      objectProperty.set( value / SCALE_FACTOR );
+      objectProperty.set( value / scaleFactor );
     } );
 
-    var chargeControlRange = new Range( valueRange.min * SCALE_FACTOR, valueRange.max * SCALE_FACTOR );
+    var chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
 
     ObjectControl.call(this, titleString, unitString, chargeControlProperty, chargeControlRange, thumbColor, tandem, options );
   }

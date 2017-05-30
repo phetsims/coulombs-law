@@ -20,6 +20,12 @@
   "charge2Abbreviated": {
     "value": "q2"
   },
+  "units.nanocoulombs": {
+    "value": "nC"
+  },
+  "units.atomicUnits": {
+    "value": "e"
+  },
   "showValues": {
     "value": "Show Values"
   },
