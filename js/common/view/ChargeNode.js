@@ -17,9 +17,8 @@ define( function( require ) {
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
   var ObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ObjectNode');
 
-  // strings
-  // var charge1String = require( 'string!COULOMBS_LAW/charge1' );
-  // var charge2String = require( 'string!COULOMBS_LAW/charge2' );
+  // constants
+  var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
 
   /**
    * @param {CoulombsLawbModel} model
@@ -30,7 +29,9 @@ define( function( require ) {
    * @param {Object} [options]
    * @constructor
    */
-  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, tandem, options ) {
+  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, chargeArrowForceRange, tandem, options ) {
+
+    var forceConstant = InverseSquareLawCommonConstants.k;
 
     options = _.extend( {
       label: 'This Charge',
@@ -47,11 +48,14 @@ define( function( require ) {
     // @private
     this.objectModel = chargeObjectModel;
 
+    var maxForce = forceConstant * chargeObjectModel.valueRange.max * chargeObjectModel.valueRange.max / 2;
+    var minForce = -maxForce;
+
     // functions that determine scaling of the arrow readout and the corrent image to represent
-    var pullForceRange = new RangeWithValue( ( -5e-7 ), ( 5e-7 ) ); // empirically determined for linear mapping of pull objects
+    var pullForceRange = new RangeWithValue( minForce, maxForce ); // empirically determined for linear mapping of pull objects
 
     // the arrow node, scaled by model ranges and values
-    var arrowForceRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) ); // empirically determined for linear mapping of pull objects
+    var arrowForceRange = chargeArrowForceRange; // empirically determined for linear mapping of pull objects
     
     ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, arrowForceRange, tandem.createTandem( 'chargeNode1' ), options );
 

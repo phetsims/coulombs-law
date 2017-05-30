@@ -11,6 +11,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
+  var RangeWithValue = require('DOT/RangeWithValue'); 
 
   // strings
   var unitsNanocoulombsString = require( 'string!COULOMBS_LAW/units.nanocoulombs');
@@ -24,7 +25,9 @@ define( function( require ) {
    */
   function CoulombsLawMacroView( coulombsLawModel, tandem ) {
 
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsNanocoulombsString, tandem );
+    var forceArrowRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) );
+
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsNanocoulombsString, forceArrowRange, tandem );
   }
 
   coulombsLaw.register( 'CoulombsLawMacroView', CoulombsLawMacroView );
