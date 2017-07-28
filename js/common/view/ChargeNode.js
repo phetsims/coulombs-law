@@ -37,7 +37,8 @@ define( function( require ) {
       label: 'This Charge',
       otherObjectName: 'Other Charge',
       scientificNotationMode: true,
-      snapToNearest: model.snapObjectsToNearest
+      snapToNearest: model.snapObjectsToNearest,
+      displayShadow: false
     }, options );
 
     // @private
