@@ -115,6 +115,11 @@ define( function( require ) {
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
 
+    // the arrows and their labels should be above both charges (and their markers) but below
+    // the ruler and control panels
+    this.addChild( chargeNode1.arrowNode );
+    this.addChild( chargeNode2.arrowNode );
+
     var coulombsLawRuler = new ISLRuler(
       coulombsLawModel,
       this.layoutBounds.width,
