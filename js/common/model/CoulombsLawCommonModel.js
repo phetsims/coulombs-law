@@ -25,6 +25,10 @@ define( function( require ) {
    */
   function CoulombsLawCommonModel( charge1Value, charge2Value, charge1Position, charge2Position, valueRange, tandem, options ) {
 
+    options = _.extend( {
+      snapObjectsToNearest: 0.1
+    }, options);
+
     this.rulerPositionProperty = new Property( new Vector2( -5.2, 1.75 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
       phetioValueType: TVector2

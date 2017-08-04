@@ -124,7 +124,8 @@ define( function( require ) {
       coulombsLawModel,
       this.layoutBounds.height,
       modelViewTransform,
-      tandem.createTandem( 'coulombsLawRuler' ), {
+      tandem.createTandem( 'coulombsLawRuler' ),
+      {
         snapToNearest: 0.1 // in model coordinates
       }
     );
