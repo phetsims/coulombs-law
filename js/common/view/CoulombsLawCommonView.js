@@ -122,7 +122,6 @@ define( function( require ) {
 
     var coulombsLawRuler = new ISLCRulerNode(
       coulombsLawModel,
-      this.layoutBounds.width,
       this.layoutBounds.height,
       modelViewTransform,
       tandem.createTandem( 'coulombsLawRuler' ), {
