@@ -16,7 +16,7 @@ define( function( require ) {
   /**
    * @constructor
    */
-  function CoulombsLawMacroModel( tandem, options ) {
+  function CoulombsLawMacroModel( tandem ) {
 
     // set initial charge values
     
@@ -31,7 +31,7 @@ define( function( require ) {
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 
-    CoulombsLawCommonModel.call( this, chargeValue1, chargeValue2, position1, position2, valueRange, tandem, options );
+    CoulombsLawCommonModel.call( this, chargeValue1, chargeValue2, position1, position2, valueRange, tandem, { snapObjectsToNearest: 0.1 } );
   }
 
   coulombsLaw.register( 'CoulombsLawMacroModel', CoulombsLawMacroModel );

@@ -19,7 +19,7 @@ define( function( require ) {
   /**
    * @constructor
    */
-  function CoulombsLawAtomicModel( tandem, options ) {
+  function CoulombsLawAtomicModel( tandem ) {
 
     // conversion factor for atomic units
     var e = InverseSquareLawCommonConstants.coulombsPerAtomicUnit;
@@ -37,7 +37,10 @@ define( function( require ) {
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 
-    CoulombsLawCommonModel.call( this, chargeValue1, chargeValue2, position1, position2, valueRange, tandem, options );
+    CoulombsLawCommonModel.call( this, chargeValue1, chargeValue2, position1, position2, valueRange, tandem, {
+      minSeparationBetweenObjects: 1E-13,
+      snapObjectsToNearest: 1E-13
+    } );
   }
 
   coulombsLaw.register( 'CoulombsLawAtomicModel', CoulombsLawAtomicModel );
