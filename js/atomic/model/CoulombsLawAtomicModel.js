@@ -9,6 +9,8 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var Charge = require( 'COULOMBS_LAW/common/model/Charge' );
+  var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
   var Range = require( 'DOT/Range' );
@@ -25,6 +27,7 @@ define( function( require ) {
     var e = InverseSquareLawCommonConstants.coulombsPerAtomicUnit;
 
     // set initial charge values
+    // TODO: consider creating charges/masses in subtypes
     
     var chargeValue1 = e; // charge in Coulombs
     var chargeValue2 = -e; // charge in Coulombs
@@ -37,7 +40,22 @@ define( function( require ) {
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 
-    CoulombsLawCommonModel.call( this, chargeValue1, chargeValue2, position1, position2, valueRange, tandem, {
+    var baseColor1 = new Color( '#00f' );
+    var baseColor2 = new Color( '#f00' );
+
+    var charge1 = new Charge( chargeValue1, position1, valueRange, baseColor1, tandem, { 
+      constantRadius: 1.5E-12,
+      tandemUnits: 'coulombs'
+    } );
+    var charge2 = new Charge( chargeValue2, position2, valueRange, baseColor2, tandem, { 
+      constantRadius: 1.5E-12,
+      tandemUnits: 'coulombs'
+    } );
+
+    var leftBoundary = InverseSquareLawCommonConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
+    var rightBoundary = InverseSquareLawCommonConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
+
+    CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, {
       minSeparationBetweenObjects: 1E-13,
       snapObjectsToNearest: 1E-13
     } );

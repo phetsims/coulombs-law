@@ -9,8 +9,11 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var Charge = require( 'COULOMBS_LAW/common/model/Charge' );
+  var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
+  var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
   var Range = require( 'DOT/Range' );
   
   /**
@@ -31,7 +34,16 @@ define( function( require ) {
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 
-    CoulombsLawCommonModel.call( this, chargeValue1, chargeValue2, position1, position2, valueRange, tandem, { snapObjectsToNearest: 0.1 } );
+    var baseColor1 = new Color( '#00f' );
+    var baseColor2 = new Color( '#f00' );
+
+    var charge1 = new Charge( chargeValue1, position1, valueRange, baseColor1, tandem, { tandemUnits: 'coulombs' } );
+    var charge2 = new Charge( chargeValue2, position2, valueRange, baseColor2, tandem, { tandemUnits: 'coulombs' } );
+
+    var leftBoundary = InverseSquareLawCommonConstants.LEFT_OBJECT_BOUNDARY;
+    var rightBoundary = InverseSquareLawCommonConstants.RIGHT_OBJECT_BOUNDARY;
+
+    CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, { snapObjectsToNearest: 0.1 } );
   }
 
   coulombsLaw.register( 'CoulombsLawMacroModel', CoulombsLawMacroModel );

@@ -19,7 +19,7 @@ define( function( require ) {
 
   // constants
   var SCALE_FACTOR = 1 / InverseSquareLawCommonConstants.coulombsPerAtomicUnit;  // number of e in one C
-  var DISTANCE_SCALE_FACTOR = 1E-12;
+  // var DISTANCE_SCALE_FACTOR = 1E-12;
   /**
    * @param {CoulombsLawModel} coulombsLawModel
    * @constructor
@@ -27,14 +27,9 @@ define( function( require ) {
   function CoulombsLawAtomicView( coulombsLawModel, tandem ) {
 
      // the arrow node, scaled by model ranges and values
-    var arrowForceRange = new RangeWithValue( ( 4.7e-29 ), ( 1.5e-26 ) ); // empirically determined for linear mapping of pull objects
+    var arrowForceRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) ); // empirically determined for linear mapping of pull objects
 
-    var scaleOptions = {
-      valueScale: SCALE_FACTOR,
-      distanceScale: DISTANCE_SCALE_FACTOR
-    };
-
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, arrowForceRange, tandem, scaleOptions );
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, arrowForceRange, tandem );
   }
 
   coulombsLaw.register( 'CoulombsLawAtomicView', CoulombsLawAtomicView );

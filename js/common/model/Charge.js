@@ -33,7 +33,7 @@ define( function( require ) {
   function Charge( initialCharge, initialPosition, valueRange, baseColor, tandem, options ) {
 
     options = _.extend( {
-      constantRadius: 0.675,
+      constantRadius: 0.675
     }, options );
 
     var constantRadiusProperty = new Property( true, {
@@ -44,10 +44,9 @@ define( function( require ) {
     var negativeColor = new Color( '#00f' );
     var positiveColor = new Color( '#f00' );
 
-    InverseSquareLawObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, options );
+    InverseSquareLawObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, tandem, options );
 
-    // @public - mass color is will change with value
-    // TODO: alter 'constantRadiusProperty' to better indicate the condition for which the object colors will change
+    // @public - object node color is will change with value
     // radius changes will be moved into the Mass object
     // color property will be changed and updated based on a boolean value (negative vs positive for Charge and Constant Radius for Mass)
     // brightness will be set according to the Mass/Charge magnitude

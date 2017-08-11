@@ -66,14 +66,18 @@ define( function( require ) {
     } );
     this.addChild( resetAllButton );
 
+    var modelViewTransformScale = ( this.layoutBounds.width - 180 ) / Math.abs( coulombsLawModel.rightObjectBoundary - coulombsLawModel.leftObjectBoundary );
+
     // Create the model-view transform.  The primary units used in the model are meters, so significant zoom is used.
     // The multipliers for the 2nd parameter can be used to adjust where the point (0, 0) in the model, which is
     // between the two masses.
     var modelViewTransform = ModelViewTransform2.createSinglePointScaleInvertedYMapping(
       Vector2.ZERO,
       new Vector2( this.layoutBounds.width / 2, this.layoutBounds.height / 2 ),
-      50
+      modelViewTransformScale
     );
+
+    this.modelViewTransform = modelViewTransform;
 
     var chargeNode1 = new ChargeNode( 
       coulombsLawModel, 
