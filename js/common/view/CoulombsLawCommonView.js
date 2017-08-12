@@ -66,7 +66,8 @@ define( function( require ) {
     } );
     this.addChild( resetAllButton );
 
-    var modelViewTransformScale = ( this.layoutBounds.width - 180 ) / Math.abs( coulombsLawModel.rightObjectBoundary - coulombsLawModel.leftObjectBoundary );
+    // create a dynamic scale such that 
+    var modelViewTransformScale = Math.abs( ( this.layoutBounds.width - 180 ) / ( coulombsLawModel.rightObjectBoundary - coulombsLawModel.leftObjectBoundary ) );
 
     // Create the model-view transform.  The primary units used in the model are meters, so significant zoom is used.
     // The multipliers for the 2nd parameter can be used to adjust where the point (0, 0) in the model, which is
