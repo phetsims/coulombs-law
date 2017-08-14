@@ -9,7 +9,6 @@ define( function( require ) {
 
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
-  var Color = require( 'SCENERY/util/Color' );
   var CoulombsLawQueryParameters = require( 'COULOMBS_LAW/common/CoulombsLawQueryParameters' );
   var HSlider = require( 'SUN/HSlider' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -39,7 +38,6 @@ define( function( require ) {
   var CHARGE_NODE_Y_POSITION = 225;
   var MOCKUP = CoulombsLawQueryParameters.mockup;
   var SHOW_GRID = ISLQueryParameters.showGrid;
-  var SLIDER_THUMB_COLOR = new Color( 'indigo' );
 
   // images
   var backgroundImage = require( 'image!COULOMBS_LAW/image06.png' );
@@ -170,7 +168,6 @@ define( function( require ) {
       unitString,
       coulombsLawModel.object1.valueProperty,
       coulombsLawModel.object1.valueRange,
-      SLIDER_THUMB_COLOR,
       scaleFactor,
       tandem.createTandem( 'charge2Control' ),
       {
@@ -186,7 +183,6 @@ define( function( require ) {
       unitString,
       coulombsLawModel.object2.valueProperty,
       coulombsLawModel.object2.valueRange,
-      SLIDER_THUMB_COLOR,
       scaleFactor,
       tandem.createTandem( 'charge2Control' ),
       {

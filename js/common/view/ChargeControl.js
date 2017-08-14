@@ -10,6 +10,7 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var ChargeControlSliderThumb = require( 'COULOMBS_LAW/common/view/ChargeControlSliderThumb' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var Dimension2 = require( 'DOT/Dimension2' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -29,7 +30,7 @@ define( function( require ) {
    * @param {Tandem} tandem
    * @constructor
    */
-  function ChargeControl( titleString, unitString, objectProperty, valueRange, thumbColor, scaleFactor, tandem, options ) {
+  function ChargeControl( titleString, unitString, objectProperty, valueRange, scaleFactor, tandem, options ) {
 
     options = _.extend( {
       align: 'center',
@@ -58,7 +59,9 @@ define( function( require ) {
 
     var chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
 
-    ObjectControl.call(this, titleString, unitString, chargeControlProperty, chargeControlRange, thumbColor, tandem, options );
+    options.thumbNode = new ChargeControlSliderThumb( objectProperty, options );
+
+    ObjectControl.call(this, titleString, unitString, chargeControlProperty, chargeControlRange, tandem, options );
   }
 
   coulombsLaw.register( 'ChargeControl', ChargeControl );
