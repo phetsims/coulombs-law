@@ -12,7 +12,7 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var Property = require( 'AXON/Property' );
   var InverseSquareLawModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/InverseSquareLawModel' );
-  var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
+  var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
 
   // phet-io modules
   var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
@@ -30,7 +30,7 @@ define( function( require ) {
       phetioValueType: TBoolean 
     } );
 
-    InverseSquareLawModel.call( this, InverseSquareLawCommonConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );
+    InverseSquareLawModel.call( this, ISLCConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );
   }
 
   coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );

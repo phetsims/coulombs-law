@@ -18,7 +18,7 @@ define( function( require ) {
   var ObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ObjectNode');
 
   // constants
-  var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
+  var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
 
   /**
    * @param {CoulombsLawbModel} model
@@ -31,7 +31,7 @@ define( function( require ) {
    */
   function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, chargeArrowForceRange, tandem, options ) {
 
-    var forceConstant = InverseSquareLawCommonConstants.k;
+    var forceConstant = ISLCConstants.k;
 
     options = _.extend( {
       label: 'This Charge',

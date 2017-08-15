@@ -19,7 +19,7 @@ define( function( require ) {
   var Property = require( 'AXON/Property' );
 
   // constants
-  var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
+  var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
 
   /**
    * @constructor
@@ -27,7 +27,7 @@ define( function( require ) {
   function CoulombsLawAtomicModel( tandem ) {
 
     // conversion factor for atomic units
-    var e = InverseSquareLawCommonConstants.coulombsPerAtomicUnit;
+    var e = ISLCConstants.coulombsPerAtomicUnit;
 
     // set initial charge values
     // TODO: consider creating charges/masses in subtypes
@@ -55,8 +55,8 @@ define( function( require ) {
       tandemUnits: 'coulombs'
     } );
 
-    var leftBoundary = InverseSquareLawCommonConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
-    var rightBoundary = InverseSquareLawCommonConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
+    var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
+    var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
 
     this.rulerPositionProperty = new Property( new Vector2( -5.2E-11, 1.75E-11 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),

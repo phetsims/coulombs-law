@@ -13,7 +13,7 @@ define( function( require ) {
   var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
-  var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
+  var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var Range = require( 'DOT/Range' );
   var TVector2 = require( 'DOT/TVector2' );
   var Vector2 = require( 'DOT/Vector2' );
@@ -43,8 +43,8 @@ define( function( require ) {
     var charge1 = new Charge( chargeValue1, position1, valueRange, baseColor1, tandem, { tandemUnits: 'coulombs' } );
     var charge2 = new Charge( chargeValue2, position2, valueRange, baseColor2, tandem, { tandemUnits: 'coulombs' } );
 
-    var leftBoundary = InverseSquareLawCommonConstants.LEFT_OBJECT_BOUNDARY;
-    var rightBoundary = InverseSquareLawCommonConstants.RIGHT_OBJECT_BOUNDARY;
+    var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY;
+    var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY;
 
     this.rulerPositionProperty = new Property( new Vector2( -5.2, 1.75 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
