@@ -53,17 +53,6 @@ define( function( require ) {
     var rightAlignment = this.layoutBounds.maxX - 10;
     var bottomAlignment = this.layoutBounds.maxY - 10;
 
-    // Reset All button
-    var resetAllButton = new ResetAllButton( {
-      listener: function() {
-        coulombsLawModel.reset();
-      },
-      radius: 18,
-      right:  rightAlignment,
-      bottom: bottomAlignment
-    } );
-    this.addChild( resetAllButton );
-
     // create a dynamic scale such that 
     var modelViewTransformScale = Math.abs( ( this.layoutBounds.width - 180 ) / ( coulombsLawModel.rightObjectBoundary - coulombsLawModel.leftObjectBoundary ) );
 
@@ -192,6 +181,19 @@ define( function( require ) {
     );
 
     this.addChild( charge2Control );
+
+    // Reset All button
+    var resetAllButton = new ResetAllButton( {
+      listener: function() {
+        coulombsLawModel.reset();
+        charge1Control.reset();
+        charge2Control.reset();
+      },
+      radius: 18,
+      right:  rightAlignment,
+      bottom: bottomAlignment
+    } );
+    this.addChild( resetAllButton );
 
     //------------------------------------------------
     // debugging

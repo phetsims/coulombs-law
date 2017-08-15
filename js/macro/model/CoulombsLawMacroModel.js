@@ -15,6 +15,9 @@ define( function( require ) {
   var CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
   var InverseSquareLawCommonConstants = require( 'INVERSE_SQUARE_LAW_COMMON/InverseSquareLawCommonConstants' );
   var Range = require( 'DOT/Range' );
+  var TVector2 = require( 'DOT/TVector2' );
+  var Vector2 = require( 'DOT/Vector2' );
+  var Property = require( 'AXON/Property' );
   
   /**
    * @constructor
@@ -42,6 +45,11 @@ define( function( require ) {
 
     var leftBoundary = InverseSquareLawCommonConstants.LEFT_OBJECT_BOUNDARY;
     var rightBoundary = InverseSquareLawCommonConstants.RIGHT_OBJECT_BOUNDARY;
+
+    this.rulerPositionProperty = new Property( new Vector2( -5.2, 1.75 ), {
+      tandem: tandem.createTandem( 'rulerPositionProperty' ),
+      phetioValueType: TVector2
+    } ); // @public
 
     CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, { snapObjectsToNearest: 0.1 } );
   }

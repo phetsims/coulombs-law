@@ -51,20 +51,25 @@ define( function( require ) {
     // scales between C and nC or e
 
     // varies between -10 and 10
-    var chargeControlProperty = new Property( objectProperty.get() * scaleFactor );
+    this.chargeControlProperty = new Property( objectProperty.get() * scaleFactor );
 
-    chargeControlProperty.link( function( value ) {
+    this.chargeControlProperty.link( function( value ) {
       objectProperty.set( value / scaleFactor );
     } );
+
 
     var chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
 
     options.thumbNode = new ChargeControlSliderThumb( objectProperty, options );
 
-    ObjectControl.call(this, titleString, unitString, chargeControlProperty, chargeControlRange, tandem, options );
+    ObjectControl.call(this, titleString, unitString, this.chargeControlProperty, chargeControlRange, tandem, options );
   }
 
   coulombsLaw.register( 'ChargeControl', ChargeControl );
 
-  return inherit( ObjectControl, ChargeControl );
+  return inherit( ObjectControl, ChargeControl, {
+    reset: function() {
+      this.chargeControlProperty.reset();
+    }
+  } );
 } );
