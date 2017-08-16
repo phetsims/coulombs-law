@@ -65,10 +65,14 @@ define( function( require ) {
 
   return inherit( InverseSquareLawObject, Charge, {
 
+    getMaxRadius: function() {
+      return this.radiusProperty.get();
+    },
+
     /**
      * @override
      */
-    calculateRadius: function( mass ) {
+    calculateRadius: function( charge ) {
       throw new Error( 'No radius adjustment allowed for Charge objects.' );
     },
 
