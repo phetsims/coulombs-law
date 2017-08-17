@@ -11,7 +11,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var Property = require( 'AXON/Property' );
-  var InverseSquareLawModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/InverseSquareLawModel' );
+  var ISLCModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCModel' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
 
   // phet-io modules
@@ -30,17 +30,17 @@ define( function( require ) {
       phetioValueType: TBoolean 
     } );
 
-    InverseSquareLawModel.call( this, ISLCConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );
+    ISLCModel.call( this, ISLCConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );
   }
 
   coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );
 
-  return inherit( InverseSquareLawModel, CoulombsLawCommonModel, {
+  return inherit( ISLCModel, CoulombsLawCommonModel, {
 
     // @public resets the model
     reset: function() {
       this.rulerPositionProperty.reset();
-      InverseSquareLawModel.prototype.reset.call( this );
+      ISLCModel.prototype.reset.call( this );
     }
   } );
 } );
