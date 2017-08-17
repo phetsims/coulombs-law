@@ -18,6 +18,7 @@ define( function( require ) {
 
   // constants
   var SCALE_FACTOR = 1E9;  // number of nC in one C
+  var MODEL_VIEW_TRANSFORM_SCALE = 50;
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -27,7 +28,7 @@ define( function( require ) {
 
     var forceArrowRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) );
 
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsNanocoulombsString, forceArrowRange, tandem );
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsNanocoulombsString, forceArrowRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
   }
 
   coulombsLaw.register( 'CoulombsLawMacroView', CoulombsLawMacroView );

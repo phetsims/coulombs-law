@@ -43,11 +43,12 @@ define( function( require ) {
 
     // @private
     this.modelViewTransform = modelViewTransform;
-
     this.model = model;
-
-    // @private
     this.objectModel = chargeObjectModel;
+    this.layoutBounds = layoutBounds;
+
+    // for incrementing the radius to prevent division by zero in RadialGradient
+    this.snapToNearest = options.snapToNearest;
 
     var maxForce = forceConstant * chargeObjectModel.valueRange.max * chargeObjectModel.valueRange.max / 2;
     var minForce = -maxForce;
@@ -70,6 +71,10 @@ define( function( require ) {
 
     updateGradient: function( baseColor ) {
       var radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
+      // if the radius = 1, radial gradient will throw an error
+      // ensure inequality
+      radius = radius === 1 ? radius + this.snapToNearest : radius;
+
       this.objectCircle.fill = new RadialGradient( -radius * 0.6, -radius * 0.6, 1, -radius * 0.6, -radius * 0.6, radius )
         .addColorStop( 0, baseColor.colorUtilsBrighter( 0.5 ).toCSS() )
         .addColorStop( 1, baseColor.toCSS() );

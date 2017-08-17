@@ -33,7 +33,7 @@ define( function( require ) {
   function Charge( initialCharge, initialPosition, valueRange, baseColor, tandem, options ) {
 
     options = _.extend( {
-      constantRadius: 0.675
+      constantRadius: 0.475 // ensure this is in meters
     }, options );
 
     var constantRadiusProperty = new Property( true, {
@@ -64,10 +64,6 @@ define( function( require ) {
   coulombsLaw.register( 'Charge', Charge );
 
   return inherit( InverseSquareLawObject, Charge, {
-
-    getMaxRadius: function() {
-      return this.radiusProperty.get();
-    },
 
     /**
      * @override

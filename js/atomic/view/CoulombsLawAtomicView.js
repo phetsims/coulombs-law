@@ -19,7 +19,7 @@ define( function( require ) {
 
   // constants
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
-  // var DISTANCE_SCALE_FACTOR = 1E-12;
+  var MODEL_VIEW_TRANSFORM_SCALE = 5E12;
   /**
    * @param {CoulombsLawModel} coulombsLawModel
    * @constructor
@@ -29,7 +29,7 @@ define( function( require ) {
      // the arrow node, scaled by model ranges and values
     var arrowForceRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) ); // empirically determined for linear mapping of pull objects
 
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, arrowForceRange, tandem );
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, arrowForceRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
   }
 
   coulombsLaw.register( 'CoulombsLawAtomicView', CoulombsLawAtomicView );
