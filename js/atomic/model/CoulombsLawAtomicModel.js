@@ -35,8 +35,8 @@ define( function( require ) {
     var chargeValue1 = e; // charge in Coulombs
     var chargeValue2 = -e; // charge in Coulombs
 
-    var position1 = -2E-11; // initial position from center in m
-    var position2 = 2E-11; // initial position from center in m
+    var position1 = -2E-11; // initial position from center in m (20pm)
+    var position2 = 2E-11; // initial position from center in m (20pm)
 
     var minChargeValue = -10 * e; // in Coulombs
     var maxChargeValue = 10 * e; // in Coulombs
