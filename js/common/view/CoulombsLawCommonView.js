@@ -35,7 +35,7 @@ define( function( require ) {
   var scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 225;
+  var CHARGE_NODE_Y_POSITION = 218;
   var MOCKUP = CoulombsLawQueryParameters.mockup;
   var SHOW_GRID = ISLQueryParameters.showGrid;
 
