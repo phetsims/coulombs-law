@@ -97,8 +97,7 @@ define( function( require ) {
         arrowColor: '#f66',
         y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 175,
-        attractNegative: true,
-        chargeArrowForceRange: arrowForceRange
+        attractNegative: true
       } );
 
     this.addChild( chargeNode1 );

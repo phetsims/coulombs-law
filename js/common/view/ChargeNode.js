@@ -50,7 +50,7 @@ define( function( require ) {
     // for incrementing the radius to prevent division by zero in RadialGradient
     this.snapToNearest = options.snapToNearest;
 
-    var maxForce = forceConstant * chargeObjectModel.valueRange.max * chargeObjectModel.valueRange.max / 2;
+    var maxForce = forceConstant * Math.pow( chargeObjectModel.valueRange.max, 2 ) / Math.pow( ( chargeObjectModel.radiusProperty.get() * 2 ), 2 );
     var minForce = -maxForce;
 
     // functions that determine scaling of the arrow readout and the corrent image to represent
@@ -71,7 +71,7 @@ define( function( require ) {
 
     updateGradient: function( baseColor ) {
       var radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
-      // if the radius = 1, radial gradient will throw an error
+      // if the radius = 1, radial gradient will throw an divide-by-zero error
       // ensure inequality
       radius = radius === 1 ? radius + this.snapToNearest : radius;
 

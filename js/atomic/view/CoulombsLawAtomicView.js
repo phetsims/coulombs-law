@@ -28,7 +28,7 @@ define( function( require ) {
   function CoulombsLawAtomicView( coulombsLawModel, tandem ) {
 
      // the arrow node, scaled by model ranges and values
-    var arrowForceRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) ); // empirically determined for linear mapping of pull objects
+    var arrowForceRange = new RangeWithValue( ( 1.45e-7 ), ( 2.4e-3 ) ); // empirically determined for linear mapping of pull objects
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, arrowForceRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
 

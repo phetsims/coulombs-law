@@ -15,10 +15,10 @@ define( function( require ) {
   var RangeWithValue = require('DOT/RangeWithValue'); 
 
   // strings
-  var unitsNanocoulombsString = require( 'string!COULOMBS_LAW/units.nanocoulombs');
+  var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs');
 
   // constants
-  var SCALE_FACTOR = 1E9;  // number of nC in one C
+  var SCALE_FACTOR = 1E6;  // number of microcoulombs in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 50;
 
   /**
@@ -27,9 +27,9 @@ define( function( require ) {
    */
   function CoulombsLawMacroView( coulombsLawModel, tandem ) {
 
-    var forceArrowRange = new RangeWithValue( ( 7.7e-11 ), ( 7.5e-7 ) );
+    var forceArrowRange = new RangeWithValue( ( 1e-4 ), ( 4.0e-1 ) );
 
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsNanocoulombsString, forceArrowRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, forceArrowRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
 
     // create a line the length of 1 cm
     var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1 );
