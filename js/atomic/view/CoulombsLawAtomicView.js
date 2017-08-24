@@ -13,10 +13,12 @@ define( function( require ) {
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
+  var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
   var RangeWithValue = require('DOT/RangeWithValue'); 
 
   // strings
   var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits');
+  var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers')
 
   // constants
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
@@ -32,6 +34,20 @@ define( function( require ) {
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, arrowForceRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
 
+    // create and add atomic ruler
+    var coulombsLawRuler = new ISLCRulerNode(
+      coulombsLawModel,
+      this.layoutBounds.height,
+      this.modelViewTransform,
+      tandem.createTandem( 'coulombsLawRuler' ),
+      {
+        snapToNearest: 0.1, // in model coordinates
+        majorTickLabels: [ '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100' ],
+        unitString: unitsPicometersString
+      }
+    );
+
+    this.addChild( coulombsLawRuler );
     // create a line the length of 1 picometer
     var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1E-12 );
 

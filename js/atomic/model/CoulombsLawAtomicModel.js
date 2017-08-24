@@ -55,6 +55,7 @@ define( function( require ) {
       tandemUnits: 'coulombs'
     } );
 
+    // boundary constants in m, convert to pm (-50pm, 50pm)
     var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
     var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
 

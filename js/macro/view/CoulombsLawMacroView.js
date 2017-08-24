@@ -12,6 +12,7 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
+  var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
   var RangeWithValue = require('DOT/RangeWithValue'); 
 
   // strings
@@ -19,7 +20,7 @@ define( function( require ) {
 
   // constants
   var SCALE_FACTOR = 1E6;  // number of microcoulombs in one C
-  var MODEL_VIEW_TRANSFORM_SCALE = 50;
+  var MODEL_VIEW_TRANSFORM_SCALE = 5000;
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -31,8 +32,21 @@ define( function( require ) {
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, forceArrowRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
 
+    // create and add macro ruler
+    var coulombsLawRuler = new ISLCRulerNode(
+      coulombsLawModel,
+      this.layoutBounds.height,
+      this.modelViewTransform,
+      tandem.createTandem( 'coulombsLawRuler' ),
+      {
+        snapToNearest: 0.1 // in model coordinates
+      }
+    );
+
+    this.addChild( coulombsLawRuler );
+
     // create a line the length of 1 cm
-    var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1 );
+    var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1E-2 );
 
     var legendNode = new ISLCLegendNode( 
       legendNodeLineLength, // length of the line

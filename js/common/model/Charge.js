@@ -33,7 +33,7 @@ define( function( require ) {
   function Charge( initialCharge, initialPosition, valueRange, baseColor, tandem, options ) {
 
     options = _.extend( {
-      constantRadius: 0.675 // ensure this is in meters
+      constantRadius: 6.75E-3 // ensure this is in meters (0.675cm)
     }, options );
 
     var constantRadiusProperty = new Property( true, {

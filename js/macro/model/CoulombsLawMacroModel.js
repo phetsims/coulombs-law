@@ -43,15 +43,16 @@ define( function( require ) {
     var charge1 = new Charge( chargeValue1, position1, valueRange, baseColor1, tandem, { tandemUnits: 'coulombs' } );
     var charge2 = new Charge( chargeValue2, position2, valueRange, baseColor2, tandem, { tandemUnits: 'coulombs' } );
 
-    var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY;
-    var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY;
+  // boundary constants are in m, convert to cm
+    var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
+    var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
 
-    this.rulerPositionProperty = new Property( new Vector2( -5.2, -0.75 ), {
+    this.rulerPositionProperty = new Property( new Vector2( -5.2E-2, -7.5E-3 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
       phetioValueType: TVector2
     } ); // @public
 
-    CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, { snapObjectsToNearest: 0.1 } );
+    CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, { snapObjectsToNearest: 0.001, minSeparationBetweenObjects: 0.001 } );
   }
 
   coulombsLaw.register( 'CoulombsLawMacroModel', CoulombsLawMacroModel );

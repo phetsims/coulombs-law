@@ -13,7 +13,6 @@ define( function( require ) {
   var HSlider = require( 'SUN/HSlider' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Image = require( 'SCENERY/nodes/Image' );
-  var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
   var ISLCheckboxPanel = require ('INVERSE_SQUARE_LAW_COMMON/view/ISLCheckboxPanel' );
   var Property = require( 'AXON/Property' );
   var ScreenView = require( 'JOIST/ScreenView' );
@@ -108,16 +107,6 @@ define( function( require ) {
     this.addChild( chargeNode1.arrowNode );
     this.addChild( chargeNode2.arrowNode );
 
-    var coulombsLawRuler = new ISLCRulerNode(
-      coulombsLawModel,
-      this.layoutBounds.height,
-      modelViewTransform,
-      tandem.createTandem( 'coulombsLawRuler' ),
-      {
-        snapToNearest: 0.1 // in model coordinates
-      }
-    );
-
     // construct checkbox parameter lists
 
     var checkboxParameters = [];
@@ -145,8 +134,6 @@ define( function( require ) {
                                                              } );
 
     this.addChild( coulombsLawParameterCheckbox );
-
-    this.addChild( coulombsLawRuler );
 
     var charge1Control = new ChargeControl(
       charge1String,
