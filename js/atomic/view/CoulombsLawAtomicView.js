@@ -18,7 +18,7 @@ define( function( require ) {
 
   // strings
   var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits');
-  var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers')
+  var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers');
 
   // constants
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
