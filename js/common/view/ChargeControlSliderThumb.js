@@ -27,7 +27,7 @@ define( function( require ) {
 
   /**
    * Constructor.
-   * @param {Property.<number>} objectProperty - the number Property associated with the InverseSquareLawObject
+   * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
    * @param {Object} options
    */
   function ChargeControlSliderThumb( objectProperty, options ) {

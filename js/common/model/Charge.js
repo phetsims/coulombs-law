@@ -14,7 +14,7 @@ define( function( require ) {
   var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var DerivedProperty = require( 'AXON/DerivedProperty' );
-  var InverseSquareLawObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/InverseSquareLawObject' );
+  var ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Property = require( 'AXON/Property' );
   var TColor = require( 'SCENERY/util/TColor' );
@@ -44,7 +44,7 @@ define( function( require ) {
     var negativeColor = new Color( '#00f' );
     var positiveColor = new Color( '#f00' );
 
-    InverseSquareLawObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, tandem, options );
+    ISLCObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, tandem, options );
 
     // @public - object node color is will change with value
     // radius changes will be moved into the Mass object
@@ -63,7 +63,7 @@ define( function( require ) {
 
   coulombsLaw.register( 'Charge', Charge );
 
-  return inherit( InverseSquareLawObject, Charge, {
+  return inherit( ISLCObject, Charge, {
 
     /**
      * @override
