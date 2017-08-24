@@ -15,7 +15,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var RangeWithValue = require('DOT/RangeWithValue'); 
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
-  var ObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ObjectNode');
+  var ISLCObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode');
 
   // constants
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
@@ -59,15 +59,14 @@ define( function( require ) {
     // the arrow node, scaled by model ranges and values
     var arrowForceRange = chargeArrowForceRange; // empirically determined for linear mapping of pull objects
     
-    ObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, arrowForceRange, tandem.createTandem( 'chargeNode1' ), options );
+    ISLCObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, arrowForceRange, tandem.createTandem( 'chargeNode1' ), options );
 
     this.model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
   }
 
   coulombsLaw.register( 'ChargeNode', ChargeNode );
 
-  // TODO: Inherit from InverseSquareObjectNode
-  return inherit( ObjectNode, ChargeNode, {
+  return inherit( ISLCObjectNode, ChargeNode, {
 
     updateGradient: function( baseColor ) {
       var radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
@@ -81,7 +80,7 @@ define( function( require ) {
     }, 
     redrawForce: function () {
       this.arrowNode.scientificNotationMode = this.model.scientificNotationProperty.get();
-      ObjectNode.prototype.redrawForce.call( this );      
+      ISLCObjectNode.prototype.redrawForce.call( this );      
     }
   } );
 } );
