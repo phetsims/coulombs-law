@@ -39,7 +39,7 @@ define( function( require ) {
       this.modelViewTransform,
       tandem.createTandem( 'coulombsLawRuler' ),
       {
-        snapToNearest: 0.1 // in model coordinates
+        snapToNearest: 0.001 // in model coordinates
       }
     );
 

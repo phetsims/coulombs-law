@@ -59,14 +59,14 @@ define( function( require ) {
     var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
     var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
 
-    this.rulerPositionProperty = new Property( new Vector2( -5.2E-11, -0.75E-11 ), {
+    this.rulerPositionProperty = new Property( new Vector2( 0, -0.75E-11 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
       phetioValueType: TVector2
     } ); // @public
 
     CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, {
       minSeparationBetweenObjects: 1E-13,
-      snapObjectsToNearest: 1E-13
+      snapObjectsToNearest: 1E-12
     } );
   }
 
