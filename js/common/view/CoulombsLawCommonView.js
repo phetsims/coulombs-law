@@ -21,7 +21,7 @@ define( function( require ) {
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
   var Vector2 = require( 'DOT/Vector2' );
-  var InverseSquareLawGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/InverseSquareLawGridNode' );
+  var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
   var ISLQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLQueryParameters' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
 
@@ -193,7 +193,7 @@ define( function( require ) {
     }
 
     if ( SHOW_GRID ) {
-      var gridNode = new InverseSquareLawGridNode( 7.8, -7.8, 0.1, this.layoutBounds, modelViewTransform, {
+      var gridNode = new ISLCGridNode( 7.8, -7.8, 0.1, this.layoutBounds, modelViewTransform, {
         stroke: 'rgba( 250, 100, 100, 0.6 )'
       } );
       this.addChild( gridNode );
