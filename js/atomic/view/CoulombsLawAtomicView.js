@@ -14,7 +14,6 @@ define( function( require ) {
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
-  var RangeWithValue = require('DOT/RangeWithValue'); 
 
   // strings
   var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits');
@@ -29,10 +28,7 @@ define( function( require ) {
    */
   function CoulombsLawAtomicView( coulombsLawModel, tandem ) {
 
-     // the arrow node, scaled by model ranges and values
-    var arrowForceRange = new RangeWithValue( ( 1.45e-7 ), ( 2.4e-3 ) ); // empirically determined for linear mapping of pull objects
-
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, arrowForceRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, tandem );
 
     // create and add atomic ruler
     var coulombsLawRuler = new ISLCRulerNode(

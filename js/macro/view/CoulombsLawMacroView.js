@@ -13,7 +13,6 @@ define( function( require ) {
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
-  var RangeWithValue = require('DOT/RangeWithValue'); 
 
   // strings
   var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs');
@@ -28,9 +27,7 @@ define( function( require ) {
    */
   function CoulombsLawMacroView( coulombsLawModel, tandem ) {
 
-    var forceArrowRange = new RangeWithValue( ( 1e-4 ), ( 4.0e-1 ) );
-
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, forceArrowRange, MODEL_VIEW_TRANSFORM_SCALE, tandem );
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, tandem );
 
     // create and add macro ruler
     var coulombsLawRuler = new ISLCRulerNode(

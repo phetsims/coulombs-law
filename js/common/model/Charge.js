@@ -69,7 +69,7 @@ define( function( require ) {
      * @override
      */
     calculateRadius: function( charge ) {
-      throw new Error( 'No radius adjustment allowed for Charge objects.' );
+      return this.radiusProperty.get();
     },
 
     // @public

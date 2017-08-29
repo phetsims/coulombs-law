@@ -29,7 +29,7 @@ define( function( require ) {
    * @param {Object} [options]
    * @constructor
    */
-  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, chargeArrowForceRange, tandem, options ) {
+  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, tandem, options ) {
 
     var forceConstant = ISLCConstants.k;
 
@@ -38,6 +38,7 @@ define( function( require ) {
       otherObjectName: 'Other Charge',
       scientificNotationMode: true,
       snapToNearest: model.snapObjectsToNearest,
+      maxArrowWidth: 50,
       displayShadow: false
     }, options );
 
@@ -55,11 +56,8 @@ define( function( require ) {
 
     // functions that determine scaling of the arrow readout and the corrent image to represent
     var pullForceRange = new RangeWithValue( minForce, maxForce ); // empirically determined for linear mapping of pull objects
-
-    // the arrow node, scaled by model ranges and values
-    var arrowForceRange = chargeArrowForceRange; // empirically determined for linear mapping of pull objects
     
-    ISLCObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, arrowForceRange, tandem.createTandem( 'chargeNode1' ), options );
+    ISLCObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, tandem.createTandem( 'chargeNode1' ), options );
 
     this.model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
   }

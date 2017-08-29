@@ -45,7 +45,7 @@ define( function( require ) {
    * @param {CoulombsLawModel} coulombsLawModel
    * @constructor
    */
-  function CoulombsLawCommonView( coulombsLawModel, scaleFactor, unitString, arrowForceRange, modelViewTransformScale, tandem ) {
+  function CoulombsLawCommonView( coulombsLawModel, scaleFactor, unitString, modelViewTransformScale, tandem ) {
 
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) }  );
 
@@ -68,7 +68,6 @@ define( function( require ) {
       coulombsLawModel.object1, 
       this.layoutBounds, 
       modelViewTransform,
-      arrowForceRange,
       tandem.createTandem( 'chargeNode1' ), 
       {
         title: charge1String,
@@ -86,7 +85,6 @@ define( function( require ) {
       coulombsLawModel.object2, 
       this.layoutBounds, 
       modelViewTransform,
-      arrowForceRange,
       tandem.createTandem( 'chargeNode2' ), 
       {
         title: charge2String,
