@@ -34,9 +34,6 @@ define( function( require ) {
 
     options = _.extend( {
       align: 'center',
-      // maxWidth: 275,
-      // minWidth: 275,
-      // maxHeight: 89,
       arrowButtonScale: 0.5,
       thumbSize: THUMB_SIZE,
       trackSize: TRACK_SIZE,

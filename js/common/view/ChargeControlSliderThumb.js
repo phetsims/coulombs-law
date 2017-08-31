@@ -23,7 +23,7 @@ define( function( require ) {
   var THUMB_SIZE = new Dimension2( 10, 18 );
   var NEGATIVE_FILL = new Color( '#00f' );
   var POSITIVE_FILL = new Color( '#f00' );
-  var ZERO_FILL = new Color( 'indigo' );
+  var ZERO_FILL = new Color( 'gray' );
 
   /**
    * Constructor.
