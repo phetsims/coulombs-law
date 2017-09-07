@@ -9,6 +9,7 @@ define( function( require ) {
 
   // modules
   var inherit = require( 'PHET_CORE/inherit' );
+  var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
@@ -16,10 +17,15 @@ define( function( require ) {
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
 
   // strings
+  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
+  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
+  var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
+  var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
   var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits');
   var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers');
 
   // constants
+  var CHARGE_NODE_Y_POSITION = 218;
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5E12;
   /**
@@ -29,6 +35,50 @@ define( function( require ) {
   function CoulombsLawAtomicView( coulombsLawModel, tandem ) {
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, tandem );
+
+    // charge nodes added in each screen to allow for different decimal precision
+    // and arrow height
+    var chargeNode1 = new ChargeNode( 
+      coulombsLawModel, 
+      coulombsLawModel.object1, 
+      this.layoutBounds, 
+      this.modelViewTransform,
+      tandem.createTandem( 'chargeNode1' ), 
+      {
+        title: charge1String,
+        label: charge1AbbreviatedString,
+        otherObjectLabel: charge2AbbreviatedString,
+        defaultDirection: 'left',
+        arrowColor: '#66f',
+        y: CHARGE_NODE_Y_POSITION,
+        forceArrowHeight: 125,
+        attractNegative: true
+      } );
+
+    var chargeNode2 = new ChargeNode( 
+      coulombsLawModel, 
+      coulombsLawModel.object2, 
+      this.layoutBounds, 
+      this.modelViewTransform,
+      tandem.createTandem( 'chargeNode2' ), 
+      {
+        title: charge2String,
+        label: charge2AbbreviatedString,
+        otherObjectLabel: charge1AbbreviatedString,
+        defaultDirection: 'right',
+        arrowColor: '#f66',
+        y: CHARGE_NODE_Y_POSITION,
+        forceArrowHeight: 175,
+        attractNegative: true
+      } );
+
+    this.addChild( chargeNode1 );
+    this.addChild( chargeNode2 );
+
+    // the arrows and their labels should be above both charges (and their markers) but below
+    // the ruler and control panels
+    this.addChild( chargeNode1.arrowNode );
+    this.addChild( chargeNode2.arrowNode );
 
     // create and add atomic ruler
     var coulombsLawRuler = new ISLCRulerNode(

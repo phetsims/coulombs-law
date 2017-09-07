@@ -17,7 +17,6 @@ define( function( require ) {
   var Property = require( 'AXON/Property' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
-  var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
   var Vector2 = require( 'DOT/Vector2' );
@@ -28,13 +27,10 @@ define( function( require ) {
   // strings
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   var charge2String = require( 'string!COULOMBS_LAW/charge2' );
-  var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
-  var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
   var showValuesString = require( 'string!COULOMBS_LAW/showValues' );
   var scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 218;
   var MOCKUP = CoulombsLawQueryParameters.mockup;
   var SHOW_GRID = ISLQueryParameters.showGrid;
 
@@ -63,47 +59,7 @@ define( function( require ) {
 
     this.modelViewTransform = modelViewTransform;
 
-    var chargeNode1 = new ChargeNode( 
-      coulombsLawModel, 
-      coulombsLawModel.object1, 
-      this.layoutBounds, 
-      modelViewTransform,
-      tandem.createTandem( 'chargeNode1' ), 
-      {
-        title: charge1String,
-        label: charge1AbbreviatedString,
-        otherObjectLabel: charge2AbbreviatedString,
-        defaultDirection: 'left',
-        arrowColor: '#66f',
-        y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 125,
-        attractNegative: true
-      } );
-
-    var chargeNode2 = new ChargeNode( 
-      coulombsLawModel, 
-      coulombsLawModel.object2, 
-      this.layoutBounds, 
-      modelViewTransform,
-      tandem.createTandem( 'chargeNode2' ), 
-      {
-        title: charge2String,
-        label: charge2AbbreviatedString,
-        otherObjectLabel: charge1AbbreviatedString,
-        defaultDirection: 'right',
-        arrowColor: '#f66',
-        y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 175,
-        attractNegative: true
-      } );
-
-    this.addChild( chargeNode1 );
-    this.addChild( chargeNode2 );
-
-    // the arrows and their labels should be above both charges (and their markers) but below
-    // the ruler and control panels
-    this.addChild( chargeNode1.arrowNode );
-    this.addChild( chargeNode2.arrowNode );
+    // former charge and arrow node additions
 
     // construct checkbox parameter lists
 
