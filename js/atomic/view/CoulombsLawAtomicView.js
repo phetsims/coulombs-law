@@ -25,7 +25,7 @@ define( function( require ) {
   var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers');
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 218;
+  var CHARGE_NODE_Y_POSITION = 205;
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5E12;
   /**
@@ -51,7 +51,7 @@ define( function( require ) {
         defaultDirection: 'left',
         arrowColor: '#66f',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 125,
+        forceArrowHeight: 70,
         attractNegative: true
       } );
 
@@ -68,7 +68,7 @@ define( function( require ) {
         defaultDirection: 'right',
         arrowColor: '#f66',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 175,
+        forceArrowHeight: 120,
         attractNegative: true
       } );
 

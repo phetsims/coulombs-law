@@ -23,7 +23,7 @@ define( function( require ) {
   var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs');
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 218;
+  var CHARGE_NODE_Y_POSITION = 205;
   var SCALE_FACTOR = 1E6;  // number of microcoulombs in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5000;
 
@@ -50,7 +50,7 @@ define( function( require ) {
         defaultDirection: 'left',
         arrowColor: '#66f',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 125,
+        forceArrowHeight: 105,
         attractNegative: true
       } );
 
@@ -67,7 +67,7 @@ define( function( require ) {
         defaultDirection: 'right',
         arrowColor: '#f66',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 175,
+        forceArrowHeight: 165,
         attractNegative: true
       } );
 
