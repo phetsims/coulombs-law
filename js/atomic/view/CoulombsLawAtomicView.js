@@ -89,7 +89,8 @@ define( function( require ) {
       {
         snapToNearest: 1E-12, // in model coordinates
         majorTickLabels: [ '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100' ],
-        unitString: unitsPicometersString
+        unitString: unitsPicometersString,
+        rulerInset: 15
       }
     );
 
