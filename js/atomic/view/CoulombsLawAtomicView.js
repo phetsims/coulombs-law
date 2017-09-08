@@ -15,6 +15,8 @@ define( function( require ) {
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
+  var RichText = require( 'SCENERY/nodes/RichText' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
 
   // strings
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
@@ -22,7 +24,9 @@ define( function( require ) {
   var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
   var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits');
-  var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers');
+  var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers' );
+  var unitsAtomicLegendScaleString = require( 'string!COULOMBS_LAW/units.atomicLegendScale' );
+  var pmScaleString = require( 'string!COULOMBS_LAW/pmScale' );
 
   // constants
   var CHARGE_NODE_Y_POSITION = 205;
@@ -96,19 +100,32 @@ define( function( require ) {
 
     this.addChild( coulombsLawRuler );
     // create a line the length of 1 picometer
-    var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1E-12 );
+    var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 10E-12 );
 
     var legendNode = new ISLCLegendNode( 
       legendNodeLineLength, // length of the line
-      '1 pm', // unit string
+      unitsAtomicLegendScaleString, // unit string
       {
         bottom: this.layoutBounds.maxY - 10,
-        tandem: tandem.createTandem( 'legendNode' ) 
+        tandem: tandem.createTandem( 'atomicLegendNode' ) 
       } );
 
     legendNode.left = this.layoutBounds.minX + 10;
 
     this.addChild( legendNode );
+
+    // add picometer conversion string
+    var pmScaleFont = new PhetFont( 12 );
+    var picometerScaleNode = new RichText( pmScaleString, {
+      fill: 'rgb(0,255,0)',
+      font: pmScaleFont,
+      bottom: this.layoutBounds.maxY - 8,
+      tandem: tandem.createTandem( 'picometerScaleString' )
+    } );
+
+    picometerScaleNode.left = legendNode.right + 10;
+
+    this.addChild( picometerScaleNode );
   }
 
   coulombsLaw.register( 'CoulombsLawAtomicView', CoulombsLawAtomicView );
