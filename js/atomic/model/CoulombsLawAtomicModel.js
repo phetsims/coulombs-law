@@ -47,11 +47,11 @@ define( function( require ) {
     var baseColor2 = new Color( '#f00' );
 
     var charge1 = new Charge( chargeValue1, position1, valueRange, baseColor1, tandem, { 
-      constantRadius: 1.1E-12,
+      constantRadius: 9.5E-13,
       tandemUnits: 'coulombs'
     } );
     var charge2 = new Charge( chargeValue2, position2, valueRange, baseColor2, tandem, { 
-      constantRadius: 1.1E-12,
+      constantRadius: 9.5E-13,
       tandemUnits: 'coulombs'
     } );
 
