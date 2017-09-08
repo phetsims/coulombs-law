@@ -15,10 +15,10 @@
     "value": "Charge 2"
   },
   "charge1Abbreviated": {
-    "value": "q1"
+    "value": "q<sub>1</sub>"
   },
   "charge2Abbreviated": {
-    "value": "q2"
+    "value": "q<sub>2</sub>"
   },
   "units.microcoulombs": {
     "value": "\u03BCC"
