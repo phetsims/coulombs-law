@@ -8,18 +8,18 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var inherit = require( 'PHET_CORE/inherit' );
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
+  var inherit = require( 'PHET_CORE/inherit' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
 
   // strings
-  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
-  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
+  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
+  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs');
 
   // constants

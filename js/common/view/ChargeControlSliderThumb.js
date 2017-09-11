@@ -13,11 +13,11 @@ define( function( require ) {
   // modules
   var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  var DerivedProperty = require( 'AXON/DerivedProperty' );
   var Dimension2 = require( 'DOT/Dimension2' );
   var HSliderThumb = require( 'SUN/HSliderThumb' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Property = require( 'AXON/Property' );
-  var DerivedProperty = require( 'AXON/DerivedProperty' );
 
   // constants
   var THUMB_SIZE = new Dimension2( 10, 18 );

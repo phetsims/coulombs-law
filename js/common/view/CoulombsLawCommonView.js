@@ -11,24 +11,24 @@ define( function( require ) {
   var Bounds2 = require( 'DOT/Bounds2' );
   var CoulombsLawQueryParameters = require( 'COULOMBS_LAW/common/CoulombsLawQueryParameters' );
   var HSlider = require( 'SUN/HSlider' );
-  var inherit = require( 'PHET_CORE/inherit' );
   var Image = require( 'SCENERY/nodes/Image' );
+  var inherit = require( 'PHET_CORE/inherit' );
   var ISLCheckboxPanel = require ('INVERSE_SQUARE_LAW_COMMON/view/ISLCheckboxPanel' );
-  var Property = require( 'AXON/Property' );
-  var ScreenView = require( 'JOIST/ScreenView' );
-  var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
-  var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
-  var Vector2 = require( 'DOT/Vector2' );
+  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
   var ISLQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLQueryParameters' );
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
+  var Property = require( 'AXON/Property' );
+  var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
+  var ScreenView = require( 'JOIST/ScreenView' );
+  var Vector2 = require( 'DOT/Vector2' );
 
   // strings
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   var charge2String = require( 'string!COULOMBS_LAW/charge2' );
-  var showValuesString = require( 'string!COULOMBS_LAW/showValues' );
   var scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
+  var showValuesString = require( 'string!COULOMBS_LAW/showValues' );
 
   // constants
   var MOCKUP = CoulombsLawQueryParameters.mockup;

@@ -14,8 +14,8 @@ define( function( require ) {
   var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var DerivedProperty = require( 'AXON/DerivedProperty' );
-  var ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
   var Property = require( 'AXON/Property' );
   var TColor = require( 'SCENERY/util/TColor' );
 

@@ -9,8 +9,8 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var CLMacroScreen = require( 'COULOMBS_LAW/macro/CLMacroScreen' );
   var CLAtomicScreen = require( 'COULOMBS_LAW/atomic/CLAtomicScreen' );
+  var CLMacroScreen = require( 'COULOMBS_LAW/macro/CLMacroScreen' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );
