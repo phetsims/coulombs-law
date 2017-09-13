@@ -11,25 +11,25 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawMacroModel = require( 'COULOMBS_LAW/macro/model/CoulombsLawMacroModel' );
   var CoulombsLawMacroView = require( 'COULOMBS_LAW/macro/view/CoulombsLawMacroView' );
+  var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
-  var Tandem = require( 'TANDEM/Tandem' );
-
-  // constants
-  var tandem = Tandem.createRootTandem();
 
   // strings
   var macroString = require( 'string!COULOMBS_LAW/macro' );
 
+  // images
+  var macroScreenIcon = require( 'image!COULOMBS_LAW/macro_screen_icon.png' );
   /**
    * @constructor
    */
-  function CLMacroScreen() {
+  function CLMacroScreen( tandem ) {
 
     var options = {
       backgroundColorProperty: new Property( 'black' ),
-      name: macroString
+      name: macroString,
+      homeScreenIcon: new Image( macroScreenIcon, { tandem: tandem.createTandem( 'icon' ) } )
     };
 
     var macroScreenTandem = tandem.createTandem( 'coulombsLawMacroScreen' );

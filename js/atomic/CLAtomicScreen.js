@@ -11,25 +11,26 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawAtomicModel = require( 'COULOMBS_LAW/atomic/model/CoulombsLawAtomicModel' );
   var CoulombsLawAtomicView = require( 'COULOMBS_LAW/atomic/view/CoulombsLawAtomicView' );
+  var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
-  var Tandem = require( 'TANDEM/Tandem' );
-
-  // constants
-  var tandem = Tandem.createRootTandem();
 
   // strings
   var atomicString = require( 'string!COULOMBS_LAW/atomic' );
 
+  // images
+  var atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png');
+
   /**
    * @constructor
    */
-  function CLAtomicScreen() {
+  function CLAtomicScreen( tandem ) {
 
     var options = {
       backgroundColorProperty: new Property( 'black' ),
-      name: atomicString
+      name: atomicString,
+      homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } )
     };
 
     var atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
