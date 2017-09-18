@@ -11,6 +11,7 @@ define( function( require ) {
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
+  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
@@ -51,6 +52,8 @@ define( function( require ) {
       {
         title: charge1String,
         label: charge1AbbreviatedString,
+        arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
+        arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
         otherObjectLabel: charge2AbbreviatedString,
         defaultDirection: 'left',
         arrowColor: '#66f',
@@ -69,6 +72,8 @@ define( function( require ) {
       {
         title: charge2String,
         label: charge2AbbreviatedString,
+        arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
+        arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
         otherObjectLabel: charge1AbbreviatedString,
         defaultDirection: 'right',
         arrowColor: '#f66',

@@ -11,9 +11,9 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawAtomicModel = require( 'COULOMBS_LAW/atomic/model/CoulombsLawAtomicModel' );
   var CoulombsLawAtomicView = require( 'COULOMBS_LAW/atomic/view/CoulombsLawAtomicView' );
+  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
 
   // strings
@@ -28,14 +28,12 @@ define( function( require ) {
   function CLAtomicScreen( tandem ) {
 
     var options = {
-      backgroundColorProperty: new Property( 'black' ),
+      backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
       name: atomicString,
       homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } )
     };
 
     var atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
-
-    // debugger;
 
     Screen.call( this,
       function() { return new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ); },

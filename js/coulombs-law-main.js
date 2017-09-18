@@ -11,6 +11,10 @@ define( function( require ) {
   // modules
   var CLAtomicScreen = require( 'COULOMBS_LAW/atomic/CLAtomicScreen' );
   var CLMacroScreen = require( 'COULOMBS_LAW/macro/CLMacroScreen' );
+  var CoulombsLawCommonConstants = require( 'COULOMBS_LAW/common/CoulombsLawCommonConstants' );
+  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  var CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
+  var CoulombsLawGlobals = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobals' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );
@@ -29,8 +33,13 @@ define( function( require ) {
       qualityAssurance: '',
       graphicArts: '',
       thanks: ''
-    }
+    },
+    optionsNode: new CoulombsLawGlobalOptionsNode( CoulombsLawCommonConstants.GLOBALS_TANDEM.createTandem( 'options' ) )
   };
+
+  CoulombsLawGlobals.projectorModeProperty.link( function( inProjectorMode ) {
+    CoulombsLawColorProfile.profileNameProperty.set( inProjectorMode ? 'projector' : 'default' );
+  } );
 
   var screens = [
     new CLMacroScreen( tandem.createTandem( 'macroScreen' ) ),

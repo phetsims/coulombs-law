@@ -33,10 +33,6 @@ define(function(require) {
     forceArrowLabelStroke: {
       default: BLACK,
       projector: WHITE
-    },
-    rulerStroke: {
-      default: BLACK,
-      projector: WHITE
     }
   }, [ 'default', 'projector' ] );
 

@@ -11,9 +11,9 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawMacroModel = require( 'COULOMBS_LAW/macro/model/CoulombsLawMacroModel' );
   var CoulombsLawMacroView = require( 'COULOMBS_LAW/macro/view/CoulombsLawMacroView' );
+  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
 
   // strings
@@ -21,13 +21,14 @@ define( function( require ) {
 
   // images
   var macroScreenIcon = require( 'image!COULOMBS_LAW/macro_screen_icon.png' );
+  
   /**
    * @constructor
    */
   function CLMacroScreen( tandem ) {
 
     var options = {
-      backgroundColorProperty: new Property( 'black' ),
+      backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
       name: macroString,
       homeScreenIcon: new Image( macroScreenIcon, { tandem: tandem.createTandem( 'icon' ) } )
     };
