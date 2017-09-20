@@ -83,6 +83,9 @@ define( function( require ) {
         forceReadoutDecimalPlaces: 9
       } );
 
+    chargeNode1.objectCircle.stroke = 'black';
+    chargeNode2.objectCircle.stroke = 'black';
+
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
 
