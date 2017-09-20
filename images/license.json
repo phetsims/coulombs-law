@@ -13,7 +13,7 @@
     ],
     "projectURL": "http://phet.colorado.edu",
     "license": "contact phethelp@colorado.edu",
-    "notes": "Screenshot from PhET design docs, temporary image"
+    "notes": "atomic_scale_screen_icon.png created by Cheryl McCutchan"
   },
   "macro_screen_icon.png": {
     "text": [
@@ -21,6 +21,6 @@
     ],
     "projectURL": "http://phet.colorado.edu",
     "license": "contact phethelp@colorado.edu",
-    "notes": "Screenshot from PhET design docs, temporary image"
+    "notes": "macro_screen_icon.png created by Amy Rouinfar"
   }
 }
