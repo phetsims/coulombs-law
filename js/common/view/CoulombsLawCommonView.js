@@ -147,9 +147,11 @@ define( function( require ) {
     }
 
     if ( SHOW_GRID ) {
-      var gridNode = new ISLCGridNode( 7.8, -7.8, 0.1, this.layoutBounds, modelViewTransform, {
-        stroke: 'rgba( 250, 100, 100, 0.6 )'
-      } );
+      var gridNode = new ISLCGridNode( 
+        coulombsLawModel.snapObjectsToNearest, 
+        this.layoutBounds, 
+        modelViewTransform,
+        { stroke: 'rgba( 250, 100, 100, 0.6 )' } );
       this.addChild( gridNode );
     }
   }

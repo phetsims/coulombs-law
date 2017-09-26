@@ -50,6 +50,8 @@ define( function( require ) {
         otherObjectLabel: charge2AbbreviatedString,
         arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
         arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
+        arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
+        arrowLabelStroke: CoulombsLawColorProfile.forceArrowLabelStrokeProperty,
         defaultDirection: 'left',
         arrowColor: '#66f',
         y: CHARGE_NODE_Y_POSITION,
@@ -70,6 +72,8 @@ define( function( require ) {
         otherObjectLabel: charge1AbbreviatedString,
         arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
         arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
+        arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
+        arrowLabelStroke: CoulombsLawColorProfile.forceArrowLabelStrokeProperty,
         defaultDirection: 'right',
         arrowColor: '#f66',
         y: CHARGE_NODE_Y_POSITION,
@@ -78,9 +82,12 @@ define( function( require ) {
         forceReadoutDecimalPlaces: 3
       } );
 
+    // stroke added to allow charge edges to be visible in projector mode and for printing
     chargeNode1.objectCircle.stroke = 'black';
+    chargeNode1.objectCircle.lineWidth = 0.5;
     chargeNode2.objectCircle.stroke = 'black';
-    
+    chargeNode2.objectCircle.lineWidth = 0.5;
+
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
 
@@ -109,6 +116,7 @@ define( function( require ) {
       legendNodeLineLength, // length of the line
       '1 cm', // unit string
       {
+        fill: CoulombsLawColorProfile.legendNodeFillProperty,
         bottom: this.layoutBounds.maxY - 10,
         tandem: tandem.createTandem( 'legendNode' ) 
       } );

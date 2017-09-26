@@ -54,6 +54,8 @@ define( function( require ) {
         label: charge1AbbreviatedString,
         arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
         arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
+        arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
+        arrowLabelStroke: CoulombsLawColorProfile.forceArrowLabelStrokeProperty,
         otherObjectLabel: charge2AbbreviatedString,
         defaultDirection: 'left',
         arrowColor: '#66f',
@@ -74,6 +76,8 @@ define( function( require ) {
         label: charge2AbbreviatedString,
         arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
         arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
+        arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
+        arrowLabelStroke: CoulombsLawColorProfile.forceArrowLabelStrokeProperty,
         otherObjectLabel: charge1AbbreviatedString,
         defaultDirection: 'right',
         arrowColor: '#f66',
@@ -83,8 +87,11 @@ define( function( require ) {
         forceReadoutDecimalPlaces: 9
       } );
 
+    // stroke added to allow charge edges to be visible in projector mode and for printing
     chargeNode1.objectCircle.stroke = 'black';
+    chargeNode1.objectCircle.lineWidth = 0.5;
     chargeNode2.objectCircle.stroke = 'black';
+    chargeNode2.objectCircle.lineWidth = 0.5;
 
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
@@ -116,6 +123,7 @@ define( function( require ) {
       legendNodeLineLength, // length of the line
       unitsAtomicLegendScaleString, // unit string
       {
+        fill: CoulombsLawColorProfile.legendNodeFillProperty,
         bottom: this.layoutBounds.maxY - 10,
         tandem: tandem.createTandem( 'atomicLegendNode' ) 
       } );
@@ -127,7 +135,7 @@ define( function( require ) {
     // add picometer conversion string
     var pmScaleFont = new PhetFont( 12 );
     var picometerScaleNode = new RichText( pmScaleString, {
-      fill: 'rgb(0,255,0)',
+      fill: CoulombsLawColorProfile.legendNodeFillProperty,
       font: pmScaleFont,
       bottom: this.layoutBounds.maxY - 8,
       tandem: tandem.createTandem( 'picometerScaleString' )
