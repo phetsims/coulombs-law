@@ -120,7 +120,7 @@ define( function( require ) {
       } );
 
 
-    legendNode.left = this.layoutBounds.minX + 10;
+    legendNode.left = this.layoutBounds.minX + 9.35;
 
     this.addChild( legendNode );
   }

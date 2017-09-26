@@ -126,7 +126,7 @@ define( function( require ) {
         tandem: tandem.createTandem( 'atomicLegendNode' ) 
       } );
 
-    legendNode.left = this.layoutBounds.minX + 10;
+    legendNode.left = this.layoutBounds.minX + 9.35;
 
     this.addChild( legendNode );
 
