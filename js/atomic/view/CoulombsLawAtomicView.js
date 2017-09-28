@@ -10,8 +10,8 @@ define( function( require ) {
   // modules
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );

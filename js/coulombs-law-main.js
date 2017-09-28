@@ -11,8 +11,8 @@ define( function( require ) {
   // modules
   var CLAtomicScreen = require( 'COULOMBS_LAW/atomic/CLAtomicScreen' );
   var CLMacroScreen = require( 'COULOMBS_LAW/macro/CLMacroScreen' );
-  var CoulombsLawCommonConstants = require( 'COULOMBS_LAW/common/CoulombsLawCommonConstants' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  var CoulombsLawCommonConstants = require( 'COULOMBS_LAW/common/CoulombsLawCommonConstants' );
   var CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
   var CoulombsLawGlobals = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobals' );
   var Sim = require( 'JOIST/Sim' );

@@ -3,9 +3,9 @@ define(function(require) {
   'use strict';
 
   // modules
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var Color = require( 'SCENERY/util/Color' );
   var ColorProfile = require( 'SCENERY_PHET/ColorProfile' );
+  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
 
   // constants
   var BLACK = new Color( 0, 0, 0 );

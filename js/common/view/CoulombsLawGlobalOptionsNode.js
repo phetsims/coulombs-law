@@ -4,9 +4,9 @@ define( function ( require ) {
   'use strict';
 
   // modules
+  var CheckBox = require( 'SUN/CheckBox' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawGlobals = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobals' );
-  var CheckBox = require( 'SUN/CheckBox' );
   var inherit = require( 'PHET_CORE/inherit' );
   var LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
   var OptionsDialog = require( 'JOIST/OptionsDialog' );
