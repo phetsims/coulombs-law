@@ -31,7 +31,7 @@ define(function(require) {
       default: WHITE,
       projector: BLACK
     },
-    forceArrowLabelStroke: {
+    labelShadowFill: {
       default: BLACK,
       projector: WHITE
     },

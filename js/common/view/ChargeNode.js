@@ -12,6 +12,7 @@ define( function( require ) {
 
   // modules
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var inherit = require( 'PHET_CORE/inherit' );
   var RangeWithValue = require('DOT/RangeWithValue'); 
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
@@ -39,7 +40,16 @@ define( function( require ) {
       scientificNotationMode: true,
       snapToNearest: model.snapObjectsToNearest,
       maxArrowWidth: 50,
-      displayShadow: false
+      displayShadow: false,
+      attractNegative: true,
+      forceReadoutDecimalPlaces: 9,
+
+      // colors for projector and default modes
+      labelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
+      arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
+      arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
+      arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
+      labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty
     }, options );
 
     // @private
@@ -60,6 +70,9 @@ define( function( require ) {
     ISLCObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, tandem.createTandem( 'chargeNode1' ), options );
 
     this.model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
+
+    this.objectCircle.stroke = 'black';
+    this.objectCircle.lineWidth = 0.5;
   }
 
   coulombsLaw.register( 'ChargeNode', ChargeNode );

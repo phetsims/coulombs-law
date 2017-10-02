@@ -48,15 +48,10 @@ define( function( require ) {
         title: charge1String,
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
-        arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
-        arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
-        arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
         defaultDirection: 'left',
         arrowColor: '#66f',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 105,
-        attractNegative: true,
-        forceReadoutDecimalPlaces: 3
+        forceArrowHeight: 105
       } );
 
     var chargeNode2 = new ChargeNode( 
@@ -69,22 +64,11 @@ define( function( require ) {
         title: charge2String,
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,
-        arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
-        arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
-        arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
         defaultDirection: 'right',
         arrowColor: '#f66',
         y: CHARGE_NODE_Y_POSITION,
-        forceArrowHeight: 165,
-        attractNegative: true,
-        forceReadoutDecimalPlaces: 3
+        forceArrowHeight: 165
       } );
-
-    // stroke added to allow charge edges to be visible in projector mode and for printing
-    chargeNode1.objectCircle.stroke = 'black';
-    chargeNode1.objectCircle.lineWidth = 0.5;
-    chargeNode2.objectCircle.stroke = 'black';
-    chargeNode2.objectCircle.lineWidth = 0.5;
 
     this.addChild( chargeNode1 );
     this.addChild( chargeNode2 );
