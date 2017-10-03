@@ -36,7 +36,7 @@
     "value": "10 pm"
   },
   "pmScale": {
-    "value": "1 picometer (pm) = 1 x 10<sup>-12</sup>"
+    "value": "1 picometer (pm) = 1 x 10<sup>-12</sup> m"
   },
   "options.projectorMode": {
     "value": "Projector Mode"
