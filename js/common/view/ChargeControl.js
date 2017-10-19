@@ -50,6 +50,7 @@ define( function( require ) {
     // varies between -10 and 10
     this.chargeControlProperty = new Property( objectProperty.get() * scaleFactor );
 
+    // no unlinking/disposing required as property is never destroyed
     this.chargeControlProperty.link( function( value ) {
       objectProperty.set( value / scaleFactor );
     } );

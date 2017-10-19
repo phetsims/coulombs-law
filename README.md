@@ -1,7 +1,7 @@
-Coulombs Law
+Coulomb's Law
 ================
 
-"Coulombs Law" is an educational simulation in HTML5, by <a href="https://phet.colorado.edu/" target="_blank">PhET Interactive Simulations</a>
+"Coulomb's Law" is an educational simulation in HTML5, by <a href="https://phet.colorado.edu/" target="_blank">PhET Interactive Simulations</a>
 at the University of Colorado Boulder.
 
 *This simulation is under development and has not been published.*

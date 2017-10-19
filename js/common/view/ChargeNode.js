@@ -69,6 +69,7 @@ define( function( require ) {
     
     ISLCObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, tandem.createTandem( 'chargeNode1' ), options );
 
+    // scientific notation property is never removed/destroyed, no disposal required
     this.model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
 
     this.objectCircle.stroke = 'black';
@@ -91,7 +92,7 @@ define( function( require ) {
     }, 
     redrawForce: function () {
       this.arrowNode.scientificNotationMode = this.model.scientificNotationProperty.get();
-      ISLCObjectNode.prototype.redrawForce.call( this );      
+      ISLCObjectNode.prototype.redrawForce.call( this );
     }
   } );
 } );

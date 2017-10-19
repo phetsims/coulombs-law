@@ -3,6 +3,7 @@
 define( function ( require ) {
   'use strict';
 
+  // modules
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var Tandem = require( 'TANDEM/Tandem' );
 

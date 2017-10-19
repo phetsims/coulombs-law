@@ -11,8 +11,6 @@ define(function(require) {
   var BLACK = new Color( 0, 0, 0 );
   var WHITE = new Color( 255, 255, 255 );
   var GREEN = new Color( 0, 255, 0 );
-  // var RED = new Color( 255, 0, 0 );
-  // var BLUE = new Color( 0, 0, 255 );
 
   var CoulombsLawColorProfile = new ColorProfile( {
     background: {

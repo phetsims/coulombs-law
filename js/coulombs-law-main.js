@@ -37,6 +37,7 @@ define( function( require ) {
     optionsNode: new CoulombsLawGlobalOptionsNode( CoulombsLawCommonConstants.GLOBALS_TANDEM.createTandem( 'options' ) )
   };
 
+  // projectorModeProperty is never destroyed after initialization, disposal unnecessary
   CoulombsLawGlobals.projectorModeProperty.link( function( inProjectorMode ) {
     CoulombsLawColorProfile.profileNameProperty.set( inProjectorMode ? 'projector' : 'default' );
   } );

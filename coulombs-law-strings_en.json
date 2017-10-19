@@ -35,6 +35,9 @@
   "units.atomicLegendScale": {
     "value": "10 pm"
   },
+  "units.macroLegendScale": {
+    "value": "1 cm"
+  },
   "pmScale": {
     "value": "1 picometer (pm) = 1 x 10<sup>-12</sup> m"
   },
