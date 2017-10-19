@@ -120,6 +120,7 @@ define( function( require ) {
     this.addChild( charge2Control );
 
     // Reset All button
+    // buttons are never disposed in this sim
     var resetAllButton = new ResetAllButton( {
       listener: function() {
         coulombsLawModel.reset();
@@ -158,12 +159,5 @@ define( function( require ) {
 
   coulombsLaw.register( 'CoulombsLawCommonView', CoulombsLawCommonView );
 
-  return inherit( ScreenView, CoulombsLawCommonView, {
-
-    //TODO Called by the animation loop. Optional, so if your view has no animation, please delete this.
-    // @public
-    step: function( dt ) {
-      //TODO Handle view animation here.
-    }
-  } );
+  return inherit( ScreenView, CoulombsLawCommonView );
 } );

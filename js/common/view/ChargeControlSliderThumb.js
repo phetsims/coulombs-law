@@ -35,6 +35,7 @@ define( function( require ) {
     var self = this;
 
     // fills are axon Properties because they need to change with the objectProperty
+    // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
     var fillEnabledProperty = new DerivedProperty( [ objectProperty ], function( value ) {
       return self.getUpdatedFill( value );
     } );

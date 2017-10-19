@@ -16,6 +16,7 @@ define( function( require ) {
 
   // phet-io modules
   var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
+  
   /**
    * @constructor
    */

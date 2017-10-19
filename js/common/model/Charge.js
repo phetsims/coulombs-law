@@ -47,10 +47,8 @@ define( function( require ) {
     ISLCObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, tandem, options );
 
     // @public - object node color is will change with value
-    // radius changes will be moved into the Mass object
-    // color property will be changed and updated based on a boolean value (negative vs positive for Charge and Constant Radius for Mass)
+    // color property will be updated based on a boolean value (negative vs positive)
     // brightness will be set according to the Mass/Charge magnitude
-
     this.baseColorProperty = new DerivedProperty(
       [ this.valueProperty ],
       function( value ) {

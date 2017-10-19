@@ -22,6 +22,7 @@ define( function( require ) {
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
   var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs');
+  var unitsMacroLegendScaleString = require( 'string!COULOMBS_LAW/units.macroLegendScale' );
 
   // constants
   var CHARGE_NODE_Y_POSITION = 205;
@@ -96,7 +97,7 @@ define( function( require ) {
 
     var legendNode = new ISLCLegendNode( 
       legendNodeLineLength, // length of the line
-      '1 cm', // unit string
+      unitsMacroLegendScaleString, // unit string
       {
         fill: CoulombsLawColorProfile.legendNodeFillProperty,
         bottom: this.layoutBounds.maxY - 10,
