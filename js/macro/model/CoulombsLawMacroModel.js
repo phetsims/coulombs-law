@@ -1,8 +1,10 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
+ * Model for Macro Screen with large charge values.
  *
- * @author $AUTHOR$
+ * @author Jesse Greenberg
+ * @author Michael Barlow
  */
 define( function( require ) {
   'use strict';

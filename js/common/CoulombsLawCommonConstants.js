@@ -1,5 +1,10 @@
 // Copyright 2017, University of Colorado Boulder
 
+/**
+ * Creates the root tandem for all global properties.
+ *
+ * @author Michael Barlow (PhET Interactive Simulations)
+ */
 define( function ( require ) {
   'use strict';
 

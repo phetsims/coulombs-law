@@ -1,8 +1,10 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
- *
- * @author $AUTHOR$
+ * Base model for all Coulombs Law sim screens. Allows for distinct instantiation details for both atomic and macro scales.
+ * 
+ * @author Jesse Greenberg (PhET Interactive Simulations)
+ * @author Michael Barlow (PhET Interactive Simulations)
  */
 define( function( require ) {
   'use strict';

@@ -1,4 +1,11 @@
 // Copyright 2017, University of Colorado Boulder
+
+/**
+ * Creates a color profile to handle both a default and projector mode. Mostly allows nodes to be seen with a white
+ * background.
+ *
+ * @author Michael Barlow (PhET Interactive Simulations)
+ */
 define(function(require) {
   'use strict';
 

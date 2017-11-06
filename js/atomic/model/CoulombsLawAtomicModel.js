@@ -1,8 +1,10 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
+ * Model for Atomic Scale screen.
  *
- * @author $AUTHOR$
+ * @author Jesse Greenberg
+ * @author Michael Barlow
  */
 define( function( require ) {
   'use strict';

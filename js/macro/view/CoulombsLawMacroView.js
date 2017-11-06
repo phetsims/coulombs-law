@@ -1,8 +1,11 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
+ * Class for Macro subscreen. Adds charge, ruler, and legend elements and creates the necessary scale factor for proper
+ * model/view consistency.
  *
- * @author $AUTHOR$
+ * @author Jesse Greenberg
+ * @author Michael Barlow
  */
 define( function( require ) {
   'use strict';

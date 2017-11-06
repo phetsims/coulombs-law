@@ -3,9 +3,8 @@
 /**
  * Model for one of the spherical draggable charges.
  *
- * @author Aadish Gupta (PhET Interactive Simulations)
- * @author Sam Reid (PhET Interactive Simulations)
  * @author Jesse Greenberg (PhET Interactive Simulations)
+ * @author Michael Barlow (PhET Interactive Simulations)
  */
 define( function( require ) {
   'use strict';

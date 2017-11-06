@@ -1,8 +1,11 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
+ * Atomic scale specific screen view. Adds charge, ruler, and legend nodes that all require scale-specific instantiation.
+ * Also creates the proper model/view scaling.
  *
- * @author $AUTHOR$
+ * @author Jesse Greenberg
+ * @author Michael Barlow
  */
 define( function( require ) {
   'use strict';
@@ -35,6 +38,7 @@ define( function( require ) {
   var MODEL_VIEW_TRANSFORM_SCALE = 5E12;
   /**
    * @param {CoulombsLawModel} coulombsLawModel
+   * @param {Tandem} tandem
    * @constructor
    */
   function CoulombsLawAtomicView( coulombsLawModel, tandem ) {

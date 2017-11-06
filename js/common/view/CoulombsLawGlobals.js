@@ -1,5 +1,12 @@
 // Copyright 2017, University of Colorado Boulder
 
+/**
+ * Defines sim-wide properties to be manipulated form the footer navigation's options checkbox
+ * (see CoulobsLawGlobalOptionsNode.js).
+ *
+ * @author Michael Barlow
+ */
+
 define( function ( require ) {
   'use strict';
 

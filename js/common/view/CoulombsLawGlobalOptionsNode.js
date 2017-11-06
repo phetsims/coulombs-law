@@ -1,5 +1,11 @@
 // Copyright 2017, University of Colorado Boulder
 
+/**
+ * An options checkbox that can be accessed from the footer navigation. Links to global sim properties.
+ * 
+ * @author Michael Barlow (PhET Interactive Simulations)
+ * 
+ */
 define( function ( require ) {
   'use strict';
 

@@ -1,8 +1,8 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
- *
- * @author $AUTHOR$
+ * @author Jesse Greenberg
+ * @author Michael Barlow
  */
 define( function( require ) {
   'use strict';

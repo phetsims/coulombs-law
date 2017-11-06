@@ -1,8 +1,11 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
- *
- * @author $AUTHOR$
+ * Parent screen view that allows for different model to view scaling for each child sim. Adds controls, checkboxes, and
+ * reset buttons to the screens.
+ * 
+ * @author Jesse Greenberg (PhET Interactive Simulations)
+ * @author Michael Barlow (PhET Interactive Simulations)
  */
 define( function( require ) {
   'use strict';
