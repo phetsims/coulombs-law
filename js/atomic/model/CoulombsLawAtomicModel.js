@@ -45,14 +45,11 @@ define( function( require ) {
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 
-    var baseColor1 = new Color( '#00f' );
-    var baseColor2 = new Color( '#f00' );
-
-    var charge1 = new Charge( chargeValue1, position1, valueRange, baseColor1, tandem, { 
+    var charge1 = new Charge( chargeValue1, position1, valueRange, tandem, { 
       constantRadius: 9.5E-13,
       tandemUnits: 'coulombs'
     } );
-    var charge2 = new Charge( chargeValue2, position2, valueRange, baseColor2, tandem, { 
+    var charge2 = new Charge( chargeValue2, position2, valueRange, tandem, { 
       constantRadius: 9.5E-13,
       tandemUnits: 'coulombs'
     } );

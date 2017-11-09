@@ -24,12 +24,11 @@ define( function( require ) {
   /**
    * @param {number} initialCharge
    * @param {number} initialPosition
-   * @param {string} baseColor
    * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
    */
-  function Charge( initialCharge, initialPosition, valueRange, baseColor, tandem, options ) {
+  function Charge( initialCharge, initialPosition, valueRange, tandem, options ) {
 
     options = _.extend( {
       constantRadius: 6.75E-3 // ensure this is in meters (0.675cm)
