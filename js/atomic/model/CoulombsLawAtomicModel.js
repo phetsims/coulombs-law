@@ -11,7 +11,6 @@ define( function( require ) {
 
   // modules
   var Charge = require( 'COULOMBS_LAW/common/model/Charge' );
-  var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
   var inherit = require( 'PHET_CORE/inherit' );
