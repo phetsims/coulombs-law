@@ -26,9 +26,9 @@ define( function( require ) {
   var ZERO_FILL = new Color( 'gray' );
 
   /**
-   * Constructor.
    * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
    * @param {Object} options
+   * @constructor
    */
   function ChargeControlSliderThumb( objectProperty, options ) {
 
@@ -61,7 +61,9 @@ define( function( require ) {
 
     /**
      * Set the thumb fill based on the linked property's value
+     * 
      * @param {number} propertyValue
+     * @returns {Color}
      */
     getUpdatedFill: function( propertyValue ) {
       

@@ -25,11 +25,11 @@ define( function( require ) {
 
   /**
    * @param {CoulombsLawbModel} model
-   * @param {ChargeModel} chargeModel
+   * @param {Charge} chargeObjectModel
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
    * @param {Tandem} tandem
-   * @param {Object} [options]
+   * @param {Object} options
    * @constructor
    */
   function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, tandem, options ) {
@@ -82,6 +82,10 @@ define( function( require ) {
 
   return inherit( ISLCObjectNode, ChargeNode, {
 
+    /**
+     * Alter the radial gradient based on the radius of the charge object
+     * @param  {Color} baseColor
+     */
     updateGradient: function( baseColor ) {
       var radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
       // if the radius = 1, radial gradient will throw an divide-by-zero error
@@ -91,7 +95,11 @@ define( function( require ) {
       this.objectCircle.fill = new RadialGradient( -radius * 0.6, -radius * 0.6, 1, -radius * 0.6, -radius * 0.6, radius )
         .addColorStop( 0, baseColor.colorUtilsBrighter( 0.5 ).toCSS() )
         .addColorStop( 1, baseColor.toCSS() );
-    }, 
+    },
+
+    /**
+     * Updates the node's arrow length, force readout, and puller image.
+     */
     redrawForce: function () {
       this.arrowNode.scientificNotationMode = this.model.scientificNotationProperty.get();
       ISLCObjectNode.prototype.redrawForce.call( this );

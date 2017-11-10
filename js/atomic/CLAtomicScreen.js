@@ -17,19 +17,20 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
 
   // strings
-  var atomicString = require( 'string!COULOMBS_LAW/atomic' );
+  var screenAtomicString = require( 'string!COULOMBS_LAW/screen.atomic' );
 
   // images
   var atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png');
 
   /**
+   * @param {Tandem} tandem
    * @constructor
    */
   function CLAtomicScreen( tandem ) {
 
     var options = {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
-      name: atomicString,
+      name: screenAtomicString,
       homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } )
     };
 

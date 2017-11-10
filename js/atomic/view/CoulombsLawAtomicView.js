@@ -35,7 +35,8 @@ define( function( require ) {
   // constants
   var CHARGE_NODE_Y_POSITION = 205;
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
-  var MODEL_VIEW_TRANSFORM_SCALE = 5E12;
+  var MODEL_VIEW_TRANSFORM_SCALE = 5E12; // scales the modelViewTransorm for accurate positioning on Macro and Atomic screens
+
   /**
    * @param {CoulombsLawModel} coulombsLawModel
    * @param {Tandem} tandem

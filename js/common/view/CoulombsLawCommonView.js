@@ -42,11 +42,17 @@ define( function( require ) {
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
+   * @param {number} scaleFactor - multiplicative constant to distinguish between Macro and Atomic scales
+   * @param {string} unitString
+   * @param {number} modelViewTransformScale - allows for distinct layout scales between Macro and Atomic screens
+   * @param {Tandem} tandem
    * @constructor
    */
   function CoulombsLawCommonView( coulombsLawModel, scaleFactor, unitString, modelViewTransformScale, tandem ) {
 
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) }  );
+
+    var self = this;
 
     var rightAlignment = this.layoutBounds.maxX - 10;
     var bottomAlignment = this.layoutBounds.maxY - 10;
@@ -100,7 +106,7 @@ define( function( require ) {
       scaleFactor,
       tandem.createTandem( 'charge2Control' ),
       {
-        right: rightAlignment - 387,
+        right: self.layoutBounds.centerX - 5,
         top: coulombsLawParameterCheckbox.top
       }
     );
@@ -115,7 +121,7 @@ define( function( require ) {
       scaleFactor,
       tandem.createTandem( 'charge2Control' ),
       {
-        right: rightAlignment - 193,
+        left: self.layoutBounds.centerX + 5,
         top: coulombsLawParameterCheckbox.top
       }
     );

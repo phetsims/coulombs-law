@@ -21,6 +21,7 @@ define( function( require ) {
   var Vector2 = require( 'DOT/Vector2' );
   
   /**
+   * @param {Tandem} tandem
    * @constructor
    */
   function CoulombsLawMacroModel( tandem ) {

@@ -23,7 +23,7 @@ define( function( require ) {
 
   /**
    * @param {number} initialCharge
-   * @param {number} initialPosition
+   * @param {number} initialPosition - only for the x coordinate
    * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
@@ -61,9 +61,8 @@ define( function( require ) {
 
   return inherit( ISLCObject, Charge, {
 
-    /**
-     * @override
-     */
+    // @override
+    // Returns the {number} radius of the charge object
     calculateRadius: function( charge ) {
       return this.radiusProperty.get();
     },

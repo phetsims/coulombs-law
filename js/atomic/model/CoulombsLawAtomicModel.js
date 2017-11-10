@@ -23,6 +23,7 @@ define( function( require ) {
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
 
   /**
+   * @param {Tandem} tandem
    * @constructor
    */
   function CoulombsLawAtomicModel( tandem ) {

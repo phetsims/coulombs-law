@@ -2,10 +2,10 @@
   "coulombs-law.title": {
     "value": "Coulomb's Law"
   },
-  "macro": {
-    "value": "Macro"
+  "screen.macro": {
+    "value": "Macro Scale"
   },
-  "atomic": {
+  "screen.atomic": {
     "value": "Atomic Scale"
   },
   "charge1": {

@@ -20,6 +20,10 @@ define( function( require ) {
   var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
   
   /**
+   * @param {Charge} charge1 - The left charge
+   * @param {Charge} charge2 - The right charge
+   * @param {number} leftBoundary
+   * @param {number} rightBoundary
    * @constructor
    */
   function CoulombsLawCommonModel( charge1, charge2, leftBoundary, rightBoundary, tandem, options ) {

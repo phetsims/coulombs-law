@@ -24,10 +24,12 @@ define( function( require ) {
 
   /**
    * @param {string} titleString
-   * @param {Property.<number>} objectProperty
-   * @param {Range} valueRange
-   * @param {Color} thumbColor
+   * @param {string} unitString - for the NumberControl readout
+   * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
+   * @param {Range} valueRange - max and min values for the object property, used for display and as NumberControl argument
+   * @param {number} scaleFactor - multiplicative constant for getting proper readouts/positions on Macro and Atomic screens
    * @param {Tandem} tandem
+   * @param {Object} options
    * @constructor
    */
   function ChargeControl( titleString, unitString, objectProperty, valueRange, scaleFactor, tandem, options ) {
@@ -66,6 +68,7 @@ define( function( require ) {
   coulombsLaw.register( 'ChargeControl', ChargeControl );
 
   return inherit( ISLCObjectControl, ChargeControl, {
+    // @public
     reset: function() {
       this.chargeControlProperty.reset();
     }

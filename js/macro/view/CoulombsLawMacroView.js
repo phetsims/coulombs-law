@@ -34,6 +34,7 @@ define( function( require ) {
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
+   * @param {Tandem} tandem
    * @constructor
    */
   function CoulombsLawMacroView( coulombsLawModel, tandem ) {
