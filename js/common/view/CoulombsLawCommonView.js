@@ -66,12 +66,10 @@ define( function( require ) {
       modelViewTransformScale
     );
 
+    // @private
     this.modelViewTransform = modelViewTransform;
 
-    // former charge and arrow node additions
-
     // construct checkbox parameter lists
-
     var checkboxParameters = [];
 
     checkboxParameters.push({

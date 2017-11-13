@@ -1,7 +1,7 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
- * Creates the root tandem for all global properties.
+ * Registers the root tandem for all global properties.
  *
  * @author Michael Barlow (PhET Interactive Simulations)
  */

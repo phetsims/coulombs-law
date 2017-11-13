@@ -2,6 +2,7 @@
 
 /**
  * Base model for all Coulombs Law sim screens. Allows for distinct instantiation details for both atomic and macro scales.
+ * Inherits from the base ISLCModel that is responsible for all force calculation between the model's charge objects.
  * 
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)
@@ -32,6 +33,7 @@ define( function( require ) {
       snapObjectsToNearest: 0.1
     }, options);
 
+    // @public - controls whether we display the force values in decimal or scientific notation format
     this.scientificNotationProperty = new Property( true, {
       tandem: tandem.createTandem( 'scientificNotation' ),
       phetioValueType: TBoolean 

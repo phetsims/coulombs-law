@@ -1,7 +1,7 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
- * Arrow buttons, slider and text box for editing the object value amount.
+ * Custom slider thumb that changes its backgroun color based on the value of its associated object property value.
  *
  * @author  Jesse Greenberg
  * @author  Michael Barlow
@@ -50,6 +50,8 @@ define( function( require ) {
       fillEnabled: fillEnabledProperty,
       fillHighlighted: fillHighlightedProperty
     }, options );
+
+    // @private - whether the slider thumb is enabled
     this.enabledProperty = options.enabledProperty;
     
     HSliderThumb.call( this, this.enabledProperty, options );

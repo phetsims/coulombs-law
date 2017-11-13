@@ -1,7 +1,7 @@
 // Copyright 2017, University of Colorado Boulder
 
 /**
- * Query parameters supported by this simulation.
+ * Query parameters supported by this simulation. Only used for development purposes.
  *
  * @author Jesse Greenberg (PhET Interactive Simulations)
  */

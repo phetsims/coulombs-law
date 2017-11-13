@@ -46,10 +46,9 @@ define( function( require ) {
       additionalTicks: [{value: 0, tandemLabel: 'majorTickZeroLabel'}]
     }, options );
 
-    // create intermediate property
-    // scales between C and nC or e
-
-    // varies between -10 and 10
+    // @public
+    // intermediate property to allow for scaling between atomic units and microcoulombs
+    // value ranges from -10 to 10 and unit can be e or mc
     this.chargeControlProperty = new Property( objectProperty.get() * scaleFactor );
 
     // no unlinking/disposing required as property is never destroyed
@@ -57,9 +56,9 @@ define( function( require ) {
       objectProperty.set( value / scaleFactor );
     } );
 
-
     var chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
 
+    // add custom thumb to the slider
     options.thumbNode = new ChargeControlSliderThumb( objectProperty, options );
 
     ISLCObjectControl.call(this, titleString, unitString, this.chargeControlProperty, chargeControlRange, tandem, options );

@@ -103,6 +103,7 @@ define( function( require ) {
     );
 
     this.addChild( coulombsLawRuler );
+
     // create a line the length of 1 picometer
     var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 10E-12 );
 
@@ -124,6 +125,7 @@ define( function( require ) {
     var picometerScaleNode = new RichText( pmScaleString, {
       fill: CoulombsLawColorProfile.legendNodeFillProperty,
       font: pmScaleFont,
+      maxWidth: 180,
       bottom: this.layoutBounds.maxY - 8,
       tandem: tandem.createTandem( 'picometerScaleString' )
     } );

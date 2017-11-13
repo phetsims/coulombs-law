@@ -60,14 +60,17 @@ define( function( require ) {
     this.objectModel = chargeObjectModel;
     this.layoutBounds = layoutBounds;
 
+    // @private
     // for incrementing the radius to prevent division by zero in RadialGradient
     this.snapToNearest = options.snapToNearest;
 
+    // inherited object node accepts the entire force range. (NOTE: necessary to calculate here as Coulomb's Law allows
+    // negative forces while Gravity Force Lab does not.)
     var maxForce = forceConstant * Math.pow( chargeObjectModel.valueRange.max, 2 ) / Math.pow( ( chargeObjectModel.radiusProperty.get() * 2 ), 2 );
     var minForce = -maxForce;
 
-    // functions that determine scaling of the arrow readout and the corrent image to represent
-    var pullForceRange = new RangeWithValue( minForce, maxForce ); // empirically determined for linear mapping of pull objects
+    // function that determines scaling of the arrow readout and the current image to represent
+    var pullForceRange = new RangeWithValue( minForce, maxForce );
     
     ISLCObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, tandem.createTandem( 'chargeNode1' ), options );
 
