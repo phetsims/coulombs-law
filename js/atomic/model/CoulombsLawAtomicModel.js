@@ -16,6 +16,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var Property = require( 'AXON/Property' );
   var Range = require( 'DOT/Range' );
+  var TProperty = require( 'AXON/TProperty' );
   var TVector2 = require( 'DOT/TVector2' );
   var Vector2 = require( 'DOT/Vector2' );
 
@@ -61,7 +62,7 @@ define( function( require ) {
     // @public - the position of the ruler in the model
     this.rulerPositionProperty = new Property( new Vector2( 0, -0.75E-11 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
-      phetioValueType: TVector2
+      phetioType: TProperty( TVector2 )
     } );
 
     CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, {

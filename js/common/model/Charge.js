@@ -17,6 +17,8 @@ define( function( require ) {
   var ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
   var Property = require( 'AXON/Property' );
   var TColor = require( 'SCENERY/util/TColor' );
+  var TDerivedProperty = require( 'AXON/TDerivedProperty' );
+  var TProperty = require( 'AXON/TProperty' );
 
   // phet-io modules
   var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
@@ -36,7 +38,7 @@ define( function( require ) {
 
     var constantRadiusProperty = new Property( true, {
       tandem: tandem.createTandem( 'constantRadiusProperty' ),
-      phetioValueType: TBoolean
+      phetioType: TProperty( TBoolean )
     });
 
     var negativeColor = new Color( '#00f' );
@@ -53,7 +55,7 @@ define( function( require ) {
         var newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs(value) / valueRange.max );
       },
-      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioValueType: TColor }
+      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: TDerivedProperty( TColor ) }
     );
   }
 
