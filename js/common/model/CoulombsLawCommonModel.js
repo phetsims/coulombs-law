@@ -19,7 +19,7 @@ define( function( require ) {
   var PropertyIO = require( 'AXON/PropertyIO' );
 
   // phet-io modules
-  var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
+  var BooleanIO = require( 'ifphetio!PHET_IO/types/BooleanIO' );
 
   /**
    * @param {Charge} charge1 - The left charge
@@ -39,7 +39,7 @@ define( function( require ) {
     // @public - controls whether we display the force values in decimal or scientific notation format
     this.scientificNotationProperty = new Property( true, {
       tandem: tandem.createTandem( 'scientificNotation' ),
-      phetioType: PropertyIO( TBoolean )
+      phetioType: PropertyIO( BooleanIO )
     } );
 
     ISLCModel.call( this, ISLCConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );

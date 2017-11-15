@@ -21,7 +21,7 @@ define( function( require ) {
   var PropertyIO = require( 'AXON/PropertyIO' );
 
   // phet-io modules
-  var TBoolean = require( 'ifphetio!PHET_IO/types/TBoolean' );
+  var BooleanIO = require( 'ifphetio!PHET_IO/types/BooleanIO' );
 
   /**
    * @param {number} initialCharge
@@ -38,7 +38,7 @@ define( function( require ) {
 
     var constantRadiusProperty = new Property( true, {
       tandem: tandem.createTandem( 'constantRadiusProperty' ),
-      phetioType: PropertyIO( TBoolean )
+      phetioType: PropertyIO( BooleanIO )
     });
 
     var negativeColor = new Color( '#00f' );
