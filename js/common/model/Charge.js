@@ -17,7 +17,7 @@ define( function( require ) {
   var ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
   var Property = require( 'AXON/Property' );
   var TColor = require( 'SCENERY/util/TColor' );
-  var TDerivedProperty = require( 'AXON/TDerivedProperty' );
+  var DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
   var PropertyIO = require( 'AXON/PropertyIO' );
 
   // phet-io modules
@@ -55,7 +55,7 @@ define( function( require ) {
         var newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs(value) / valueRange.max );
       },
-      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: TDerivedProperty( TColor ) }
+      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedPropertyIO( TColor ) }
     );
   }
 
