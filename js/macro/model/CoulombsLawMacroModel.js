@@ -17,7 +17,7 @@ define( function( require ) {
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var Property = require( 'AXON/Property' );
   var Range = require( 'DOT/Range' );
-  var TProperty = require( 'AXON/TProperty' );
+  var PropertyIO = require( 'AXON/PropertyIO' );
   var TVector2 = require( 'DOT/TVector2' );
   var Vector2 = require( 'DOT/Vector2' );
   
@@ -49,7 +49,7 @@ define( function( require ) {
 
     this.rulerPositionProperty = new Property( new Vector2( 0, -7.5E-3 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
-      phetioType: TProperty( TVector2 )
+      phetioType: PropertyIO( TVector2 )
     } ); // @public
 
     CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, { snapObjectsToNearest: 0.001, minSeparationBetweenObjects: 0.001 } );
