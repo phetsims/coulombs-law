@@ -16,10 +16,10 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var Property = require( 'AXON/Property' );
-  var Range = require( 'DOT/Range' );
   var PropertyIO = require( 'AXON/PropertyIO' );
-  var Vector2IO = require( 'DOT/Vector2IO' );
+  var Range = require( 'DOT/Range' );
   var Vector2 = require( 'DOT/Vector2' );
+  var Vector2IO = require( 'DOT/Vector2IO' );
   
   /**
    * @param {Tandem} tandem

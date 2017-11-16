@@ -24,8 +24,8 @@ define( function( require ) {
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
   var charge2String = require( 'string!COULOMBS_LAW/charge2' );
-  var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs');
   var unitsMacroLegendScaleString = require( 'string!COULOMBS_LAW/units.macroLegendScale' );
+  var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs' );
 
   // constants
   var CHARGE_NODE_Y_POSITION = 205;

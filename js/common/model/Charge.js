@@ -11,13 +11,13 @@ define( function( require ) {
 
   // modules
   var Color = require( 'SCENERY/util/Color' );
+  var ColorIO = require( 'SCENERY/util/ColorIO' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var DerivedProperty = require( 'AXON/DerivedProperty' );
+  var DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
   var Property = require( 'AXON/Property' );
-  var ColorIO = require( 'SCENERY/util/ColorIO' );
-  var DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
   var PropertyIO = require( 'AXON/PropertyIO' );
 
   // phet-io modules
