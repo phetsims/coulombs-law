@@ -13,6 +13,6 @@ define( function ( require ) {
   var Tandem = require( 'TANDEM/Tandem' );
 
   return coulombsLaw.register( 'CoulombsLawCommonConstants', {
-    GLOBALS_TANDEM: Tandem.createStaticTandem( 'globals' )
+    GLOBALS_TANDEM: Tandem.rootTandem.createTandem( 'globals' )
   } );
 } ); 

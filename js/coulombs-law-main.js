@@ -22,7 +22,7 @@ define( function( require ) {
   // strings
   var coulombsLawTitleString = require( 'string!COULOMBS_LAW/coulombs-law.title' );
 
-  var tandem = Tandem.createRootTandem();
+  var tandem = Tandem.rootTandem;
 
   var simOptions = {
     credits: {
