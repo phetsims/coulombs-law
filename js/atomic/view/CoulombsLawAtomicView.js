@@ -133,6 +133,10 @@ define( function( require ) {
     picometerScaleNode.left = legendNode.right + 10;
 
     this.addChild( picometerScaleNode );
+
+    // a11y - charges are first in focus order
+    var charges = [ chargeNode1, chargeNode2 ];
+    this.accessibleOrder = charges.concat( this.accessibleOrder );
   }
 
   coulombsLaw.register( 'CoulombsLawAtomicView', CoulombsLawAtomicView );

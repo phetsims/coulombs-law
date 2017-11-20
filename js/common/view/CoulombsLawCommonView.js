@@ -140,6 +140,9 @@ define( function( require ) {
     } );
     this.addChild( resetAllButton );
 
+    // accessible order of controls, charge objects will come first in subtypes
+    this.accessibleOrder = [ charge1Control, charge2Control, coulombsLawParameterCheckbox, resetAllButton ];
+
     //------------------------------------------------
     // debugging
     //------------------------------------------------

@@ -112,6 +112,10 @@ define( function( require ) {
     legendNode.left = this.layoutBounds.minX + 9.35;
 
     this.addChild( legendNode );
+
+    // a11y - charges are first in accessible order, followed by control panel in supertype
+    var charges = [ chargeNode1, chargeNode2 ];
+    this.accessibleOrder = charges.concat( this.accessibleOrder );
   }
 
   coulombsLaw.register( 'CoulombsLawMacroView', CoulombsLawMacroView );
