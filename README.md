@@ -11,5 +11,37 @@ The <a href="http://bit.ly/phet-html5-development-overview" target="_blank">PhET
 Development. This guide includes how to obtain simulation code and its dependencies, notes about architecture & design, how to test and build
 the sims, as well as other important information.
 
+### Quick Start
+(1) Clone the simulation and its dependencies:
+```
+git clone https://github.com/phetsims/assert.git
+git clone https://github.com/phetsims/axon.git
+git clone https://github.com/phetsims/babel.git
+git clone https://github.com/phetsims/brand.git
+git clone https://github.com/phetsims/chipper.git
+git clone https://github.com/phetsims/coulombs-law.git
+git clone https://github.com/phetsims/dot.git
+git clone https://github.com/phetsims/inverse-square-law-common.git
+git clone https://github.com/phetsims/joist.git
+git clone https://github.com/phetsims/kite.git
+git clone https://github.com/phetsims/phet-core.git
+git clone https://github.com/phetsims/phetcommon.git
+git clone https://github.com/phetsims/query-string-machine.git
+git clone https://github.com/phetsims/scenery.git
+git clone https://github.com/phetsims/scenery-phet.git
+git clone https://github.com/phetsims/sherpa.git
+git clone https://github.com/phetsims/sun.git
+git clone https://github.com/phetsims/tandem.git
+```
+(2) Start an http-server
+
+(3) Open `http://localhost/coulombs-law/coulombs-law_en.html` (You will probably need to modify this URL based on your HTTP port and relative path.)
+
+### Get Involved
+
+Contact us at our Google Group: <a href="http://groups.google.com/forum/#!forum/developing-interactive-simulations-in-html5" target="_blank">Developing Interactive Simulations in HTML5</a>
+
+Help us improve, create a <a href="http://github.com/phetsims/coulombs-law/issues/new" target="_blank">New Issue</a>
+
 ### License
 See the <a href="https://github.com/phetsims/coulombs-law/blob/master/LICENSE" target="_blank">LICENSE</a>
