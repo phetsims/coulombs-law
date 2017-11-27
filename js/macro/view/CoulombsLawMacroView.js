@@ -21,14 +21,11 @@ define( function( require ) {
 
   // strings
   var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
-  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
-  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var unitsMacroLegendScaleString = require( 'string!COULOMBS_LAW/units.macroLegendScale' );
   var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs' );
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 205;
   var SCALE_FACTOR = 1E6;  // number of microcoulombs in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5000;
 
@@ -41,8 +38,7 @@ define( function( require ) {
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, tandem );
 
-    // charge nodes added in each screen to allow for different decimal precision
-    // and arrow height
+    // charge nodes added in each screen to allow for different decimal precision and arrow height
     var chargeNode1 = new ChargeNode( 
       coulombsLawModel, 
       coulombsLawModel.object1, 
@@ -50,12 +46,10 @@ define( function( require ) {
       this.modelViewTransform,
       tandem.createTandem( 'chargeNode1' ), 
       {
-        title: charge1String,
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
         defaultDirection: 'left',
         arrowColor: '#66f',
-        y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 105
       } );
 
@@ -66,12 +60,10 @@ define( function( require ) {
       this.modelViewTransform,
       tandem.createTandem( 'chargeNode2' ), 
       {
-        title: charge2String,
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,
         defaultDirection: 'right',
         arrowColor: '#f66',
-        y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 165
       } );
 

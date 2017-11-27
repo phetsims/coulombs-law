@@ -22,6 +22,7 @@ define( function( require ) {
 
   // constants
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
+  var CHARGE_NODE_Y_POSITION = 205;
 
   /**
    * @param {CoulombsLawbModel} model
@@ -38,13 +39,14 @@ define( function( require ) {
 
     options = _.extend( {
       label: 'This Charge',
-      otherObjectName: 'Other Charge',
+      otherObjectLabel: 'Other Charge',
       scientificNotationMode: true,
       snapToNearest: model.snapObjectsToNearest,
       maxArrowWidth: 50,
       displayShadow: false,
       attractNegative: true,
       forceReadoutDecimalPlaces: 9,
+      y: CHARGE_NODE_Y_POSITION,
 
       // colors for projector and default modes
       labelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
@@ -77,6 +79,7 @@ define( function( require ) {
     // scientific notation property is never removed/destroyed, no disposal required
     this.model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
 
+    // stroke added here for projector mode and white bg printing options
     this.objectCircle.stroke = 'black';
     this.objectCircle.lineWidth = 0.5;
   }

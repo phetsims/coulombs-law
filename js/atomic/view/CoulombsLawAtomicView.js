@@ -24,16 +24,13 @@ define( function( require ) {
 
   // strings
   var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
-  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
-  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var pmScaleString = require( 'string!COULOMBS_LAW/pmScale' );
   var unitsAtomicLegendScaleString = require( 'string!COULOMBS_LAW/units.atomicLegendScale' );
   var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits');
   var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers' );
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 205;
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5E12; // scales the modelViewTransorm for accurate positioning on Macro and Atomic screens
 
@@ -46,8 +43,7 @@ define( function( require ) {
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, tandem );
 
-    // charge nodes added in each screen to allow for different decimal precision
-    // and arrow height
+    // charge nodes added in each screen to allow for different decimal precision and arrow height
     var chargeNode1 = new ChargeNode( 
       coulombsLawModel, 
       coulombsLawModel.object1, 
@@ -55,12 +51,10 @@ define( function( require ) {
       this.modelViewTransform,
       tandem.createTandem( 'chargeNode1' ), 
       {
-        title: charge1String,
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
         defaultDirection: 'left',
         arrowColor: '#66f',
-        y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 70,
       } );
 
@@ -71,12 +65,10 @@ define( function( require ) {
       this.modelViewTransform,
       tandem.createTandem( 'chargeNode2' ), 
       {
-        title: charge2String,
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,
         defaultDirection: 'right',
         arrowColor: '#f66',
-        y: CHARGE_NODE_Y_POSITION,
         forceArrowHeight: 120
       } );
 
