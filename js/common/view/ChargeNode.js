@@ -71,7 +71,7 @@ define( function( require ) {
     var maxForce = forceConstant * Math.pow( chargeObjectModel.valueRange.max, 2 ) / Math.pow( ( chargeObjectModel.radiusProperty.get() * 2 ), 2 );
     var minForce = -maxForce;
 
-    // function that determines scaling of the arrow readout and the current image to represent
+    // function that determines the current puller image to represent
     var pullForceRange = new RangeWithValue( minForce, maxForce );
     
     ISLCObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, tandem.createTandem( 'chargeNode1' ), options );
