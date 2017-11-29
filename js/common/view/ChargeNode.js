@@ -74,7 +74,16 @@ define( function( require ) {
     // function that determines the current puller image to represent
     var pullForceRange = new RangeWithValue( minForce, maxForce );
     
-    ISLCObjectNode.call( this, model, chargeObjectModel, layoutBounds, modelViewTransform, pullForceRange, tandem.createTandem( 'chargeNode1' ), options );
+    ISLCObjectNode.call( 
+      this,
+      model,
+      chargeObjectModel,
+      layoutBounds,
+      modelViewTransform,
+      pullForceRange,
+      tandem.createTandem( 'chargeNode1' ),
+      options
+    );
 
     // scientific notation property is never removed/destroyed, no disposal required
     this.model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
