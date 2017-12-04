@@ -13,6 +13,12 @@
     "requirejsNamespace": "COULOMBS_LAW",
     "phetLibs": [
       "inverse-square-law-common"
-    ]
+    ],
+    "runnable": true,
+    "supportedBrands": [
+      "phet"
+    ],
+    "accessible": true,
+    "simulation": true
   }
 }
