@@ -75,8 +75,8 @@ define( function( require ) {
     this.addChild( chargeNode1.arrowNode );
     this.addChild( chargeNode2.arrowNode );
 
-    // create and add macro ruler
-    var coulombsLawRuler = new ISLCRulerNode(
+    // @public (read-only) - create and add macro ruler
+    this.coulombsLawRuler = new ISLCRulerNode(
       coulombsLawModel,
       this.layoutBounds.height,
       this.modelViewTransform,
@@ -85,8 +85,7 @@ define( function( require ) {
         snapToNearest: 0.001 // in model coordinates
       }
     );
-
-    this.addChild( coulombsLawRuler );
+    this.addChild( this.coulombsLawRuler );
 
     // create a line the length of 1 cm
     var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1E-2 );

@@ -169,5 +169,17 @@ define( function( require ) {
 
   coulombsLaw.register( 'CoulombsLawCommonView', CoulombsLawCommonView );
 
-  return inherit( ScreenView, CoulombsLawCommonView );
+  return inherit( ScreenView, CoulombsLawCommonView, {
+
+    /**
+     * Animate the view.
+     *
+     * @param {number} dt
+     */
+    step: function( dt ) {
+
+      // a11y
+      this.coulombsLawRuler.step( dt );
+    }
+  } );
 } );

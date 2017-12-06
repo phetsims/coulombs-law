@@ -80,8 +80,8 @@ define( function( require ) {
     this.addChild( chargeNode1.arrowNode );
     this.addChild( chargeNode2.arrowNode );
 
-    // create and add atomic ruler
-    var coulombsLawRuler = new ISLCRulerNode(
+    // @public (read-only) - create and add atomic ruler
+    this.coulombsLawRuler = new ISLCRulerNode(
       coulombsLawModel,
       this.layoutBounds.height,
       this.modelViewTransform,
@@ -93,8 +93,7 @@ define( function( require ) {
         rulerInset: 15
       }
     );
-
-    this.addChild( coulombsLawRuler );
+    this.addChild( this.coulombsLawRuler );
 
     // create a line the length of 1 picometer
     var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 10E-12 );
