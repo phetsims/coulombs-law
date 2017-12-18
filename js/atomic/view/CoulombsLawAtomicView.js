@@ -56,6 +56,10 @@ define( function( require ) {
         defaultDirection: 'left',
         arrowColor: '#66f',
         forceArrowHeight: 70,
+
+        // TODO: scale factor for the arrow so that it has requested size, calculate this if design team likes the feel
+        // see https://github.com/phetsims/inverse-square-law-common/issues/21
+        maxArrowWidth: 50000
       } );
 
     var chargeNode2 = new ChargeNode( 
@@ -69,7 +73,11 @@ define( function( require ) {
         otherObjectLabel: charge1AbbreviatedString,
         defaultDirection: 'right',
         arrowColor: '#f66',
-        forceArrowHeight: 120
+        forceArrowHeight: 120,
+
+        // TODO: scale factor for the arrow so that it has requested size, calculate this if design team likes the feel,
+        // see https://github.com/phetsims/inverse-square-law-common/issues/21
+        maxArrowWidth: 50000
       } );
 
     this.addChild( chargeNode1 );
