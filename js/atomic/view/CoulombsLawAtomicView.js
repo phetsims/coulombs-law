@@ -56,6 +56,7 @@ define( function( require ) {
         defaultDirection: 'left',
         arrowColor: '#66f',
         forceArrowHeight: 70,
+        atomicScale: true,
 
         // TODO: scale factor for the arrow so that it has requested size, calculate this if design team likes the feel
         // see https://github.com/phetsims/inverse-square-law-common/issues/21
@@ -74,6 +75,7 @@ define( function( require ) {
         defaultDirection: 'right',
         arrowColor: '#f66',
         forceArrowHeight: 120,
+        atomicScale: true,
 
         // TODO: scale factor for the arrow so that it has requested size, calculate this if design team likes the feel,
         // see https://github.com/phetsims/inverse-square-law-common/issues/21
