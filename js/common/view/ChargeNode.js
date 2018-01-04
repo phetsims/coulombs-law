@@ -47,6 +47,7 @@ define( function( require ) {
       attractNegative: true,
       forceReadoutDecimalPlaces: 9,
       y: CHARGE_NODE_Y_POSITION,
+      pullRangeMultiplier: 1,
 
       // colors for projector and default modes
       labelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
@@ -69,6 +70,7 @@ define( function( require ) {
     // inherited object node accepts the entire force range. (NOTE: necessary to calculate here as Coulomb's Law allows
     // negative forces while Gravity Force Lab does not.)
     var maxForce = forceConstant * Math.pow( chargeObjectModel.valueRange.max, 2 ) / Math.pow( ( chargeObjectModel.radiusProperty.get() * 2 ), 2 );
+    maxForce = maxForce * options.pullRangeMultiplier;
     var minForce = -maxForce;
 
     // function that determines the current puller image to represent

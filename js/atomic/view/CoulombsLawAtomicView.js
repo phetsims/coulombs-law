@@ -33,7 +33,9 @@ define( function( require ) {
   // constants
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5E12; // scales the modelViewTransorm for accurate positioning on Macro and Atomic screens
-
+  var ARROW_MAX_WIDTH = 500;
+  var PULL_RANGE_MULTIPLIER = 1 / 200;
+  
   /**
    * @param {CoulombsLawModel} coulombsLawModel
    * @param {Tandem} tandem
@@ -57,10 +59,8 @@ define( function( require ) {
         arrowColor: '#66f',
         forceArrowHeight: 70,
         atomicScale: true,
-
-        // TODO: scale factor for the arrow so that it has requested size, calculate this if design team likes the feel
-        // see https://github.com/phetsims/inverse-square-law-common/issues/21
-        maxArrowWidth: 50000
+        maxArrowWidth: ARROW_MAX_WIDTH,
+        pullRangeMultiplier: PULL_RANGE_MULTIPLIER
       } );
 
     var chargeNode2 = new ChargeNode( 
@@ -76,10 +76,8 @@ define( function( require ) {
         arrowColor: '#f66',
         forceArrowHeight: 120,
         atomicScale: true,
-
-        // TODO: scale factor for the arrow so that it has requested size, calculate this if design team likes the feel,
-        // see https://github.com/phetsims/inverse-square-law-common/issues/21
-        maxArrowWidth: 50000
+        maxArrowWidth: ARROW_MAX_WIDTH,
+        pullRangeMultiplier: PULL_RANGE_MULTIPLIER
       } );
 
     this.addChild( chargeNode1 );
