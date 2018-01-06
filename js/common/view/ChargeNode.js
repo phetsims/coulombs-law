@@ -29,7 +29,7 @@ define( function( require ) {
    * @param {Charge} chargeObjectModel
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
-   * @param {Tandem} tandem
+   * @param {Tandem} tandem // TODO: move to options
    * @param {Object} options
    * @constructor
    */
@@ -54,7 +54,9 @@ define( function( require ) {
       arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
       arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
       arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
-      labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty
+      labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
+
+      tandem: tandem.createTandem( 'chargeNode1' ),
     }, options );
 
     // @private
@@ -83,7 +85,6 @@ define( function( require ) {
       layoutBounds,
       modelViewTransform,
       pullForceRange,
-      tandem.createTandem( 'chargeNode1' ),
       options
     );
 
