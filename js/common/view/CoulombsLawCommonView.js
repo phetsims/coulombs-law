@@ -3,7 +3,7 @@
 /**
  * Parent screen view that allows for different model to view scaling for each child sim. Adds controls, checkboxes, and
  * reset buttons to the screens.
- * 
+ *
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)
  */
@@ -50,7 +50,7 @@ define( function( require ) {
    */
   function CoulombsLawCommonView( coulombsLawModel, scaleFactor, unitString, modelViewTransformScale, tandem ) {
 
-    ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) }  );
+    ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) } );
 
     var self = this;
 
@@ -72,27 +72,26 @@ define( function( require ) {
     // construct checkbox parameter lists
     var checkboxParameters = [];
 
-    checkboxParameters.push({
+    checkboxParameters.push( {
       content: showValuesString,
       property: coulombsLawModel.showValuesProperty,
       textTandemLabel: 'showValuesText',      // tandem for the label
       checkboxTandemLabel: 'showValuesCheckbox'    // tande name for checkbox node (see VerticalCheckboxGroup)
-    });
+    } );
 
-    checkboxParameters.push({
+    checkboxParameters.push( {
       content: scientificNotationString,
       property: coulombsLawModel.scientificNotationProperty,
       textTandemLabel: 'scientificNotationText',
       checkboxTandemLabel: 'scientificNotationCheckbox'
-    });
+    } );
 
-    var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxParameters,
-                                                             tandem.createTandem( 'coulombsLawParameterCheckbox' ),
-                                                             {
-                                                              fill: '#EDEDED',
-                                                              right: rightAlignment,
-                                                              bottom: bottomAlignment - 73
-                                                             } );
+    var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxParameters, {
+      tandem: tandem.createTandem( 'coulombsLawParameterCheckbox' ),
+      fill: '#EDEDED',
+      right: rightAlignment,
+      bottom: bottomAlignment - 73
+    } );
 
     this.addChild( coulombsLawParameterCheckbox );
 
@@ -135,7 +134,7 @@ define( function( require ) {
         charge2Control.reset();
       },
       radius: 18,
-      right:  rightAlignment,
+      right: rightAlignment,
       bottom: bottomAlignment
     } );
     this.addChild( resetAllButton );
@@ -158,9 +157,9 @@ define( function( require ) {
     }
 
     if ( SHOW_GRID ) {
-      var gridNode = new ISLCGridNode( 
-        coulombsLawModel.snapObjectsToNearest, 
-        this.layoutBounds, 
+      var gridNode = new ISLCGridNode(
+        coulombsLawModel.snapObjectsToNearest,
+        this.layoutBounds,
         modelViewTransform,
         { stroke: 'rgba( 250, 100, 100, 0.6 )' } );
       this.addChild( gridNode );
