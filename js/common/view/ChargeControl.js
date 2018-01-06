@@ -28,7 +28,7 @@ define( function( require ) {
    * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
    * @param {Range} valueRange - max and min values for the object property, used for display and as NumberControl argument
    * @param {number} scaleFactor - multiplicative constant for getting proper readouts/positions on Macro and Atomic screens
-   * @param {Tandem} tandem
+   * @param {Tandem} tandem // TODO: move to options
    * @param {Object} options
    * @constructor
    */
@@ -43,6 +43,7 @@ define( function( require ) {
       valueFontSize: 12,
       valueXMargin: 4,
       valueYMargin: 2,
+      tandem: tandem,
       additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ]
     }, options );
 

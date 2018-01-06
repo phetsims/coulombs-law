@@ -98,7 +98,7 @@ define( function( require ) {
     var charge1Control = new ChargeControl(
       charge1String,
       unitString,
-      coulombsLawModel.object1.valueProperty,
+      coulombsLawModel.object1.massProperty,
       coulombsLawModel.object1.valueRange,
       scaleFactor,
       tandem.createTandem( 'charge2Control' ),
@@ -113,7 +113,7 @@ define( function( require ) {
     var charge2Control = new ChargeControl(
       charge2String,
       unitString,
-      coulombsLawModel.object2.valueProperty,
+      coulombsLawModel.object2.massProperty,
       coulombsLawModel.object2.valueRange,
       scaleFactor,
       tandem.createTandem( 'charge2Control' ),
