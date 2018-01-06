@@ -14,7 +14,7 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var Dimension2 = require( 'DOT/Dimension2' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCObjectControl = require('INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectControl');
+  var ISLCObjectControlPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectControlPanel' );
   var Property = require( 'AXON/Property' );
   var Range = require( 'DOT/Range' );
 
@@ -61,12 +61,12 @@ define( function( require ) {
     // add custom thumb to the slider
     options.thumbNode = new ChargeControlSliderThumb( objectProperty, options );
 
-    ISLCObjectControl.call(this, titleString, unitString, this.chargeControlProperty, chargeControlRange, tandem, options );
+    ISLCObjectControlPanel.call( this, titleString, unitString, this.chargeControlProperty, chargeControlRange, tandem, options );
   }
 
   coulombsLaw.register( 'ChargeControl', ChargeControl );
 
-  return inherit( ISLCObjectControl, ChargeControl, {
+  return inherit( ISLCObjectControlPanel, ChargeControl, {
     // @public
     reset: function() {
       this.chargeControlProperty.reset();
