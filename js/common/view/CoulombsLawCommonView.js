@@ -16,7 +16,7 @@ define( function( require ) {
   var HSlider = require( 'SUN/HSlider' );
   var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCheckboxPanel = require ('INVERSE_SQUARE_LAW_COMMON/view/ISLCheckboxPanel' );
+  var ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
@@ -86,7 +86,7 @@ define( function( require ) {
       checkboxTandemLabel: 'scientificNotationCheckbox'
     });
 
-    var coulombsLawParameterCheckbox = new ISLCheckboxPanel( checkboxParameters,
+    var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxParameters,
                                                              tandem.createTandem( 'coulombsLawParameterCheckbox' ),
                                                              {
                                                               fill: '#EDEDED',
