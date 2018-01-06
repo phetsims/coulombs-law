@@ -43,7 +43,7 @@ define( function( require ) {
       valueFontSize: 12,
       valueXMargin: 4,
       valueYMargin: 2,
-      additionalTicks: [{value: 0, tandemLabel: 'majorTickZeroLabel'}]
+      additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ]
     }, options );
 
     // @public
@@ -60,8 +60,9 @@ define( function( require ) {
 
     // add custom thumb to the slider
     options.thumbNode = new ChargeControlSliderThumb( objectProperty, options );
+    options.tandem = tandem; // TODO: pass through in options in the first place
 
-    ISLCObjectControlPanel.call( this, titleString, unitString, this.chargeControlProperty, chargeControlRange, tandem, options );
+    ISLCObjectControlPanel.call( this, titleString, unitString, this.chargeControlProperty, chargeControlRange, options );
   }
 
   coulombsLaw.register( 'ChargeControl', ChargeControl );
