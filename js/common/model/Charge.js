@@ -26,6 +26,7 @@ define( function( require ) {
   /**
    * @param {number} initialCharge
    * @param {number} initialPosition - only for the x coordinate
+   * @param {Range} valueRange - only for the x coordinate
    * @param {Tandem} tandem
    * @param {Object} options
    * @constructor
