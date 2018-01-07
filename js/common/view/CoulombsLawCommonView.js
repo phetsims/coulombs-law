@@ -76,7 +76,7 @@ define( function( require ) {
       content: showValuesString,
       property: coulombsLawModel.showValuesProperty,
       textTandemLabel: 'showValuesText',      // tandem for the label
-      checkboxTandemLabel: 'showValuesCheckbox'    // tande name for checkbox node (see VerticalCheckboxGroup)
+      checkboxTandemLabel: 'showValuesCheckbox'    // tandem name for checkbox node (see VerticalCheckboxGroup)
     } );
 
     checkboxParameters.push( {
