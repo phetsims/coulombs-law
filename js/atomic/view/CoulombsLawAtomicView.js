@@ -1,4 +1,4 @@
-// Copyright 2017, University of Colorado Boulder
+// Copyright 2017-2018, University of Colorado Boulder
 
 /**
  * Atomic scale specific screen view. Adds charge, ruler, and legend nodes that all require scale-specific instantiation.
