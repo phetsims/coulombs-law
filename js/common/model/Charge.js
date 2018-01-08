@@ -50,7 +50,7 @@ define( function( require ) {
     // @public - object node color is will change with value
     // color property will be updated based on a boolean value (negative vs positive)
     // brightness will be set according to the Mass/Charge magnitude
-    this.baseColorProperty = new DerivedProperty( [ this.massProperty ], function( value ) {
+    this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], function( value ) {
         var newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
       },
@@ -71,7 +71,7 @@ define( function( require ) {
     // @public
     // TODO: reset should be implemented in the parent class ISLCObject
     reset: function() {
-      this.massProperty.reset();
+      this.valueProperty.reset();
       this.positionProperty.reset();
     }
   } );
