@@ -21,6 +21,7 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
   var ISLQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLQueryParameters' );
+  var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
   var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
   var Property = require( 'AXON/Property' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
@@ -48,7 +49,7 @@ define( function( require ) {
    * @param {Tandem} tandem
    * @constructor
    */
-  function CoulombsLawCommonView( coulombsLawModel, scaleFactor, unitString, modelViewTransformScale, tandem ) {
+  function CoulombsLawCommonView( coulombsLawModel, scaleFactor, unitString, modelViewTransformScale, options, tandem ) {
 
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) } );
 
@@ -68,6 +69,16 @@ define( function( require ) {
 
     // @private
     this.modelViewTransform = modelViewTransform;
+
+    // @public (read-only) - create and add macro ruler
+    this.coulombsLawRuler = new ISLCRulerNode(
+      coulombsLawModel,
+      this.layoutBounds.height,
+      this.modelViewTransform,
+      tandem.createTandem( 'coulombsLawRuler' ),
+      _.pick( options, [ 'snapToNearest', 'majorTickLabel', 'unitString', 'rulerInset' ] )
+    );
+    this.addChild( this.coulombsLawRuler );
 
     // construct checkbox parameter lists
     var checkboxParameters = [];

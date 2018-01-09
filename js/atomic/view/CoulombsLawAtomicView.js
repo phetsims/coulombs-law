@@ -18,7 +18,6 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
-  var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var RichText = require( 'SCENERY/nodes/RichText' );
 
@@ -34,8 +33,8 @@ define( function( require ) {
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5E12; // scales the modelViewTransorm for accurate positioning on Macro and Atomic screens
   var ARROW_MAX_WIDTH = 500;
-  var PULL_RANGE_MULTIPLIER = 1 / 200;
-  
+  var PULL_RANGE_MULTIPLIER = 1 / 10;
+
   /**
    * @param {CoulombsLawModel} coulombsLawModel
    * @param {Tandem} tandem
@@ -43,7 +42,14 @@ define( function( require ) {
    */
   function CoulombsLawAtomicView( coulombsLawModel, tandem ) {
 
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, tandem );
+    var rulerOptions = {
+      snapToNearest: 1E-12, // in model coordinates
+      majorTickLabels: [ '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100' ],
+      unitString: unitsPicometersString,
+      rulerInset: 15
+    };
+
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
     // charge nodes added in each screen to allow for different decimal precision and arrow height
     var chargeNode1 = new ChargeNode( 
@@ -80,28 +86,28 @@ define( function( require ) {
         pullRangeMultiplier: PULL_RANGE_MULTIPLIER
       } );
 
-    this.addChild( chargeNode1 );
-    this.addChild( chargeNode2 );
+    this.insertChild( 0, chargeNode1 );
+    this.insertChild( 0, chargeNode2 );
 
     // the arrows and their labels should be above both charges (and their markers) but below
     // the ruler and control panels
-    this.addChild( chargeNode1.arrowNode );
-    this.addChild( chargeNode2.arrowNode );
+    this.insertChild( 1, chargeNode1.arrowNode );
+    this.insertChild( 1, chargeNode2.arrowNode );
 
     // @public (read-only) - create and add atomic ruler
-    this.coulombsLawRuler = new ISLCRulerNode(
-      coulombsLawModel,
-      this.layoutBounds.height,
-      this.modelViewTransform,
-      tandem.createTandem( 'coulombsLawRuler' ),
-      {
-        snapToNearest: 1E-12, // in model coordinates
-        majorTickLabels: [ '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100' ],
-        unitString: unitsPicometersString,
-        rulerInset: 15
-      }
-    );
-    this.addChild( this.coulombsLawRuler );
+    // this.coulombsLawRuler = new ISLCRulerNode(
+    //   coulombsLawModel,
+    //   this.layoutBounds.height,
+    //   this.modelViewTransform,
+    //   tandem.createTandem( 'coulombsLawRuler' ),
+    //   {
+    //     snapToNearest: 1E-12, // in model coordinates
+    //     majorTickLabels: [ '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100' ],
+    //     unitString: unitsPicometersString,
+    //     rulerInset: 15
+    //   }
+    // );
+    // this.addChild( this.coulombsLawRuler );
 
     // create a line the length of 1 picometer
     var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 10E-12 );

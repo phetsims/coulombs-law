@@ -17,7 +17,6 @@ define( function( require ) {
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
-  var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
 
   // strings
   var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
@@ -36,7 +35,11 @@ define( function( require ) {
    */
   function CoulombsLawMacroView( coulombsLawModel, tandem ) {
 
-    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, tandem );
+    var rulerOptions = {
+      snapToNearest: 0.001  // in model coordinates
+    };
+
+    CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
     // charge nodes added in each screen to allow for different decimal precision and arrow height
     var chargeNode1 = new ChargeNode( 
@@ -67,25 +70,13 @@ define( function( require ) {
         forceArrowHeight: 165
       } );
 
-    this.addChild( chargeNode1 );
-    this.addChild( chargeNode2 );
+    this.insertChild( 0, chargeNode1 );
+    this.insertChild( 0, chargeNode2 );
 
     // the arrows and their labels should be above both charges (and their markers) but below
     // the ruler and control panels
-    this.addChild( chargeNode1.arrowNode );
-    this.addChild( chargeNode2.arrowNode );
-
-    // @public (read-only) - create and add macro ruler
-    this.coulombsLawRuler = new ISLCRulerNode(
-      coulombsLawModel,
-      this.layoutBounds.height,
-      this.modelViewTransform,
-      tandem.createTandem( 'coulombsLawRuler' ),
-      {
-        snapToNearest: 0.001 // in model coordinates
-      }
-    );
-    this.addChild( this.coulombsLawRuler );
+    this.insertChild( 1, chargeNode1.arrowNode );
+    this.insertChild( 1, chargeNode2.arrowNode );
 
     // create a line the length of 1 cm
     var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1E-2 );
