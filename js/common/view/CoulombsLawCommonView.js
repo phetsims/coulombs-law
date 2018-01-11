@@ -6,6 +6,7 @@
  *
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)
+ * @author Sam Reid Î(PhET Interactive Simulations)
  */
 define( function( require ) {
   'use strict';
@@ -27,6 +28,7 @@ define( function( require ) {
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var Vector2 = require( 'DOT/Vector2' );
+  var ISLCCheckboxItem = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxItem' );
 
   // strings
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
@@ -81,24 +83,16 @@ define( function( require ) {
     );
     this.addChild( this.coulombsLawRuler );
 
-    // construct checkbox parameter lists
-    var checkboxParameters = [];
+    var checkboxItems = [
+      new ISLCCheckboxItem( showValuesString, coulombsLawModel.showValuesProperty, {
+        tandem: tandem.createTandem( 'showValuesCheckbox' )
+      } ),
+      new ISLCCheckboxItem( scientificNotationString, coulombsLawModel.scientificNotationProperty, {
+        tandem: tandem.createTandem( 'scientificNotationCheckbox' )
+      } )
+    ];
 
-    checkboxParameters.push( {
-      content: showValuesString,
-      property: coulombsLawModel.showValuesProperty,
-      textTandemLabel: 'showValuesText',      // tandem for the label
-      checkboxTandemLabel: 'showValuesCheckbox'    // tandem name for checkbox node (see VerticalCheckboxGroup)
-    } );
-
-    checkboxParameters.push( {
-      content: scientificNotationString,
-      property: coulombsLawModel.scientificNotationProperty,
-      textTandemLabel: 'scientificNotationText',
-      checkboxTandemLabel: 'scientificNotationCheckbox'
-    } );
-
-    var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxParameters, {
+    var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxItems, {
       tandem: tandem.createTandem( 'coulombsLawParameterCheckbox' ),
       fill: '#EDEDED',
       right: rightAlignment,
