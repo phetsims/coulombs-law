@@ -52,6 +52,7 @@ define( function( require ) {
     // @public resets the model
     reset: function() {
       this.rulerPositionProperty.reset();
+      this.scientificNotationProperty.reset();
       ISLCModel.prototype.reset.call( this );
     }
   } );
