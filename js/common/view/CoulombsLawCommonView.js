@@ -20,6 +20,7 @@ define( function( require ) {
   var ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  var ISLCCheckboxItem = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxItem' );
   var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
   var ISLQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLQueryParameters' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
@@ -83,6 +84,7 @@ define( function( require ) {
     );
     this.addChild( this.coulombsLawRuler );
 
+    // construct checkbox item list
     var checkboxItems = [
       new ISLCCheckboxItem( showValuesString, coulombsLawModel.showValuesProperty, {
         tandem: tandem.createTandem( 'showValuesCheckbox' )

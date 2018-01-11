@@ -86,6 +86,8 @@ define( function( require ) {
         pullRangeMultiplier: PULL_RANGE_MULTIPLIER
       } );
 
+    // charge nodes and arrows are added to the bottom of the scene graph so that the ruler will appear above them yet
+    // still below the control panels (which are added in the CommonView)
     this.insertChild( 0, chargeNode1 );
     this.insertChild( 0, chargeNode2 );
 
