@@ -32,8 +32,8 @@ define( function( require ) {
   // constants
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5E12; // scales the modelViewTransorm for accurate positioning on Macro and Atomic screens
-  var ARROW_MAX_WIDTH = 500;
-  var PULL_RANGE_MULTIPLIER = 1 / 10;
+  var ARROW_MAX_WIDTH = 10000;
+  var PULL_RANGE_MULTIPLIER = 1 / 70;
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
