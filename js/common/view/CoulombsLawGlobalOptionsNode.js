@@ -10,7 +10,7 @@ define( function ( require ) {
   'use strict';
 
   // modules
-  var CheckBox = require( 'SUN/CheckBox' );
+  var Checkbox = require( 'SUN/Checkbox' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawGlobals = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobals' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -26,18 +26,18 @@ define( function ( require ) {
    * @param {Tandem} tandem 
    */
   function CoulombsLawGlobalOptionsNode( tandem ) {
-    
-    var checkBoxText = new Text( optionsProjectorModeString, {
+
+    var checkboxText = new Text( optionsProjectorModeString, {
       font: OptionsDialog.DEFAULT_FONT,
-      tandem: tandem.createTandem( 'projectoModeCheckBoxString' )
+      tandem: tandem.createTandem( 'projectoModeCheckboxString' )
     } );
 
-    var projectorModeCheckBox = new CheckBox( checkBoxText, CoulombsLawGlobals.projectorModeProperty, {
-      tandem: tandem.createTandem( 'projectorModeCheckBox' )
+    var projectorModeCheckbox = new Checkbox( checkboxText, CoulombsLawGlobals.projectorModeProperty, {
+      tandem: tandem.createTandem( 'projectorModeCheckbox' )
     } );
 
     LayoutBox.call( this, _.extend( {
-      children: [ projectorModeCheckBox ],
+      children: [ projectorModeCheckbox ],
       spacing: OptionsDialog.DEFAULT_SPACING,
       align: 'left',
       tandem: tandem
