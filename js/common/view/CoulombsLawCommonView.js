@@ -79,8 +79,14 @@ define( function( require ) {
       this.layoutBounds.height,
       this.modelViewTransform,
       tandem.createTandem( 'coulombsLawRuler' ),
-      _.pick( options, [ 'snapToNearest', 'majorTickLabel', 'unitString', 'rulerInset' ] )
-    );
+      _.pick( options, [
+        'snapToNearest',
+        'majorTickLabel',
+        'unitString',
+        'rulerInset',
+        'moveOnHoldDelay',
+        'moveOnHoldInterval'
+      ] ) );
     this.addChild( this.coulombsLawRuler );
 
     // construct checkbox item list
