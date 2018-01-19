@@ -22,7 +22,7 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var ISLCCheckboxItem = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxItem' );
   var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
-  var ISLQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLQueryParameters' );
+  var ISLCQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCQueryParameters' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
   var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
   var Property = require( 'AXON/Property' );
@@ -38,7 +38,7 @@ define( function( require ) {
 
   // constants
   var MOCKUP = CoulombsLawQueryParameters.mockup;
-  var SHOW_GRID = ISLQueryParameters.showGrid;
+  var SHOW_GRID = ISLCQueryParameters.showGrid;
 
   // images
   var backgroundImage = require( 'image!COULOMBS_LAW/image06.png' );
