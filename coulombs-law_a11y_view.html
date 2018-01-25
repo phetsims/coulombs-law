@@ -162,9 +162,8 @@
   noAccessibility && ( simulationQueryString += 'accessibility' );
 
 
-  // assemble src location, always en local
-  debugger;
-  var brandSuffix = window.location.hostname === 'phet.colorado.edu' ? '' : '_phet';
+  // add brand name for dev deploys
+  var brandSuffix = window.location.hostname === 'www.colorado.edu' ? '_phet' : '';
   document.getElementById( 'iframe' ).setAttribute( 'src', 'coulombs-law_en' + brandSuffix + '.html' + simulationQueryString );
 </script>
 
