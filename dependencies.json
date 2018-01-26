@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.0-dev.10 Thu Jan 25 2018 18:37:03 GMT-0700 (Mountain Standard Time)",
+  "comment": "# coulombs-law 1.0.0-dev.11 Thu Jan 25 2018 18:51:48 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -17,7 +17,7 @@
     "branch": "master"
   },
   "coulombs-law": {
-    "sha": "5bbb8206a52f27882a58578ed84d8c3cf18c203b",
+    "sha": "a51e0583b997c53d75db3950ee819e12f5a5cab8",
     "branch": "master"
   },
   "dot": {
@@ -77,7 +77,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "9350f22d11b893ac322df50602a3bf47aa3e6609",
+    "sha": "70cf829b42b65d6c4f58045f40ed6768b7b889a5",
     "branch": "master"
   },
   "scenery-phet": {
