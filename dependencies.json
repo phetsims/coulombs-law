@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.0-dev.11 Thu Jan 25 2018 18:51:48 GMT-0700 (Mountain Standard Time)",
+  "comment": "# coulombs-law 1.0.0-dev.13 Mon Jan 29 2018 15:55:04 GMT-0700 (MST)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,11 +13,11 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "3bd83184b5b121c697a05becbed57a0ebdc875d1",
+    "sha": "f616a059d415c0efaff83897ff937f1649c0235c",
     "branch": "master"
   },
   "coulombs-law": {
-    "sha": "a51e0583b997c53d75db3950ee819e12f5a5cab8",
+    "sha": "77b8d1e55b608418dc154396bf2ce00c6f9d7ca2",
     "branch": "master"
   },
   "dot": {
@@ -41,7 +41,7 @@
     "branch": "master"
   },
   "phet-io": {
-    "sha": "626f2c939fc4c3a59044259a4cead5b8020273cc",
+    "sha": "59e4fea1c61a3bbe3c2f3f02d6aacccf9a0dba55",
     "branch": "master"
   },
   "phet-io-website": {
@@ -57,15 +57,15 @@
     "branch": "master"
   },
   "phet-io-wrapper-sonification": {
-    "sha": "a3d5056ce1a28f9e972f2770fccff645ecf88346",
+    "sha": "adfff6d0245797bbdd3a6a53af72c4cef502465b",
     "branch": "master"
   },
   "phet-io-wrapper-visualizing-engagement": {
-    "sha": "83ca1fe39c4f9b25bee48309dce494bea7254f25",
+    "sha": "14150f43c23232984af555edd3d4a07c73a84886",
     "branch": "master"
   },
   "phet-io-wrappers": {
-    "sha": "eb4b33ba71c8992ed76923d188f188a40fdf1a64",
+    "sha": "d11aebf69543136a4bc26bc9993f2cec586b7998",
     "branch": "master"
   },
   "phetcommon": {
@@ -81,15 +81,15 @@
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "42b94b4fa2b32cb84f416653abf0a4f83854e628",
+    "sha": "bd233bf8f798e0db98a550c31bd7e73f48994b53",
     "branch": "master"
   },
   "sherpa": {
-    "sha": "d59690f0f6c46384e532496fa7e9156ea0724f46",
+    "sha": "7a6906fd09154b40ff68462843acc7f97e0d2276",
     "branch": "master"
   },
   "sun": {
-    "sha": "3b4ff6c4ba93e963be4d6888b018cfead594ce03",
+    "sha": "56f146b17331e9bbef9105d4c65616f59f69c78e",
     "branch": "master"
   },
   "tandem": {
