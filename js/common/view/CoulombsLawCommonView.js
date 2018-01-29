@@ -81,7 +81,7 @@ define( function( require ) {
       tandem.createTandem( 'coulombsLawRuler' ),
       _.pick( options, [
         'snapToNearest',
-        'majorTickLabel',
+        'majorTickLabels',
         'unitString',
         'rulerInset',
         'moveOnHoldDelay',
