@@ -35,8 +35,8 @@ define( function( require ) {
     // set initial charge values
     // TODO: consider creating charges/masses in subtypes
     
-    var chargeValue1 = 2 * e; // charge in Coulombs
-    var chargeValue2 = -4 * e; // charge in Coulombs
+    var chargeValue1 = -2 * e; // charge in Coulombs
+    var chargeValue2 = 4 * e; // charge in Coulombs
 
     var position1 = -2E-11; // initial position from center in m (20pm)
     var position2 = 2E-11; // initial position from center in m (20pm)
