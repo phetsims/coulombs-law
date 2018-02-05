@@ -53,7 +53,7 @@ define( function( require ) {
         otherObjectLabel: charge2AbbreviatedString,
         defaultDirection: 'left',
         arrowColor: '#66f',
-        forceArrowHeight: 105
+        forceArrowHeight: 70
       } );
 
     var chargeNode2 = new ChargeNode( 
@@ -67,7 +67,7 @@ define( function( require ) {
         otherObjectLabel: charge1AbbreviatedString,
         defaultDirection: 'right',
         arrowColor: '#f66',
-        forceArrowHeight: 165
+        forceArrowHeight: 120
       } );
 
     // charge nodes and arrows are added to the bottom of the scene graph so that the ruler will appear above them yet
