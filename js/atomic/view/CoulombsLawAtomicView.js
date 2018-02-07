@@ -66,7 +66,8 @@ define( function( require ) {
         forceArrowHeight: 70,
         atomicScale: true,
         maxArrowWidth: ARROW_MAX_WIDTH,
-        pullRangeMultiplier: PULL_RANGE_MULTIPLIER
+        pullRangeMultiplier: PULL_RANGE_MULTIPLIER,
+        forceReadoutDecimalPlaces: 9
       } );
 
     var chargeNode2 = new ChargeNode( 
@@ -83,7 +84,8 @@ define( function( require ) {
         forceArrowHeight: 120,
         atomicScale: true,
         maxArrowWidth: ARROW_MAX_WIDTH,
-        pullRangeMultiplier: PULL_RANGE_MULTIPLIER
+        pullRangeMultiplier: PULL_RANGE_MULTIPLIER,
+        forceReadoutDecimalPlaces: 9
       } );
 
     // charge nodes and arrows are added to the bottom of the scene graph so that the ruler will appear above them yet
