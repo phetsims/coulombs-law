@@ -29,7 +29,7 @@ define( function ( require ) {
 
     var checkboxText = new Text( optionsProjectorModeString, {
       font: OptionsDialog.DEFAULT_FONT,
-      tandem: tandem.createTandem( 'projectoModeCheckboxString' )
+      tandem: tandem.createTandem( 'projectorModeCheckboxString' )
     } );
 
     var projectorModeCheckbox = new Checkbox( checkboxText, CoulombsLawGlobals.projectorModeProperty, {
