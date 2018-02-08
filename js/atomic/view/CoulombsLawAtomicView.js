@@ -33,7 +33,7 @@ define( function( require ) {
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
   var MODEL_VIEW_TRANSFORM_SCALE = 5E12; // scales the modelViewTransorm for accurate positioning on Macro and Atomic screens
   var ARROW_MAX_WIDTH = 10000;
-  var PULL_RANGE_MULTIPLIER = 1 / 30;
+  var PULL_RANGE_MULTIPLIER = 1 / 50;
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -66,7 +66,8 @@ define( function( require ) {
         forceArrowHeight: 70,
         atomicScale: true,
         maxArrowWidth: ARROW_MAX_WIDTH,
-        pullRangeMultiplier: PULL_RANGE_MULTIPLIER
+        pullRangeMultiplier: PULL_RANGE_MULTIPLIER,
+        forceReadoutDecimalPlaces: 9
       } );
 
     var chargeNode2 = new ChargeNode( 
@@ -83,7 +84,8 @@ define( function( require ) {
         forceArrowHeight: 120,
         atomicScale: true,
         maxArrowWidth: ARROW_MAX_WIDTH,
-        pullRangeMultiplier: PULL_RANGE_MULTIPLIER
+        pullRangeMultiplier: PULL_RANGE_MULTIPLIER,
+        forceReadoutDecimalPlaces: 9
       } );
 
     // charge nodes and arrows are added to the bottom of the scene graph so that the ruler will appear above them yet
