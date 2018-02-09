@@ -43,7 +43,7 @@ define( function( require ) {
     var charge1 = new Charge( chargeValue1, position1, valueRange, tandem, { tandemUnits: 'coulombs' } );
     var charge2 = new Charge( chargeValue2, position2, valueRange, tandem, { tandemUnits: 'coulombs' } );
 
-  // boundary constants are in m, convert to cm
+    // boundary constants are in m, convert to cm
     var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
     var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
 
@@ -52,7 +52,11 @@ define( function( require ) {
       phetioType: PropertyIO( Vector2IO )
     } ); // @public
 
-    CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, { snapObjectsToNearest: 0.001, minSeparationBetweenObjects: 0.001 } );
+    CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, {
+      snapObjectsToNearest: 0.001,
+      minSeparationBetweenObjects: 0.001,
+      displayScientificNotation: false
+    } );
   }
 
   coulombsLaw.register( 'CoulombsLawMacroModel', CoulombsLawMacroModel );

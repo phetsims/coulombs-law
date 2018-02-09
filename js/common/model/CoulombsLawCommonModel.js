@@ -33,11 +33,12 @@ define( function( require ) {
   function CoulombsLawCommonModel( charge1, charge2, leftBoundary, rightBoundary, tandem, options ) {
 
     options = _.extend( {
-      snapObjectsToNearest: 0.1
+      snapObjectsToNearest: 0.1,
+      displayScientificNotation: true
     }, options );
 
     // @public - controls whether we display the force values in decimal or scientific notation format
-    this.scientificNotationProperty = new Property( true, {
+    this.scientificNotationProperty = new Property( options.displayScientificNotation, {
       tandem: tandem.createTandem( 'scientificNotation' ),
       phetioType: PropertyIO( BooleanIO )
     } );
