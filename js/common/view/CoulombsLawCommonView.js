@@ -13,7 +13,6 @@ define( function( require ) {
 
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
-  var CoulombsLawQueryParameters = require( 'COULOMBS_LAW/common/CoulombsLawQueryParameters' );
   var HSlider = require( 'SUN/HSlider' );
   var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -37,7 +36,7 @@ define( function( require ) {
   var showValuesString = require( 'string!COULOMBS_LAW/showValues' );
 
   // constants
-  var MOCKUP = CoulombsLawQueryParameters.mockup;
+  var MOCKUP = ISLCQueryParameters.showMockup;
   var SHOW_GRID = ISLCQueryParameters.showGrid;
 
   // images
