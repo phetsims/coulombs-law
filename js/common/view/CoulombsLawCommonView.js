@@ -13,8 +13,6 @@ define( function( require ) {
 
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
-  var HSlider = require( 'SUN/HSlider' );
-  var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
@@ -24,7 +22,6 @@ define( function( require ) {
   var ISLCQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCQueryParameters' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
   var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
-  var Property = require( 'AXON/Property' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var Vector2 = require( 'DOT/Vector2' );
@@ -36,11 +33,7 @@ define( function( require ) {
   var showValuesString = require( 'string!COULOMBS_LAW/showValues' );
 
   // constants
-  var MOCKUP = ISLCQueryParameters.showMockup;
   var SHOW_GRID = ISLCQueryParameters.showGrid;
-
-  // images
-  var backgroundImage = require( 'image!COULOMBS_LAW/image06.png' );
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -163,16 +156,6 @@ define( function( require ) {
     //------------------------------------------------
     // debugging
     //------------------------------------------------
-
-    if ( MOCKUP ) {
-      //Show the mock-up and a slider to change its transparency
-      var mockupOpacityProperty = new Property( 0.00 );
-      var mockImage = new Image( backgroundImage, { pickable: false } );
-      mockImage.scale( this.layoutBounds.width / mockImage.width, this.layoutBounds.height / mockImage.height );
-      mockupOpacityProperty.linkAttribute( mockImage, 'opacity' );
-      this.addChild( mockImage );
-      this.addChild( new HSlider( mockupOpacityProperty, { min: 0, max: 1 }, { top: 10, left: 10 } ) );
-    }
 
     if ( SHOW_GRID ) {
       var gridNode = new ISLCGridNode(
