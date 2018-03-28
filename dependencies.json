@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.0-dev.15 Tue Mar 27 2018 11:32:42 GMT-0800 (Alaskan Daylight Time)",
+  "comment": "# coulombs-law 1.0.0-dev.16 Wed Mar 28 2018 15:32:51 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,11 +13,11 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "525dedc7031ec8e17c757410a6a800927a8d5c9b",
+    "sha": "29396db7c472f763cb86ecd24663355d0f67eed0",
     "branch": "master"
   },
   "coulombs-law": {
-    "sha": "ba6944ee2dce1ff6cae5dda7ee5b44eb303583b3",
+    "sha": "b7ce9ee661b3da6e17086ee9c1d72cbaaf4dabd8",
     "branch": "master"
   },
   "dot": {
@@ -25,12 +25,12 @@
     "branch": "master"
   },
   "inverse-square-law-common": {
-    "sha": "77b78b346afc864693e40753e66c6ea1c85df604",
+    "sha": "f370ff1793d16149daf54024f774e912dfe023dd",
     "branch": "master"
   },
   "joist": {
-    "sha": "5c4252fc78055a41f35616e77195abb7b42bb5f0",
-    "branch": "HEAD"
+    "sha": "58c4c08cbb98b1813222e0049c8a06c2b1758538",
+    "branch": "master"
   },
   "kite": {
     "sha": "b607147875dca2c350235f96d4f5546617bc6e4b",
@@ -45,7 +45,7 @@
     "branch": "master"
   },
   "phet-io-website": {
-    "sha": "1619d1dc2bb5d1d61419c579a9c11ec481acaeed",
+    "sha": "397862e03bdaf81ad5c81b38d2f4d76b9b7c82f2",
     "branch": "master"
   },
   "phet-io-wrapper-classroom-activity": {
@@ -69,19 +69,19 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "54a2bc038314865f9ce19092f1daa9664680a2f8",
-    "branch": "HEAD"
+    "sha": "e704af93c588ab60717e7a83be028334bcab8a73",
+    "branch": "master"
   },
   "scenery-phet": {
-    "sha": "83a7fbebb8a5fe60bce5590024d0795d175f6bb0",
-    "branch": "HEAD"
+    "sha": "09a695aff3ee82e728caa89a7cb8d3a0965158dc",
+    "branch": "master"
   },
   "sherpa": {
     "sha": "9c6ec322fc2577bbbdc588bb67765dfdb76b49a9",
     "branch": "master"
   },
   "sun": {
-    "sha": "b78fc2d2e874fc3860813dff2a0e671df8045c00",
+    "sha": "82d08aa78cb24ea700ce70635e1beb45dac88275",
     "branch": "master"
   },
   "tandem": {
