@@ -26,9 +26,6 @@
   "units.atomicUnits": {
     "value": "e"
   },
-  "showValues": {
-    "value": "Show Values"
-  },
   "scientificNotation": {
     "value": "Scientific Notation"
   },

@@ -30,7 +30,7 @@ define( function( require ) {
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   var charge2String = require( 'string!COULOMBS_LAW/charge2' );
   var scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
-  var showValuesString = require( 'string!COULOMBS_LAW/showValues' );
+  var forceValuesString = require( 'string!INVERSE_SQUARE_LAW_COMMON/forceValues' );
 
   // constants
   var SHOW_GRID = ISLCQueryParameters.showGrid;
@@ -83,8 +83,8 @@ define( function( require ) {
 
     // construct checkbox item list
     var checkboxItems = [
-      new ISLCCheckboxItem( showValuesString, coulombsLawModel.showValuesProperty, {
-        tandem: tandem.createTandem( 'showValuesCheckbox' )
+      new ISLCCheckboxItem( forceValuesString, coulombsLawModel.forceValuesProperty, {
+        tandem: tandem.createTandem( 'forceValuesCheckbox' )
       } ),
       new ISLCCheckboxItem( scientificNotationString, coulombsLawModel.scientificNotationProperty, {
         tandem: tandem.createTandem( 'scientificNotationCheckbox' )
