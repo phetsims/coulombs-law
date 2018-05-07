@@ -27,11 +27,11 @@ define( function( require ) {
   var simOptions = {
     credits: {
       //TODO fill in proper credits, all of these fields are optional, see joist.AboutDialog
-      leadDesign: '',
-      softwareDevelopment: '',
-      team: '',
-      qualityAssurance: '',
-      graphicArts: '',
+      leadDesign: 'Amy Rouinfar',
+      softwareDevelopment: 'Jesse Greenberg, Michael Barlow',
+      team: 'Amy Hansen, Ariel Paul, Kathy Perkins',
+      qualityAssurance: 'Steele Dalton, Liam Mulhall',
+      graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
       thanks: ''
     },
     optionsNode: new CoulombsLawGlobalOptionsNode( CoulombsLawCommonConstants.GLOBALS_TANDEM.createTandem( 'options' ) )
