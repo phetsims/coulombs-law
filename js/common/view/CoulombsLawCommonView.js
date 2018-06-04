@@ -91,6 +91,10 @@ define( function( require ) {
       } )
     ];
 
+    coulombsLawModel.forceValuesProperty.link( function ( showValues ) {
+      checkboxItems[ 1 ].enabled = showValues;
+    } );
+
     var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxItems, {
       tandem: tandem.createTandem( 'coulombsLawParameterCheckbox' ),
       fill: '#EDEDED',
