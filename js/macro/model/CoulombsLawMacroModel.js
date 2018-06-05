@@ -29,10 +29,10 @@ define( function( require ) {
 
     // set initial charge values
     
-    var chargeValue1 = -2E-6; // -2 microcoulombs in Coulombs
-    var chargeValue2 = 4E-6; // 4 microcoulombs in Coulombs
+    var chargeValue1 = -4E-6; // -4 microcoulombs in Coulombs
+    var chargeValue2 = 8E-6; // 8 microcoulombs in Coulombs
 
-    var position1 = -2E-2; // initial position from center in m
+    var position1 = -1E-2; // initial position from center in m
     var position2 = 2E-2; // initial position from center in m
 
     var minChargeValue = -10E-6; // in Coulombs
