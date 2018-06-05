@@ -7,7 +7,7 @@
     "url": "https://github.com/phetsims/coulombs-law.git"
   },
   "devDependencies": {
-    "grunt": "~1.0.0"
+    "grunt": "^1.0.3"
   },
   "phet": {
     "requirejsNamespace": "COULOMBS_LAW",
