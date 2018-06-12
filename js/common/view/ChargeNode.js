@@ -56,7 +56,7 @@ define( function( require ) {
       arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
       labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
 
-      tandem: tandem.createTandem( 'chargeNode1' ),
+      tandem: tandem.createTandem( 'chargeNode1' )
     }, options );
 
     // @private
