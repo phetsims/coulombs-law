@@ -5,6 +5,7 @@
  *
  * @author $AUTHOR$
  */
+// REVIEW: Update @author
 define( function( require ) {
   'use strict';
 

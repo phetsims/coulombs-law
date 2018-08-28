@@ -38,6 +38,7 @@ define( function( require ) {
     }, options );
 
     // @public - controls whether we display the force values in decimal or scientific notation format
+    // REVIEW: Doc type Property.<boolean>?
     this.scientificNotationProperty = new Property( options.displayScientificNotation, {
       tandem: tandem.createTandem( 'scientificNotation' ),
       phetioType: PropertyIO( BooleanIO )

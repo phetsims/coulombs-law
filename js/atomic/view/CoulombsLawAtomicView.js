@@ -98,6 +98,7 @@ define( function( require ) {
     this.insertChild( 1, chargeNode1.arrowNode );
     this.insertChild( 1, chargeNode2.arrowNode );
 
+    // REVIEW: Remove unused code?
     // @public (read-only) - create and add atomic ruler
     // this.coulombsLawRuler = new ISLCRulerNode(
     //   coulombsLawModel,
@@ -133,7 +134,7 @@ define( function( require ) {
     var pmScaleFont = new PhetFont( 12 );
     var picometerScaleNode = new RichText( pmScaleString, {
       fill: CoulombsLawColorProfile.legendNodeFillProperty,
-      font: pmScaleFont,
+      font: pmScaleFont, // REVIEW: Inline pmScaleFont in font option. Removes variable declaration.
       maxWidth: 180,
       bottom: this.layoutBounds.maxY - 8,
       tandem: tandem.createTandem( 'picometerScaleString' )
