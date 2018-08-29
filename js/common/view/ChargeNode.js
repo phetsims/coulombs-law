@@ -106,6 +106,7 @@ define( function( require ) {
      */
     updateGradient: function( baseColor ) {
       var radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
+
       // if the radius = 1, radial gradient will throw an divide-by-zero error
       // ensure inequality
       radius = radius === 1 ? radius + this.snapToNearest : radius;

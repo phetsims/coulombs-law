@@ -28,7 +28,6 @@ define( function( require ) {
   function CoulombsLawMacroModel( tandem ) {
 
     // set initial charge values
-    
     var chargeValue1 = -4E-6; // -4 microcoulombs in Coulombs
     var chargeValue2 = 8E-6; // 8 microcoulombs in Coulombs
 
