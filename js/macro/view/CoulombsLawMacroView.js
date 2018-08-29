@@ -96,7 +96,7 @@ define( function( require ) {
         tandem: tandem.createTandem( 'legendNode' ) 
       } );
 
-
+    // REVIEW: Pass into options for legendNode.
     legendNode.left = this.layoutBounds.minX + 9.35;
 
     this.addChild( legendNode );

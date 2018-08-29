@@ -39,6 +39,7 @@ define( function( require ) {
 
     // @public - controls whether we display the force values in decimal or scientific notation format
     // REVIEW: Doc type Property.<boolean>?
+    // REVIEW: Consider using BooleanProperty
     this.scientificNotationProperty = new Property( options.displayScientificNotation, {
       tandem: tandem.createTandem( 'scientificNotation' ),
       phetioType: PropertyIO( BooleanIO )
@@ -52,6 +53,7 @@ define( function( require ) {
   return inherit( ISLCModel, CoulombsLawCommonModel, {
 
     // @public resets the model
+    // REVIEW: Use jsDoc format for function discription
     reset: function() {
       this.rulerPositionProperty.reset();
       this.scientificNotationProperty.reset();

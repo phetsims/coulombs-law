@@ -50,6 +50,7 @@ define( function( require ) {
     // @public
     // intermediate property to allow for scaling between atomic units and microcoulombs
     // value ranges from -10 to 10 and unit can be e or mc
+    // REVIEW: Type doc? Consider using numberProperty
     this.chargeControlProperty = new Property( objectProperty.get() * scaleFactor );
 
     // no unlinking/disposing required as property is never destroyed
@@ -60,6 +61,7 @@ define( function( require ) {
     var chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
 
     // add custom thumb to the slider
+    // REVIEW: Move to options above. May be a duplicate of TODO statement below.
     options.thumbNode = new ChargeControlSliderThumb( objectProperty, options );
     options.tandem = tandem; // TODO: pass through in options in the first place
 
@@ -69,6 +71,7 @@ define( function( require ) {
   coulombsLaw.register( 'ChargeControl', ChargeControl );
 
   return inherit( ISLCObjectControlPanel, ChargeControl, {
+
     // @public
     reset: function() {
       this.chargeControlProperty.reset();

@@ -52,6 +52,7 @@ define( function( require ) {
     }, options );
 
     // @private - whether the slider thumb is enabled
+    // REVIEW: Doc type?
     this.enabledProperty = options.enabledProperty;
     
     HSliderThumb.call( this, this.enabledProperty, options );

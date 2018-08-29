@@ -66,6 +66,7 @@ define( function( require ) {
     this.modelViewTransform = modelViewTransform;
 
     // @public (read-only) - create and add macro ruler
+    // REVIEW: Doc type?
     this.coulombsLawRuler = new ISLCRulerNode(
       coulombsLawModel,
       this.layoutBounds.height,
