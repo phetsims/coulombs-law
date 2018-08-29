@@ -126,6 +126,7 @@ define( function( require ) {
         tandem: tandem.createTandem( 'atomicLegendNode' ) 
       } );
 
+    // REVIEW: Can we move this into the options at the initial declaration?
     legendNode.left = this.layoutBounds.minX + 9.35;
 
     this.addChild( legendNode );
@@ -140,12 +141,15 @@ define( function( require ) {
       tandem: tandem.createTandem( 'picometerScaleString' )
     } );
 
+    // REVIEW: Can we move this into the options at the initial declaration?
     picometerScaleNode.left = legendNode.right + 10;
 
     this.addChild( picometerScaleNode );
 
     // a11y - charges are first in focus order
     var charges = [ chargeNode1, chargeNode2 ];
+
+    // REVIEW: Visibility annotation? Doc type?
     this.accessibleOrder = charges.concat( this.accessibleOrder );
   }
 

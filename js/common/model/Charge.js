@@ -37,6 +37,7 @@ define( function( require ) {
       constantRadius: 6.75E-3 // ensure this is in meters (0.675cm)
     }, options );
 
+    // REVIEW: Consider using BooleanProperty
     var constantRadiusProperty = new Property( true, {
       tandem: tandem.createTandem( 'constantRadiusProperty' ),
       phetioType: PropertyIO( BooleanIO )
@@ -50,6 +51,7 @@ define( function( require ) {
     // @public - object node color is will change with value
     // color property will be updated based on a boolean value (negative vs positive)
     // brightness will be set according to the Mass/Charge magnitude
+    // REVIEW: Visibility annotation? Type Doc?
     this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], function( value ) {
         var newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
@@ -64,6 +66,8 @@ define( function( require ) {
 
     // @override
     // Returns the {number} radius of the charge object
+    // REVIEW: jsDoc should have @return {type}. Eliminates need for {number} in function description.
+    // REVIEW: Function description should be first in jsDoc.
     calculateRadius: function( charge ) {
       return this.radiusProperty.get();
     },
