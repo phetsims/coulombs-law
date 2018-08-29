@@ -22,3 +22,6 @@ In order to utilize a common codebase (Inverse Square Law Common - ISLC) between
 ### Charge Nodes
 These are instances of ISLCObjectNodes with constant radius and the ability for different arrow directions. See the [ISLC implementation](https://github.com/phetsims/inverse-square-law-common/blob/master/doc/implementation-notes.md) for the details on updating pullers, force values, and arrows.
 
+// REVIEW: It may be helpful to indicate that a puller/pusher is the robot figure. Taken from documentation in ISLCObjectNode.js:
+// REVIEW: 'The objects have a shaded sphere with a puller/pusher robot attached that updates based on the model object values.'
+// REVIEW: Perhaps it is better suited in the implementation notes for the ISLC repo with adjusted wording.
