@@ -1,4 +1,4 @@
-// Copyright 2017-2018, University of Colorado Boulder
+// Copyright 2018, University of Colorado Boulder
 
 /**
  * Custom slider thumb that changes its backgroun color based on the value of its associated object property value.
@@ -15,9 +15,9 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var DerivedProperty = require( 'AXON/DerivedProperty' );
   var Dimension2 = require( 'DOT/Dimension2' );
-  var HSliderThumb = require( 'SUN/HSliderThumb' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Property = require( 'AXON/Property' );
+  var SliderThumb = require( 'SUN/SliderThumb' );
 
   // constants
   var THUMB_SIZE = new Dimension2( 10, 18 );
@@ -55,12 +55,12 @@ define( function( require ) {
     // REVIEW: Doc type?
     this.enabledProperty = options.enabledProperty;
     
-    HSliderThumb.call( this, this.enabledProperty, options );
+    SliderThumb.call( this, this.enabledProperty, options );
   }
 
   coulombsLaw.register( 'ChargeControlSliderThumb', ChargeControlSliderThumb );
 
-  return inherit( HSliderThumb, ChargeControlSliderThumb, {
+  return inherit( SliderThumb, ChargeControlSliderThumb, {
 
     /**
      * Set the thumb fill based on the linked property's value
