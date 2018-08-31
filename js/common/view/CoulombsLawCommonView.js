@@ -67,6 +67,7 @@ define( function( require ) {
 
     // @public (read-only) - create and add macro ruler
     // REVIEW: Doc type?
+    // REVIEW: Is this being used in subtypes? I only see usages in this file and usages in commented code
     this.coulombsLawRuler = new ISLCRulerNode(
       coulombsLawModel,
       this.layoutBounds.height,

@@ -52,6 +52,7 @@ define( function( require ) {
     // color property will be updated based on a boolean value (negative vs positive)
     // brightness will be set according to the Mass/Charge magnitude
     // REVIEW: Visibility annotation? Type Doc?
+    // REVIEW: Should this be @protected visibility annotation? I may be wrong here.
     this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], function( value ) {
         var newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
@@ -68,6 +69,7 @@ define( function( require ) {
     // Returns the {number} radius of the charge object
     // REVIEW: jsDoc should have @return {type}. Eliminates need for {number} in function description.
     // REVIEW: Function description should be first in jsDoc.
+    // REVIEW: Remove unused parameter?
     calculateRadius: function( charge ) {
       return this.radiusProperty.get();
     },

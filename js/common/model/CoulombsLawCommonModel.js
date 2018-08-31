@@ -53,7 +53,7 @@ define( function( require ) {
   return inherit( ISLCModel, CoulombsLawCommonModel, {
 
     // @public resets the model
-    // REVIEW: Use jsDoc format for function discription
+    // REVIEW: Use jsDoc format for function description
     reset: function() {
       this.rulerPositionProperty.reset();
       this.scientificNotationProperty.reset();

@@ -65,8 +65,7 @@ define( function( require ) {
     this.objectModel = chargeObjectModel;
     this.layoutBounds = layoutBounds;
 
-    // @private
-    // for incrementing the radius to prevent division by zero in RadialGradient
+    // @private - Used for incrementing the radius to prevent division by zero in RadialGradient
     this.snapToNearest = options.snapToNearest;
 
     // inherited object node accepts the entire force range. (NOTE: necessary to calculate here as Coulomb's Law allows
