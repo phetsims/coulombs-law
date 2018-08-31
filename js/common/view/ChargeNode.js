@@ -3,6 +3,7 @@
 /**
  * Scenery node for the charge object. Children include the pusher/pullers, the circular charge, the force arrow, and
  * all labels. Most instantiation details are handled in ISLCObjectNode including all property linking and drawing.
+ // REVIEW: Use Property instead of property in above comment
  *
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)

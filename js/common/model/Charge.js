@@ -51,6 +51,7 @@ define( function( require ) {
     // @public - object node color is will change with value
     // color property will be updated based on a boolean value (negative vs positive)
     // brightness will be set according to the Mass/Charge magnitude
+    // REVIEW: Use Property instead of property in above comment
     // REVIEW: Visibility annotation? Type Doc?
     // REVIEW: Should this be @protected visibility annotation? I may be wrong here.
     this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], function( value ) {

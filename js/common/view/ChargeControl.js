@@ -27,6 +27,7 @@ define( function( require ) {
    * @param {string} unitString - for the NumberControl readout
    * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
    * @param {Range} valueRange - max and min values for the object property, used for display and as NumberControl argument
+   *     // REVIEW: Use Property instead of property in "object property" above
    * @param {number} scaleFactor - multiplicative constant for getting proper readouts/positions on Macro and Atomic screens
    * @param {Tandem} tandem // TODO: move to options
    * @param {Object} options
@@ -50,10 +51,12 @@ define( function( require ) {
     // @public
     // intermediate property to allow for scaling between atomic units and microcoulombs
     // value ranges from -10 to 10 and unit can be e or mc
+    // REVIEW: Use Property instead of property in above comment
     // REVIEW: Type doc? Consider using numberProperty
     this.chargeControlProperty = new Property( objectProperty.get() * scaleFactor );
 
     // no unlinking/disposing required as property is never destroyed
+    // REVIEW: Use Property instead of property in above comment
     this.chargeControlProperty.link( function( value ) {
       objectProperty.set( value / scaleFactor );
     } );
