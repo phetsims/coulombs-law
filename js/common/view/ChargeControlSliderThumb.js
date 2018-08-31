@@ -1,12 +1,11 @@
 // Copyright 2018, University of Colorado Boulder
 
 /**
- * Custom slider thumb that changes its backgroun color based on the value of its associated object property value.
+ * Custom slider thumb that changes its background color based on the value of its associated object Property value.
  *
  * @author  Jesse Greenberg
  * @author  Michael Barlow
  */
-
 define( function( require ) {
   'use strict';
 
