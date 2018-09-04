@@ -21,7 +21,6 @@ define( function ( require ) {
   // strings
   var optionsProjectorModeString = require( 'string!COULOMBS_LAW/options.projectorMode' );
 
-
   /**
    * @param {Tandem} tandem 
    */

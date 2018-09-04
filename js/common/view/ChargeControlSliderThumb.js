@@ -35,15 +35,18 @@ define( function( require ) {
 
     // fills are axon Properties because they need to change with the objectProperty
     // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
+    // REVIEW: Doc type
     var fillEnabledProperty = new DerivedProperty( [ objectProperty ], function( value ) {
       return self.getUpdatedFill( value );
     } );
 
+    // REVIEW: Doc type
     var fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
       return self.getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
     } );
 
     options = _.extend( {
+      // REVIEW: Consider using BooleanProperty?
       enabledProperty: new Property( true ),
       size: THUMB_SIZE,
       fillEnabled: fillEnabledProperty,
@@ -61,6 +64,7 @@ define( function( require ) {
 
   return inherit( SliderThumb, ChargeControlSliderThumb, {
 
+    //REVIEW: Can this be declared locally within the constructor. This method is only used in this file
     /**
      * Set the thumb fill based on the linked property's value
      * 
