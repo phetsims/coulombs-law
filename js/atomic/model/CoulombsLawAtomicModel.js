@@ -34,6 +34,7 @@ define( function( require ) {
 
     // set initial charge values
     // TODO: consider creating charges/masses in subtypes
+    // REVIEW: Stale todo?
     var chargeValue1 = -2 * e; // charge in Coulombs
     var chargeValue2 = 4 * e; // charge in Coulombs
 

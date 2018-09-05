@@ -30,7 +30,7 @@ define( function( require ) {
    * @param {Charge} chargeObjectModel
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
-   * @param {Tandem} tandem // TODO: move to options
+   * @param {Tandem} tandem // TODO: move to options // REVIEW: Handle todo
    * @param {Object} options
    * @constructor
    */

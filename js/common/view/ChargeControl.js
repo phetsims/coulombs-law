@@ -29,7 +29,7 @@ define( function( require ) {
    * @param {Range} valueRange - max and min values for the object property, used for display and as NumberControl argument
    *     // REVIEW: Use Property instead of property in "object property" above
    * @param {number} scaleFactor - multiplicative constant for getting proper readouts/positions on Macro and Atomic screens
-   * @param {Tandem} tandem // TODO: move to options
+   * @param {Tandem} tandem // TODO: move to options // REVIEW: Handle todo
    * @param {Object} options
    * @constructor
    */

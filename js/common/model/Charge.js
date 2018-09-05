@@ -77,6 +77,7 @@ define( function( require ) {
 
     // @public
     // TODO: reset should be implemented in the parent class ISLCObject
+    // REVIEW: Handle review
     reset: function() {
       this.valueProperty.reset();
       this.positionProperty.reset();
