@@ -15,6 +15,7 @@ define( function( require ) {
   var Dimension2 = require( 'DOT/Dimension2' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCObjectControlPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectControlPanel' );
+  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var Property = require( 'AXON/Property' );
   var Range = require( 'DOT/Range' );
 
@@ -36,16 +37,22 @@ define( function( require ) {
   function ChargeControl( titleString, unitString, objectProperty, valueRange, scaleFactor, tandem, options ) {
 
     options = _.extend( {
+
+      // panel options
       align: 'center',
-      arrowButtonScale: 0.5,
-      thumbSize: THUMB_SIZE,
-      trackSize: TRACK_SIZE,
-      titleFontSize: 16,
-      valueFontSize: 12,
-      valueXMargin: 4,
-      valueYMargin: 2,
-      tandem: tandem,
-      additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ]
+
+      numberControlOptions: {
+        arrowButtonScale: 0.5,
+        thumbSize: THUMB_SIZE,
+        trackSize: TRACK_SIZE,
+        titleFont: new PhetFont( 16 ),
+        valueFont: new PhetFont( 12 ),
+        valueXMargin: 4,
+        valueYMargin: 2,
+        additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ]
+      },
+
+      tandem: tandem
     }, options );
 
     // @public
@@ -65,7 +72,7 @@ define( function( require ) {
 
     // add custom thumb to the slider
     // REVIEW: Move to options above. May be a duplicate of TODO statement below.
-    options.thumbNode = new ChargeControlSliderThumb( objectProperty, options );
+    options.numberControlOptions.thumbNode = new ChargeControlSliderThumb( objectProperty, options );
     options.tandem = tandem; // TODO: pass through in options in the first place
 
     ISLCObjectControlPanel.call( this, titleString, unitString, this.chargeControlProperty, chargeControlRange, options );
