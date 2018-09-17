@@ -31,7 +31,8 @@ define( function( require ) {
     var options = {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
       name: screenAtomicString,
-      homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } )
+      homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
+      tandem: tandem
     };
 
     var atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );

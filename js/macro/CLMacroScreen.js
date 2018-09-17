@@ -32,7 +32,8 @@ define( function( require ) {
     var options = {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
       name: screenMacroString,
-      homeScreenIcon: new Image( macroScreenIcon, { tandem: tandem.createTandem( 'icon' ) } )
+      homeScreenIcon: new Image( macroScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
+      tandem: tandem
     };
 
     var macroScreenTandem = tandem.createTandem( 'coulombsLawMacroScreen' );

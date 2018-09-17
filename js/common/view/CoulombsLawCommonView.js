@@ -93,7 +93,7 @@ define( function( require ) {
       } )
     ];
 
-    coulombsLawModel.forceValuesProperty.link( function ( showValues ) {
+    coulombsLawModel.forceValuesProperty.link( function( showValues ) {
       checkboxItems[ 1 ].enabled = showValues;
     } );
 
@@ -112,7 +112,7 @@ define( function( require ) {
       coulombsLawModel.object1.valueProperty,
       coulombsLawModel.object1.valueRange,
       scaleFactor,
-      tandem.createTandem( 'charge2Control' ),
+      tandem.createTandem( 'charge1Control' ),
       {
         right: self.layoutBounds.centerX - 5,
         top: coulombsLawParameterCheckbox.top
@@ -146,7 +146,8 @@ define( function( require ) {
       },
       radius: 18,
       right: rightAlignment,
-      bottom: bottomAlignment
+      bottom: bottomAlignment,
+      tandem: tandem.createTandem( 'resetAllButton' )
     } );
     this.addChild( resetAllButton );
 

@@ -41,7 +41,7 @@ define( function( require ) {
     // REVIEW: Doc type Property.<boolean>?
     // REVIEW: Consider using BooleanProperty
     this.scientificNotationProperty = new Property( options.displayScientificNotation, {
-      tandem: tandem.createTandem( 'scientificNotation' ),
+      tandem: tandem.createTandem( 'scientificNotationProperty' ),
       phetioType: PropertyIO( BooleanIO )
     } );
 
