@@ -23,7 +23,9 @@ define( function ( require ) {
   function CoulombsLawGlobalOptionsNode( tandem ) {
 
     var projectorModeCheckbox = new ProjectorModeCheckbox( {
-      projectorModeEnabledProperty: CoulombsLawGlobals.projectorModeProperty
+      projectorModeEnabledProperty: CoulombsLawGlobals.projectorModeProperty,
+      tandem: tandem.createTandem( 'projectorCheckbox' ),
+      phetioInstanceDocumentation: 'The checkbox that toggles if projector mode is enabled.'
     } );
 
     LayoutBox.call( this, _.extend( {
