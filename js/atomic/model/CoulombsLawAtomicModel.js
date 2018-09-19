@@ -46,11 +46,11 @@ define( function( require ) {
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 
-    var charge1 = new Charge( chargeValue1, position1, valueRange, tandem, { 
+    var charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ), {
       constantRadius: 9.5E-13,
       tandemUnits: 'coulombs'
     } );
-    var charge2 = new Charge( chargeValue2, position2, valueRange, tandem, { 
+    var charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ), {
       constantRadius: 9.5E-13,
       tandemUnits: 'coulombs'
     } );
