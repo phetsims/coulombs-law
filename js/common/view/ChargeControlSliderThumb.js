@@ -15,7 +15,7 @@ define( function( require ) {
   var DerivedProperty = require( 'AXON/DerivedProperty' );
   var Dimension2 = require( 'DOT/Dimension2' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var Property = require( 'AXON/Property' );
+  var BooleanProperty = require( 'AXON/BooleanProperty' );
   var SliderThumb = require( 'SUN/SliderThumb' );
 
   // constants
@@ -31,58 +31,52 @@ define( function( require ) {
    */
   function ChargeControlSliderThumb( objectProperty, options ) {
 
-    var self = this;
-
+    // {Property.<Color>}
     // fills are axon Properties because they need to change with the objectProperty
     // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
-    // REVIEW: Doc type
     var fillEnabledProperty = new DerivedProperty( [ objectProperty ], function( value ) {
-      return self.getUpdatedFill( value );
+      return getUpdatedFill( value );
     } );
 
-    // REVIEW: Doc type
+    // {Property.<Color>}
     var fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
-      return self.getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
+      return getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
     } );
 
     options = _.extend( {
-      // REVIEW: Consider using BooleanProperty?
-      enabledProperty: new Property( true ),
+      enabledProperty: new BooleanProperty( true ),
       size: THUMB_SIZE,
       fillEnabled: fillEnabledProperty,
       fillHighlighted: fillHighlightedProperty
     }, options );
 
-    // @private - whether the slider thumb is enabled
-    // REVIEW: Doc type?
+    // @private {Property.<boolean>}- whether the slider thumb is enabled
     this.enabledProperty = options.enabledProperty;
-    
+
     SliderThumb.call( this, this.enabledProperty, options );
+  }
+
+  /**
+   * Helper function to get a color based on a linked Property's value
+   *
+   * @param {number} propertyValue
+   * @returns {Color}
+   */
+  function getUpdatedFill( propertyValue ) {
+
+    var fill;
+    if ( propertyValue < 0 ) {
+      fill = NEGATIVE_FILL;
+    } else if ( propertyValue > 0 ) {
+      fill = POSITIVE_FILL;
+    } else {
+      fill = ZERO_FILL;
+    }
+
+    return fill;
   }
 
   coulombsLaw.register( 'ChargeControlSliderThumb', ChargeControlSliderThumb );
 
-  return inherit( SliderThumb, ChargeControlSliderThumb, {
-
-    //REVIEW: Can this be declared locally within the constructor. This method is only used in this file
-    /**
-     * Set the thumb fill based on the linked property's value
-     * 
-     * @param {number} propertyValue
-     * @returns {Color}
-     */
-    getUpdatedFill: function( propertyValue ) {
-      
-      var fill;
-      if ( propertyValue < 0 ) {
-        fill = NEGATIVE_FILL;
-      } else if ( propertyValue > 0 ) {
-        fill = POSITIVE_FILL;
-      } else {
-        fill = ZERO_FILL;
-      }
-
-      return fill;
-    }
-  } );
+  return inherit( SliderThumb, ChargeControlSliderThumb );
 } );
