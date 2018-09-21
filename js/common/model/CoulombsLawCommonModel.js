@@ -15,11 +15,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCModel' );
-  var Property = require( 'AXON/Property' );
-  var PropertyIO = require( 'AXON/PropertyIO' );
-
-  // ifphetio
-  var BooleanIO = require( 'ifphetio!PHET_IO/types/BooleanIO' );
+  var BooleanProperty = require( 'AXON/BooleanProperty' );
 
   /**
    * @param {Charge} charge1 - The left charge
@@ -37,12 +33,9 @@ define( function( require ) {
       displayScientificNotation: true
     }, options );
 
-    // @public - controls whether we display the force values in decimal or scientific notation format
-    // REVIEW: Doc type Property.<boolean>?
-    // REVIEW: Consider using BooleanProperty
-    this.scientificNotationProperty = new Property( options.displayScientificNotation, {
-      tandem: tandem.createTandem( 'scientificNotationProperty' ),
-      phetioType: PropertyIO( BooleanIO )
+    // @public {Property.<boolean>} - controls whether we display the force values in decimal or scientific notation format
+    this.scientificNotationProperty = new BooleanProperty( options.displayScientificNotation, {
+      tandem: tandem.createTandem( 'scientificNotationProperty' )
     } );
 
     ISLCModel.call( this, ISLCConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );
@@ -52,8 +45,11 @@ define( function( require ) {
 
   return inherit( ISLCModel, CoulombsLawCommonModel, {
 
-    // @public resets the model
-    // REVIEW: Use jsDoc format for function description
+    /**
+     * Resets the model.
+     *
+     * @public
+     */
     reset: function() {
       this.rulerPositionProperty.reset();
       this.scientificNotationProperty.reset();
