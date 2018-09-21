@@ -112,10 +112,10 @@ define( function( require ) {
       coulombsLawModel.object1.valueProperty,
       coulombsLawModel.object1.valueRange,
       scaleFactor,
-      tandem.createTandem( 'charge1Control' ),
       {
         right: self.layoutBounds.centerX - 5,
-        top: coulombsLawParameterCheckbox.top
+        top: coulombsLawParameterCheckbox.top,
+        tandem: tandem.createTandem( 'charge1Control' )
       }
     );
 
@@ -127,10 +127,10 @@ define( function( require ) {
       coulombsLawModel.object2.valueProperty,
       coulombsLawModel.object2.valueRange,
       scaleFactor,
-      tandem.createTandem( 'charge2Control' ),
       {
         left: self.layoutBounds.centerX + 5,
-        top: coulombsLawParameterCheckbox.top
+        top: coulombsLawParameterCheckbox.top,
+        tandem: tandem.createTandem( 'charge2Control' )
       }
     );
 
