@@ -33,8 +33,6 @@ define( function( require ) {
     var e = ISLCConstants.coulombsPerAtomicUnit;
 
     // set initial charge values
-    // TODO: consider creating charges/masses in subtypes
-    // REVIEW: Stale todo?
     var chargeValue1 = -2 * e; // charge in Coulombs
     var chargeValue2 = 4 * e; // charge in Coulombs
 
@@ -59,8 +57,7 @@ define( function( require ) {
     var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
     var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
 
-    // @public - the position of the ruler in the model
-    // REVIEW: Doc type
+    // @public {Property.<Vector2>} - the position of the ruler in the model
     this.rulerPositionProperty = new Property( new Vector2( 0, -0.75E-11 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
       phetioType: PropertyIO( Vector2IO )
