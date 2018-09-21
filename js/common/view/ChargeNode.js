@@ -2,8 +2,7 @@
 
 /**
  * Scenery node for the charge object. Children include the pusher/pullers, the circular charge, the force arrow, and
- * all labels. Most instantiation details are handled in ISLCObjectNode including all property linking and drawing.
- // REVIEW: Use Property instead of property in above comment
+ * all labels. Most instantiation details are handled in ISLCObjectNode including all Property linking and drawing.
  *
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)
@@ -17,9 +16,10 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var RangeWithValue = require('DOT/RangeWithValue'); 
-  var RadialGradient = require( 'SCENERY/util/RadialGradient' );
   var ISLCObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode');
+  var RangeWithValue = require('DOT/RangeWithValue');
+  var RadialGradient = require( 'SCENERY/util/RadialGradient' );
+  var Tandem = require( 'TANDEM/Tandem' );
 
   // constants
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
@@ -30,11 +30,10 @@ define( function( require ) {
    * @param {Charge} chargeObjectModel
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
-   * @param {Tandem} tandem // TODO: move to options // REVIEW: Handle todo
    * @param {Object} options
    * @constructor
    */
-  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, tandem, options ) {
+  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, options ) {
 
     var forceConstant = ISLCConstants.k;
 
@@ -57,7 +56,7 @@ define( function( require ) {
       arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
       labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
 
-      tandem: tandem.createTandem( 'chargeNode1' )
+      tandem: Tandem.required
     }, options );
 
     // @private
@@ -77,8 +76,8 @@ define( function( require ) {
 
     // function that determines the current puller image to represent
     var pullForceRange = new RangeWithValue( minForce, maxForce );
-    
-    ISLCObjectNode.call( 
+
+    ISLCObjectNode.call(
       this,
       model,
       chargeObjectModel,

@@ -57,7 +57,6 @@ define( function( require ) {
       coulombsLawModel.object1,
       this.layoutBounds,
       this.modelViewTransform,
-      tandem.createTandem( 'chargeNode1' ),
       {
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
@@ -67,7 +66,8 @@ define( function( require ) {
         atomicScale: true,
         maxArrowWidth: ARROW_MAX_WIDTH,
         pullRangeMultiplier: PULL_RANGE_MULTIPLIER,
-        forceReadoutDecimalPlaces: 9
+        forceReadoutDecimalPlaces: 9,
+        tandem: tandem.createTandem( 'chargeNode1' )
       } );
 
     var chargeNode2 = new ChargeNode(
@@ -75,7 +75,6 @@ define( function( require ) {
       coulombsLawModel.object2,
       this.layoutBounds,
       this.modelViewTransform,
-      tandem.createTandem( 'chargeNode2' ),
       {
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,
@@ -85,7 +84,8 @@ define( function( require ) {
         atomicScale: true,
         maxArrowWidth: ARROW_MAX_WIDTH,
         pullRangeMultiplier: PULL_RANGE_MULTIPLIER,
-        forceReadoutDecimalPlaces: 9
+        forceReadoutDecimalPlaces: 9,
+        tandem: tandem.createTandem( 'chargeNode2' )
       } );
 
     // charge nodes and arrows are added to the bottom of the scene graph so that the ruler will appear above them yet

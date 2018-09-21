@@ -3,9 +3,10 @@
 /**
  * Main entry point for the sim.
  *
- * @author $AUTHOR$
+ * @author Michael Barlow (PhET Interactive Simulations)
+ * @author Jesse Greenberg (PhET Interactive Simulations)
  */
-// REVIEW: Update @author
+ 
 define( function( require ) {
   'use strict';
 
