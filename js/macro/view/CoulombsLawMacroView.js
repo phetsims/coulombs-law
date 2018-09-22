@@ -93,11 +93,9 @@ define( function( require ) {
       {
         fill: CoulombsLawColorProfile.legendNodeFillProperty,
         bottom: this.layoutBounds.maxY - 10,
+        left: this.layoutBounds.minX + 9.35,
         tandem: tandem.createTandem( 'legendNode' )
       } );
-
-    // REVIEW: Pass into options for legendNode.
-    legendNode.left = this.layoutBounds.minX + 9.35;
 
     this.addChild( legendNode );
 

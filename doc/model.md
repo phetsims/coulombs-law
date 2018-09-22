@@ -16,6 +16,4 @@ Applies to a visual scale where the charges are ~1cm in diameter. When calculati
 
 ## Atomic Scale
 
-Applies to a more realistic scale in which the charges arou ~1pm in diameter and charge is measured in atomic units.
-
-// REVIEW: typo in "the charges around"?
+Applies to a more realistic scale in which the charges are ~1pm in diameter and charge is measured in atomic units.

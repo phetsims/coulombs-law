@@ -65,10 +65,8 @@ define( function( require ) {
     // @private
     this.modelViewTransform = modelViewTransform;
 
-    // @public (read-only) - create and add macro ruler
-    // REVIEW: Doc type?
-    // REVIEW: Is this being used in subtypes? I only see usages in this file and usages in commented code
-    this.coulombsLawRuler = new ISLCRulerNode(
+    // create and add macro ruler
+    var coulombsLawRuler = new ISLCRulerNode(
       coulombsLawModel,
       this.layoutBounds.height,
       this.modelViewTransform,
@@ -81,7 +79,7 @@ define( function( require ) {
         'moveOnHoldDelay',
         'moveOnHoldInterval'
       ] ) );
-    this.addChild( this.coulombsLawRuler );
+    this.addChild( coulombsLawRuler );
 
     // construct checkbox item list
     var checkboxItems = [
@@ -151,9 +149,9 @@ define( function( require ) {
     } );
     this.addChild( resetAllButton );
 
-    // accessible order of controls, charge objects will come first in subtypes
+    // a11y - accessible order of controls, charge objects will come first in subtypes
     this.accessibleOrder = [
-      this.coulombsLawRuler,
+      coulombsLawRuler,
       charge1Control,
       charge2Control,
       coulombsLawParameterCheckbox,
