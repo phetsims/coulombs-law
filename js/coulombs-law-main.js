@@ -6,7 +6,7 @@
  * @author Michael Barlow (PhET Interactive Simulations)
  * @author Jesse Greenberg (PhET Interactive Simulations)
  */
- 
+
 define( function( require ) {
   'use strict';
 
@@ -28,10 +28,11 @@ define( function( require ) {
 
   var simOptions = {
     credits: {
-      //TODO fill in proper credits, all of these fields are optional, see joist.AboutDialog
       leadDesign: 'Amy Rouinfar',
       softwareDevelopment: 'Jesse Greenberg, Michael Barlow',
-      team: 'Amy Hansen, Ariel Paul, Kathy Perkins',
+      team: 'Amy Hanson, Ariel Paul, Kathy Perkins',
+      // TODO: assign to @KatieWoe to fill QA once we move into testing, see
+      // https://github.com/phetsims/coulombs-law/issues/64#issuecomment-417026684
       qualityAssurance: 'Steele Dalton, Liam Mulhall',
       graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
       thanks: ''
