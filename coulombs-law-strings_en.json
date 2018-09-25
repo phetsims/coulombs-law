@@ -23,10 +23,10 @@
   "scientificNotation": {
     "value": "Scientific Notation"
   },
-  "screen.macroScale": {
+  "screen.macro": {
     "value": "Macro Scale"
   },
-  "screen.atomicScale": {
+  "screen.atomic": {
     "value": "Atomic Scale"
   },
   "units.atomicUnits": {
