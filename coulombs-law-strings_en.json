@@ -1,13 +1,4 @@
 {
-  "coulombs-law.title": {
-    "value": "Coulomb's Law"
-  },
-  "screen.macro": {
-    "value": "Macro Scale"
-  },
-  "screen.atomic": {
-    "value": "Atomic Scale"
-  },
   "charge1": {
     "value": "Charge 1"
   },
@@ -20,14 +11,26 @@
   "charge2Abbreviated": {
     "value": "q<sub>2</sub>"
   },
-  "units.microcoulombs": {
-    "value": "\u03BCC"
+  "coulombs-law.title": {
+    "value": "Coulomb's Law"
   },
-  "units.atomicUnits": {
-    "value": "e"
+  "options.projectorMode": {
+    "value": "Projector Mode"
+  },
+  "pmScale": {
+    "value": "1 picometer (pm) = 1 x 10<sup>-12</sup> m"
   },
   "scientificNotation": {
     "value": "Scientific Notation"
+  },
+  "screen.macroScale": {
+    "value": "Macro Scale"
+  },
+  "screen.atomicScale": {
+    "value": "Atomic Scale"
+  },
+  "units.atomicUnits": {
+    "value": "e"
   },
   "units.atomicLegendScale": {
     "value": "10 pm"
@@ -35,10 +38,7 @@
   "units.macroLegendScale": {
     "value": "1 cm"
   },
-  "pmScale": {
-    "value": "1 picometer (pm) = 1 x 10<sup>-12</sup> m"
-  },
-  "options.projectorMode": {
-    "value": "Projector Mode"
+  "units.microcoulombs": {
+    "value": "\u03BCC"
   }
 }
