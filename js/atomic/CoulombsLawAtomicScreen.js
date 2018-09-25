@@ -17,7 +17,7 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
 
   // strings
-  var screenAtomicString = require( 'string!COULOMBS_LAW/screen.atomic' );
+  var screenAtomicScaleString = require( 'string!COULOMBS_LAW/screen.atomicScale' );
 
   // images
   var atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png');
@@ -26,11 +26,11 @@ define( function( require ) {
    * @param {Tandem} tandem
    * @constructor
    */
-  function CLAtomicScreen( tandem ) {
+  function CoulombsLawAtomicScreen( tandem ) {
 
     var options = {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
-      name: screenAtomicString,
+      name: screenAtomicScaleString,
       homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
       tandem: tandem
     };
@@ -44,7 +44,7 @@ define( function( require ) {
     );
   }
 
-  coulombsLaw.register( 'CLAtomicScreen', CLAtomicScreen );
+  coulombsLaw.register( 'CoulombsLawAtomicScreen', CoulombsLawAtomicScreen );
 
-  return inherit( Screen, CLAtomicScreen );
+  return inherit( Screen, CoulombsLawAtomicScreen );
 } );

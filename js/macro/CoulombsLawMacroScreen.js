@@ -18,20 +18,20 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
 
   // strings
-  var screenMacroString = require( 'string!COULOMBS_LAW/screen.macro' );
+  var screenMacroScaleString = require( 'string!COULOMBS_LAW/screen.macroScale' );
 
   // images
   var macroScreenIcon = require( 'image!COULOMBS_LAW/macro_screen_icon.png' );
-  
+
   /**
    * @param {Tandem} tandem
    * @constructor
    */
-  function CLMacroScreen( tandem ) {
+  function CoulombsLawMacroScreen( tandem ) {
 
     var options = {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
-      name: screenMacroString,
+      name: screenMacroScaleString,
       homeScreenIcon: new Image( macroScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
       tandem: tandem
     };
@@ -45,7 +45,7 @@ define( function( require ) {
     );
   }
 
-  coulombsLaw.register( 'CLMacroScreen', CLMacroScreen );
+  coulombsLaw.register( 'CoulombsLawMacroScreen', CoulombsLawMacroScreen );
 
-  return inherit( Screen, CLMacroScreen );
+  return inherit( Screen, CoulombsLawMacroScreen );
 } );

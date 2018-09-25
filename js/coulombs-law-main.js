@@ -11,8 +11,8 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var CLAtomicScreen = require( 'COULOMBS_LAW/atomic/CLAtomicScreen' );
-  var CLMacroScreen = require( 'COULOMBS_LAW/macro/CLMacroScreen' );
+  var CoulombsLawAtomicScreen = require( 'COULOMBS_LAW/atomic/CoulombsLawAtomicScreen' );
+  var CoulombsLawMacroScreen = require( 'COULOMBS_LAW/macro/CoulombsLawMacroScreen' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawCommonConstants = require( 'COULOMBS_LAW/common/CoulombsLawCommonConstants' );
   var CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
@@ -45,8 +45,8 @@ define( function( require ) {
   } );
 
   var screens = [
-    new CLMacroScreen( tandem.createTandem( 'macroScreen' ) ),
-    new CLAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
+    new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
+    new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
   ];
 
   SimLauncher.launch( function() {
