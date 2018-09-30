@@ -48,6 +48,7 @@ define( function( require ) {
 
     // @public {Property.<Vector2>} - the ruler position
     this.rulerPositionProperty = new Property( new Vector2( 0, -7.5E-3 ), {
+      valueType: Vector2,
       tandem: tandem.createTandem( 'rulerPositionProperty' ),
       phetioType: PropertyIO( Vector2IO )
     } );
