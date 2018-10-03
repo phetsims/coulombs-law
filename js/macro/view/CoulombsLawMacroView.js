@@ -23,7 +23,6 @@ define( function( require ) {
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
   var unitsMacroLegendScaleString = require( 'string!COULOMBS_LAW/units.macroLegendScale' );
 
-  // REVIEW: Add microcoulombs to units section of MathSymbols.js
   var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs' );
 
   // constants
