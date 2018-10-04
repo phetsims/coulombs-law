@@ -17,7 +17,7 @@ define( function( require ) {
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode');
-  var RangeWithValue = require('DOT/RangeWithValue');
+  var Range = require('DOT/Range');
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
   var Tandem = require( 'TANDEM/Tandem' );
 
@@ -75,7 +75,7 @@ define( function( require ) {
     var minForce = -maxForce;
 
     // function that determines the current puller image to represent
-    var pullForceRange = new RangeWithValue( minForce, maxForce );
+    var pullForceRange = new Range( minForce, maxForce );
 
     ISLCObjectNode.call(
       this,
