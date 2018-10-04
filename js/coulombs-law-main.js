@@ -17,6 +17,7 @@ define( function( require ) {
   var CoulombsLawCommonConstants = require( 'COULOMBS_LAW/common/CoulombsLawCommonConstants' );
   var CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
   var CoulombsLawGlobals = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobals' );
+  var CoulombsLawKeyboardHelpContent = require( 'COULOMBS_LAW/common/view/CoulombsLawKeyboardHelpContent' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );
@@ -37,7 +38,9 @@ define( function( require ) {
       graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
       thanks: ''
     },
-    optionsNode: new CoulombsLawGlobalOptionsNode( CoulombsLawCommonConstants.GLOBALS_TANDEM.createTandem( 'options' ) )
+    optionsNode: new CoulombsLawGlobalOptionsNode( CoulombsLawCommonConstants.GLOBALS_TANDEM.createTandem( 'options' ) ),
+    accessibility: true,
+    keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
   };
 
   // projectorModeProperty is never destroyed after initialization, disposal unnecessary

@@ -40,5 +40,41 @@
   },
   "units.microcoulombs": {
     "value": "\u03BCC"
+  },
+  "chargePositionsHeading": {
+    "value": "Charge Positions"
+  },
+  "moveChargesLabel": {
+    "value": "Move charges"
+  },
+  "moveInLargerStepsLabel": {
+    "value": "Move in larger steps"
+  },
+  "jumpLeftLabel": {
+    "value": "Jump to left"
+  },
+  "jumpRightLabel": {
+    "value": "Jump to right"
+  },
+  "moveRulerHeading": {
+    "value": "Move Ruler"
+  },
+  "moveRulerLabel": {
+    "value": "Move ruler"
+  },
+  "chargeAmountHeading": {
+    "value": "Charge Amount"
+  },
+  "adjustAmountLabel": {
+    "value": "Adjust amount"
+  },
+  "adjustInLargerStepsLabel": {
+    "value": "Adjust in larger steps"
+  },
+  "jumpToMinimumLabel": {
+    "value": "Jump to minimum"
+  },
+  "jumpToMaximumLabel": {
+    "value": "Jump to maximum"
   }
 }
