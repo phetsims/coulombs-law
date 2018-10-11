@@ -48,12 +48,11 @@ define( function( require ) {
     CoulombsLawColorProfile.profileNameProperty.set( inProjectorMode ? 'projector' : 'default' );
   } );
 
-  var screens = [
-    new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
-    new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
-  ];
-
   SimLauncher.launch( function() {
+    var screens = [
+      new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
+      new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
+    ];
     var sim = new Sim( coulombsLawTitleString, screens, simOptions );
     sim.start();
   } );
