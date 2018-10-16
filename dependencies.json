@@ -1,11 +1,11 @@
 {
-  "comment": "# coulombs-law 1.0.0-dev.20 Mon Oct 15 2018 14:02:26 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# coulombs-law 1.0.0-rc.0 Tue Oct 16 2018 11:35:02 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
   },
   "axon": {
-    "sha": "99f9c72aab000923b909fe985ae91e4e5a240e9e",
+    "sha": "7751fab50cc37447a5603b50d776cc267bd437ac",
     "branch": "master"
   },
   "brand": {
@@ -13,12 +13,12 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "f5850a6527bb7c909079aa3a6287b36f8bb83eb8",
+    "sha": "fc5919bb025834d414098d68ed322f5247055475",
     "branch": "master"
   },
   "coulombs-law": {
-    "sha": "627043d5ea7480cf685be0c4cc73c3ba049d8b7e",
-    "branch": "master"
+    "sha": "9d5ce13742c25182c4743b4f7425c9dceebc195c",
+    "branch": "1.0"
   },
   "dot": {
     "sha": "dcccfddd20aa5200bc2d8558b47c40a5d2510d5e",
@@ -37,7 +37,7 @@
     "branch": "master"
   },
   "phet-core": {
-    "sha": "2ff7b4893a5c1198665938f3657b3d893d2e56d6",
+    "sha": "4404c06bc434f5fdc0184fcc827638a45d0fe360",
     "branch": "master"
   },
   "phet-io": {
@@ -69,11 +69,11 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "239d3619f4e487f2b4fc509bf8d0afae955ba1c0",
+    "sha": "f402eed4ef7c4360e6d4825a4ea5fc0fa4f8f6bc",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "1de1d460a714ef9917966f6b37c064e90632b07c",
+    "sha": "dc31f4d900e3ec862e5c6574fe02105d7a8d0bb1",
     "branch": "master"
   },
   "sherpa": {
@@ -81,7 +81,7 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "d78f8bd06ca42a81d07b256bccc120ee611176a5",
+    "sha": "46ee1492b041ca1be7395d35a28e13ebfb4ed102",
     "branch": "master"
   },
   "tambo": {
