@@ -24,6 +24,7 @@ define( require => {
   const chargePositionsHeadingString = require( 'string!COULOMBS_LAW/chargePositionsHeading' );
   const moveChargesLabelString = require( 'string!COULOMBS_LAW/moveChargesLabel' );
   const moveInLargerStepsLabelString = require( 'string!COULOMBS_LAW/moveInLargerStepsLabel' );
+  const moveInSmallerStepsLabelString = require( 'string!COULOMBS_LAW/moveInSmallerStepsLabel' );
   const jumpLeftLabelString = require( 'string!COULOMBS_LAW/jumpLeftLabel' );
   const jumpRightLabelString = require( 'string!COULOMBS_LAW/jumpRightLabel' );
   const moveRulerHeadingString = require( 'string!COULOMBS_LAW/moveRulerHeading' );
@@ -36,6 +37,7 @@ define( require => {
 
   // a11y strings
   const moveChargesDescriptionString = CoulombsLawA11yStrings.moveChargesDescription.value;
+  const smallStepsMoveChargesDescriptionString = CoulombsLawA11yStrings.smallStepsMoveChargesDescription.value;
   const largeStepsMoveChargesDescriptionString = CoulombsLawA11yStrings.largeStepsMoveChargesDescription.value;
   const jumpHomeDescriptionString = CoulombsLawA11yStrings.jumpHomeDescription.value;
   const jumpEndDescriptionString = CoulombsLawA11yStrings.jumpEndDescription.value;
@@ -83,11 +85,13 @@ define( require => {
   class ChargePositionsContent extends HelpContent {
     constructor() {
       const arrowsIcon = HelpContent.leftRightArrowKeysRowIcon();
+      const shiftPlusArrowsIcon = HelpContent.shiftPlusIcon( arrowsIcon );
       const pgUpDownIcon = HelpContent.pageUpPageDownRowIcon();
       const homeKeyIcon = new HomeKeyNode();
       const endKeyIcon = new EndKeyNode();
       const content = [
         createRow( moveChargesLabelString, arrowsIcon, moveChargesDescriptionString ),
+        createRow( moveInSmallerStepsLabelString, shiftPlusArrowsIcon, smallStepsMoveChargesDescriptionString ),
         createRow( moveInLargerStepsLabelString, pgUpDownIcon, largeStepsMoveChargesDescriptionString ),
         createRow( jumpLeftLabelString, homeKeyIcon, jumpHomeDescriptionString ),
         createRow( jumpRightLabelString, endKeyIcon, jumpEndDescriptionString )
