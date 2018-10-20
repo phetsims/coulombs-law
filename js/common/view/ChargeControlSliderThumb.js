@@ -54,6 +54,9 @@ define( function( require ) {
     this.enabledProperty = options.enabledProperty;
 
     SliderThumb.call( this, this.enabledProperty, options );
+
+    this.mouseArea = this.localBounds;
+    this.touchArea = this.mouseArea.dilated( 3 );
   }
 
   /**
