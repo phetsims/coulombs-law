@@ -15,12 +15,28 @@
     "license": "contact phethelp@colorado.edu",
     "notes": "atomic_scale_screen_icon.png created by Cheryl McCutchan"
   },
-  "macro_screen_icon.png": {
+  "macro_scale_screen_icon.png": {
     "text": [
       "Copyright 2002-2015 University of Colorado Boulder"
     ],
     "projectURL": "http://phet.colorado.edu",
     "license": "contact phethelp@colorado.edu",
-    "notes": "macro_screen_icon.png created by Amy Rouinfar"
+    "notes": "macro_scale_screen_icon.png created by Amy Rouinfar"
+  },
+  "atomic_scale_screen_icon_navbar.png": {
+    "text": [
+      "Copyright 2002-2015 University of Colorado Boulder"
+    ],
+    "projectURL": "http://phet.colorado.edu",
+    "license": "contact phethelp@colorado.edu",
+    "notes": "atomic_scale_screen_icon_navbar.png created by Cheryl McCutchan"
+  },
+  "macro_scale_screen_icon_navbar.png": {
+    "text": [
+      "Copyright 2002-2015 University of Colorado Boulder"
+    ],
+    "projectURL": "http://phet.colorado.edu",
+    "license": "contact phethelp@colorado.edu",
+    "notes": "macro_scale_screen_icon_navbar.png created by Amy Rouinfar"
   }
 }

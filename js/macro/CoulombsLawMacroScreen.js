@@ -21,7 +21,8 @@ define( function( require ) {
   var screenMacroScaleString = require( 'string!COULOMBS_LAW/screen.macroScale' );
 
   // images
-  var macroScreenIcon = require( 'image!COULOMBS_LAW/macro_screen_icon.png' );
+  var macroScaleScreenIcon = require( 'image!COULOMBS_LAW/macro_scale_screen_icon.png' );
+  var macroScaleScreenIconNavbar = require( 'image!COULOMBS_LAW/macro_scale_screen_icon_navbar.png' );
 
   /**
    * @param {Tandem} tandem
@@ -32,7 +33,8 @@ define( function( require ) {
     var options = {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
       name: screenMacroScaleString,
-      homeScreenIcon: new Image( macroScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
+      homeScreenIcon: new Image( macroScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
+      navigationBarIcon: new Image( macroScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ),
       tandem: tandem
     };
 
