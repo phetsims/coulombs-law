@@ -21,6 +21,7 @@ define( function( require ) {
 
   // images
   var atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png');
+  var atomicScaleScreenIconNavbar = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon_navbar.png' );
 
   /**
    * @param {Tandem} tandem
@@ -32,6 +33,7 @@ define( function( require ) {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
       name: screenAtomicScaleString,
       homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
+      navigationBarIcon: new Image( atomicScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ),
       tandem: tandem
     };
 
