@@ -47,6 +47,9 @@
   "moveInLargerStepsLabel": {
     "value": "Move in larger steps"
   },
+  "moveInSmallerStepsLabel": {
+    "value": "Move in smaller steps"
+  },
   "jumpLeftLabel": {
     "value": "Jump to left"
   },
