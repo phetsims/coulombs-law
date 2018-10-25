@@ -11,11 +11,11 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var BooleanProperty = require( 'AXON/BooleanProperty' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCModel' );
-  var BooleanProperty = require( 'AXON/BooleanProperty' );
 
   /**
    * @param {Charge} charge1 - The left charge

@@ -13,11 +13,11 @@ define( function( require ) {
 
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  var inherit = require( 'PHET_CORE/inherit' );
   var ISLCCheckboxItem = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxItem' );
+  var ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
   var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
   var ISLCQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCQueryParameters' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
@@ -29,8 +29,8 @@ define( function( require ) {
   // strings
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
   var charge2String = require( 'string!COULOMBS_LAW/charge2' );
-  var scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
   var forceValuesString = require( 'string!INVERSE_SQUARE_LAW_COMMON/forceValues' );
+  var scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
 
   // constants
   var SHOW_GRID = ISLCQueryParameters.showGrid;

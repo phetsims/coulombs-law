@@ -15,8 +15,8 @@ define( function( require ) {
     var Dimension2 = require( 'DOT/Dimension2' );
     var inherit = require( 'PHET_CORE/inherit' );
     var ISLCObjectControlPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectControlPanel' );
-    var PhetFont = require( 'SCENERY_PHET/PhetFont' );
     var NumberProperty = require( 'AXON/NumberProperty' );
+    var PhetFont = require( 'SCENERY_PHET/PhetFont' );
     var Range = require( 'DOT/Range' );
     var Tandem = require( 'TANDEM/Tandem' );
 
