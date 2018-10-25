@@ -14,26 +14,26 @@ define( require => {
   const CoulombsLawA11yStrings = require( 'COULOMBS_LAW/common/CoulombsLawA11yStrings' );
   const EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
   const GeneralNavigationHelpContent = require( 'SCENERY_PHET/keyboard/help/GeneralNavigationHelpContent' );
-  const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
   const HBox = require( 'SCENERY/nodes/HBox' );
   const HelpContent = require( 'SCENERY_PHET/keyboard/help/HelpContent' );
+  const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
   const Text = require( 'SCENERY/nodes/Text' );
   const VBox = require( 'SCENERY/nodes/VBox' );
 
   // strings
+  const adjustAmountLabelString = require( 'string!COULOMBS_LAW/adjustAmountLabel' );
+  const adjustInLargerStepsLabelString = require( 'string!COULOMBS_LAW/adjustInLargerStepsLabel' );
+  const chargeAmountHeadingString = require( 'string!COULOMBS_LAW/chargeAmountHeading' );
   const chargePositionsHeadingString = require( 'string!COULOMBS_LAW/chargePositionsHeading' );
+  const jumpLeftLabelString = require( 'string!COULOMBS_LAW/jumpLeftLabel' );
+  const jumpRightLabelString = require( 'string!COULOMBS_LAW/jumpRightLabel' );
+  const jumpToMaximumLabelString = require( 'string!COULOMBS_LAW/jumpToMaximumLabel' );
+  const jumpToMinimumLabelString = require( 'string!COULOMBS_LAW/jumpToMinimumLabel' );
   const moveChargesLabelString = require( 'string!COULOMBS_LAW/moveChargesLabel' );
   const moveInLargerStepsLabelString = require( 'string!COULOMBS_LAW/moveInLargerStepsLabel' );
   const moveInSmallerStepsLabelString = require( 'string!COULOMBS_LAW/moveInSmallerStepsLabel' );
-  const jumpLeftLabelString = require( 'string!COULOMBS_LAW/jumpLeftLabel' );
-  const jumpRightLabelString = require( 'string!COULOMBS_LAW/jumpRightLabel' );
   const moveRulerHeadingString = require( 'string!COULOMBS_LAW/moveRulerHeading' );
   const moveRulerLabelString = require( 'string!COULOMBS_LAW/moveRulerLabel' );
-  const chargeAmountHeadingString = require( 'string!COULOMBS_LAW/chargeAmountHeading' );
-  const adjustAmountLabelString = require( 'string!COULOMBS_LAW/adjustAmountLabel' );
-  const adjustInLargerStepsLabelString = require( 'string!COULOMBS_LAW/adjustInLargerStepsLabel' );
-  const jumpToMinimumLabelString = require( 'string!COULOMBS_LAW/jumpToMinimumLabel' );
-  const jumpToMaximumLabelString = require( 'string!COULOMBS_LAW/jumpToMaximumLabel' );
 
   // a11y strings
   const moveChargesDescriptionString = CoulombsLawA11yStrings.moveChargesDescription.value;
