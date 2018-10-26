@@ -56,7 +56,11 @@ define( function( require ) {
       arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
       labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
 
-      tandem: Tandem.required
+      tandem: Tandem.required,
+      // TODO: proper sting usage
+      createAriaValueText: function( formattedValue ) {
+        return '{{formattedValue}} coulombs';
+      }
     }, options );
 
     // @private
