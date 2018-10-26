@@ -48,8 +48,6 @@ define( function( require ) {
 
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) } );
 
-    var self = this;
-
     var rightAlignment = this.layoutBounds.maxX - 10;
     var bottomAlignment = this.layoutBounds.maxY - 10;
 
@@ -110,12 +108,10 @@ define( function( require ) {
       coulombsLawModel.object1.valueProperty,
       coulombsLawModel.object1.valueRange,
       scaleFactor,
-      {
-        right: self.layoutBounds.centerX - 5,
-        top: coulombsLawParameterCheckbox.top,
-        tandem: tandem.createTandem( 'charge1Control' )
-      }
+      { tandem: tandem.createTandem( 'charge1Control' ) }
     );
+    charge1Control.right = this.layoutBounds.centerX - 5;
+    charge1Control.top = coulombsLawParameterCheckbox.top;
 
     this.addChild( charge1Control );
 
@@ -126,11 +122,12 @@ define( function( require ) {
       coulombsLawModel.object2.valueRange,
       scaleFactor,
       {
-        left: self.layoutBounds.centerX + 5,
-        top: coulombsLawParameterCheckbox.top,
         tandem: tandem.createTandem( 'charge2Control' )
       }
     );
+
+    charge2Control.left = this.layoutBounds.centerX + 5;
+    charge2Control.top = coulombsLawParameterCheckbox.top;
 
     this.addChild( charge2Control );
 
