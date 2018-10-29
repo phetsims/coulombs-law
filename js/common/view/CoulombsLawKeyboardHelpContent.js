@@ -85,7 +85,7 @@ define( require => {
   class ChargePositionsContent extends HelpContent {
     constructor() {
       const arrowsIcon = HelpContent.leftRightArrowKeysRowIcon();
-      const shiftPlusArrowsIcon = HelpContent.shiftPlusIcon( arrowsIcon );
+      const shiftPlusArrowsIcon = HelpContent.shiftPlusIcon( HelpContent.leftRightArrowKeysRowIcon() );
       const pgUpDownIcon = HelpContent.pageUpPageDownRowIcon();
       const homeKeyIcon = new HomeKeyNode();
       const endKeyIcon = new EndKeyNode();
