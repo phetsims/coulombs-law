@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.0-rc.1 Tue Oct 30 2018 13:51:57 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# coulombs-law 1.0.0-rc.2 Tue Oct 30 2018 14:09:41 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "251b414f05fc57857404fd17436e793c7184377a",
+    "sha": "fdd29cdf4b1064d4297d75075668a4404334ebe5",
     "branch": "1.0"
   },
   "dot": {
@@ -26,7 +26,7 @@
   },
   "inverse-square-law-common": {
     "sha": "aec59098757b62c0f21686251f84a9664c73171b",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "joist": {
     "sha": "b12072c7a761e2f28c68a587dec92e2c4941e53d",
@@ -70,7 +70,7 @@
   },
   "scenery": {
     "sha": "60286436cad20ef1a7eb95c04d58027e6af07b8f",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "scenery-phet": {
     "sha": "dc31f4d900e3ec862e5c6574fe02105d7a8d0bb1",
@@ -82,7 +82,7 @@
   },
   "sun": {
     "sha": "0677cbd6cf45047b79f1199c2259b23244f4c97d",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "tambo": {
     "sha": "fe63321c9bc182be19eec1f3b843ba7853bfc67b",
