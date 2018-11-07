@@ -32,9 +32,7 @@ define( function( require ) {
       leadDesign: 'Amy Rouinfar',
       softwareDevelopment: 'Jesse Greenberg, Michael Barlow',
       team: 'Amy Hanson, Ariel Paul, Kathy Perkins',
-      // TODO: assign to @KatieWoe to fill QA once we move into testing, see
-      // https://github.com/phetsims/coulombs-law/issues/64#issuecomment-417026684
-      qualityAssurance: 'Steele Dalton, Liam Mulhall',
+      qualityAssurance: 'Katie Woessner, Laura Rea, Steele Dalton, Liam Mulhall',
       graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
       thanks: ''
     },
