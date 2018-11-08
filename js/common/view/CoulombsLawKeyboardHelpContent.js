@@ -47,6 +47,9 @@ define( require => {
   const jumpToMinimumDescriptionString = CoulombsLawA11yStrings.jumpToMinimumDescription.value;
   const jumpToMaximumDescriptionString = CoulombsLawA11yStrings.jumpToMaximumDescription.value;
 
+  // constants
+  const LABEL_MAX_WIDTH = 225;
+
   class CoulombsLawKeyboardHelpContent extends HBox {
 
     constructor() {
@@ -61,7 +64,7 @@ define( require => {
         maxWidth: 312
       } );
 
-      const generalNavigationHelpContent = new GeneralNavigationHelpContent();
+      const generalNavigationHelpContent = new GeneralNavigationHelpContent( { labelMaxWidth: LABEL_MAX_WIDTH } );
       const adjustChargeContent = new AdjustChargeContent();
       HelpContent.alignHelpContentIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
 
@@ -132,7 +135,7 @@ define( require => {
   function createRow ( labelText, icon, description, iconOptions ) {
     const label = new Text( labelText, {
       font: HelpContent.DEFAULT_LABEL_FONT,
-      maxWidth: 225
+      maxWidth: LABEL_MAX_WIDTH
     } );
 
     return HelpContent.labelWithIcon( label, icon, description, iconOptions ? { iconOptions } : null );
