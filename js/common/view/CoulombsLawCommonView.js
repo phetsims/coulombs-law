@@ -142,6 +142,7 @@ define( function( require ) {
       radius: 18,
       right: rightAlignment,
       bottom: bottomAlignment,
+      touchAreaDilation: 10,
       tandem: tandem.createTandem( 'resetAllButton' )
     } );
     this.addChild( resetAllButton );
