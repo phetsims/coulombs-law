@@ -19,7 +19,7 @@ define(function(require) {
   var WHITE = new Color( 255, 255, 255 );
   var GREEN = new Color( 0, 255, 0 );
 
-  var CoulombsLawColorProfile = new ColorProfile( {
+  var CoulombsLawColorProfile = new ColorProfile( [ 'default', 'projector' ], {
     background: {
       default: BLACK,
       projector: WHITE
@@ -48,7 +48,7 @@ define(function(require) {
       default: BLACK,
       projector: WHITE
     }
-  }, [ 'default', 'projector' ] );
+  } );
 
   coulombsLaw.register( 'CoulombsLawColorProfile', CoulombsLawColorProfile );
 
