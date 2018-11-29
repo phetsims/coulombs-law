@@ -56,7 +56,7 @@ define( function( require ) {
     SliderThumb.call( this, this.enabledProperty, options );
 
     this.mouseArea = this.localBounds;
-    this.touchArea = this.mouseArea.dilated( 3 );
+    this.touchArea = this.mouseArea.dilated( 6 );
   }
 
   /**
