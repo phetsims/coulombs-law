@@ -125,6 +125,10 @@ define( function( require ) {
     redrawForce: function () {
       this.arrowNode.scientificNotationMode = this.model.scientificNotationProperty.get();
       ISLCObjectNode.prototype.redrawForce.call( this );
+    },
+
+    resetAriaValueText: function () {
+      return 'aria value text';
     }
   } );
 } );
