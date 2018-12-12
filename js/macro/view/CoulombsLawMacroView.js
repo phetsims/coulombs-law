@@ -91,7 +91,7 @@ define( function( require ) {
       unitsMacroLegendScaleString, // unit string
       {
         fill: CoulombsLawColorProfile.legendNodeFillProperty,
-        bottom: this.layoutBounds.maxY - 10,
+        bottom: this.layoutBounds.maxY - 20,
         left: this.layoutBounds.minX + 9.35,
         tandem: tandem.createTandem( 'legendNode' )
       } );
