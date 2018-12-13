@@ -86,6 +86,7 @@ define( function( require ) {
       model,
       chargeObjectModel,
       layoutBounds,
+      null,
       modelViewTransform,
       pullForceRange,
       options
