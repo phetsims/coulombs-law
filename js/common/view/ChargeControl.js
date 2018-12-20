@@ -41,14 +41,16 @@ define( function( require ) {
         align: 'center',
 
         numberControlOptions: {
-          arrowButtonScale: 0.5,
           thumbSize: THUMB_SIZE,
           trackSize: TRACK_SIZE,
           titleFont: new PhetFont( 16 ),
           valueFont: new PhetFont( 12 ),
           valueXMargin: 4,
           valueYMargin: 2,
-          additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ]
+          additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ],
+          arrowButtonOptions: {
+            scale: 0.5
+          }
         },
 
         tandem: Tandem.required
