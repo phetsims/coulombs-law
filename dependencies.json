@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.0-rc.8 Fri Dec 21 2018 16:20:55 GMT-0700 (Mountain Standard Time)",
+  "comment": "# coulombs-law 1.0.0-rc.9 Fri Dec 21 2018 16:28:45 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "3ddf8c61022d94cc0637c5fc774f1179ee762197",
+    "sha": "31538688f287befc10174dcba8417df7b98468f9",
     "branch": "1.0"
   },
   "dot": {
@@ -26,7 +26,7 @@
   },
   "inverse-square-law-common": {
     "sha": "180e1bb6c8254db88a46bd4f55616458da241fbe",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "joist": {
     "sha": "b12072c7a761e2f28c68a587dec92e2c4941e53d",
@@ -74,7 +74,7 @@
   },
   "scenery-phet": {
     "sha": "5ad4a625929c691d3f8b0d11b7c30434de562f24",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "sherpa": {
     "sha": "0989d371163d6f63b86d64735d192297d75b23f2",
