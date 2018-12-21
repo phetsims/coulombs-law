@@ -118,7 +118,7 @@ define( function( require ) {
       fill: CoulombsLawColorProfile.legendNodeFillProperty,
       font: new PhetFont( 12 ),
       maxWidth: 180,
-      bottom: this.layoutBounds.maxY - 8,
+      centerY: legendNode.localToParentPoint( legendNode.legendArrowLine.center ).y,
       left: legendNode.right + 10,
       tandem: tandem.createTandem( 'picometerScaleString' )
     } );
