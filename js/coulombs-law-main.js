@@ -32,7 +32,7 @@ define( function( require ) {
       leadDesign: 'Amy Rouinfar',
       softwareDevelopment: 'Jesse Greenberg, Michael Barlow',
       team: 'Amy Hanson, Ariel Paul, Kathy Perkins',
-      qualityAssurance: 'Katie Woessner, Laura Rea, Steele Dalton, Liam Mulhall',
+      qualityAssurance: 'Steele Dalton, Liam Mulhall, Laura Rea, Jacob Romero, Katie Woessner, Kelly Wurtz',
       graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
       thanks: ''
     },
