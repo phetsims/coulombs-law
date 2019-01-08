@@ -61,7 +61,7 @@ define( function( require ) {
      * Returns the radius of the charge object.
      *
      * @override
-     * @return {number}
+     * @returns {number}
      */
     calculateRadius: function() {
       return this.radiusProperty.get();
