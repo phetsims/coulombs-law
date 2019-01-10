@@ -63,12 +63,6 @@ define( function( require ) {
       }
     }, options );
 
-    // @private
-    this.modelViewTransform = modelViewTransform;
-    this.model = model;
-    this.objectModel = chargeObjectModel;
-    this.layoutBounds = layoutBounds;
-
     // @private - Used for incrementing the radius to prevent division by zero in RadialGradient
     this.snapToNearest = options.snapToNearest;
 
@@ -86,7 +80,6 @@ define( function( require ) {
       model,
       chargeObjectModel,
       layoutBounds,
-      null,
       modelViewTransform,
       pullForceRange,
       options
