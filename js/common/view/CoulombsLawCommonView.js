@@ -138,6 +138,7 @@ define( function( require ) {
         coulombsLawModel.reset();
         charge1Control.reset();
         charge2Control.reset();
+        coulombsLawRuler.reset();
       },
       radius: 18,
       right: rightAlignment,

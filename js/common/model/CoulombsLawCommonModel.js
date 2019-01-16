@@ -51,6 +51,8 @@ define( function( require ) {
      * @public
      */
     reset: function() {
+
+      // As of writing this, all (both) subtypes have a rulerPositionProperty, so it is easy enough to just reset this here.
       this.rulerPositionProperty.reset();
       this.scientificNotationProperty.reset();
       ISLCModel.prototype.reset.call( this );
