@@ -50,32 +50,36 @@ define( require => {
   class CoulombsLawKeyboardHelpContent extends HBox {
 
     constructor() {
-      const chargeContent = new ChargePositionsContent();
-      const rulerContent = new MoveRulerContent();
+
+      var helpContentOptions = {
+        
+        // i18n, restricts both labelText and maxWidth, see HelpContent
+        baseLabelMaxWidth: 130
+      };
+
+      const chargeContent = new ChargePositionsContent( helpContentOptions );
+      const rulerContent = new MoveRulerContent( helpContentOptions );
       HelpContent.alignHelpContentIcons( [ chargeContent, rulerContent ] );
 
       const leftHelpContent = new VBox( {
         children: [ chargeContent, rulerContent ],
         align: 'left',
-        spacing: 30,
-        maxWidth: 312
+        spacing: 30
       } );
 
-      const generalNavigationHelpContent = new GeneralNavigationHelpContent();
-      const adjustChargeContent = new AdjustChargeContent();
+      const generalNavigationHelpContent = new GeneralNavigationHelpContent( helpContentOptions );
+      const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
       HelpContent.alignHelpContentIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
 
       const rightHelpContent = new VBox( {
         children: [ adjustChargeContent, generalNavigationHelpContent ],
         align: 'left',
-        spacing: 30,
-        maxWidth: 312
+        spacing: 30
       } );
       super( {
         children: [ leftHelpContent, rightHelpContent ],
         align: 'top',
-        spacing: 30,
-        maxWidth: 625 // i18n, about the width of the screen
+        spacing: 30
       } );
     }
   }
@@ -83,7 +87,7 @@ define( require => {
   coulombsLaw.register( 'CoulombsLawKeyboardHelpContent', CoulombsLawKeyboardHelpContent );
 
   class ChargePositionsContent extends HelpContent {
-    constructor() {
+    constructor( options ) {
       const arrowsIcon = HelpContent.leftRightArrowKeysRowIcon();
       const shiftPlusArrowsIcon = HelpContent.shiftPlusIcon( HelpContent.leftRightArrowKeysRowIcon() );
       const pgUpDownIcon = HelpContent.pageUpPageDownRowIcon();
@@ -96,23 +100,25 @@ define( require => {
         createRow( jumpLeftLabelString, homeKeyIcon, jumpHomeDescriptionString ),
         createRow( jumpRightLabelString, endKeyIcon, jumpEndDescriptionString )
       ];
-      super( chargePositionsHeadingString, content );
+      super( chargePositionsHeadingString, content, options );
     }
   }
 
   class MoveRulerContent extends HelpContent {
-    constructor() {
+    constructor( options ) {
+      assert && assert( !options || options.a11yContentTagName === undefined, 'MoveRulerContent sets a11yContentTagName' );
+
       const icon = HelpContent.arrowOrWasdKeysRowIcon();
       super(
         moveRulerHeadingString,
         [ createRow( moveRulerLabelString, icon, moveRulerDescriptionString, { tagName: 'p' } ) ],
-        { a11yContentTagName: null }
+        _.extend( {}, options, { a11yContentTagName: null } )
       );
     }
   }
 
   class AdjustChargeContent extends HelpContent {
-    constructor() {
+    constructor( options ) {
       const leftRightArrowIcon = HelpContent.leftRightArrowKeysRowIcon();
       const upDownArrowIcon = HelpContent.upDownArrowKeysRowIcon();
       const leftRightOrUpDownIcon = HelpContent.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
@@ -125,7 +131,7 @@ define( require => {
         createRow( jumpToMaximumLabelString, new EndKeyNode(), jumpToMaximumDescriptionString )
       ];
 
-      super( chargeAmountHeadingString, content );
+      super( chargeAmountHeadingString, content, options );
     }
   }
 
