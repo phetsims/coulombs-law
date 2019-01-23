@@ -129,10 +129,9 @@ define( require => {
     }
   }
 
-  function createRow ( labelText, icon, description, iconOptions ) {
+  function createRow( labelText, icon, description, iconOptions ) {
     const label = new Text( labelText, {
-      font: HelpContent.DEFAULT_LABEL_FONT,
-      maxWidth: 225
+      font: HelpContent.DEFAULT_LABEL_FONT
     } );
 
     return HelpContent.labelWithIcon( label, icon, description, iconOptions ? { iconOptions } : null );
