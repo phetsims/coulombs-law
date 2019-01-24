@@ -54,7 +54,7 @@ define( require => {
       var helpContentOptions = {
         
         // i18n, restricts both labelText and maxWidth, see HelpContent
-        baseLabelMaxWidth: 130
+        labelMaxWidth: 130
       };
 
       const chargeContent = new ChargePositionsContent( helpContentOptions );
