@@ -26,7 +26,7 @@ define( function( require ) {
   var CHARGE_NODE_Y_POSITION = 205;
 
   /**
-   * @param {CoulombsLawbModel} model
+   * @param {CoulombsLawCommonModel} model
    * @param {Charge} chargeObjectModel
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
@@ -121,6 +121,7 @@ define( function( require ) {
       ISLCObjectNode.prototype.redrawForce.call( this );
     },
 
+    // TODO: still needs implementing
     resetAriaValueText: function () {
       return 'aria value text';
     }
