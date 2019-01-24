@@ -17,7 +17,6 @@ define( require => {
   const HBox = require( 'SCENERY/nodes/HBox' );
   const HelpContent = require( 'SCENERY_PHET/keyboard/help/HelpContent' );
   const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
-  const Text = require( 'SCENERY/nodes/Text' );
   const VBox = require( 'SCENERY/nodes/VBox' );
 
   // strings
@@ -136,11 +135,7 @@ define( require => {
   }
 
   function createRow( labelText, icon, description, iconOptions ) {
-    const label = new Text( labelText, {
-      font: HelpContent.DEFAULT_LABEL_FONT
-    } );
-
-    return HelpContent.labelWithIcon( label, icon, description, iconOptions ? { iconOptions } : null );
+    return HelpContent.labelWithIcon( labelText, icon, description, iconOptions ? { iconOptions } : null );
   }
 
   return CoulombsLawKeyboardHelpContent;
