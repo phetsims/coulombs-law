@@ -39,15 +39,19 @@ define( function( require ) {
 
         // panel options
         align: 'center',
+        additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ],
 
         numberControlOptions: {
-          thumbSize: THUMB_SIZE,
-          trackSize: TRACK_SIZE,
-          titleFont: new PhetFont( 16 ),
-          valueFont: new PhetFont( 12 ),
-          valueXMargin: 4,
-          valueYMargin: 2,
-          additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ],
+          sliderOptions: {
+            thumbSize: THUMB_SIZE,
+            trackSize: TRACK_SIZE
+          },
+          titleNodeOptions: { font: new PhetFont( 16 ) },
+          numberDisplayOptions: {
+            font: new PhetFont( 12 ),
+            xMargin: 4,
+            yMargin: 2
+          },
           arrowButtonOptions: {
             scale: 0.5
           }
@@ -69,7 +73,7 @@ define( function( require ) {
       var chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
 
       // add custom thumb to the slider
-      options.numberControlOptions.thumbNode = new ChargeControlSliderThumb( objectProperty, _.extend( {}, options,
+      options.numberControlOptions.sliderOptions.thumbNode = new ChargeControlSliderThumb( objectProperty, _.extend( {}, options,
         { tandem: options.tandem.createTandem( 'chargeControlsSliderThumb' ) } ) );
 
       ISLCObjectControlPanel.call( this, titleString, unitString, this.chargeControlProperty, chargeControlRange, options );
