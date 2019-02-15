@@ -135,7 +135,7 @@ define( require => {
   }
 
   function createRow( labelText, icon, description, iconOptions ) {
-    return HelpContent.labelWithIcon( labelText, icon, description, iconOptions ? { iconOptions } : null );
+    return HelpContent.labelWithIcon( labelText, icon, description, iconOptions ? { iconOptions: iconOptions } : null );
   }
 
   return CoulombsLawKeyboardHelpContent;
