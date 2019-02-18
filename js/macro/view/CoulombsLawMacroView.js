@@ -1,4 +1,4 @@
-// Copyright 2017-2018, University of Colorado Boulder
+// Copyright 2017-2019, University of Colorado Boulder
 
 /**
  * Class for Macro subscreen. Adds charge, ruler, and legend elements and creates the necessary scale factor for proper

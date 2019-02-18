@@ -1,4 +1,4 @@
-// Copyright 2017, University of Colorado Boulder
+// Copyright 2017-2018, University of Colorado Boulder
 
 /**
  * Creates a color profile to handle both a default and projector mode. Mostly allows nodes to be seen with a white
