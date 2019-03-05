@@ -10,7 +10,6 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var BooleanProperty = require( 'AXON/BooleanProperty' );
   var Color = require( 'SCENERY/util/Color' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var DerivedProperty = require( 'AXON/DerivedProperty' );
@@ -34,7 +33,7 @@ define( function( require ) {
     // {Property.<Color>}
     // fills are axon Properties because they need to change with the objectProperty
     // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
-    var fillEnabledProperty = new DerivedProperty( [ objectProperty ], function( value ) {
+    var fillProperty = new DerivedProperty( [ objectProperty ], function( value ) {
       return getUpdatedFill( value );
     } );
 
@@ -44,16 +43,12 @@ define( function( require ) {
     } );
 
     options = _.extend( {
-      enabledProperty: new BooleanProperty( true ),
       size: THUMB_SIZE,
-      fillEnabled: fillEnabledProperty,
+      fill: fillProperty,
       fillHighlighted: fillHighlightedProperty
     }, options );
 
-    // @private {Property.<boolean>}- whether the slider thumb is enabled
-    this.enabledProperty = options.enabledProperty;
-
-    SliderThumb.call( this, this.enabledProperty, options );
+    SliderThumb.call( this, options );
 
     this.mouseArea = this.localBounds;
     this.touchArea = this.mouseArea.dilated( 6 );
