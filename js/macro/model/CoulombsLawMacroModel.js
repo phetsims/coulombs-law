@@ -15,11 +15,9 @@ define( function( require ) {
   var CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
-  var Property = require( 'AXON/Property' );
-  var PropertyIO = require( 'AXON/PropertyIO' );
   var Range = require( 'DOT/Range' );
   var Vector2 = require( 'DOT/Vector2' );
-  var Vector2IO = require( 'DOT/Vector2IO' );
+  var Vector2Property = require( 'DOT/Vector2Property' );
 
   /**
    * @param {Tandem} tandem
@@ -47,10 +45,8 @@ define( function( require ) {
     var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
 
     // @public {Property.<Vector2>} - the ruler position
-    this.rulerPositionProperty = new Property( new Vector2( 0, -7.5E-3 ), {
-      valueType: Vector2,
-      tandem: tandem.createTandem( 'rulerPositionProperty' ),
-      phetioType: PropertyIO( Vector2IO )
+    this.rulerPositionProperty = new Vector2Property( new Vector2( 0, -7.5E-3 ), {
+      tandem: tandem.createTandem( 'rulerPositionProperty' )
     } );
 
     CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, {
