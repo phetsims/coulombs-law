@@ -44,7 +44,7 @@ define( function( require ) {
     var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
     var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
 
-    // @public {Property.<Vector2>} - the ruler position
+    // @public - the ruler position
     this.rulerPositionProperty = new Vector2Property( new Vector2( 0, -7.5E-3 ), {
       tandem: tandem.createTandem( 'rulerPositionProperty' )
     } );
