@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.0 Thu Dec 27 2018 11:33:23 GMT-0700 (Mountain Standard Time)",
+  "comment": "# coulombs-law 1.0.0 Fri Mar 08 2019 13:03:36 GMT-0500 (EST)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -9,15 +9,15 @@
     "branch": "HEAD"
   },
   "brand": {
-    "sha": "1fd6682e452ae55e0bd27b95376fd2c626b16d6e",
-    "branch": "HEAD"
+    "sha": "704d37c12f4d8de88a471427f6254c20ce230c11",
+    "branch": "coulombs-law-1.0"
   },
   "chipper": {
     "sha": "fc5919bb025834d414098d68ed322f5247055475",
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "fa38d0b3e0da2faec5a020ec003351253413a4e7",
+    "sha": "7805bc5163290b55306b68c552b630237f184eda",
     "branch": "1.0"
   },
   "dot": {
@@ -29,8 +29,8 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "b12072c7a761e2f28c68a587dec92e2c4941e53d",
-    "branch": "HEAD"
+    "sha": "5e2c20eac7aa15b69952d64912aebc011183ee08",
+    "branch": "coulombs-law-1.0"
   },
   "kite": {
     "sha": "380cef530ae6a8ae4aa644ff4f09baf85326ad9f",
