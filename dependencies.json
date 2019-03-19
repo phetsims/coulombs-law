@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.0 Fri Mar 08 2019 13:03:36 GMT-0500 (EST)",
+  "comment": "# coulombs-law 1.0.0 Tue Mar 19 2019 16:09:04 GMT-0400 (EDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -10,14 +10,14 @@
   },
   "brand": {
     "sha": "704d37c12f4d8de88a471427f6254c20ce230c11",
-    "branch": "coulombs-law-1.0"
-  },
-  "chipper": {
-    "sha": "fc5919bb025834d414098d68ed322f5247055475",
     "branch": "HEAD"
   },
+  "chipper": {
+    "sha": "63b40ec8b85217b52ed82af8526ad84e0879bd0c",
+    "branch": "coulombs-law-1.0"
+  },
   "coulombs-law": {
-    "sha": "7805bc5163290b55306b68c552b630237f184eda",
+    "sha": "c0cf03fc6a17805430bf22f42d0338a1f93de314",
     "branch": "1.0"
   },
   "dot": {
@@ -30,7 +30,7 @@
   },
   "joist": {
     "sha": "5e2c20eac7aa15b69952d64912aebc011183ee08",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "kite": {
     "sha": "380cef530ae6a8ae4aa644ff4f09baf85326ad9f",
@@ -64,6 +64,10 @@
     "sha": "33aef589f2f8a6049772398d1387e19b797e3dce",
     "branch": "HEAD"
   },
+  "phetmarks": {
+    "sha": "9b0054b127af9970fd96d0326cd792bfa2c25720",
+    "branch": "HEAD"
+  },
   "query-string-machine": {
     "sha": "9ae63aab514937ff2119f5844c1da37db0ba49d5",
     "branch": "HEAD"
@@ -91,9 +95,5 @@
   "tandem": {
     "sha": "f9cfcc67c13c21c30b1787fe628b0def4c09be58",
     "branch": "HEAD"
-  },
-  "phetmarks": {
-    "branch": "master",
-    "sha": "9b0054b127af9970fd96d0326cd792bfa2c25720"
   }
 }
