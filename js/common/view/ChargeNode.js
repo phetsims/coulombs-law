@@ -119,11 +119,6 @@ define( function( require ) {
     redrawForce: function () {
       this.arrowNode.scientificNotationMode = this.model.scientificNotationProperty.get();
       ISLCObjectNode.prototype.redrawForce.call( this );
-    },
-
-    // TODO: still needs implementing
-    resetAriaValueText: function () {
-      return 'aria value text';
     }
   } );
 } );
