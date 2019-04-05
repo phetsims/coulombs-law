@@ -58,7 +58,7 @@ define( require => {
 
       const chargeContent = new ChargePositionsContent( helpContentOptions );
       const rulerContent = new MoveRulerContent( helpContentOptions );
-      KeyboardHelpSection.alignHelpContentIcons( [ chargeContent, rulerContent ] );
+      KeyboardHelpSection.alignHelpSectionIcons( [ chargeContent, rulerContent ] );
 
       const leftHelpContent = new VBox( {
         children: [ chargeContent, rulerContent ],
@@ -68,7 +68,7 @@ define( require => {
 
       const generalNavigationHelpContent = new GeneralKeyboardHelpSection( helpContentOptions );
       const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
-      KeyboardHelpSection.alignHelpContentIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
+      KeyboardHelpSection.alignHelpSectionIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
 
       const rightHelpContent = new VBox( {
         children: [ adjustChargeContent, generalNavigationHelpContent ],
