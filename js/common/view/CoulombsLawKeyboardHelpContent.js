@@ -92,14 +92,14 @@ define( require => {
       const pgUpDownIcon = KeyboardHelpSection.pageUpPageDownRowIcon();
       const homeKeyIcon = new HomeKeyNode();
       const endKeyIcon = new EndKeyNode();
-      const content = [
+      const rows = [
         createRow( moveChargesLabelString, arrowsIcon, moveChargesDescriptionString ),
         createRow( moveInSmallerStepsLabelString, shiftPlusArrowsIcon, smallStepsMoveChargesDescriptionString ),
         createRow( moveInLargerStepsLabelString, pgUpDownIcon, largeStepsMoveChargesDescriptionString ),
         createRow( jumpLeftLabelString, homeKeyIcon, jumpHomeDescriptionString ),
         createRow( jumpRightLabelString, endKeyIcon, jumpEndDescriptionString )
       ];
-      super( chargePositionsHeadingString, content, options );
+      super( chargePositionsHeadingString, rows, options );
     }
   }
 
@@ -123,14 +123,14 @@ define( require => {
       const leftRightOrUpDownIcon = KeyboardHelpSection.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
       const pgUpDownIcon = KeyboardHelpSection.pageUpPageDownRowIcon();
 
-      const content = [
+      const rows = [
         createRow( adjustAmountLabelString, leftRightOrUpDownIcon, adjustChargeAmountDescriptionString ),
         createRow( adjustInLargerStepsLabelString, pgUpDownIcon, largeStepsAdjustAmountDescriptionString ),
         createRow( jumpToMinimumLabelString, new HomeKeyNode(), jumpToMinimumDescriptionString ),
         createRow( jumpToMaximumLabelString, new EndKeyNode(), jumpToMaximumDescriptionString )
       ];
 
-      super( chargeAmountHeadingString, content, options );
+      super( chargeAmountHeadingString, rows, options );
     }
   }
 
