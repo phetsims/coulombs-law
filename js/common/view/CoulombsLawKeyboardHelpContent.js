@@ -13,7 +13,7 @@ define( require => {
   const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   const CoulombsLawA11yStrings = require( 'COULOMBS_LAW/common/CoulombsLawA11yStrings' );
   const EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
-  const GeneralNavigationHelpContent = require( 'SCENERY_PHET/keyboard/help/GeneralNavigationHelpContent' );
+  const GeneralKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/GeneralKeyboardHelpSection' );
   const HBox = require( 'SCENERY/nodes/HBox' );
   const KeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpSection' );
   const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
@@ -66,7 +66,7 @@ define( require => {
         spacing: 30
       } );
 
-      const generalNavigationHelpContent = new GeneralNavigationHelpContent( helpContentOptions );
+      const generalNavigationHelpContent = new GeneralKeyboardHelpSection( helpContentOptions );
       const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
       KeyboardHelpSection.alignHelpContentIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
 
