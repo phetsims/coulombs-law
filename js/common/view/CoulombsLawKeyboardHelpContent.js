@@ -15,7 +15,7 @@ define( require => {
   const EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
   const GeneralNavigationHelpContent = require( 'SCENERY_PHET/keyboard/help/GeneralNavigationHelpContent' );
   const HBox = require( 'SCENERY/nodes/HBox' );
-  const HelpContent = require( 'SCENERY_PHET/keyboard/help/HelpContent' );
+  const KeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpSection' );
   const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
   const VBox = require( 'SCENERY/nodes/VBox' );
 
@@ -52,13 +52,13 @@ define( require => {
 
       var helpContentOptions = {
         
-        // i18n, restricts both labelText and maxWidth, see HelpContent
+        // i18n, restricts both labelText and maxWidth, see KeyboardHelpSection
         labelMaxWidth: 130
       };
 
       const chargeContent = new ChargePositionsContent( helpContentOptions );
       const rulerContent = new MoveRulerContent( helpContentOptions );
-      HelpContent.alignHelpContentIcons( [ chargeContent, rulerContent ] );
+      KeyboardHelpSection.alignHelpContentIcons( [ chargeContent, rulerContent ] );
 
       const leftHelpContent = new VBox( {
         children: [ chargeContent, rulerContent ],
@@ -68,7 +68,7 @@ define( require => {
 
       const generalNavigationHelpContent = new GeneralNavigationHelpContent( helpContentOptions );
       const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
-      HelpContent.alignHelpContentIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
+      KeyboardHelpSection.alignHelpContentIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
 
       const rightHelpContent = new VBox( {
         children: [ adjustChargeContent, generalNavigationHelpContent ],
@@ -85,11 +85,11 @@ define( require => {
 
   coulombsLaw.register( 'CoulombsLawKeyboardHelpContent', CoulombsLawKeyboardHelpContent );
 
-  class ChargePositionsContent extends HelpContent {
+  class ChargePositionsContent extends KeyboardHelpSection {
     constructor( options ) {
-      const arrowsIcon = HelpContent.leftRightArrowKeysRowIcon();
-      const shiftPlusArrowsIcon = HelpContent.shiftPlusIcon( HelpContent.leftRightArrowKeysRowIcon() );
-      const pgUpDownIcon = HelpContent.pageUpPageDownRowIcon();
+      const arrowsIcon = KeyboardHelpSection.leftRightArrowKeysRowIcon();
+      const shiftPlusArrowsIcon = KeyboardHelpSection.shiftPlusIcon( KeyboardHelpSection.leftRightArrowKeysRowIcon() );
+      const pgUpDownIcon = KeyboardHelpSection.pageUpPageDownRowIcon();
       const homeKeyIcon = new HomeKeyNode();
       const endKeyIcon = new EndKeyNode();
       const content = [
@@ -103,11 +103,11 @@ define( require => {
     }
   }
 
-  class MoveRulerContent extends HelpContent {
+  class MoveRulerContent extends KeyboardHelpSection {
     constructor( options ) {
       assert && assert( !options || options.a11yContentTagName === undefined, 'MoveRulerContent sets a11yContentTagName' );
 
-      const icon = HelpContent.arrowOrWasdKeysRowIcon();
+      const icon = KeyboardHelpSection.arrowOrWasdKeysRowIcon();
       super(
         moveRulerHeadingString,
         [ createRow( moveRulerLabelString, icon, moveRulerDescriptionString, { tagName: 'p' } ) ],
@@ -116,12 +116,12 @@ define( require => {
     }
   }
 
-  class AdjustChargeContent extends HelpContent {
+  class AdjustChargeContent extends KeyboardHelpSection {
     constructor( options ) {
-      const leftRightArrowIcon = HelpContent.leftRightArrowKeysRowIcon();
-      const upDownArrowIcon = HelpContent.upDownArrowKeysRowIcon();
-      const leftRightOrUpDownIcon = HelpContent.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
-      const pgUpDownIcon = HelpContent.pageUpPageDownRowIcon();
+      const leftRightArrowIcon = KeyboardHelpSection.leftRightArrowKeysRowIcon();
+      const upDownArrowIcon = KeyboardHelpSection.upDownArrowKeysRowIcon();
+      const leftRightOrUpDownIcon = KeyboardHelpSection.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
+      const pgUpDownIcon = KeyboardHelpSection.pageUpPageDownRowIcon();
 
       const content = [
         createRow( adjustAmountLabelString, leftRightOrUpDownIcon, adjustChargeAmountDescriptionString ),
@@ -135,7 +135,7 @@ define( require => {
   }
 
   function createRow( labelText, icon, description, iconOptions ) {
-    return HelpContent.labelWithIcon( labelText, icon, description, iconOptions ? { iconOptions: iconOptions } : null );
+    return KeyboardHelpSection.labelWithIcon( labelText, icon, description, iconOptions ? { iconOptions: iconOptions } : null );
   }
 
   return CoulombsLawKeyboardHelpContent;
