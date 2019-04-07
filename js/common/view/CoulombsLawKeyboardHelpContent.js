@@ -14,9 +14,9 @@ define( require => {
   const CoulombsLawA11yStrings = require( 'COULOMBS_LAW/common/CoulombsLawA11yStrings' );
   const EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
   const GeneralKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/GeneralKeyboardHelpSection' );
-  const HBox = require( 'SCENERY/nodes/HBox' );
   const KeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpSection' );
   const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
+  const TwoColumnKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/TwoColumnKeyboardHelpContent' );
   const VBox = require( 'SCENERY/nodes/VBox' );
 
   // strings
@@ -46,7 +46,7 @@ define( require => {
   const jumpToMinimumDescriptionString = CoulombsLawA11yStrings.jumpToMinimumDescription.value;
   const jumpToMaximumDescriptionString = CoulombsLawA11yStrings.jumpToMaximumDescription.value;
 
-  class CoulombsLawKeyboardHelpContent extends HBox {
+  class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
 
     constructor() {
 
@@ -75,11 +75,8 @@ define( require => {
         align: 'left',
         spacing: 30
       } );
-      super( {
-        children: [ leftHelpContent, rightHelpContent ],
-        align: 'top',
-        spacing: 30
-      } );
+
+      super( leftHelpContent, rightHelpContent );
     }
   }
 
