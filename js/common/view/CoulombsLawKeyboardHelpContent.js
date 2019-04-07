@@ -83,6 +83,10 @@ define( require => {
   coulombsLaw.register( 'CoulombsLawKeyboardHelpContent', CoulombsLawKeyboardHelpContent );
 
   class ChargePositionsContent extends KeyboardHelpSection {
+
+    /**
+     * @param {Object} [options]
+     */
     constructor( options ) {
       const arrowsIcon = KeyboardHelpSection.leftRightArrowKeysRowIcon();
       const shiftPlusArrowsIcon = KeyboardHelpSection.shiftPlusIcon( KeyboardHelpSection.leftRightArrowKeysRowIcon() );
