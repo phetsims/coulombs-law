@@ -30,10 +30,11 @@ define( function( require ) {
    * @param {Charge} chargeObjectModel
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
+   * @param {ISLCAlertManager} alertManager
    * @param {Object} options
    * @constructor
    */
-  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, options ) {
+  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, options ) {
 
     var forceConstant = ISLCConstants.k;
 
@@ -82,6 +83,7 @@ define( function( require ) {
       layoutBounds,
       modelViewTransform,
       pullForceRange,
+      alertManager,
       options
     );
 

@@ -16,6 +16,7 @@ define( function( require ) {
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
@@ -49,6 +50,8 @@ define( function( require ) {
       rulerInset: 15
     };
 
+    const alertManager = new ISLCAlertManager( coulombsLawModel );
+
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
     // charge nodes added in each screen to allow for different decimal precision and arrow height
@@ -57,6 +60,7 @@ define( function( require ) {
       coulombsLawModel.object1,
       this.layoutBounds,
       this.modelViewTransform,
+      alertManager,
       {
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
@@ -75,6 +79,7 @@ define( function( require ) {
       coulombsLawModel.object2,
       this.layoutBounds,
       this.modelViewTransform,
+      alertManager,
       {
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,

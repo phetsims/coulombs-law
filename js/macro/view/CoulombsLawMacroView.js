@@ -11,7 +11,7 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
+  var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
@@ -47,7 +47,7 @@ define( function( require ) {
     // TODO: convert to CL-specific types, only here to pass CT
     PositionDescriber.initialize( new PositionDescriber( coulombsLawModel, 'label1', 'label2' ) );
     ForceDescriber.initialize( new ForceDescriber( coulombsLawModel, 'label1', 'label2' ) );
-    ISLCAlertManager.initialize( new ISLCAlertManager( coulombsLawModel ) );
+    const alertManager = new ISLCAlertManager( coulombsLawModel );
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
@@ -57,6 +57,7 @@ define( function( require ) {
       coulombsLawModel.object1,
       this.layoutBounds,
       this.modelViewTransform,
+      alertManager,
       {
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
@@ -72,6 +73,7 @@ define( function( require ) {
       coulombsLawModel.object2,
       this.layoutBounds,
       this.modelViewTransform,
+      alertManager,
       {
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,
