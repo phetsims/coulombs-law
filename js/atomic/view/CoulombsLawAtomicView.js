@@ -11,11 +11,12 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode');
+  var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var ForceDescriber = require( 'INVERSE_SQUARE_LAW_COMMON/view/describers/ForceDescriber' );
   var ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
@@ -27,7 +28,7 @@ define( function( require ) {
   var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
   var pmScaleString = require( 'string!COULOMBS_LAW/pmScale' );
   var unitsAtomicLegendScaleString = require( 'string!COULOMBS_LAW/units.atomicLegendScale' );
-  var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits');
+  var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits' );
   var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers' );
 
   // constants
@@ -50,7 +51,8 @@ define( function( require ) {
       rulerInset: 15
     };
 
-    const alertManager = new ISLCAlertManager( coulombsLawModel );
+    const forceDescriber = new ForceDescriber( coulombsLawModel, 'label1', 'label2' );
+    const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber );
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
