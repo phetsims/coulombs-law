@@ -16,8 +16,8 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCObjectNode = require('INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode');
-  var Range = require('DOT/Range');
+  var ISLCObjectNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode' );
+  var Range = require( 'DOT/Range' );
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
   var Tandem = require( 'TANDEM/Tandem' );
 
@@ -31,10 +31,11 @@ define( function( require ) {
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
    * @param {ISLCAlertManager} alertManager
+   * @param {PositionDescriber} positionDescriber
    * @param {Object} options
    * @constructor
    */
-  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, options ) {
+  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, positionDescriber, options ) {
 
     var forceConstant = ISLCConstants.k;
 
@@ -84,6 +85,7 @@ define( function( require ) {
       modelViewTransform,
       pullForceRange,
       alertManager,
+      positionDescriber,
       options
     );
 
@@ -118,7 +120,7 @@ define( function( require ) {
     /**
      * Updates the node's arrow length, force readout, and puller image.
      */
-    redrawForce: function () {
+    redrawForce: function() {
       this.arrowNode.scientificNotationMode = this.model.scientificNotationProperty.get();
       ISLCObjectNode.prototype.redrawForce.call( this );
     }

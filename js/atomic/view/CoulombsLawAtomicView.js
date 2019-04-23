@@ -11,12 +11,13 @@ define( function( require ) {
   'use strict';
 
   // modules
+  const PositionDescriber = require( 'INVERSE_SQUARE_LAW_COMMON/view/describers/PositionDescriber' );
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
-  var inherit = require( 'PHET_CORE/inherit' );
   var ForceDescriber = require( 'INVERSE_SQUARE_LAW_COMMON/view/describers/ForceDescriber' );
+  var inherit = require( 'PHET_CORE/inherit' );
   var ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
@@ -51,8 +52,9 @@ define( function( require ) {
       rulerInset: 15
     };
 
+    const positionDescriber = new PositionDescriber( coulombsLawModel, 'label1', 'label2' );
     const forceDescriber = new ForceDescriber( coulombsLawModel, 'label1', 'label2' );
-    const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber );
+    const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber, positionDescriber );
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
@@ -63,6 +65,7 @@ define( function( require ) {
       this.layoutBounds,
       this.modelViewTransform,
       alertManager,
+      positionDescriber,
       {
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
@@ -82,6 +85,7 @@ define( function( require ) {
       this.layoutBounds,
       this.modelViewTransform,
       alertManager,
+      positionDescriber,
       {
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,

@@ -45,9 +45,9 @@ define( function( require ) {
 
 
     // TODO: convert to CL-specific types, only here to pass CT
-    PositionDescriber.initialize( new PositionDescriber( coulombsLawModel, 'label1', 'label2' ) );
+    const positionDescriber = new PositionDescriber( coulombsLawModel, 'label1', 'label2' );
     const forceDescriber = new ForceDescriber( coulombsLawModel, 'label1', 'label2' );
-    const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber );
+    const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber, positionDescriber );
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
@@ -58,6 +58,7 @@ define( function( require ) {
       this.layoutBounds,
       this.modelViewTransform,
       alertManager,
+      positionDescriber,
       {
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
@@ -74,6 +75,7 @@ define( function( require ) {
       this.layoutBounds,
       this.modelViewTransform,
       alertManager,
+      positionDescriber,
       {
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,
