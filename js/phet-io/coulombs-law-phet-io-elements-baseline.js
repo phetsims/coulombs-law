@@ -3004,7 +3004,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~0": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3015,7 +3015,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~0.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3026,7 +3026,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~0.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3037,7 +3037,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~0.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3048,7 +3048,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~0.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3059,7 +3059,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~1": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3070,7 +3070,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~1.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3081,7 +3081,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~1.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3092,7 +3092,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~1.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3103,7 +3103,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~1.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3114,7 +3114,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~10": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3125,7 +3125,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~10.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3136,7 +3136,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~10.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3147,7 +3147,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~10.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3158,7 +3158,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~10.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3169,7 +3169,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~2": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3180,7 +3180,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~2.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3191,7 +3191,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~2.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3202,7 +3202,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~2.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3213,7 +3213,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~2.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3224,7 +3224,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~3": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3235,7 +3235,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~3.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3246,7 +3246,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~3.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3257,7 +3257,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~3.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3268,7 +3268,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~3.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3279,7 +3279,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~4": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3290,7 +3290,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~4.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3301,7 +3301,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~4.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3312,7 +3312,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~4.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3323,7 +3323,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~4.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3334,7 +3334,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~5": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3345,7 +3345,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~5.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3356,7 +3356,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~5.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3367,7 +3367,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~5.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3378,7 +3378,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~5.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3389,7 +3389,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~6": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3400,7 +3400,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~6.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3411,7 +3411,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~6.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3422,7 +3422,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~6.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3433,7 +3433,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~6.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3444,7 +3444,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~7": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3455,7 +3455,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~7.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3466,7 +3466,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~7.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3477,7 +3477,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~7.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3488,7 +3488,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~7.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3499,7 +3499,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~8": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3510,7 +3510,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~8.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3521,7 +3521,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~8.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3532,7 +3532,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~8.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3543,7 +3543,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~8.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3554,7 +3554,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~9": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3565,7 +3565,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9.opacityProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~9.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3576,7 +3576,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9.pickableProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~9.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3587,7 +3587,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9.textProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~9.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -3598,7 +3598,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9.visibleProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawRuler.ruler.majorTickLabels~9.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8449,7 +8449,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~0": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8460,7 +8460,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~0.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8471,7 +8471,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~0.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8482,7 +8482,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~0.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8493,7 +8493,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~0.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~0.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8504,7 +8504,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~1": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8515,7 +8515,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~1.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8526,7 +8526,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~1.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8537,7 +8537,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~1.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8548,7 +8548,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~1.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~1.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8559,7 +8559,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~10": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8570,7 +8570,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~10.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8581,7 +8581,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~10.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8592,7 +8592,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~10.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8603,7 +8603,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~10.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~10.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8614,7 +8614,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~2": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8625,7 +8625,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~2.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8636,7 +8636,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~2.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8647,7 +8647,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~2.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8658,7 +8658,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~2.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~2.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8669,7 +8669,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~3": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8680,7 +8680,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~3.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8691,7 +8691,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~3.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8702,7 +8702,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~3.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8713,7 +8713,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~3.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~3.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8724,7 +8724,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~4": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8735,7 +8735,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~4.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8746,7 +8746,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~4.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8757,7 +8757,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~4.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8768,7 +8768,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~4.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~4.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8779,7 +8779,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~5": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8790,7 +8790,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~5.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8801,7 +8801,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~5.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8812,7 +8812,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~5.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8823,7 +8823,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~5.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~5.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8834,7 +8834,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~6": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8845,7 +8845,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~6.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8856,7 +8856,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~6.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8867,7 +8867,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~6.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8878,7 +8878,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~6.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~6.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8889,7 +8889,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~7": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8900,7 +8900,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~7.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8911,7 +8911,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~7.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8922,7 +8922,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~7.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8933,7 +8933,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~7.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~7.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8944,7 +8944,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~8": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8955,7 +8955,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~8.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8966,7 +8966,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~8.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8977,7 +8977,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~8.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8988,7 +8988,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~8.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~8.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -8999,7 +8999,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~9": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9010,7 +9010,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "TextIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9.opacityProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~9.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9021,7 +9021,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9.pickableProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~9.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9032,7 +9032,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9.textProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~9.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -9043,7 +9043,7 @@ window.phet.phetio.phetioElementsBaseline =
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<StringIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels.element~9.visibleProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawRuler.ruler.majorTickLabels~9.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
       "phetioFeatured": false,
