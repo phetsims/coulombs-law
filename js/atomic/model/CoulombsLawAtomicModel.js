@@ -60,7 +60,7 @@ define( function( require ) {
       tandem: tandem.createTandem( 'rulerPositionProperty' )
     } );
 
-    CoulombsLawCommonModel.call( this, charge1, charge2, leftBoundary, rightBoundary, tandem, {
+    CoulombsLawCommonModel.call( this, charge1, charge2, new Range( leftBoundary, rightBoundary ), tandem, {
       minSeparationBetweenObjects: 1E-13,
       snapObjectsToNearest: 1E-12
     } );

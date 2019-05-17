@@ -17,12 +17,10 @@ define( function( require ) {
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCObjectNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode' );
-  var Range = require( 'DOT/Range' );
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
   var Tandem = require( 'TANDEM/Tandem' );
 
   // constants
-  var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   var CHARGE_NODE_Y_POSITION = 205;
 
   /**
@@ -36,8 +34,6 @@ define( function( require ) {
    * @constructor
    */
   function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, positionDescriber, options ) {
-
-    var forceConstant = ISLCConstants.k;
 
     options = _.extend( {
       label: 'This Charge',
@@ -68,22 +64,12 @@ define( function( require ) {
     // @private - Used for incrementing the radius to prevent division by zero in RadialGradient
     this.snapToNearest = options.snapToNearest;
 
-    // inherited object node accepts the entire force range. (NOTE: necessary to calculate here as Coulomb's Law allows
-    // negative forces while Gravity Force Lab does not.)
-    var maxForce = forceConstant * Math.pow( chargeObjectModel.valueRange.max, 2 ) / Math.pow( ( chargeObjectModel.radiusProperty.get() * 2 ), 2 );
-    maxForce = maxForce * options.pullRangeMultiplier;
-    var minForce = -maxForce;
-
-    // function that determines the current puller image to represent
-    var pullForceRange = new Range( minForce, maxForce );
-
     ISLCObjectNode.call(
       this,
       model,
       chargeObjectModel,
       layoutBounds,
       modelViewTransform,
-      pullForceRange,
       alertManager,
       positionDescriber,
       options

@@ -20,13 +20,12 @@ define( function( require ) {
   /**
    * @param {Charge} charge1 - The left charge
    * @param {Charge} charge2 - The right charge
-   * @param {number} leftBoundary
-   * @param {number} rightBoundary
+   * @param {Range} locationRange
    * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function CoulombsLawCommonModel( charge1, charge2, leftBoundary, rightBoundary, tandem, options ) {
+  function CoulombsLawCommonModel( charge1, charge2, locationRange, tandem, options ) {
 
     options = _.extend( {
       snapObjectsToNearest: 0.1,
@@ -38,7 +37,7 @@ define( function( require ) {
       tandem: tandem.createTandem( 'scientificNotationProperty' )
     } );
 
-    ISLCModel.call( this, ISLCConstants.k, charge1, charge2, leftBoundary, rightBoundary, tandem, options );
+    ISLCModel.call( this, ISLCConstants.k, charge1, charge2, locationRange, tandem, options );
   }
 
   coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );
