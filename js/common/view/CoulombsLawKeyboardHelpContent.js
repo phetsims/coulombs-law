@@ -17,7 +17,6 @@ define( require => {
   const KeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpSection' );
   const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
   const TwoColumnKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/TwoColumnKeyboardHelpContent' );
-  const VBox = require( 'SCENERY/nodes/VBox' );
 
   // strings
   const adjustAmountLabelString = require( 'string!COULOMBS_LAW/adjustAmountLabel' );
@@ -59,22 +58,12 @@ define( require => {
       const chargeContent = new ChargePositionsContent( helpContentOptions );
       const rulerContent = new MoveRulerContent( helpContentOptions );
       KeyboardHelpSection.alignHelpSectionIcons( [ chargeContent, rulerContent ] );
-
-      const leftHelpContent = new VBox( {
-        children: [ chargeContent, rulerContent ],
-        align: 'left',
-        spacing: 30
-      } );
+      const leftHelpContent = [ chargeContent, rulerContent ];
 
       const generalNavigationHelpContent = new GeneralKeyboardHelpSection( helpContentOptions );
       const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
       KeyboardHelpSection.alignHelpSectionIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
-
-      const rightHelpContent = new VBox( {
-        children: [ adjustChargeContent, generalNavigationHelpContent ],
-        align: 'left',
-        spacing: 30
-      } );
+      const rightHelpContent = [ adjustChargeContent, generalNavigationHelpContent ];
 
       super( leftHelpContent, rightHelpContent );
     }
