@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.2 Wed Apr 24 2019 15:14:53 GMT-0800 (Alaskan Daylight Time)",
+  "comment": "# coulombs-law 1.0.2 Fri May 24 2019 14:35:25 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -13,11 +13,11 @@
     "branch": "HEAD"
   },
   "chipper": {
-    "sha": "8eab600c0f2618c64367be80f4869058d2a3ff7b",
-    "branch": "HEAD"
+    "sha": "149ea8f11648f0231041ee1ed8866728dbbcbfea",
+    "branch": "coulombs-law-1.0"
   },
   "coulombs-law": {
-    "sha": "e2e460f59a39591fbb9d8b8fd2e35b693d36f6ce",
+    "sha": "4b2fb5ccd8f20c260f5bc24fe59712cf2012c81a",
     "branch": "1.0"
   },
   "dot": {
@@ -42,18 +42,6 @@
   },
   "phet-io": {
     "sha": "a7436d70e1671c0a12e007356b9a4c8d42e6e5b3",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-classroom-activity": {
-    "sha": "534dc5954e58f920ed24ee8c86739c1c833688f3",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-hookes-law-energy": {
-    "sha": "3372700d3d85185f57f42de683f64c3b2b9ee161",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-lab-book": {
-    "sha": "09507f4d88c2ded23f3d0ddf0e37f0e2df0f2c00",
     "branch": "HEAD"
   },
   "phet-io-wrappers": {
