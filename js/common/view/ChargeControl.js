@@ -22,7 +22,6 @@ define( function( require ) {
 
     // constants
     var TRACK_SIZE = new Dimension2( 132, 0.25 );
-    var THUMB_SIZE = new Dimension2( 10, 18 );
 
     /**
      * @param {string} titleString
