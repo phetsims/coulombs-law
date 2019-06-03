@@ -43,7 +43,6 @@ define( function( require ) {
 
         numberControlOptions: {
           sliderOptions: {
-            thumbSize: THUMB_SIZE,
             trackSize: TRACK_SIZE
           },
           titleNodeOptions: { font: new PhetFont( 16 ) },
