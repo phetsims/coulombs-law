@@ -11,11 +11,11 @@ define( function( require ) {
   'use strict';
 
   // modules
-  const PositionDescriber = require( 'INVERSE_SQUARE_LAW_COMMON/view/describers/PositionDescriber' );
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
+  var CoulombsLawPositionDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawPositionDescriber' );
   var ForceDescriber = require( 'INVERSE_SQUARE_LAW_COMMON/view/describers/ForceDescriber' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
@@ -52,7 +52,7 @@ define( function( require ) {
       rulerInset: 15
     };
 
-    const positionDescriber = new PositionDescriber( coulombsLawModel, 'label1', 'label2' );
+    const positionDescriber = new CoulombsLawPositionDescriber( coulombsLawModel, 'label1', 'label2' );
     const forceDescriber = new ForceDescriber( coulombsLawModel, 'label1', 'label2', positionDescriber );
     const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber, positionDescriber );
 

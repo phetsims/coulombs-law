@@ -12,12 +12,12 @@ define( function( require ) {
 
   // modules
   var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
+  var CoulombsLawPositionDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawPositionDescriber' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
   var ForceDescriber = require( 'INVERSE_SQUARE_LAW_COMMON/view/describers/ForceDescriber' );
   var ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
-  var PositionDescriber = require( 'INVERSE_SQUARE_LAW_COMMON/view/describers/PositionDescriber' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
 
@@ -45,7 +45,7 @@ define( function( require ) {
 
 
     // TODO: convert to CL-specific types, only here to pass CT
-    const positionDescriber = new PositionDescriber( coulombsLawModel, 'label1', 'label2' );
+    const positionDescriber = new CoulombsLawPositionDescriber( coulombsLawModel, 'label1', 'label2' );
     const forceDescriber = new ForceDescriber( coulombsLawModel, 'label1', 'label2', positionDescriber );
     const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber, positionDescriber );
 
