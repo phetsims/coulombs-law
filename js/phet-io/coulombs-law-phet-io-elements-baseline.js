@@ -928,7 +928,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.slider.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -1731,7 +1731,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.slider.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -3799,7 +3799,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesCheckbox.enabledProperty": {
       "phetioDocumentation": "When disabled, the checkbox is grayed out and cannot be pressed.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -4085,7 +4085,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.scientificNotationCheckbox.enabledProperty": {
       "phetioDocumentation": "When disabled, the checkbox is grayed out and cannot be pressed.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -4767,7 +4767,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.globals.options.projectorCheckbox.enabledProperty": {
       "phetioDocumentation": "When disabled, the checkbox is grayed out and cannot be pressed.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -6373,7 +6373,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.slider.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -7176,7 +7176,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.slider.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -9244,7 +9244,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesCheckbox.enabledProperty": {
       "phetioDocumentation": "When disabled, the checkbox is grayed out and cannot be pressed.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -9519,7 +9519,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.scientificNotationCheckbox.enabledProperty": {
       "phetioDocumentation": "When disabled, the checkbox is grayed out and cannot be pressed.",
       "phetioEventType": "model",
-      "phetioFeatured": true,
+      "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -10289,7 +10289,7 @@ window.phet.phetio.phetioElementsBaseline =
     "coulombsLaw.navigationBar.phetButton.enabledProperty": {
       "phetioDocumentation": "When disabled, the button is grayed out and cannot be pressed",
       "phetioEventType": "model",
-      "phetioFeatured": false,
+      "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
