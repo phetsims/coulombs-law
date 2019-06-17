@@ -21,11 +21,12 @@ define( require => {
 
     /**
      * @param {number} force in newtons
+     * @param {number} numberOfRegions - for crosscheck
      * @returns {number}
      * @override
      * @protected
      */
-    getForceVectorIndex( force ) {
+    getForceVectorIndex( force, numberOfRegions ) {
 
       // TODO: implement when working on CL descriptions.
       return 0;
