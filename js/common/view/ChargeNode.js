@@ -76,7 +76,7 @@ define( function( require ) {
     );
 
     // scientific notation property is never removed/destroyed, no disposal required
-    this.model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
+    model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
 
     // stroke added here for projector mode and white bg printing options
     this.objectCircle.stroke = 'black';

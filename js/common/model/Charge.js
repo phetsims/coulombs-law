@@ -43,9 +43,7 @@ define( function( require ) {
 
     ISLCObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, tandem, options );
 
-    // @public {Property.<Color>} - object node color is will change with value (linked in ISLCObjectNode.js)
-    //  - color Property will be updated based on a boolean value (negative vs positive)
-    //  - brightness will be set according to the Mass/Charge magnitude
+    // see ISLCObject
     this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], function( value ) {
         var newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
