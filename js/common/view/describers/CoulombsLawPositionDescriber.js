@@ -10,12 +10,11 @@ define( require => {
   class CoulombsLawPositionDescriber extends PositionDescriber {
 
     /**
-     * @param {GFLBModel} model
+     * @param {ISLCModel} model
      * @param {string} object1Label
      * @param {string} object2Label
      */
     constructor( model, object1Label, object2Label ) {
-
       super( model, object1Label, object2Label );
     }
 
