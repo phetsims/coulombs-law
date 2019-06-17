@@ -41,14 +41,13 @@ define( function( require ) {
     var maxChargeValue = 10 * e; // in Coulombs
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
+    const constantRadius = 9.5E-13;
 
     var charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ), {
-      constantRadius: 9.5E-13,
-      tandemUnits: 'coulombs'
+      constantRadius: constantRadius
     } );
     var charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ), {
-      constantRadius: 9.5E-13,
-      tandemUnits: 'coulombs'
+      constantRadius: constantRadius
     } );
 
     // boundary constants in m, convert to pm (-50pm, 50pm)

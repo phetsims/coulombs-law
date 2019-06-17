@@ -37,8 +37,8 @@ define( function( require ) {
 
     var valueRange = new Range( minChargeValue, maxChargeValue );
 
-    var charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ), { tandemUnits: 'coulombs' } );
-    var charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ), { tandemUnits: 'coulombs' } );
+    var charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ) );
+    var charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ) );
 
     // boundary constants are in m, convert to cm
     var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;

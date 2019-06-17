@@ -30,7 +30,8 @@ define( function( require ) {
   function Charge( initialCharge, initialPosition, valueRange, tandem, options ) {
 
     options = _.extend( {
-      constantRadius: 6.75E-3 // ensure this is in meters (0.675cm)
+      constantRadius: 6.75E-3, // ensure this is in meters (0.675cm)
+      valueUnits: 'coulombs'
     }, options );
 
     var constantRadiusProperty = new BooleanProperty( true, {
