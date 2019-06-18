@@ -54,7 +54,7 @@ define( function( require ) {
 
     const positionDescriber = new CoulombsLawPositionDescriber( coulombsLawModel, 'label1', 'label2' );
     const forceDescriber = new CoulombsLawForceDescriber( coulombsLawModel, 'label1', 'label2', positionDescriber );
-    const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber, positionDescriber );
+    const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber );
 
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
