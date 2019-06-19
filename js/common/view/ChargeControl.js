@@ -42,7 +42,10 @@ define( function( require ) {
 
         numberControlOptions: {
           sliderOptions: {
-            trackSize: TRACK_SIZE
+            trackSize: TRACK_SIZE,
+
+            // Instead of having a LinkedProperty to this.chargeControlProperty, link directly to the model Property.
+            phetioLinkedProperty: objectProperty
           },
           titleNodeOptions: { font: new PhetFont( 16 ) },
           numberDisplayOptions: {
@@ -61,6 +64,7 @@ define( function( require ) {
       // @public {Property.<number>} - intermediate Property to allow for scaling between atomic units and microcoulombs
       //  - value ranges from -10 to 10
       //  - unit can be e or mc
+      // TODO: make this DynamicProperty to support PhET-iO LinkedElement, or eliminate altogether
       this.chargeControlProperty = new NumberProperty( objectProperty.get() * scaleFactor, { range: new Range( -10, 10 ) } );
 
       // no unlinking/disposing required as Property is never destroyed
