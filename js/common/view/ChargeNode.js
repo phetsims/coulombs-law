@@ -36,7 +36,7 @@ define( function( require ) {
   function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, positionDescriber, options ) {
 
     options = _.extend( {
-      label: 'This Charge',
+      label: 'This Charge', // TODO: factor out into strings files
       otherObjectLabel: 'Other Charge',
       scientificNotationMode: true,
       snapToNearest: model.snapObjectsToNearest,
