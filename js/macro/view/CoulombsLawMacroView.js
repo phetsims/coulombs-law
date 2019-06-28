@@ -56,6 +56,7 @@ define( function( require ) {
       this.layoutBounds,
       this.modelViewTransform,
       alertManager,
+      forceDescriber,
       positionDescriber,
       {
         label: charge1AbbreviatedString,
@@ -73,6 +74,7 @@ define( function( require ) {
       this.layoutBounds,
       this.modelViewTransform,
       alertManager,
+      forceDescriber,
       positionDescriber,
       {
         label: charge2AbbreviatedString,

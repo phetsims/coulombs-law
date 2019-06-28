@@ -29,11 +29,12 @@ define( function( require ) {
    * @param {Bounds2} layoutBounds
    * @param {ModelViewTransform2} modelViewTransform
    * @param {ISLCAlertManager} alertManager
+   * @param {ForceDescriber} forceDescriber
    * @param {PositionDescriber} positionDescriber
    * @param {Object} options
    * @constructor
    */
-  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, positionDescriber, options ) {
+  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, forceDescriber, positionDescriber, options ) {
 
     options = _.extend( {
       label: 'This Charge', // TODO: factor out into strings files
@@ -71,6 +72,7 @@ define( function( require ) {
       layoutBounds,
       modelViewTransform,
       alertManager,
+      forceDescriber,
       positionDescriber,
       options
     );
