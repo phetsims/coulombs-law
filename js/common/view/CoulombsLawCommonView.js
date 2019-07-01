@@ -81,7 +81,7 @@ define( function( require ) {
 
     // construct checkbox item list
     var checkboxItems = [
-      new ISLCCheckboxItem( forceValuesString, coulombsLawModel.forceValuesProperty, {
+      new ISLCCheckboxItem( forceValuesString, coulombsLawModel.showForceValuesProperty, {
         tandem: tandem.createTandem( 'forceValuesCheckbox' )
       } ),
       new ISLCCheckboxItem( scientificNotationString, coulombsLawModel.scientificNotationProperty, {
@@ -89,7 +89,7 @@ define( function( require ) {
       } )
     ];
 
-    coulombsLawModel.forceValuesProperty.link( function( showValues ) {
+    coulombsLawModel.showForceValuesProperty.link( function( showValues ) {
       checkboxItems[ 1 ].enabled = showValues;
     } );
 

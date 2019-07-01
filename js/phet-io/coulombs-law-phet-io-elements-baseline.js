@@ -155,17 +155,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.forceValuesProperty": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "PropertyIO.<BooleanIO>"
-    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.rulerPositionProperty": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
@@ -178,6 +167,17 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<Vector2IO>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.scientificNotationProperty": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO.<BooleanIO>"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.showForceValuesProperty": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
@@ -6579,17 +6579,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.forceValuesProperty": {
-      "phetioDocumentation": "",
-      "phetioEventType": "model",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": false,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "PropertyIO.<BooleanIO>"
-    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.rulerPositionProperty": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
@@ -6602,6 +6591,17 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<Vector2IO>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.scientificNotationProperty": {
+      "phetioDocumentation": "",
+      "phetioEventType": "model",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO.<BooleanIO>"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.showForceValuesProperty": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": false,
