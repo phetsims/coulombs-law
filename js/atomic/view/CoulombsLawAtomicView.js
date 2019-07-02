@@ -15,8 +15,9 @@ define( function( require ) {
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
-  var CoulombsLawPositionDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawPositionDescriber' );
   var CoulombsLawForceDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawForceDescriber' );
+  var CoulombsLawPositionDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawPositionDescriber' );
+  var DefaultDirection = require( 'INVERSE_SQUARE_LAW_COMMON/view/DefaultDirection' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
   var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
@@ -69,7 +70,7 @@ define( function( require ) {
       {
         label: charge1AbbreviatedString,
         otherObjectLabel: charge2AbbreviatedString,
-        defaultDirection: 'left',
+        defaultDirection: DefaultDirection.LEFT,
         arrowColor: '#66f',
         forceArrowHeight: 70,
         pullerNodeOptions: {
@@ -94,7 +95,7 @@ define( function( require ) {
       {
         label: charge2AbbreviatedString,
         otherObjectLabel: charge1AbbreviatedString,
-        defaultDirection: 'right',
+        defaultDirection: DefaultDirection.RIGHT,
         arrowColor: '#f66',
         forceArrowHeight: 120,
         pullerNodeOptions: {
