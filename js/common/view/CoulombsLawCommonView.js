@@ -12,12 +12,11 @@ define( function( require ) {
   'use strict';
 
   // modules
+  const BooleanProperty = require( 'AXON/BooleanProperty' );
   var Bounds2 = require( 'DOT/Bounds2' );
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCCheckboxItem = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxItem' );
-  var ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
   var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
   var ISLCQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCQueryParameters' );
   var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
@@ -25,6 +24,7 @@ define( function( require ) {
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var Vector2 = require( 'DOT/Vector2' );
+  var ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
 
   // strings
   var charge1String = require( 'string!COULOMBS_LAW/charge1' );
@@ -79,18 +79,29 @@ define( function( require ) {
       ] ) );
     this.addChild( coulombsLawRuler );
 
+    const scientificNotationCheckboxTandem = tandem.createTandem( 'scientificNotationCheckbox' );
+    const scientificCheckboxEnabledProperty = new BooleanProperty( true, {
+      tandem: scientificNotationCheckboxTandem.createTandem( 'enabledProperty' ),
+      phetioFeatured: true
+    } );
+
     // construct checkbox item list
     var checkboxItems = [
-      new ISLCCheckboxItem( forceValuesString, coulombsLawModel.showForceValuesProperty, {
+      {
+        label: forceValuesString,
+        property: coulombsLawModel.showForceValuesProperty,
         tandem: tandem.createTandem( 'forceValuesCheckbox' )
-      } ),
-      new ISLCCheckboxItem( scientificNotationString, coulombsLawModel.scientificNotationProperty, {
-        tandem: tandem.createTandem( 'scientificNotationCheckbox' )
-      } )
+      },
+      {
+        label: scientificNotationString,
+        property: coulombsLawModel.scientificNotationProperty,
+        options: { enabledProperty: scientificCheckboxEnabledProperty },
+        tandem: scientificNotationCheckboxTandem
+      }
     ];
 
     coulombsLawModel.showForceValuesProperty.link( function( showValues ) {
-      checkboxItems[ 1 ].enabled = showValues;
+      scientificCheckboxEnabledProperty.value = showValues;
     } );
 
     var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxItems, {
