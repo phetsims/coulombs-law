@@ -58,7 +58,7 @@ define( function( require ) {
         arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
         arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
         arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
-        labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
+        labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty
       },
 
       // phet-io
