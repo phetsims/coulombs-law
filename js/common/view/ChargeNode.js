@@ -17,6 +17,7 @@ define( function( require ) {
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var inherit = require( 'PHET_CORE/inherit' );
   var ISLCObjectNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode' );
+  var merge = require( 'PHET_CORE/merge' );
   var RadialGradient = require( 'SCENERY/util/RadialGradient' );
   var Tandem = require( 'TANDEM/Tandem' );
 
@@ -36,17 +37,19 @@ define( function( require ) {
    */
   function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, forceDescriber, positionDescriber, options ) {
 
-    options = _.extend( {
+    options = merge( {
       label: 'This Charge', // TODO: factor out into strings files
       otherObjectLabel: 'Other Charge',
       scientificNotationMode: true,
       snapToNearest: model.snapObjectsToNearest,
       maxArrowWidth: 50,
-      displayShadow: false,
       attractNegative: true,
       forceReadoutDecimalPlaces: 9,
       y: CHARGE_NODE_Y_POSITION,
-      pullRangeMultiplier: 1,
+
+      pullerNodeOptions: {
+        displayShadow: false
+      },
 
       // colors for projector and default modes
       labelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
@@ -56,6 +59,7 @@ define( function( require ) {
       labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
 
       tandem: Tandem.required,
+
       // TODO: proper sting usage
       a11yCreateValueChangeAriaValueText: function( formattedValue ) {
         return '{{formattedValue}} coulombs';
