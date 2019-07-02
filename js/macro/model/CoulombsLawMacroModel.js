@@ -40,7 +40,7 @@ define( function( require ) {
     var charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ) );
     var charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ) );
 
-    // boundary constants are in m, convert to cm
+    // boundary constants are in "X meters", convert to "X cm" but still in the unit of meters
     var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
     var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
 

@@ -45,6 +45,26 @@ define( function( require ) {
   return inherit( ISLCModel, CoulombsLawCommonModel, {
 
     /**
+     * @override
+     * @returns {number}
+     */
+    getMinForce: function() {
+      return -this.getMaxForce();
+    },
+
+    /**
+     * @override
+     * @returns {number}
+     */
+    getMaxForce: function() {
+
+      // inherited object node accepts the entire force range. (NOTE: necessary to calculate here as Coulomb's Law allows
+      // negative forces while Gravity Force Lab does not.)
+      return this.calculateForce( this.object1.valueRange.max, this.object1.valueRange.max,
+        this.getMinDistance( this.object1.valueProperty.get() ) ); // This assumes constant radius for Coulombs law
+    },
+
+    /**
      * Resets the model.
      *
      * @public

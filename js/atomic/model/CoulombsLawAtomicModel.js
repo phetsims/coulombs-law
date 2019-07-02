@@ -50,7 +50,7 @@ define( function( require ) {
       constantRadius: constantRadius
     } );
 
-    // boundary constants in m, convert to pm (-50pm, 50pm)
+    // boundary constants are in "X meters", convert to "X pm" (-50pm, 50pm) but still in the unit of meters
     var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
     var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
 

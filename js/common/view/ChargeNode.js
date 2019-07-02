@@ -35,7 +35,8 @@ define( function( require ) {
    * @param {Object} options
    * @constructor
    */
-  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, forceDescriber, positionDescriber, options ) {
+  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager,
+                       forceDescriber, positionDescriber, options ) {
 
     options = merge( {
       label: 'This Charge', // TODO: factor out into strings files
