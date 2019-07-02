@@ -180,7 +180,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.showForceValuesProperty": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
-      "phetioFeatured": false,
+      "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -3909,7 +3909,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesCheckbox.property": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
-      "phetioFeatured": false,
+      "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": true,
@@ -4105,15 +4105,15 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "NodeIO"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.scientificNotationCheckbox.enabledProperty": {
-      "phetioDocumentation": "When disabled, the checkbox is grayed out and cannot be pressed.",
+      "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
-      "phetioReadOnly": false,
+      "phetioReadOnly": true,
       "phetioState": true,
       "phetioStudioControl": true,
-      "phetioTypeName": "PropertyIO.<BooleanIO>"
+      "phetioTypeName": "LinkedElementIO"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.scientificNotationCheckbox.labelNode": {
       "phetioDocumentation": "",
@@ -6604,7 +6604,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.showForceValuesProperty": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
-      "phetioFeatured": false,
+      "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
@@ -10289,7 +10289,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesCheckbox.property": {
       "phetioDocumentation": "",
       "phetioEventType": "model",
-      "phetioFeatured": false,
+      "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": true,
@@ -10474,15 +10474,15 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "NodeIO"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.scientificNotationCheckbox.enabledProperty": {
-      "phetioDocumentation": "When disabled, the checkbox is grayed out and cannot be pressed.",
+      "phetioDocumentation": "",
       "phetioEventType": "model",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
-      "phetioReadOnly": false,
+      "phetioReadOnly": true,
       "phetioState": true,
       "phetioStudioControl": true,
-      "phetioTypeName": "PropertyIO.<BooleanIO>"
+      "phetioTypeName": "LinkedElementIO"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.scientificNotationCheckbox.labelNode": {
       "phetioDocumentation": "",

@@ -12,7 +12,6 @@ define( function( require ) {
   'use strict';
 
   // modules
-  const BooleanProperty = require( 'AXON/BooleanProperty' );
   var Bounds2 = require( 'DOT/Bounds2' );
   var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
@@ -79,12 +78,6 @@ define( function( require ) {
       ] ) );
     this.addChild( coulombsLawRuler );
 
-    const scientificNotationCheckboxTandem = tandem.createTandem( 'scientificNotationCheckbox' );
-    const scientificCheckboxEnabledProperty = new BooleanProperty( true, {
-      tandem: scientificNotationCheckboxTandem.createTandem( 'enabledProperty' ),
-      phetioFeatured: true
-    } );
-
     // construct checkbox item list
     var checkboxItems = [
       {
@@ -95,14 +88,10 @@ define( function( require ) {
       {
         label: scientificNotationString,
         property: coulombsLawModel.scientificNotationProperty,
-        options: { enabledProperty: scientificCheckboxEnabledProperty },
-        tandem: scientificNotationCheckboxTandem
+        options: { enabledProperty: coulombsLawModel.showForceValuesProperty }, // force values toggles this enabled
+        tandem: tandem.createTandem( 'scientificNotationCheckbox' )
       }
     ];
-
-    coulombsLawModel.showForceValuesProperty.link( function( showValues ) {
-      scientificCheckboxEnabledProperty.value = showValues;
-    } );
 
     var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxItems, {
       tandem: tandem.createTandem( 'coulombsLawParameterCheckbox' ),
