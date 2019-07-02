@@ -32,11 +32,6 @@ define( require => {
       // TODO: implement when working on CL descriptions.
       return 0;
     }
-
-    // TODO: implement when auditory descriptions are implemented in this sim
-    getPositionAriaValueTextCreator() {
-      return () => '';
-    }
   }
 
   return coulombsLaw.register( 'CoulombsLawPositionDescriber', CoulombsLawPositionDescriber );
