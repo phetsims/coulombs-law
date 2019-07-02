@@ -72,10 +72,12 @@ define( function( require ) {
         defaultDirection: 'left',
         arrowColor: '#66f',
         forceArrowHeight: 70,
-        maxArrowWidth: ARROW_MAX_WIDTH,
-        forceReadoutDecimalPlaces: 9,
         pullerNodeOptions: {
           atomicScale: true
+        },
+        arrowNodeOptions:{
+          forceReadoutDecimalPlaces: 9,
+          maxArrowWidth: ARROW_MAX_WIDTH
         },
 
         tandem: tandem.createTandem( 'chargeNode1' )
@@ -95,10 +97,12 @@ define( function( require ) {
         defaultDirection: 'right',
         arrowColor: '#f66',
         forceArrowHeight: 120,
-        maxArrowWidth: ARROW_MAX_WIDTH,
-        forceReadoutDecimalPlaces: 9,
         pullerNodeOptions: {
           atomicScale: true
+        },
+        arrowNodeOptions:{
+          forceReadoutDecimalPlaces: 9,
+          maxArrowWidth: ARROW_MAX_WIDTH
         },
 
         tandem: tandem.createTandem( 'chargeNode2' )

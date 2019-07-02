@@ -42,22 +42,26 @@ define( function( require ) {
       otherObjectLabel: 'Other Charge',
       scientificNotationMode: true,
       snapToNearest: model.snapObjectsToNearest,
-      maxArrowWidth: 50,
       attractNegative: true,
-      forceReadoutDecimalPlaces: 9,
       y: CHARGE_NODE_Y_POSITION,
 
       pullerNodeOptions: {
         displayShadow: false
       },
 
-      // colors for projector and default modes
-      labelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
-      arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
-      arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
-      arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
-      labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
+      arrowNodeOptions: {
+        maxArrowWidth: 50,
+        forceReadoutDecimalPlaces: 9,
 
+        // colors for projector and default modes
+        labelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
+        arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
+        arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
+        arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
+        labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
+      },
+
+      // phet-io
       tandem: Tandem.required,
 
       // TODO: proper sting usage

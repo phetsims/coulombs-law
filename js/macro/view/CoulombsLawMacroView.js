@@ -64,7 +64,9 @@ define( function( require ) {
         defaultDirection: 'left',
         arrowColor: '#66f',
         forceArrowHeight: 70,
-        forceReadoutDecimalPlaces: 3,
+        arrowNodeOptions: {
+          forceReadoutDecimalPlaces: 3
+        },
         tandem: tandem.createTandem( 'chargeNode1' )
       } );
 
@@ -82,7 +84,9 @@ define( function( require ) {
         defaultDirection: 'right',
         arrowColor: '#f66',
         forceArrowHeight: 120,
-        forceReadoutDecimalPlaces: 3,
+        arrowNodeOptions: {
+          forceReadoutDecimalPlaces: 3
+        },
         tandem: tandem.createTandem( 'chargeNode2' )
       } );
 
