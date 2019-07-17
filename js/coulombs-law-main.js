@@ -13,7 +13,6 @@ define( function( require ) {
   // modules
   var CoulombsLawAtomicScreen = require( 'COULOMBS_LAW/atomic/CoulombsLawAtomicScreen' );
   var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  var CoulombsLawCommonConstants = require( 'COULOMBS_LAW/common/CoulombsLawCommonConstants' );
   var CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
   var CoulombsLawGlobals = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobals' );
   var CoulombsLawKeyboardHelpContent = require( 'COULOMBS_LAW/common/view/CoulombsLawKeyboardHelpContent' );
@@ -36,7 +35,7 @@ define( function( require ) {
       graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
       thanks: ''
     },
-    optionsNode: new CoulombsLawGlobalOptionsNode( CoulombsLawCommonConstants.GLOBALS_TANDEM.createTandem( 'options' ) ),
+    optionsNode: new CoulombsLawGlobalOptionsNode( Tandem.globalTandem.createTandem( 'options' ) ),
     accessibility: true,
     keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
   };
