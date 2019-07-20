@@ -33,7 +33,9 @@ define( function( require ) {
       graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
       thanks: ''
     },
-    optionsNode: new CoulombsLawGlobalOptionsNode( Tandem.globalTandem.createTandem( 'options' ) ),
+
+    // Creates content for the Options dialog
+    createOptionsDialogContent: tandem => new CoulombsLawGlobalOptionsNode( tandem ),
     accessibility: true,
     keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
   };
