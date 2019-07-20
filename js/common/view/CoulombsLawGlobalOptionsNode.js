@@ -1,17 +1,16 @@
-// Copyright 2017-2018, University of Colorado Boulder
+// Copyright 2017-2019, University of Colorado Boulder
 
 /**
- * An options checkbox that can be accessed from the footer navigation. Links to global sim properties.
+ * Global options shown in the "Options" dialog from the PhET Menu.
  * 
  * @author Michael Barlow (PhET Interactive Simulations)
- * 
  */
 define( function ( require ) {
   'use strict';
 
   // modules
   var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawGlobals = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobals' );
+  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var inherit = require( 'PHET_CORE/inherit' );
   var LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
   var OptionsDialog = require( 'JOIST/OptionsDialog' );
@@ -22,8 +21,7 @@ define( function ( require ) {
    */
   function CoulombsLawGlobalOptionsNode( tandem ) {
 
-    var projectorModeCheckbox = new ProjectorModeCheckbox( {
-      projectorModeEnabledProperty: CoulombsLawGlobals.projectorModeProperty,
+    var projectorModeCheckbox = new ProjectorModeCheckbox( CoulombsLawColorProfile, {
       tandem: tandem.createTandem( 'projectorCheckbox' ),
       phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
     } );

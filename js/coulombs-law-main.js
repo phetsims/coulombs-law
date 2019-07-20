@@ -12,9 +12,7 @@ define( function( require ) {
 
   // modules
   var CoulombsLawAtomicScreen = require( 'COULOMBS_LAW/atomic/CoulombsLawAtomicScreen' );
-  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   var CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
-  var CoulombsLawGlobals = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobals' );
   var CoulombsLawKeyboardHelpContent = require( 'COULOMBS_LAW/common/view/CoulombsLawKeyboardHelpContent' );
   var CoulombsLawMacroScreen = require( 'COULOMBS_LAW/macro/CoulombsLawMacroScreen' );
   var Sim = require( 'JOIST/Sim' );
@@ -39,11 +37,6 @@ define( function( require ) {
     accessibility: true,
     keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
   };
-
-  // projectorModeProperty is never destroyed after initialization, disposal unnecessary
-  CoulombsLawGlobals.projectorModeProperty.link( function( inProjectorMode ) {
-    CoulombsLawColorProfile.profileNameProperty.set( inProjectorMode ? 'projector' : 'default' );
-  } );
 
   SimLauncher.launch( function() {
     var screens = [
