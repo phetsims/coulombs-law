@@ -44,7 +44,7 @@ define( function( require ) {
     ISLCObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, tandem, options );
 
     // see ISLCObject
-    this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], function( value ) {
+    this.baseColorProperty = new DerivedProperty( [this.valueProperty], function( value ) {
         var newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
       },
