@@ -118,7 +118,7 @@ define( function( require ) {
 
     // a11y - charges are first in accessible order, followed by control panel in supertype
     var charges = [ chargeNode1, chargeNode2 ];
-    this.accessibleOrder = charges.concat( this.accessibleOrder );
+    this.playAreaNode.accessibleOrder = charges.concat( this.playAreaNode.accessibleOrder );
   }
 
   coulombsLaw.register( 'CoulombsLawMacroView', CoulombsLawMacroView );

@@ -150,7 +150,7 @@ define( function( require ) {
     var charges = [ chargeNode1, chargeNode2 ];
 
     // a11y - tab order for the screenview (Accessibility.js setter)
-    this.accessibleOrder = charges.concat( this.accessibleOrder );
+    this.playAreaNode.accessibleOrder = charges.concat( this.playAreaNode.accessibleOrder );
   }
 
   coulombsLaw.register( 'CoulombsLawAtomicView', CoulombsLawAtomicView );
