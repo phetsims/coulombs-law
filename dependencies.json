@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.4 Fri Jul 26 2019 15:24:29 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# coulombs-law 1.0.5-rc.1 Thu Aug 01 2019 00:34:58 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "95a9cbd63980bd88d1b7206967b9e530b60470dc",
+    "sha": "edbf54325c8d35dec9db9d6fe769c7f527b9e0cd",
     "branch": "1.0"
   },
   "dot": {
@@ -50,7 +50,7 @@
   },
   "phetcommon": {
     "sha": "6751e1fb4698fc715fed490ea83d64d281c3f4ad",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "phetmarks": {
     "sha": "9b0054b127af9970fd96d0326cd792bfa2c25720",
