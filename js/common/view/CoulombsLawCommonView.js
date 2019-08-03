@@ -67,7 +67,7 @@ define( function( require ) {
       coulombsLawModel,
       this.layoutBounds.height,
       this.modelViewTransform,
-      tandem.createTandem( 'coulombsLawRuler' ),
+      tandem.createTandem( 'ruler' ),
       _.pick( options, [
         'snapToNearest',
         'majorTickLabels',

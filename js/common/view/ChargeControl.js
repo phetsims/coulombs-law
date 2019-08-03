@@ -38,7 +38,7 @@ define( function( require ) {
 
         // panel options
         align: 'center',
-        additionalTicks: [ { value: 0, tandemLabel: 'majorTickZeroLabel' } ],
+        additionalTicks: [ { value: 0 } ],
 
         numberControlOptions: {
           sliderOptions: {
