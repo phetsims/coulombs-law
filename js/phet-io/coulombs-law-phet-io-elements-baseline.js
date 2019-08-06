@@ -74,7 +74,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge1.valueProperty": {
-      "phetioDocumentation": "the value of the object",
+      "phetioDocumentation": "The value of the object",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": false,
@@ -146,7 +146,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge2.valueProperty": {
-      "phetioDocumentation": "the value of the object",
+      "phetioDocumentation": "The value of the object",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": false,
@@ -5354,7 +5354,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge1.valueProperty": {
-      "phetioDocumentation": "the value of the object",
+      "phetioDocumentation": "The value of the object",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": false,
@@ -5426,7 +5426,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge2.valueProperty": {
-      "phetioDocumentation": "the value of the object",
+      "phetioDocumentation": "The value of the object",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": false,
