@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.5 Mon Aug 05 2019 15:16:32 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# coulombs-law 1.0.5 Mon Aug 19 2019 13:16:24 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "ce890ccd119308ca37d94f5bac804cd751532f31",
+    "sha": "cf8ebdb760b71626991605202f9862ac9bf04dee",
     "branch": "1.0"
   },
   "dot": {
@@ -29,8 +29,8 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "5e2c20eac7aa15b69952d64912aebc011183ee08",
-    "branch": "HEAD"
+    "sha": "8e1319cb9e5296f2418d3bcfb9b86e1b499f7eae",
+    "branch": "coulombs-law-1.0"
   },
   "kite": {
     "sha": "380cef530ae6a8ae4aa644ff4f09baf85326ad9f",
@@ -65,8 +65,8 @@
     "branch": "HEAD"
   },
   "scenery-phet": {
-    "sha": "5ad4a625929c691d3f8b0d11b7c30434de562f24",
-    "branch": "HEAD"
+    "sha": "33ce1272a641fd3ee2bd2617a166032a37bef429",
+    "branch": "coulombs-law-1.0"
   },
   "sherpa": {
     "sha": "0989d371163d6f63b86d64735d192297d75b23f2",
