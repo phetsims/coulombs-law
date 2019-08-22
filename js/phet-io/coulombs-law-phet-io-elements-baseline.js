@@ -157,18 +157,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.separationProperty": {
-      "phetioDocumentation": "The distance between the two objects' centers",
-      "phetioDynamicElement": false,
-      "phetioEventType": "MODEL",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": true,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
-    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.forceProperty": {
       "phetioDocumentation": "The force of one object on the other (in Newtons)",
       "phetioDynamicElement": false,
@@ -204,6 +192,18 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.separationProperty": {
+      "phetioDocumentation": "The distance between the two objects' centers",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.showForceValuesProperty": {
       "phetioDocumentation": "Whether or not the force values should be displayed",
@@ -5185,18 +5185,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.separationProperty": {
-      "phetioDocumentation": "The distance between the two objects' centers",
-      "phetioDynamicElement": false,
-      "phetioEventType": "MODEL",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": true,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
-    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.forceProperty": {
       "phetioDocumentation": "The force of one object on the other (in Newtons)",
       "phetioDynamicElement": false,
@@ -5232,6 +5220,18 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO.<BooleanIO>"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.separationProperty": {
+      "phetioDocumentation": "The distance between the two objects' centers",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "DerivedPropertyIO.<NumberIO>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.showForceValuesProperty": {
       "phetioDocumentation": "Whether or not the force values should be displayed",
