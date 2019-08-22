@@ -157,7 +157,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.distanceProperty": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.separationProperty": {
       "phetioDocumentation": "The distance between the two objects' centers",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
@@ -5185,7 +5185,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.distanceProperty": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.separationProperty": {
       "phetioDocumentation": "The distance between the two objects' centers",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
