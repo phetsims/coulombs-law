@@ -58,7 +58,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": true,
-      "phetioStudioControl": true,
+      "phetioStudioControl": false,
       "phetioTypeName": "NumberPropertyIO"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge1.radiusProperty": {
@@ -130,7 +130,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": true,
-      "phetioStudioControl": true,
+      "phetioStudioControl": false,
       "phetioTypeName": "NumberPropertyIO"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge2.radiusProperty": {
@@ -5182,7 +5182,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": true,
-      "phetioStudioControl": true,
+      "phetioStudioControl": false,
       "phetioTypeName": "NumberPropertyIO"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge1.radiusProperty": {
@@ -5254,7 +5254,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": true,
-      "phetioStudioControl": true,
+      "phetioStudioControl": false,
       "phetioTypeName": "NumberPropertyIO"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge2.radiusProperty": {
