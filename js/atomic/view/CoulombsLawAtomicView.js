@@ -80,7 +80,6 @@ define( function( require ) {
           forceReadoutDecimalPlaces: 9,
           maxArrowWidth: ARROW_MAX_WIDTH
         },
-
         tandem: tandem.createTandem( 'chargeNode1' )
       } );
 
