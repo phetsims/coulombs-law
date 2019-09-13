@@ -76,7 +76,8 @@ define( function( require ) {
         pullerNodeOptions: {
           atomicScale: true
         },
-        arrowNodeOptions:{
+        labelAlign: 'right',
+        arrowNodeOptions: {
           forceReadoutDecimalPlaces: 9,
           maxArrowWidth: ARROW_MAX_WIDTH
         },
@@ -100,7 +101,8 @@ define( function( require ) {
         pullerNodeOptions: {
           atomicScale: true
         },
-        arrowNodeOptions:{
+        labelAlign: 'left',
+        arrowNodeOptions: {
           forceReadoutDecimalPlaces: 9,
           maxArrowWidth: ARROW_MAX_WIDTH
         },
