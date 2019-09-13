@@ -62,6 +62,7 @@ define( function( require ) {
         labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
         backgroundFill: CoulombsLawColorProfile.backgroundProperty
       },
+      labelTop: 5,
 
       // phet-io
       tandem: Tandem.required,
