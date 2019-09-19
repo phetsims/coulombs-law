@@ -22,7 +22,7 @@ define( require => {
   const Tandem = require( 'TANDEM/Tandem' );
 
   // constants
-  var CHARGE_NODE_Y_POSITION = 205;
+  const CHARGE_NODE_Y_POSITION = 205;
 
   /**
    * @param {CoulombsLawCommonModel} model
@@ -105,7 +105,7 @@ define( require => {
      * @param  {Color} baseColor
      */
     updateGradient: function( baseColor ) {
-      var radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
+      let radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
 
       // if the radius = 1, radial gradient will throw an divide-by-zero error
       // ensure inequality

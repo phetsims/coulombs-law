@@ -34,9 +34,9 @@ define( require => {
   const unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers' );
 
   // constants
-  var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
-  var MODEL_VIEW_TRANSFORM_SCALE = 5E12; // scales the modelViewTransform for accurate positioning on Macro and Atomic screens
-  var ARROW_MAX_WIDTH = 10000;
+  const SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
+  const MODEL_VIEW_TRANSFORM_SCALE = 5E12; // scales the modelViewTransform for accurate positioning on Macro and Atomic screens
+  const ARROW_MAX_WIDTH = 10000;
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -45,7 +45,7 @@ define( require => {
    */
   function CoulombsLawAtomicView( coulombsLawModel, tandem ) {
 
-    var rulerOptions = {
+    const rulerOptions = {
       snapToNearest: 1E-12, // in model coordinates
       majorTickLabels: [ '0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100' ],
       unitString: unitsPicometersString,
@@ -59,7 +59,7 @@ define( require => {
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsAtomicUnitsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
     // charge nodes added in each screen to allow for different decimal precision and arrow height
-    var chargeNode1 = new ChargeNode(
+    const chargeNode1 = new ChargeNode(
       coulombsLawModel,
       coulombsLawModel.object1,
       this.layoutBounds,
@@ -87,7 +87,7 @@ define( require => {
         tandem: tandem.createTandem( 'chargeNode1' )
       } );
 
-    var chargeNode2 = new ChargeNode(
+    const chargeNode2 = new ChargeNode(
       coulombsLawModel,
       coulombsLawModel.object2,
       this.layoutBounds,
@@ -127,9 +127,9 @@ define( require => {
     this.insertChild( 1, chargeNode2.arrowNode );
 
     // create a line the length of 1 picometer
-    var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 10E-12 );
+    const legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 10E-12 );
 
-    var legendNode = new ISLCLegendNode(
+    const legendNode = new ISLCLegendNode(
       legendNodeLineLength, // length of the line
       unitsAtomicLegendScaleString, // unit string
       {
@@ -142,7 +142,7 @@ define( require => {
     this.addChild( legendNode );
 
     // add picometer conversion string
-    var picometerScaleNode = new RichText( pmScaleString, {
+    const picometerScaleNode = new RichText( pmScaleString, {
       fill: CoulombsLawColorProfile.legendNodeFillProperty,
       font: new PhetFont( 12 ),
       maxWidth: 180,
@@ -154,7 +154,7 @@ define( require => {
     this.addChild( picometerScaleNode );
 
     // a11y - charges are first in focus order
-    var charges = [ chargeNode1, chargeNode2 ];
+    const charges = [ chargeNode1, chargeNode2 ];
 
     // a11y - tab order for the screenview (Accessibility.js setter)
     this.playAreaNode.accessibleOrder = charges.concat( this.playAreaNode.accessibleOrder );

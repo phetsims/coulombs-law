@@ -32,7 +32,7 @@ define( require => {
   const scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
 
   // constants
-  var SHOW_GRID = ISLCQueryParameters.showGrid;
+  const SHOW_GRID = ISLCQueryParameters.showGrid;
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -47,13 +47,13 @@ define( require => {
 
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 768, 464 ) } );
 
-    var rightAlignment = this.layoutBounds.maxX - 10;
-    var bottomAlignment = this.layoutBounds.maxY - 10;
+    const rightAlignment = this.layoutBounds.maxX - 10;
+    const bottomAlignment = this.layoutBounds.maxY - 10;
 
     // Create the model-view transform.  The primary units used in the model are meters, so significant zoom is used.
     // The multipliers for the 2nd parameter can be used to adjust where the point (0, 0) in the model, which is
     // between the two masses.
-    var modelViewTransform = ModelViewTransform2.createSinglePointScaleInvertedYMapping(
+    const modelViewTransform = ModelViewTransform2.createSinglePointScaleInvertedYMapping(
       Vector2.ZERO,
       new Vector2( this.layoutBounds.width / 2, this.layoutBounds.height / 2 ),
       modelViewTransformScale
@@ -63,7 +63,7 @@ define( require => {
     this.modelViewTransform = modelViewTransform;
 
     // create and add macro ruler
-    var coulombsLawRuler = new ISLCRulerNode(
+    const coulombsLawRuler = new ISLCRulerNode(
       coulombsLawModel,
       this.layoutBounds.height,
       this.modelViewTransform,
@@ -79,7 +79,7 @@ define( require => {
     this.addChild( coulombsLawRuler );
 
     // construct checkbox item list
-    var checkboxItems = [
+    const checkboxItems = [
       {
         label: forceValuesString,
         property: coulombsLawModel.showForceValuesProperty,
@@ -93,7 +93,7 @@ define( require => {
       }
     ];
 
-    var coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxItems, {
+    const coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxItems, {
       tandem: tandem.createTandem( 'coulombsLawParameterCheckbox' ),
       fill: '#EDEDED',
       right: rightAlignment,
@@ -102,7 +102,7 @@ define( require => {
 
     this.addChild( coulombsLawParameterCheckbox );
 
-    var charge1Control = new ChargeControl(
+    const charge1Control = new ChargeControl(
       charge1String,
       unitString,
       coulombsLawModel.object1.valueProperty,
@@ -115,7 +115,7 @@ define( require => {
 
     this.addChild( charge1Control );
 
-    var charge2Control = new ChargeControl(
+    const charge2Control = new ChargeControl(
       charge2String,
       unitString,
       coulombsLawModel.object2.valueProperty,
@@ -133,7 +133,7 @@ define( require => {
 
     // Reset All button
     // buttons are never disposed in this sim
-    var resetAllButton = new ResetAllButton( {
+    const resetAllButton = new ResetAllButton( {
       listener: function() {
         coulombsLawModel.reset();
         charge1Control.reset();
@@ -161,7 +161,7 @@ define( require => {
     //------------------------------------------------
 
     if ( SHOW_GRID ) {
-      var gridNode = new ISLCGridNode(
+      const gridNode = new ISLCGridNode(
         coulombsLawModel.snapObjectsToNearest,
         this.layoutBounds,
         modelViewTransform,

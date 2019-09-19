@@ -21,7 +21,7 @@ define( require => {
     const Tandem = require( 'TANDEM/Tandem' );
 
     // constants
-    var TRACK_SIZE = new Dimension2( 132, 0.25 );
+    const TRACK_SIZE = new Dimension2( 132, 0.25 );
 
     /**
      * @param {string} titleString
@@ -72,7 +72,7 @@ define( require => {
         objectProperty.set( value / scaleFactor );
       } );
 
-      var chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
+      const chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
 
       // add custom thumb to the slider
       options.numberControlOptions.sliderOptions.thumbNode = new ChargeControlSliderThumb( objectProperty, _.extend( {}, options,

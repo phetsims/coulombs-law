@@ -30,7 +30,7 @@ define( require => {
    */
   function CoulombsLawMacroScreen( tandem ) {
 
-    var options = {
+    const options = {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
       name: screenMacroScaleString,
       homeScreenIcon: new Image( macroScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
@@ -38,7 +38,7 @@ define( require => {
       tandem: tandem
     };
 
-    var macroScreenTandem = tandem.createTandem( 'coulombsLawMacroScreen' );
+    const macroScreenTandem = tandem.createTandem( 'coulombsLawMacroScreen' );
 
     Screen.call( this,
       function() { return new CoulombsLawMacroModel( macroScreenTandem.createTandem( 'model' ) ); },

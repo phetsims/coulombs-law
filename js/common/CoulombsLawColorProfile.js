@@ -15,11 +15,11 @@ define(function(require) {
   const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
 
   // constants
-  var BLACK = new Color( 0, 0, 0 );
-  var WHITE = new Color( 255, 255, 255 );
-  var GREEN = new Color( 0, 255, 0 );
+  const BLACK = new Color( 0, 0, 0 );
+  const WHITE = new Color( 255, 255, 255 );
+  const GREEN = new Color( 0, 255, 0 );
 
-  var CoulombsLawColorProfile = new ColorProfile( [ 'default', 'projector' ], {
+  const CoulombsLawColorProfile = new ColorProfile( [ 'default', 'projector' ], {
     background: {
       default: BLACK,
       projector: WHITE

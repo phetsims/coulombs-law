@@ -29,7 +29,7 @@ define( require => {
    */
   function CoulombsLawAtomicScreen( tandem ) {
 
-    var options = {
+    const options = {
       backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
       name: screenAtomicScaleString,
       homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
@@ -37,7 +37,7 @@ define( require => {
       tandem: tandem
     };
 
-    var atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
+    const atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
 
     Screen.call( this,
       function() { return new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ); },

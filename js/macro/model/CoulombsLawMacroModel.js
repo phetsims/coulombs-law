@@ -26,23 +26,23 @@ define( require => {
   function CoulombsLawMacroModel( tandem ) {
 
     // set initial charge values
-    var chargeValue1 = -4E-6; // -4 microcoulombs in Coulombs
-    var chargeValue2 = 8E-6; // 8 microcoulombs in Coulombs
+    const chargeValue1 = -4E-6; // -4 microcoulombs in Coulombs
+    const chargeValue2 = 8E-6; // 8 microcoulombs in Coulombs
 
-    var position1 = -1E-2; // initial position from center in m
-    var position2 = 2E-2; // initial position from center in m
+    const position1 = -1E-2; // initial position from center in m
+    const position2 = 2E-2; // initial position from center in m
 
-    var minChargeValue = -10E-6; // in Coulombs
-    var maxChargeValue = 10E-6; // in Coulombs
+    const minChargeValue = -10E-6; // in Coulombs
+    const maxChargeValue = 10E-6; // in Coulombs
 
-    var valueRange = new Range( minChargeValue, maxChargeValue );
+    const valueRange = new Range( minChargeValue, maxChargeValue );
 
-    var charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ) );
-    var charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ) );
+    const charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ) );
+    const charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ) );
 
     // boundary constants are in "X meters", convert to "X cm" but still in the unit of meters
-    var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
-    var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
+    const leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
+    const rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
 
     // @public - the ruler position
     this.rulerPositionProperty = new Vector2Property( new Vector2( 0, -7.5E-3 ), {

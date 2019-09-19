@@ -30,8 +30,8 @@ define( require => {
   const unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs' );
 
   // constants
-  var SCALE_FACTOR = 1E6;  // number of microcoulombs in one C
-  var MODEL_VIEW_TRANSFORM_SCALE = 5000;
+  const SCALE_FACTOR = 1E6;  // number of microcoulombs in one C
+  const MODEL_VIEW_TRANSFORM_SCALE = 5000;
 
   /**
    * @param {CoulombsLawModel} coulombsLawModel
@@ -40,7 +40,7 @@ define( require => {
    */
   function CoulombsLawMacroView( coulombsLawModel, tandem ) {
 
-    var rulerOptions = {
+    const rulerOptions = {
       snapToNearest: 0.001  // in model coordinates
     };
 
@@ -51,7 +51,7 @@ define( require => {
     CoulombsLawCommonView.call( this, coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
     // charge nodes added in each screen to allow for different decimal precision and arrow height
-    var chargeNode1 = new ChargeNode(
+    const chargeNode1 = new ChargeNode(
       coulombsLawModel,
       coulombsLawModel.object1,
       this.layoutBounds,
@@ -71,7 +71,7 @@ define( require => {
         tandem: tandem.createTandem( 'chargeNode1' )
       } );
 
-    var chargeNode2 = new ChargeNode(
+    const chargeNode2 = new ChargeNode(
       coulombsLawModel,
       coulombsLawModel.object2,
       this.layoutBounds,
@@ -102,9 +102,9 @@ define( require => {
     this.insertChild( 1, chargeNode2.arrowNode );
 
     // create a line the length of 1 cm
-    var legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1E-2 );
+    const legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 1E-2 );
 
-    var legendNode = new ISLCLegendNode(
+    const legendNode = new ISLCLegendNode(
       legendNodeLineLength, // length of the line
       unitsMacroLegendScaleString, // unit string
       {
@@ -117,7 +117,7 @@ define( require => {
     this.addChild( legendNode );
 
     // a11y - charges are first in accessible order, followed by control panel in supertype
-    var charges = [ chargeNode1, chargeNode2 ];
+    const charges = [ chargeNode1, chargeNode2 ];
     this.playAreaNode.accessibleOrder = charges.concat( this.playAreaNode.accessibleOrder );
   }
 

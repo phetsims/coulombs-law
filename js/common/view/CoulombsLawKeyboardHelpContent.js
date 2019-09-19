@@ -49,7 +49,7 @@ define( require => {
 
     constructor() {
 
-      var helpContentOptions = {
+      const helpContentOptions = {
         
         // i18n, restricts both labelText and maxWidth, see KeyboardHelpSection
         labelMaxWidth: 130

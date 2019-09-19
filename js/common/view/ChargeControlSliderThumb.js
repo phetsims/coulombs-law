@@ -18,10 +18,10 @@ define( require => {
   const SliderThumb = require( 'SUN/SliderThumb' );
 
   // constants
-  var THUMB_SIZE = new Dimension2( 10, 18 );
-  var NEGATIVE_FILL = new Color( '#00f' );
-  var POSITIVE_FILL = new Color( '#f00' );
-  var ZERO_FILL = new Color( 'gray' );
+  const THUMB_SIZE = new Dimension2( 10, 18 );
+  const NEGATIVE_FILL = new Color( '#00f' );
+  const POSITIVE_FILL = new Color( '#f00' );
+  const ZERO_FILL = new Color( 'gray' );
 
   /**
    * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
@@ -33,12 +33,12 @@ define( require => {
     // {Property.<Color>}
     // fills are axon Properties because they need to change with the objectProperty
     // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
-    var fillProperty = new DerivedProperty( [ objectProperty ], function( value ) {
+    const fillProperty = new DerivedProperty( [ objectProperty ], function( value ) {
       return getUpdatedFill( value );
     } );
 
     // {Property.<Color>}
-    var fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
+    const fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
       return getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
     } );
 
@@ -62,7 +62,7 @@ define( require => {
    */
   function getUpdatedFill( propertyValue ) {
 
-    var fill;
+    let fill;
     if ( propertyValue < 0 ) {
       fill = NEGATIVE_FILL;
     } else if ( propertyValue > 0 ) {

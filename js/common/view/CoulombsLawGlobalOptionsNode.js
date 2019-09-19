@@ -21,7 +21,7 @@ define( function ( require ) {
    */
   function CoulombsLawGlobalOptionsNode( tandem ) {
 
-    var projectorModeCheckbox = new ProjectorModeCheckbox( CoulombsLawColorProfile, {
+    const projectorModeCheckbox = new ProjectorModeCheckbox( CoulombsLawColorProfile, {
       tandem: tandem.createTandem( 'projectorCheckbox' ),
       phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
     } );

@@ -28,31 +28,31 @@ define( require => {
   function CoulombsLawAtomicModel( tandem ) {
 
     // conversion factor for atomic units
-    var e = ISLCConstants.coulombsPerAtomicUnit;
+    const e = ISLCConstants.coulombsPerAtomicUnit;
 
     // set initial charge values
-    var chargeValue1 = -2 * e; // charge in Coulombs
-    var chargeValue2 = 4 * e; // charge in Coulombs
+    const chargeValue1 = -2 * e; // charge in Coulombs
+    const chargeValue2 = 4 * e; // charge in Coulombs
 
-    var position1 = -2E-11; // initial position from center in m (20pm)
-    var position2 = 2E-11; // initial position from center in m (20pm)
+    const position1 = -2E-11; // initial position from center in m (20pm)
+    const position2 = 2E-11; // initial position from center in m (20pm)
 
-    var minChargeValue = -10 * e; // in Coulombs
-    var maxChargeValue = 10 * e; // in Coulombs
+    const minChargeValue = -10 * e; // in Coulombs
+    const maxChargeValue = 10 * e; // in Coulombs
 
-    var valueRange = new Range( minChargeValue, maxChargeValue );
+    const valueRange = new Range( minChargeValue, maxChargeValue );
     const constantRadius = 9.5E-13;
 
-    var charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ), {
+    const charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ), {
       constantRadius: constantRadius
     } );
-    var charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ), {
+    const charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ), {
       constantRadius: constantRadius
     } );
 
     // boundary constants are in "X meters", convert to "X pm" (-50pm, 50pm) but still in the unit of meters
-    var leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
-    var rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
+    const leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
+    const rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
 
     // @public - the position of the ruler in the model
     this.rulerPositionProperty = new Vector2Property( new Vector2( 0, -0.75E-11 ), {

@@ -22,9 +22,9 @@ define( require => {
   // strings
   const coulombsLawTitleString = require( 'string!COULOMBS_LAW/coulombs-law.title' );
 
-  var tandem = Tandem.rootTandem;
+  const tandem = Tandem.rootTandem;
 
-  var simOptions = {
+  const simOptions = {
     credits: {
       leadDesign: 'Amy Rouinfar',
       softwareDevelopment: 'Jesse Greenberg, Michael Barlow',
@@ -41,11 +41,11 @@ define( require => {
   };
 
   SimLauncher.launch( function() {
-    var screens = [
+    const screens = [
       new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
       new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
     ];
-    var sim = new Sim( coulombsLawTitleString, screens, simOptions );
+    const sim = new Sim( coulombsLawTitleString, screens, simOptions );
     sim.start();
   } );
 } );

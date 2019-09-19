@@ -34,18 +34,18 @@ define( require => {
       valueUnits: 'coulombs'
     }, options );
 
-    var constantRadiusProperty = new BooleanProperty( true, {
+    const constantRadiusProperty = new BooleanProperty( true, {
       tandem: tandem.createTandem( 'constantRadiusProperty' )
     } );
 
-    var negativeColor = new Color( '#00f' );
-    var positiveColor = new Color( '#f00' );
+    const negativeColor = new Color( '#00f' );
+    const positiveColor = new Color( '#f00' );
 
     ISLCObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, tandem, options );
 
     // see ISLCObject
     this.baseColorProperty = new DerivedProperty( [this.valueProperty], function( value ) {
-        var newBaseColor = value < 0 ? negativeColor : positiveColor;
+        const newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
       },
       { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedPropertyIO( ColorIO ) }
