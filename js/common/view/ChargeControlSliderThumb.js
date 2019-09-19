@@ -6,16 +6,16 @@
  * @author  Jesse Greenberg
  * @author  Michael Barlow
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var Color = require( 'SCENERY/util/Color' );
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var DerivedProperty = require( 'AXON/DerivedProperty' );
-  var Dimension2 = require( 'DOT/Dimension2' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var SliderThumb = require( 'SUN/SliderThumb' );
+  const Color = require( 'SCENERY/util/Color' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const DerivedProperty = require( 'AXON/DerivedProperty' );
+  const Dimension2 = require( 'DOT/Dimension2' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const SliderThumb = require( 'SUN/SliderThumb' );
 
   // constants
   var THUMB_SIZE = new Dimension2( 10, 18 );

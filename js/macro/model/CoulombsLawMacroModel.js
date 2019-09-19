@@ -6,18 +6,18 @@
  * @author Jesse Greenberg
  * @author Michael Barlow
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var Charge = require( 'COULOMBS_LAW/common/model/Charge' );
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
-  var Range = require( 'DOT/Range' );
-  var Vector2 = require( 'DOT/Vector2' );
-  var Vector2Property = require( 'DOT/Vector2Property' );
+  const Charge = require( 'COULOMBS_LAW/common/model/Charge' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const CoulombsLawCommonModel = require( 'COULOMBS_LAW/common/model/CoulombsLawCommonModel' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
+  const Range = require( 'DOT/Range' );
+  const Vector2 = require( 'DOT/Vector2' );
+  const Vector2Property = require( 'DOT/Vector2Property' );
 
   /**
    * @param {Tandem} tandem

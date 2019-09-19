@@ -7,20 +7,20 @@
  * @author Jesse Greenberg (PhET Interactive Simulations)
  */
 
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var CoulombsLawAtomicScreen = require( 'COULOMBS_LAW/atomic/CoulombsLawAtomicScreen' );
-  var CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
-  var CoulombsLawKeyboardHelpContent = require( 'COULOMBS_LAW/common/view/CoulombsLawKeyboardHelpContent' );
-  var CoulombsLawMacroScreen = require( 'COULOMBS_LAW/macro/CoulombsLawMacroScreen' );
-  var Sim = require( 'JOIST/Sim' );
-  var SimLauncher = require( 'JOIST/SimLauncher' );
-  var Tandem = require( 'TANDEM/Tandem' );
+  const CoulombsLawAtomicScreen = require( 'COULOMBS_LAW/atomic/CoulombsLawAtomicScreen' );
+  const CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
+  const CoulombsLawKeyboardHelpContent = require( 'COULOMBS_LAW/common/view/CoulombsLawKeyboardHelpContent' );
+  const CoulombsLawMacroScreen = require( 'COULOMBS_LAW/macro/CoulombsLawMacroScreen' );
+  const Sim = require( 'JOIST/Sim' );
+  const SimLauncher = require( 'JOIST/SimLauncher' );
+  const Tandem = require( 'TANDEM/Tandem' );
 
   // strings
-  var coulombsLawTitleString = require( 'string!COULOMBS_LAW/coulombs-law.title' );
+  const coulombsLawTitleString = require( 'string!COULOMBS_LAW/coulombs-law.title' );
 
   var tandem = Tandem.rootTandem;
 

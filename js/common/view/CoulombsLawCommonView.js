@@ -8,28 +8,28 @@
  * @author Michael Barlow (PhET Interactive Simulations)
  * @author Sam Reid Î(PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var Bounds2 = require( 'DOT/Bounds2' );
-  var ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
-  var ISLCQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCQueryParameters' );
-  var ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
-  var ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
-  var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
-  var ScreenView = require( 'JOIST/ScreenView' );
-  var Vector2 = require( 'DOT/Vector2' );
-  var ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
+  const Bounds2 = require( 'DOT/Bounds2' );
+  const ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
+  const ISLCQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCQueryParameters' );
+  const ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
+  const ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
+  const ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
+  const ScreenView = require( 'JOIST/ScreenView' );
+  const Vector2 = require( 'DOT/Vector2' );
+  const ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
 
   // strings
-  var charge1String = require( 'string!COULOMBS_LAW/charge1' );
-  var charge2String = require( 'string!COULOMBS_LAW/charge2' );
-  var forceValuesString = require( 'string!INVERSE_SQUARE_LAW_COMMON/forceValues' );
-  var scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
+  const charge1String = require( 'string!COULOMBS_LAW/charge1' );
+  const charge2String = require( 'string!COULOMBS_LAW/charge2' );
+  const forceValuesString = require( 'string!INVERSE_SQUARE_LAW_COMMON/forceValues' );
+  const scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
 
   // constants
   var SHOW_GRID = ISLCQueryParameters.showGrid;

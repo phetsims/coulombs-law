@@ -7,27 +7,27 @@
  * @author Jesse Greenberg
  * @author Michael Barlow
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
-  var CoulombsLawForceDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawForceDescriber' );
-  var CoulombsLawPositionDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawPositionDescriber' );
-  var DefaultDirection = require( 'INVERSE_SQUARE_LAW_COMMON/view/DefaultDirection' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
-  var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
+  const ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  const CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
+  const CoulombsLawForceDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawForceDescriber' );
+  const CoulombsLawPositionDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawPositionDescriber' );
+  const DefaultDirection = require( 'INVERSE_SQUARE_LAW_COMMON/view/DefaultDirection' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
+  const ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
 
   // strings
-  var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
-  var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
-  var unitsMacroLegendScaleString = require( 'string!COULOMBS_LAW/units.macroLegendScale' );
+  const charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
+  const charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
+  const unitsMacroLegendScaleString = require( 'string!COULOMBS_LAW/units.macroLegendScale' );
 
-  var unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs' );
+  const unitsMicrocoulombsString = require( 'string!COULOMBS_LAW/units.microcoulombs' );
 
   // constants
   var SCALE_FACTOR = 1E6;  // number of microcoulombs in one C

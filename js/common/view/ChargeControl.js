@@ -6,19 +6,19 @@
  * @author  Jesse Greenberg
  * @author  Michael Barlow
  */
-define( function( require ) {
+define( require => {
     'use strict';
 
     // modules
-    var ChargeControlSliderThumb = require( 'COULOMBS_LAW/common/view/ChargeControlSliderThumb' );
-    var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-    var Dimension2 = require( 'DOT/Dimension2' );
-    var inherit = require( 'PHET_CORE/inherit' );
-    var ISLCObjectControlPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectControlPanel' );
-    var NumberProperty = require( 'AXON/NumberProperty' );
-    var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-    var Range = require( 'DOT/Range' );
-    var Tandem = require( 'TANDEM/Tandem' );
+    const ChargeControlSliderThumb = require( 'COULOMBS_LAW/common/view/ChargeControlSliderThumb' );
+    const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+    const Dimension2 = require( 'DOT/Dimension2' );
+    const inherit = require( 'PHET_CORE/inherit' );
+    const ISLCObjectControlPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectControlPanel' );
+    const NumberProperty = require( 'AXON/NumberProperty' );
+    const PhetFont = require( 'SCENERY_PHET/PhetFont' );
+    const Range = require( 'DOT/Range' );
+    const Tandem = require( 'TANDEM/Tandem' );
 
     // constants
     var TRACK_SIZE = new Dimension2( 132, 0.25 );

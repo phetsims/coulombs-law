@@ -6,18 +6,18 @@
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var BooleanProperty = require( 'AXON/BooleanProperty' );
-  var Color = require( 'SCENERY/util/Color' );
-  var ColorIO = require( 'SCENERY/util/ColorIO' );
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var DerivedProperty = require( 'AXON/DerivedProperty' );
-  var DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
+  const BooleanProperty = require( 'AXON/BooleanProperty' );
+  const Color = require( 'SCENERY/util/Color' );
+  const ColorIO = require( 'SCENERY/util/ColorIO' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const DerivedProperty = require( 'AXON/DerivedProperty' );
+  const DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
 
   /**
    * @param {number} initialCharge

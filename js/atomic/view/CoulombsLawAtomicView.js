@@ -7,31 +7,31 @@
  * @author Jesse Greenberg
  * @author Michael Barlow
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  var CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
-  var CoulombsLawForceDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawForceDescriber' );
-  var CoulombsLawPositionDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawPositionDescriber' );
-  var DefaultDirection = require( 'INVERSE_SQUARE_LAW_COMMON/view/DefaultDirection' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
-  var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
-  var ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
-  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  var RichText = require( 'SCENERY/nodes/RichText' );
+  const ChargeNode = require( 'COULOMBS_LAW/common/view/ChargeNode' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  const CoulombsLawCommonView = require( 'COULOMBS_LAW/common/view/CoulombsLawCommonView' );
+  const CoulombsLawForceDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawForceDescriber' );
+  const CoulombsLawPositionDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawPositionDescriber' );
+  const DefaultDirection = require( 'INVERSE_SQUARE_LAW_COMMON/view/DefaultDirection' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ISLCAlertManager = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCAlertManager' );
+  const ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
+  const ISLCLegendNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCLegendNode' );
+  const PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  const RichText = require( 'SCENERY/nodes/RichText' );
 
   // strings
-  var charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
-  var charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
-  var pmScaleString = require( 'string!COULOMBS_LAW/pmScale' );
-  var unitsAtomicLegendScaleString = require( 'string!COULOMBS_LAW/units.atomicLegendScale' );
-  var unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits' );
-  var unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers' );
+  const charge1AbbreviatedString = require( 'string!COULOMBS_LAW/charge1Abbreviated' );
+  const charge2AbbreviatedString = require( 'string!COULOMBS_LAW/charge2Abbreviated' );
+  const pmScaleString = require( 'string!COULOMBS_LAW/pmScale' );
+  const unitsAtomicLegendScaleString = require( 'string!COULOMBS_LAW/units.atomicLegendScale' );
+  const unitsAtomicUnitsString = require( 'string!COULOMBS_LAW/units.atomicUnits' );
+  const unitsPicometersString = require( 'string!INVERSE_SQUARE_LAW_COMMON/units.picometers' );
 
   // constants
   var SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C

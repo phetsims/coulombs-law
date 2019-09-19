@@ -9,17 +9,17 @@
  *
  */
 
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCObjectNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode' );
-  var merge = require( 'PHET_CORE/merge' );
-  var RadialGradient = require( 'SCENERY/util/RadialGradient' );
-  var Tandem = require( 'TANDEM/Tandem' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ISLCObjectNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode' );
+  const merge = require( 'PHET_CORE/merge' );
+  const RadialGradient = require( 'SCENERY/util/RadialGradient' );
+  const Tandem = require( 'TANDEM/Tandem' );
 
   // constants
   var CHARGE_NODE_Y_POSITION = 205;

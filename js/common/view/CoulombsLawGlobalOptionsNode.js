@@ -9,12 +9,12 @@ define( function ( require ) {
   'use strict';
 
   // modules
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
-  var OptionsDialog = require( 'JOIST/OptionsDialog' );
-  var ProjectorModeCheckbox = require( 'JOIST/ProjectorModeCheckbox' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
+  const OptionsDialog = require( 'JOIST/OptionsDialog' );
+  const ProjectorModeCheckbox = require( 'JOIST/ProjectorModeCheckbox' );
 
   /**
    * @param {Tandem} tandem 

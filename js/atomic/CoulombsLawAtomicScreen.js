@@ -4,24 +4,24 @@
  * @author Jesse Greenberg
  * @author Michael Barlow
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var CoulombsLawAtomicModel = require( 'COULOMBS_LAW/atomic/model/CoulombsLawAtomicModel' );
-  var CoulombsLawAtomicView = require( 'COULOMBS_LAW/atomic/view/CoulombsLawAtomicView' );
-  var CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  var Image = require( 'SCENERY/nodes/Image' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var Screen = require( 'JOIST/Screen' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const CoulombsLawAtomicModel = require( 'COULOMBS_LAW/atomic/model/CoulombsLawAtomicModel' );
+  const CoulombsLawAtomicView = require( 'COULOMBS_LAW/atomic/view/CoulombsLawAtomicView' );
+  const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  const Image = require( 'SCENERY/nodes/Image' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const Screen = require( 'JOIST/Screen' );
 
   // strings
-  var screenAtomicScaleString = require( 'string!COULOMBS_LAW/screen.atomicScale' );
+  const screenAtomicScaleString = require( 'string!COULOMBS_LAW/screen.atomicScale' );
 
   // images
-  var atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png');
-  var atomicScaleScreenIconNavbar = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon_navbar.png' );
+  const atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png');
+  const atomicScaleScreenIconNavbar = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon_navbar.png' );
 
   /**
    * @param {Tandem} tandem

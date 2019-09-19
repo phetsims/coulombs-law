@@ -7,15 +7,15 @@
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var BooleanProperty = require( 'AXON/BooleanProperty' );
-  var coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
-  var ISLCModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCModel' );
+  const BooleanProperty = require( 'AXON/BooleanProperty' );
+  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
+  const ISLCModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCModel' );
 
   /**
    * @param {Charge} charge1 - The left charge
