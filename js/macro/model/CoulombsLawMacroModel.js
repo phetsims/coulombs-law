@@ -16,8 +16,6 @@ define( require => {
   const inherit = require( 'PHET_CORE/inherit' );
   const ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   const Range = require( 'DOT/Range' );
-  const Vector2 = require( 'DOT/Vector2' );
-  const Vector2Property = require( 'DOT/Vector2Property' );
 
   /**
    * @param {Tandem} tandem
