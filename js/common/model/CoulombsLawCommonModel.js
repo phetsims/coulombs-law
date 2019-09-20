@@ -16,6 +16,8 @@ define( require => {
   const inherit = require( 'PHET_CORE/inherit' );
   const ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   const ISLCModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCModel' );
+  const Vector2 = require( 'DOT/Vector2' );
+  const Vector2Property = require( 'DOT/Vector2Property' );
 
   /**
    * @param {Charge} charge1 - The left charge
@@ -29,12 +31,18 @@ define( require => {
 
     options = _.extend( {
       snapObjectsToNearest: 0.1,
-      displayScientificNotation: true
+      displayScientificNotation: true,
+      initialRulerPosition: new Vector2( 0, -7.5E-3 )
     }, options );
 
     // @public {Property.<boolean>} - controls whether we display the force values in decimal or scientific notation format
     this.scientificNotationProperty = new BooleanProperty( options.displayScientificNotation, {
       tandem: tandem.createTandem( 'scientificNotationProperty' )
+    } );
+
+    // @public - the position of the ruler in the model
+    this.rulerPositionProperty = new Vector2Property( options.initialRulerPosition, {
+      tandem: tandem.createTandem( 'rulerPositionProperty' )
     } );
 
     ISLCModel.call( this, ISLCConstants.k, charge1, charge2, locationRange, tandem, options );

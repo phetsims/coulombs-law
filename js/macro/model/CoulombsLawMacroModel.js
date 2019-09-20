@@ -44,11 +44,6 @@ define( require => {
     const leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
     const rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
 
-    // @public - the ruler position
-    this.rulerPositionProperty = new Vector2Property( new Vector2( 0, -7.5E-3 ), {
-      tandem: tandem.createTandem( 'rulerPositionProperty' )
-    } );
-
     CoulombsLawCommonModel.call( this, charge1, charge2, new Range( leftBoundary, rightBoundary ), tandem, {
       snapObjectsToNearest: 0.001,
       minSeparationBetweenObjects: 0.001,

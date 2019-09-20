@@ -16,7 +16,6 @@ define( require => {
   const inherit = require( 'PHET_CORE/inherit' );
   const Range = require( 'DOT/Range' );
   const Vector2 = require( 'DOT/Vector2' );
-  const Vector2Property = require( 'DOT/Vector2Property' );
 
   // constants
   const ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
@@ -54,14 +53,10 @@ define( require => {
     const leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-11;
     const rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-11;
 
-    // @public - the position of the ruler in the model
-    this.rulerPositionProperty = new Vector2Property( new Vector2( 0, -0.75E-11 ), {
-      tandem: tandem.createTandem( 'rulerPositionProperty' )
-    } );
-
     CoulombsLawCommonModel.call( this, charge1, charge2, new Range( leftBoundary, rightBoundary ), tandem, {
       minSeparationBetweenObjects: 1E-13,
-      snapObjectsToNearest: 1E-12
+      snapObjectsToNearest: 1E-12,
+      initialRulerPosition: new Vector2( 0, -0.75E-11 )
     } );
   }
 
