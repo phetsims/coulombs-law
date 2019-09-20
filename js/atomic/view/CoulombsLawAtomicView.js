@@ -76,10 +76,6 @@ define( require => {
         pullerNodeOptions: {
           atomicScale: true
         },
-        addLabelBackground: false,
-        labelOptions: {
-          fill: 'white'
-        },
         arrowNodeOptions: {
           forceReadoutDecimalPlaces: 9,
           maxArrowWidth: ARROW_MAX_WIDTH
@@ -103,10 +99,6 @@ define( require => {
         forceArrowHeight: 120,
         pullerNodeOptions: {
           atomicScale: true
-        },
-        addLabelBackground: false,
-        labelOptions: {
-          fill: 'white'
         },
         arrowNodeOptions: {
           forceReadoutDecimalPlaces: 9,
