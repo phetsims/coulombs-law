@@ -32,7 +32,7 @@ define( require => {
     options = _.extend( {
       snapObjectsToNearest: 0.1,
       displayScientificNotation: true,
-      initialRulerPosition: new Vector2( 0, -9E-3 )
+      initialRulerPosition: new Vector2( 0, -1.1E-2 )
     }, options );
 
     // @public {Property.<boolean>} - controls whether we display the force values in decimal or scientific notation format
