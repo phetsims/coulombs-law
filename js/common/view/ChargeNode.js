@@ -70,7 +70,7 @@ define( require => {
       tandem: Tandem.required,
 
       // TODO: proper sting usage
-      a11yCreateValueChangeAriaValueText: function( formattedValue ) {
+      a11yCreateAriaValueText: function( formattedValue ) {
         return '{{formattedValue}} coulombs';
       }
     }, options );
