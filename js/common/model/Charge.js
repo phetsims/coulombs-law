@@ -16,54 +16,43 @@ define( require => {
   const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   const DerivedProperty = require( 'AXON/DerivedProperty' );
   const DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
-  const inherit = require( 'PHET_CORE/inherit' );
   const ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
 
-  /**
-   * @param {number} initialCharge
-   * @param {number} initialPosition - only for the x coordinate
-   * @param {Range} valueRange - only for the x coordinate
-   * @param {Tandem} tandem
-   * @param {Object} options
-   * @constructor
-   */
-  function Charge( initialCharge, initialPosition, valueRange, tandem, options ) {
-
-    options = _.extend( {
-      constantRadius: 6.75E-3, // ensure this is in meters (0.675cm)
-      valueUnits: 'coulombs'
-    }, options );
-
-    const constantRadiusProperty = new BooleanProperty( true, {
-      tandem: tandem.createTandem( 'constantRadiusProperty' )
-    } );
-
-    const negativeColor = new Color( '#00f' );
-    const positiveColor = new Color( '#f00' );
-
-    ISLCObject.call( this, initialCharge, initialPosition, valueRange, constantRadiusProperty, tandem, options );
-
-    // see ISLCObject
-    this.baseColorProperty = new DerivedProperty( [this.valueProperty], function( value ) {
-        const newBaseColor = value < 0 ? negativeColor : positiveColor;
-        return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
-      },
-      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedPropertyIO( ColorIO ) }
-    );
-  }
-
-  coulombsLaw.register( 'Charge', Charge );
-
-  return inherit( ISLCObject, Charge, {
+  class Charge extends ISLCObject {
 
     /**
-     * Returns the radius of the charge object.
-     *
-     * @override
-     * @returns {number}
+     * @param {number} initialCharge
+     * @param {number} initialPosition - only for the x coordinate
+     * @param {Range} valueRange - only for the x coordinate
+     * @param {Tandem} tandem
+     * @param {Object} options
      */
-    calculateRadius: function() {
-      return this.radiusProperty.get();
+    constructor( initialCharge, initialPosition, valueRange, tandem, options ) {
+
+      options = _.extend( {
+        constantRadius: 6.75E-3, // ensure this is in meters (0.675cm)
+        valueUnits: 'coulombs'
+      }, options );
+
+      const constantRadiusProperty = new BooleanProperty( true, {
+        tandem: tandem.createTandem( 'constantRadiusProperty' )
+      } );
+
+      const negativeColor = new Color( '#00f' );
+      const positiveColor = new Color( '#f00' );
+
+      super( initialCharge, initialPosition, valueRange, constantRadiusProperty,
+        () => this.radiusProperty.get(), tandem, options );
+
+      // see ISLCObject
+      this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], value => {
+          const newBaseColor = value < 0 ? negativeColor : positiveColor;
+          return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
+        },
+        { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedPropertyIO( ColorIO ) }
+      );
     }
-  } );
+  }
+
+  return coulombsLaw.register( 'Charge', Charge );
 } );
