@@ -2,10 +2,10 @@
 
 /**
  * Global options shown in the "Options" dialog from the PhET Menu.
- * 
+ *
  * @author Michael Barlow (PhET Interactive Simulations)
  */
-define( function ( require ) {
+define( function( require ) {
   'use strict';
 
   // modules
@@ -13,12 +13,11 @@ define( function ( require ) {
   const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   const inherit = require( 'PHET_CORE/inherit' );
   const LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
-  const merge = require( 'PHET_CORE/merge' );
   const OptionsDialog = require( 'JOIST/OptionsDialog' );
   const ProjectorModeCheckbox = require( 'JOIST/ProjectorModeCheckbox' );
 
   /**
-   * @param {Tandem} tandem 
+   * @param {Tandem} tandem
    */
   function CoulombsLawGlobalOptionsNode( tandem ) {
 
@@ -27,12 +26,12 @@ define( function ( require ) {
       phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
     } );
 
-    LayoutBox.call( this, merge( {
+    LayoutBox.call( this, {
       children: [ projectorModeCheckbox ],
       spacing: OptionsDialog.DEFAULT_SPACING,
       align: 'left',
       tandem: tandem
-    } ) );
+    } );
   }
 
   coulombsLaw.register( 'CoulombsLawGlobalOptionsNode', CoulombsLawGlobalOptionsNode );
