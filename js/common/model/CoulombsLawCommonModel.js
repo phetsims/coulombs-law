@@ -16,6 +16,7 @@ define( require => {
   const inherit = require( 'PHET_CORE/inherit' );
   const ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   const ISLCModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCModel' );
+  const merge = require( 'PHET_CORE/merge' );
   const Vector2 = require( 'DOT/Vector2' );
   const Vector2Property = require( 'DOT/Vector2Property' );
 
@@ -29,7 +30,7 @@ define( require => {
    */
   function CoulombsLawCommonModel( charge1, charge2, locationRange, tandem, options ) {
 
-    options = _.extend( {
+    options = merge( {
       snapObjectsToNearest: 0.1,
       displayScientificNotation: true,
       initialRulerPosition: new Vector2( 0, -1.1E-2 )

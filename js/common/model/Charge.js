@@ -17,6 +17,7 @@ define( require => {
   const DerivedProperty = require( 'AXON/DerivedProperty' );
   const DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
   const ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
+  const merge = require( 'PHET_CORE/merge' );
 
   class Charge extends ISLCObject {
 
@@ -29,7 +30,7 @@ define( require => {
      */
     constructor( initialCharge, initialPosition, valueRange, tandem, options ) {
 
-      options = _.extend( {
+      options = merge( {
         constantRadius: 6.75E-3, // ensure this is in meters (0.675cm)
         valueUnits: 'coulombs'
       }, options );

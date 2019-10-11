@@ -15,6 +15,7 @@ define( require => {
   const DerivedProperty = require( 'AXON/DerivedProperty' );
   const Dimension2 = require( 'DOT/Dimension2' );
   const inherit = require( 'PHET_CORE/inherit' );
+  const merge = require( 'PHET_CORE/merge' );
   const SliderThumb = require( 'SUN/SliderThumb' );
 
   // constants
@@ -42,7 +43,7 @@ define( require => {
       return getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
     } );
 
-    options = _.extend( {
+    options = merge( {
       size: THUMB_SIZE,
       fill: fillProperty,
       fillHighlighted: fillHighlightedProperty

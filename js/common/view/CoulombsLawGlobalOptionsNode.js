@@ -13,6 +13,7 @@ define( function ( require ) {
   const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
   const inherit = require( 'PHET_CORE/inherit' );
   const LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
+  const merge = require( 'PHET_CORE/merge' );
   const OptionsDialog = require( 'JOIST/OptionsDialog' );
   const ProjectorModeCheckbox = require( 'JOIST/ProjectorModeCheckbox' );
 
@@ -26,7 +27,7 @@ define( function ( require ) {
       phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
     } );
 
-    LayoutBox.call( this, _.extend( {
+    LayoutBox.call( this, merge( {
       children: [ projectorModeCheckbox ],
       spacing: OptionsDialog.DEFAULT_SPACING,
       align: 'left',

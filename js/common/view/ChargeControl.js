@@ -19,6 +19,7 @@ define( require => {
     const PhetFont = require( 'SCENERY_PHET/PhetFont' );
     const Range = require( 'DOT/Range' );
     const Tandem = require( 'TANDEM/Tandem' );
+  const merge = require( 'PHET_CORE/merge' );
 
     // constants
     const TRACK_SIZE = new Dimension2( 132, 0.25 );
@@ -34,7 +35,7 @@ define( require => {
      */
     function ChargeControl( titleString, unitString, objectProperty, valueRange, scaleFactor, options ) {
 
-      options = _.extend( {
+      options = merge( {
 
         // panel options
         align: 'center',
@@ -75,7 +76,7 @@ define( require => {
       const chargeControlRange = new Range( valueRange.min * scaleFactor, valueRange.max * scaleFactor );
 
       // add custom thumb to the slider
-      options.numberControlOptions.sliderOptions.thumbNode = new ChargeControlSliderThumb( objectProperty, _.extend( {}, options,
+      options.numberControlOptions.sliderOptions.thumbNode = new ChargeControlSliderThumb( objectProperty, merge( {}, options,
         { tandem: options.tandem.createTandem( 'chargeControlsSliderThumb' ) } ) );
 
       ISLCObjectControlPanel.call( this, titleString, unitString, this.chargeControlProperty, chargeControlRange, options );
