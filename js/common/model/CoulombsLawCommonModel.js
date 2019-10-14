@@ -67,6 +67,7 @@ define( require => {
      */
     getMaxForce: function() {
 
+      // TODO: should this call snapToGrid?
       // inherited object node accepts the entire force range. (NOTE: necessary to calculate here as Coulomb's Law allows
       // negative forces while Gravity Force Lab does not.)
       return this.calculateForce( this.object1.valueRange.max, this.object1.valueRange.max,
