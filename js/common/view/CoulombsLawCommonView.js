@@ -148,7 +148,7 @@ define( require => {
     this.addChild( resetAllButton );
 
     // a11y - accessible order of controls, charge objects will come first in subtypes
-    this.playAreaNode.accessibleOrder = [
+    this.pdomPlayAreaNode.accessibleOrder = [
       coulombsLawRuler,
       charge1Control,
       charge2Control,
