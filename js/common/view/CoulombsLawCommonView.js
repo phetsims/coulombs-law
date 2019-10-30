@@ -67,6 +67,7 @@ define( require => {
       coulombsLawModel,
       this.layoutBounds.height,
       this.modelViewTransform,
+      { getRulerGrabbedAlertable: () => '' }, // describer stub
       tandem.createTandem( 'ruler' ),
       _.pick( options, [
         'snapToNearest',
