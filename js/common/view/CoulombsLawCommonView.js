@@ -62,11 +62,19 @@ define( require => {
     // @private
     this.modelViewTransform = modelViewTransform;
 
+    // ruler drag bounds (in model coordinate frame) - assumes a single point scale inverted Y mapping
+    const halfModelHeight = modelViewTransform.viewToModelDeltaY( this.layoutBounds.height / 2 );
+    const minX = coulombsLawModel.leftObjectBoundary;
+    const minY = halfModelHeight; // bottom bound because Y is inverted
+    const maxX = coulombsLawModel.rightObjectBoundary;
+    const maxY = -halfModelHeight; // top bound because Y is inverted
+
     // create and add macro ruler
     const coulombsLawRuler = new ISLCRulerNode(
-      coulombsLawModel,
-      this.layoutBounds.height,
+      coulombsLawModel.rulerPositionProperty,
+      new Bounds2( minX, minY, maxX, maxY ),
       this.modelViewTransform,
+      () => coulombsLawModel.object1.positionProperty.value, // wrap this in a closure instead of exposing this all to the ruler.
       { getRulerGrabbedAlertable: () => '' }, // describer stub
       tandem.createTandem( 'ruler' ),
       _.pick( options, [
