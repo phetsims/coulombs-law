@@ -85,7 +85,6 @@ define( require => {
         'moveOnHoldDelay',
         'moveOnHoldInterval'
       ] ) );
-    this.addChild( coulombsLawRuler );
 
     // construct checkbox item list
     const checkboxItems = [
@@ -109,8 +108,6 @@ define( require => {
       bottom: bottomAlignment - 73
     } );
 
-    this.addChild( coulombsLawParameterCheckbox );
-
     const charge1Control = new ChargeControl(
       charge1String,
       unitString,
@@ -121,8 +118,6 @@ define( require => {
     );
     charge1Control.right = this.layoutBounds.centerX - 5;
     charge1Control.top = coulombsLawParameterCheckbox.top;
-
-    this.addChild( charge1Control );
 
     const charge2Control = new ChargeControl(
       charge2String,
@@ -138,8 +133,6 @@ define( require => {
     charge2Control.left = this.layoutBounds.centerX + 5;
     charge2Control.top = coulombsLawParameterCheckbox.top;
 
-    this.addChild( charge2Control );
-
     // Reset All button
     // buttons are never disposed in this sim
     const resetAllButton = new ResetAllButton( {
@@ -154,7 +147,16 @@ define( require => {
       bottom: bottomAlignment,
       tandem: tandem.createTandem( 'resetAllButton' )
     } );
-    this.addChild( resetAllButton );
+
+    this.children = [
+      coulombsLawRuler,
+      coulombsLawParameterCheckbox,
+      charge1Control,
+      charge2Control,
+
+
+      resetAllButton
+    ];
 
     // a11y - accessible order of controls, charge objects will come first in subtypes
     this.pdomPlayAreaNode.accessibleOrder = [
