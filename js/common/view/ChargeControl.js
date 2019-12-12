@@ -59,7 +59,7 @@ define( require => {
           }
         },
 
-        tandem: Tandem.required
+        tandem: Tandem.REQUIRED
       }, options );
 
       // @public {Property.<number>} - intermediate Property to allow for scaling between atomic units and microcoulombs

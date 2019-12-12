@@ -22,7 +22,7 @@ define( require => {
   // strings
   const coulombsLawTitleString = require( 'string!COULOMBS_LAW/coulombs-law.title' );
 
-  const tandem = Tandem.rootTandem;
+  const tandem = Tandem.ROOT;
 
   const simOptions = {
     credits: {

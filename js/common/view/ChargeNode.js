@@ -67,7 +67,7 @@ define( require => {
       },
 
       // phet-io
-      tandem: Tandem.required,
+      tandem: Tandem.REQUIRED,
 
       // TODO: proper sting usage
       a11yCreateAriaValueText: function( formattedValue ) {
