@@ -16,20 +16,19 @@ define( require => {
   const ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
   const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   const inherit = require( 'PHET_CORE/inherit' );
+  const ISLCForceValuesDisplayControl = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCForceValuesDisplayControl' );
   const ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
+  const ISLCPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCPanel' );
   const ISLCQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCQueryParameters' );
   const ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
   const ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
   const ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   const ScreenView = require( 'JOIST/ScreenView' );
   const Vector2 = require( 'DOT/Vector2' );
-  const ISLCCheckboxPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCCheckboxPanel' );
 
   // strings
   const charge1String = require( 'string!COULOMBS_LAW/charge1' );
   const charge2String = require( 'string!COULOMBS_LAW/charge2' );
-  const forceValuesString = require( 'string!INVERSE_SQUARE_LAW_COMMON/forceValues' );
-  const scientificNotationString = require( 'string!COULOMBS_LAW/scientificNotation' );
 
   // constants
   const SHOW_GRID = ISLCQueryParameters.showGrid;
@@ -62,27 +61,15 @@ define( require => {
     // @private
     this.modelViewTransform = modelViewTransform;
 
-    // construct checkbox item list
-    const checkboxItems = [
-      {
-        label: forceValuesString,
-        property: coulombsLawModel.showForceValuesProperty,
-        tandem: tandem.createTandem( 'forceValuesCheckbox' )
-      },
-      {
-        label: scientificNotationString,
-        property: coulombsLawModel.scientificNotationProperty,
-        options: { enabledProperty: coulombsLawModel.showForceValuesProperty }, // force values toggles this enabled
-        tandem: tandem.createTandem( 'scientificNotationCheckbox' )
-      }
-    ];
-
-    const coulombsLawParameterCheckbox = new ISLCCheckboxPanel( checkboxItems, {
-      tandem: tandem.createTandem( 'coulombsLawParameterCheckbox' ),
-      fill: '#EDEDED',
-      right: rightAlignment,
-      bottom: bottomAlignment - 73
-    } );
+    const coulombsLawParameterPanel = new ISLCPanel(
+      new ISLCForceValuesDisplayControl( coulombsLawModel.forceValuesDisplayProperty, {
+        tandem: tandem.createTandem( 'forceValuesDisplayControl' )
+      } ), {
+        tandem: tandem.createTandem( 'coulombsLawParameterPanel' ),
+        fill: '#EDEDED',
+        right: rightAlignment,
+        bottom: bottomAlignment - 43 // empirically determined
+      } );
 
     const charge1Control = new ChargeControl(
       charge1String,
@@ -93,7 +80,7 @@ define( require => {
       { tandem: tandem.createTandem( 'charge1Control' ) }
     );
     charge1Control.right = this.layoutBounds.centerX - 5;
-    charge1Control.top = coulombsLawParameterCheckbox.top;
+    charge1Control.top = coulombsLawParameterPanel.top;
 
     const charge2Control = new ChargeControl(
       charge2String,
@@ -107,11 +94,11 @@ define( require => {
     );
 
     charge2Control.left = this.layoutBounds.centerX + 5;
-    charge2Control.top = coulombsLawParameterCheckbox.top;
+    charge2Control.top = coulombsLawParameterPanel.top;
 
     // ruler drag bounds (in model coordinate frame) - assumes a single point scale inverted Y mapping
     const minX = coulombsLawModel.leftObjectBoundary;
-    const minY = modelViewTransform.viewToModelY( coulombsLawParameterCheckbox.top + 10 ); // bottom bound because Y is inverted
+    const minY = modelViewTransform.viewToModelY( coulombsLawParameterPanel.top + 10 ); // bottom bound because Y is inverted
     const maxX = coulombsLawModel.rightObjectBoundary;
     const maxY = -modelViewTransform.viewToModelDeltaY( this.layoutBounds.height / 2 ); // top bound because Y is inverted
 
@@ -149,7 +136,7 @@ define( require => {
 
     this.children = [
       coulombsLawRuler,
-      coulombsLawParameterCheckbox,
+      coulombsLawParameterPanel,
       charge1Control,
       charge2Control,
       resetAllButton
@@ -160,7 +147,7 @@ define( require => {
       coulombsLawRuler,
       charge1Control,
       charge2Control,
-      coulombsLawParameterCheckbox,
+      coulombsLawParameterPanel,
       resetAllButton
     ];
 

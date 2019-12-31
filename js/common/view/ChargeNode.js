@@ -15,6 +15,7 @@ define( require => {
   // modules
   const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
+  const ForceValuesDisplayEnum = require( 'INVERSE_SQUARE_LAW_COMMON/model/ForceValuesDisplayEnum' );
   const inherit = require( 'PHET_CORE/inherit' );
   const ISLCObjectNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode' );
   const merge = require( 'PHET_CORE/merge' );
@@ -62,7 +63,7 @@ define( require => {
         labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
         backgroundFill: CoulombsLawColorProfile.backgroundProperty
       },
-      labelOptions:{
+      labelOptions: {
         fill: CoulombsLawColorProfile.forceArrowLabelFillProperty
       },
 
@@ -90,8 +91,8 @@ define( require => {
       options
     );
 
-    // scientific notation property is never removed/destroyed, no disposal required
-    model.scientificNotationProperty.lazyLink( this.redrawForce.bind( this ) );
+    // force display Property is never removed/destroyed, no disposal required
+    model.forceValuesDisplayProperty.lazyLink( this.redrawForce.bind( this ) );
 
     // stroke added here for projector mode and white bg printing options
     this.objectCircle.stroke = 'black';
@@ -122,7 +123,7 @@ define( require => {
      * Updates the node's arrow length, force readout, and puller image.
      */
     redrawForce: function() {
-      this.arrowNode.scientificNotationMode = this.model.scientificNotationProperty.get();
+      this.arrowNode.scientificNotationMode = this.model.forceValuesDisplayProperty.value === ForceValuesDisplayEnum.SCIENTIFIC;
       ISLCObjectNode.prototype.redrawForce.call( this );
     }
   } );

@@ -11,8 +11,9 @@ define( require => {
   'use strict';
 
   // modules
-  const BooleanProperty = require( 'AXON/BooleanProperty' );
   const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const EnumerationProperty = require( 'AXON/EnumerationProperty' );
+  const ForceValuesDisplayEnum = require( 'INVERSE_SQUARE_LAW_COMMON/model/ForceValuesDisplayEnum' );
   const inherit = require( 'PHET_CORE/inherit' );
   const ISLCConstants = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCConstants' );
   const ISLCModel = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCModel' );
@@ -36,17 +37,25 @@ define( require => {
       initialRulerPosition: new Vector2( 0, -1.1E-2 )
     }, options );
 
-    // @public {Property.<boolean>} - controls whether we display the force values in decimal or scientific notation format
-    this.scientificNotationProperty = new BooleanProperty( options.displayScientificNotation, {
-      tandem: tandem.createTandem( 'scientificNotationProperty' )
-    } );
-
     // @public - the position of the ruler in the model
     this.rulerPositionProperty = new Vector2Property( options.initialRulerPosition, {
       tandem: tandem.createTandem( 'rulerPositionProperty' )
     } );
 
     ISLCModel.call( this, ISLCConstants.k, charge1, charge2, locationRange, tandem, options );
+
+    // @public
+    this.forceValuesDisplayProperty = new EnumerationProperty( ForceValuesDisplayEnum, ForceValuesDisplayEnum.DECIMAL, {
+      tandem: tandem.createTandem( 'forceValuesDisplayProperty' ),
+      phetioDocumentation: 'This determines the display type for the force values: in decimal or scientific ' +
+                           'notation, and also hidden.'
+    } );
+
+    // ISLC code listens substantially to showForceValuesProperty, so keep that in sync as the display type changes.
+    this.forceValuesDisplayProperty.lazyLink( newValue => {
+      this.showForceValuesProperty.value = newValue === ForceValuesDisplayEnum.DECIMAL ||
+                                           newValue === ForceValuesDisplayEnum.SCIENTIFIC;
+    } );
   }
 
   coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );
@@ -83,7 +92,7 @@ define( require => {
 
       // As of writing this, all (both) subtypes have a rulerPositionProperty, so it is easy enough to just reset this here.
       this.rulerPositionProperty.reset();
-      this.scientificNotationProperty.reset();
+      this.forceValuesDisplayProperty.reset();
       ISLCModel.prototype.reset.call( this );
     }
   } );
