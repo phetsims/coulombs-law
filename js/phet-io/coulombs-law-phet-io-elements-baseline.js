@@ -2679,7 +2679,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.inputListener.firedEmitter": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.fireListener.firedEmitter": {
       "phetioDocumentation": "A function that executes. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -2692,7 +2692,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO<NullableIO<SceneryEventIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.inputListener.pressAction": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.fireListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the SceneryEvent. The arguments are:<br/><ol><li>event: SceneryEventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -2705,7 +2705,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO<SceneryEventIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.inputListener.releaseAction": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.fireListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -2809,19 +2809,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<NullableIO<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.property": {
-      "phetioDocumentation": "",
-      "phetioDynamicElement": false,
-      "phetioEventType": "MODEL",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioIsArchetype": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": true,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "LinkedElementIO"
-    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
@@ -2861,7 +2848,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.inputListener.firedEmitter": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.fireListener.firedEmitter": {
       "phetioDocumentation": "A function that executes. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -2874,7 +2861,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO<NullableIO<SceneryEventIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.inputListener.pressAction": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.fireListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the SceneryEvent. The arguments are:<br/><ol><li>event: SceneryEventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -2887,7 +2874,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO<SceneryEventIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.inputListener.releaseAction": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.fireListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -2991,19 +2978,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<NullableIO<BooleanIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.property": {
-      "phetioDocumentation": "",
-      "phetioDynamicElement": false,
-      "phetioEventType": "MODEL",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioIsArchetype": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": true,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "LinkedElementIO"
-    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
@@ -3043,6 +3017,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<NullableIO<BooleanIO>>"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.property": {
+      "phetioDocumentation": "",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "LinkedElementIO"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
@@ -3069,7 +3056,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<BooleanIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.inputListener.firedEmitter": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.fireListener.firedEmitter": {
       "phetioDocumentation": "A function that executes. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -3082,7 +3069,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO<NullableIO<SceneryEventIO>>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.inputListener.pressAction": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.fireListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the SceneryEvent. The arguments are:<br/><ol><li>event: SceneryEventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -3095,7 +3082,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO<SceneryEventIO>"
     },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.inputListener.releaseAction": {
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.fireListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -3198,19 +3185,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<NullableIO<BooleanIO>>"
-    },
-    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.property": {
-      "phetioDocumentation": "",
-      "phetioDynamicElement": false,
-      "phetioEventType": "MODEL",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioIsArchetype": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": true,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "LinkedElementIO"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
@@ -9751,7 +9725,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.inputListener.firedEmitter": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.fireListener.firedEmitter": {
       "phetioDocumentation": "A function that executes. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -9764,7 +9738,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO<NullableIO<SceneryEventIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.inputListener.pressAction": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.fireListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the SceneryEvent. The arguments are:<br/><ol><li>event: SceneryEventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -9777,7 +9751,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO<SceneryEventIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.inputListener.releaseAction": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.fireListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -9881,19 +9855,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<NullableIO<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.property": {
-      "phetioDocumentation": "",
-      "phetioDynamicElement": false,
-      "phetioEventType": "MODEL",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioIsArchetype": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": true,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "LinkedElementIO"
-    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
@@ -9933,7 +9894,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.inputListener.firedEmitter": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.fireListener.firedEmitter": {
       "phetioDocumentation": "A function that executes. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -9946,7 +9907,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO<NullableIO<SceneryEventIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.inputListener.pressAction": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.fireListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the SceneryEvent. The arguments are:<br/><ol><li>event: SceneryEventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -9959,7 +9920,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO<SceneryEventIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.inputListener.releaseAction": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.fireListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -10063,19 +10024,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<NullableIO<BooleanIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.property": {
-      "phetioDocumentation": "",
-      "phetioDynamicElement": false,
-      "phetioEventType": "MODEL",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioIsArchetype": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": true,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "LinkedElementIO"
-    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
@@ -10115,6 +10063,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<NullableIO<BooleanIO>>"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.property": {
+      "phetioDocumentation": "",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "LinkedElementIO"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
@@ -10141,7 +10102,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<BooleanIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.inputListener.firedEmitter": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.fireListener.firedEmitter": {
       "phetioDocumentation": "A function that executes. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -10154,7 +10115,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "EmitterIO<NullableIO<SceneryEventIO>>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.inputListener.pressAction": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.fireListener.pressAction": {
       "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the SceneryEvent. The arguments are:<br/><ol><li>event: SceneryEventIO</li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -10167,7 +10128,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "ActionIO<SceneryEventIO>"
     },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.inputListener.releaseAction": {
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.fireListener.releaseAction": {
       "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br/><ol><li>event: NullableIO<SceneryEventIO></li></ol>",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
@@ -10270,19 +10231,6 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<NullableIO<BooleanIO>>"
-    },
-    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.property": {
-      "phetioDocumentation": "",
-      "phetioDynamicElement": false,
-      "phetioEventType": "MODEL",
-      "phetioFeatured": false,
-      "phetioHighFrequency": false,
-      "phetioIsArchetype": false,
-      "phetioPlayback": false,
-      "phetioReadOnly": true,
-      "phetioState": true,
-      "phetioStudioControl": true,
-      "phetioTypeName": "LinkedElementIO"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",

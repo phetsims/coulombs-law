@@ -14,6 +14,7 @@ define( require => {
   // modules
   const Bounds2 = require( 'DOT/Bounds2' );
   const ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
+  const CoulombsLawRulerDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawRulerDescriber' );
   const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
   const inherit = require( 'PHET_CORE/inherit' );
   const ISLCForceValuesDisplayControl = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCForceValuesDisplayControl' );
@@ -96,6 +97,8 @@ define( require => {
     charge2Control.left = this.layoutBounds.centerX + 5;
     charge2Control.top = coulombsLawParameterPanel.top;
 
+    const rulerDescriber = new CoulombsLawRulerDescriber( coulombsLawModel, 'label1', 'label2' );
+
     // ruler drag bounds (in model coordinate frame) - assumes a single point scale inverted Y mapping
     const minX = coulombsLawModel.leftObjectBoundary;
     const minY = modelViewTransform.viewToModelY( coulombsLawParameterPanel.top + 10 ); // bottom bound because Y is inverted
@@ -108,7 +111,7 @@ define( require => {
       new Bounds2( minX, minY, maxX, maxY ),
       this.modelViewTransform,
       () => coulombsLawModel.object1.positionProperty.value, // wrap this in a closure instead of exposing this all to the ruler.
-      { getRulerGrabbedAlertable: () => '' }, // describer stub
+      rulerDescriber,
       tandem.createTandem( 'ruler' ),
       _.pick( options, [
         'snapToNearest',
