@@ -20,7 +20,7 @@ define( require => {
   const screenAtomicScaleString = require( 'string!COULOMBS_LAW/screen.atomicScale' );
 
   // images
-  const atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png');
+  const atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png' );
   const atomicScaleScreenIconNavbar = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon_navbar.png' );
 
   /**
