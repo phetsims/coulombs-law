@@ -14,14 +14,15 @@ define( require => {
   // modules
   const Bounds2 = require( 'DOT/Bounds2' );
   const ChargeControl = require( 'COULOMBS_LAW/common/view/ChargeControl' );
-  const CoulombsLawRulerDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawRulerDescriber' );
   const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
+  const CoulombsLawRulerDescriber = require( 'COULOMBS_LAW/common/view/describers/CoulombsLawRulerDescriber' );
   const inherit = require( 'PHET_CORE/inherit' );
   const ISLCForceValuesDisplayControl = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCForceValuesDisplayControl' );
   const ISLCGridNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCGridNode' );
   const ISLCPanel = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCPanel' );
   const ISLCQueryParameters = require( 'INVERSE_SQUARE_LAW_COMMON/ISLCQueryParameters' );
   const ISLCRulerNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCRulerNode' );
+  const merge = require( 'PHET_CORE/merge' );
   const ModelViewTransform2 = require( 'PHETCOMMON/view/ModelViewTransform2' );
   const ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   const ScreenView = require( 'JOIST/ScreenView' );
@@ -113,14 +114,16 @@ define( require => {
       () => coulombsLawModel.object1.positionProperty.value, // wrap this in a closure instead of exposing this all to the ruler.
       rulerDescriber,
       tandem.createTandem( 'ruler' ),
-      _.pick( options, [
+      merge( _.pick( options, [
         'snapToNearest',
         'majorTickLabels',
         'unitString',
         'rulerInset',
         'moveOnHoldDelay',
         'moveOnHoldInterval'
-      ] ) );
+      ] ), {
+        grabDragInteractionOptions: { grabCueOptions: { x: 155 } }
+      } ) );
 
     // Reset All button
     // buttons are never disposed in this sim
