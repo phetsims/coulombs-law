@@ -51,7 +51,7 @@ define( require => {
     constructor() {
 
       const helpContentOptions = {
-        
+
         // i18n, restricts both labelText and maxWidth, see KeyboardHelpSection
         labelMaxWidth: 130
       };
@@ -61,7 +61,10 @@ define( require => {
       KeyboardHelpSection.alignHelpSectionIcons( [ chargeContent, rulerContent ] );
       const leftHelpContent = [ chargeContent, rulerContent ];
 
-      const generalNavigationHelpContent = new GeneralKeyboardHelpSection( helpContentOptions );
+      const generalNavigationHelpContent = new GeneralKeyboardHelpSection( merge( helpContentOptions, {
+        withGroupContent: true,
+        withCheckboxContent: true
+      } ) );
       const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
       KeyboardHelpSection.alignHelpSectionIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
       const rightHelpContent = [ adjustChargeContent, generalNavigationHelpContent ];
