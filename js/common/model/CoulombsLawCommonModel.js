@@ -24,12 +24,12 @@ define( require => {
   /**
    * @param {Charge} charge1 - The left charge
    * @param {Charge} charge2 - The right charge
-   * @param {Range} locationRange
+   * @param {Range} positionRange
    * @param {Tandem} tandem
    * @param {Object} [options]
    * @constructor
    */
-  function CoulombsLawCommonModel( charge1, charge2, locationRange, tandem, options ) {
+  function CoulombsLawCommonModel( charge1, charge2, positionRange, tandem, options ) {
 
     options = merge( {
       snapObjectsToNearest: 0.1,
@@ -42,7 +42,7 @@ define( require => {
       tandem: tandem.createTandem( 'rulerPositionProperty' )
     } );
 
-    ISLCModel.call( this, ISLCConstants.k, charge1, charge2, locationRange, tandem, options );
+    ISLCModel.call( this, ISLCConstants.k, charge1, charge2, positionRange, tandem, options );
 
     // @public
     this.forceValuesDisplayProperty = new EnumerationProperty( ForceValuesDisplayEnum, ForceValuesDisplayEnum.DECIMAL, {
