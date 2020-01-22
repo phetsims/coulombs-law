@@ -66,6 +66,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": false,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge1.positionProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge1.radiusProperty": {
       "phetioDocumentation": "The radius of the object",
       "phetioDynamicElement": false,
@@ -91,6 +104,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge1.valueProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge2.baseColorProperty": {
       "phetioDocumentation": "",
@@ -144,6 +170,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": false,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge2.positionProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge2.radiusProperty": {
       "phetioDocumentation": "The radius of the object",
       "phetioDynamicElement": false,
@@ -169,6 +208,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.charge2.valueProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.model.forceProperty": {
       "phetioDocumentation": "The force of one object on the other (in Newtons)",
@@ -261,6 +313,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.atomicLegendNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.atomicLegendNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -325,6 +390,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.chargeControlsSliderThumb.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.chargeControlsSliderThumb.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -417,6 +495,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.leftArrowButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.leftArrowButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -495,6 +586,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.numberDisplay.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.numberDisplay.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -533,6 +637,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.numberDisplay.valueText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.numberDisplay.valueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -599,6 +716,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -663,6 +793,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.rightArrowButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.rightArrowButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -767,6 +910,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.slider.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.slider.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -963,6 +1119,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.titleNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.numberControl.titleNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -1028,6 +1197,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge1Control.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -1092,6 +1274,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.chargeControlsSliderThumb.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.chargeControlsSliderThumb.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -1184,6 +1379,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.leftArrowButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.leftArrowButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -1262,6 +1470,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.numberDisplay.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.numberDisplay.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -1300,6 +1521,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.numberDisplay.valueText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.numberDisplay.valueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -1366,6 +1600,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -1430,6 +1677,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.rightArrowButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.rightArrowButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -1534,6 +1794,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.slider.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.slider.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -1730,6 +2003,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.titleNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.numberControl.titleNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -1795,6 +2081,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.charge2Control.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -1859,6 +2158,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.centerOfMassLineNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.centerOfMassLineNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -1964,6 +2276,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.forceDisplayNode.arrowNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.forceDisplayNode.arrowNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -2015,6 +2340,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.forceDisplayNode.forceText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.forceDisplayNode.forceText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -2068,6 +2406,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.forceDisplayNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.forceDisplayNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -2120,6 +2471,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -2171,6 +2535,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode1.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -2236,6 +2613,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.centerOfMassLineNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.centerOfMassLineNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -2341,6 +2731,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.forceDisplayNode.arrowNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.forceDisplayNode.arrowNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -2392,6 +2795,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.forceDisplayNode.forceText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.forceDisplayNode.forceText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -2445,6 +2861,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.forceDisplayNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.forceDisplayNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -2496,6 +2925,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -2549,6 +2991,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.chargeNode2.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -2600,6 +3055,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawParameterPanel.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.coulombsLawParameterPanel.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -2744,6 +3212,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -2795,6 +3276,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -2913,6 +3407,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -2965,6 +3472,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -3003,6 +3523,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -3121,6 +3654,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -3172,6 +3718,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -3238,6 +3797,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -3290,6 +3862,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -3341,6 +3926,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.picometerScaleString.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.picometerScaleString.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -3445,6 +4043,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.resetAllButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.resetAllButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -3589,6 +4200,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.ruler.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.ruler.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -3627,6 +4251,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.ruler.unitsLabel.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.ruler.unitsLabel.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -3706,6 +4343,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.atomicScreen.icon.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.atomicScreen.icon.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -3757,6 +4407,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.atomicScreen.navbarIcon.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.atomicScreen.navbarIcon.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -3861,6 +4524,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": false,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.barrierRectangle.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.barrierRectangle.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -4317,6 +4993,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.keyboardHelpDialogCapsule.archetype.closeButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.keyboardHelpDialogCapsule.archetype.closeButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -4395,6 +5084,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.keyboardHelpDialogCapsule.archetype.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.keyboardHelpDialogCapsule.archetype.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -4433,6 +5135,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -4551,6 +5266,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.atomicScreenButton.icon.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.atomicScreenButton.icon.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -4589,6 +5317,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.atomicScreenButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.atomicScreenButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -4654,6 +5395,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.atomicScreenButton.text.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.atomicScreenButton.text.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -4758,6 +5512,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.homeButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.homeButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -4876,6 +5643,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.macroScreenButton.icon.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.macroScreenButton.icon.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -4914,6 +5694,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.macroScreenButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.macroScreenButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -4979,6 +5772,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.macroScreenButton.text.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.macroScreenButton.text.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -5162,6 +5968,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.closeButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.closeButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -5240,6 +6059,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -5278,6 +6110,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.termsPrivacyAndLicensingText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.termsPrivacyAndLicensingText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -5344,6 +6189,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.thirdPartyCreditsLinkText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.thirdPartyCreditsLinkText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -5408,6 +6266,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.translationCreditsLinkText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutDialogCapsule.archetype.translationCreditsLinkText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -5526,6 +6397,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutMenuItem.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.aboutMenuItem.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -5630,6 +6514,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.closeButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.closeButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -5708,6 +6605,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.content.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.content.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -5759,6 +6669,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.content.projectorCheckbox.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.content.projectorCheckbox.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -5864,6 +6787,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -5902,6 +6838,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.title.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": true,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.title.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -6020,6 +6969,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsMenuItem.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.optionsMenuItem.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -6110,6 +7072,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.navigationBar.phetButton.phetMenu.screenshotMenuItem.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.navigationBar.phetButton.phetMenu.screenshotMenuItem.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -6202,6 +7177,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.general.navigationBar.titleTextNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.general.navigationBar.titleTextNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -6279,6 +7267,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.general.screenIndexProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.general.showHomeScreenProperty": {
       "phetioDocumentation": "Whether or not home screen is displayed. This is independent of the \"current sim screen\" stored in the \"screenIndexProperty.\"",
@@ -6436,6 +7437,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.homeScreen.view.atomicScreenLargeButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.homeScreen.view.atomicScreenLargeButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -6474,6 +7488,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.homeScreen.view.atomicScreenLargeButton.text.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.homeScreen.view.atomicScreenLargeButton.text.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -6592,6 +7619,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.homeScreen.view.atomicScreenSmallButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.homeScreen.view.atomicScreenSmallButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -6630,6 +7670,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.homeScreen.view.atomicScreenSmallButton.text.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.homeScreen.view.atomicScreenSmallButton.text.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -6748,6 +7801,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.homeScreen.view.macroScreenLargeButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.homeScreen.view.macroScreenLargeButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -6786,6 +7852,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.homeScreen.view.macroScreenLargeButton.text.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.homeScreen.view.macroScreenLargeButton.text.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -6904,6 +7983,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.homeScreen.view.macroScreenSmallButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.homeScreen.view.macroScreenSmallButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -6942,6 +8034,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.homeScreen.view.macroScreenSmallButton.text.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.homeScreen.view.macroScreenSmallButton.text.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -7008,6 +8113,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.homeScreen.view.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.homeScreen.view.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -7046,6 +8164,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.homeScreen.view.title.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.homeScreen.view.title.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -7164,6 +8295,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": false,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge1.positionProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge1.radiusProperty": {
       "phetioDocumentation": "The radius of the object",
       "phetioDynamicElement": false,
@@ -7189,6 +8333,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge1.valueProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge2.baseColorProperty": {
       "phetioDocumentation": "",
@@ -7242,6 +8399,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": false,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge2.positionProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge2.radiusProperty": {
       "phetioDocumentation": "The radius of the object",
       "phetioDynamicElement": false,
@@ -7267,6 +8437,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.charge2.valueProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.model.forceProperty": {
       "phetioDocumentation": "The force of one object on the other (in Newtons)",
@@ -7372,6 +8555,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.chargeControlsSliderThumb.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.chargeControlsSliderThumb.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -7463,6 +8659,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.leftArrowButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.leftArrowButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -7541,6 +8750,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.numberDisplay.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.numberDisplay.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -7579,6 +8801,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.numberDisplay.valueText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.numberDisplay.valueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -7645,6 +8880,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -7709,6 +8957,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.rightArrowButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.rightArrowButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -7813,6 +9074,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.slider.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.slider.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -8009,6 +9283,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.titleNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.numberControl.titleNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -8074,6 +9361,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge1Control.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -8138,6 +9438,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.chargeControlsSliderThumb.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.chargeControlsSliderThumb.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -8230,6 +9543,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.leftArrowButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.leftArrowButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -8308,6 +9634,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.numberDisplay.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.numberDisplay.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -8346,6 +9685,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.numberDisplay.valueText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.numberDisplay.valueText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -8412,6 +9764,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -8476,6 +9841,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.rightArrowButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.rightArrowButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -8580,6 +9958,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.slider.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.slider.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -8776,6 +10167,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.titleNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.numberControl.titleNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -8841,6 +10245,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.charge2Control.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -8905,6 +10322,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.centerOfMassLineNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.centerOfMassLineNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -9010,6 +10440,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.forceDisplayNode.arrowNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.forceDisplayNode.arrowNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -9061,6 +10504,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.forceDisplayNode.forceText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.forceDisplayNode.forceText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -9114,6 +10570,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.forceDisplayNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.forceDisplayNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -9166,6 +10635,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -9217,6 +10699,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode1.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -9282,6 +10777,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.centerOfMassLineNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.centerOfMassLineNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -9387,6 +10895,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.forceDisplayNode.arrowNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.forceDisplayNode.arrowNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -9438,6 +10959,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.forceDisplayNode.forceText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.forceDisplayNode.forceText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -9491,6 +11025,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.forceDisplayNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.forceDisplayNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -9542,6 +11089,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -9595,6 +11155,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.chargeNode2.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -9646,6 +11219,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawParameterPanel.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.coulombsLawParameterPanel.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -9790,6 +11376,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -9841,6 +11440,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -9959,6 +11571,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -10011,6 +11636,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -10049,6 +11687,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -10167,6 +11818,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.labelText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.labelText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -10218,6 +11882,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.scientificNotationRadioButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -10284,6 +11961,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesText.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -10336,6 +12026,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -10387,6 +12090,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.legendNode.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.legendNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -10478,6 +12194,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.resetAllButton.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.resetAllButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -10622,6 +12351,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.ruler.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.ruler.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -10660,6 +12402,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.ruler.unitsLabel.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.ruler.unitsLabel.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
@@ -10739,6 +12494,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
     },
+    "coulombsLaw.macroScreen.icon.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
+    },
     "coulombsLaw.macroScreen.icon.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
@@ -10790,6 +12558,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioState": true,
       "phetioStudioControl": true,
       "phetioTypeName": "NumberPropertyIO"
+    },
+    "coulombsLaw.macroScreen.navbarIcon.opacityProperty.rangeProperty": {
+      "phetioDocumentation": "provides the range of possible values for the parent NumberProperty",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": false,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": true,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<NullableIO<RangeIO>>"
     },
     "coulombsLaw.macroScreen.navbarIcon.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
