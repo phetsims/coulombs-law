@@ -83,7 +83,7 @@ define( require => {
      */
     constructor( options ) {
       const arrowsIcon = KeyboardHelpIconFactory.leftRightArrowKeysRowIcon();
-      const shiftPlusArrowsIcon = KeyboardHelpSection.shiftPlusIcon( KeyboardHelpIconFactory.leftRightArrowKeysRowIcon() );
+      const shiftPlusArrowsIcon = KeyboardHelpIconFactory.shiftPlusIcon( KeyboardHelpIconFactory.leftRightArrowKeysRowIcon() );
       const pgUpDownIcon = KeyboardHelpIconFactory.pageUpPageDownRowIcon();
       const homeKeyIcon = new HomeKeyNode();
       const endKeyIcon = new EndKeyNode();
