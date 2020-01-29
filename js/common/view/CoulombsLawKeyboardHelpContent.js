@@ -15,6 +15,7 @@ define( require => {
   const EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
   const GeneralKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/GeneralKeyboardHelpSection' );
   const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
+  const KeyboardHelpIconFactory = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpIconFactory' );
   const KeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpSection' );
   const merge = require( 'PHET_CORE/merge' );
   const TwoColumnKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/TwoColumnKeyboardHelpContent' );
@@ -114,7 +115,7 @@ define( require => {
     constructor( options ) {
       const leftRightArrowIcon = KeyboardHelpSection.leftRightArrowKeysRowIcon();
       const upDownArrowIcon = KeyboardHelpSection.upDownArrowKeysRowIcon();
-      const leftRightOrUpDownIcon = KeyboardHelpSection.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
+      const leftRightOrUpDownIcon = KeyboardHelpIconFactory.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
       const pgUpDownIcon = KeyboardHelpSection.pageUpPageDownRowIcon();
 
       const rows = [
