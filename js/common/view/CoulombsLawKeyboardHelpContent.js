@@ -102,7 +102,7 @@ define( require => {
     constructor( options ) {
       assert && assert( !options || options.a11yContentTagName === undefined, 'MoveRulerContent sets a11yContentTagName' );
 
-      const icon = KeyboardHelpSection.arrowOrWasdKeysRowIcon();
+      const icon = KeyboardHelpIconFactory.arrowOrWasdKeysRowIcon();
       super(
         moveRulerHeadingString,
         [ createRow( moveRulerLabelString, icon, moveRulerDescriptionString, { tagName: 'p' } ) ],
