@@ -82,9 +82,9 @@ define( require => {
      * @param {Object} [options]
      */
     constructor( options ) {
-      const arrowsIcon = KeyboardHelpSection.leftRightArrowKeysRowIcon();
-      const shiftPlusArrowsIcon = KeyboardHelpSection.shiftPlusIcon( KeyboardHelpSection.leftRightArrowKeysRowIcon() );
-      const pgUpDownIcon = KeyboardHelpSection.pageUpPageDownRowIcon();
+      const arrowsIcon = KeyboardHelpIconFactory.leftRightArrowKeysRowIcon();
+      const shiftPlusArrowsIcon = KeyboardHelpSection.shiftPlusIcon( KeyboardHelpIconFactory.leftRightArrowKeysRowIcon() );
+      const pgUpDownIcon = KeyboardHelpIconFactory.pageUpPageDownRowIcon();
       const homeKeyIcon = new HomeKeyNode();
       const endKeyIcon = new EndKeyNode();
       const rows = [
@@ -113,10 +113,10 @@ define( require => {
 
   class AdjustChargeContent extends KeyboardHelpSection {
     constructor( options ) {
-      const leftRightArrowIcon = KeyboardHelpSection.leftRightArrowKeysRowIcon();
-      const upDownArrowIcon = KeyboardHelpSection.upDownArrowKeysRowIcon();
+      const leftRightArrowIcon = KeyboardHelpIconFactory.leftRightArrowKeysRowIcon();
+      const upDownArrowIcon = KeyboardHelpIconFactory.upDownArrowKeysRowIcon();
       const leftRightOrUpDownIcon = KeyboardHelpIconFactory.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
-      const pgUpDownIcon = KeyboardHelpSection.pageUpPageDownRowIcon();
+      const pgUpDownIcon = KeyboardHelpIconFactory.pageUpPageDownRowIcon();
 
       const rows = [
         createRow( adjustAmountLabelString, leftRightOrUpDownIcon, adjustChargeAmountDescriptionString ),
