@@ -40,7 +40,7 @@ define( require => {
    * @param {number} scaleFactor - multiplicative constant to distinguish between Macro and Atomic scales
    * @param {string} unitString
    * @param {number} modelViewTransformScale - allows for distinct layout scales between Macro and Atomic screens
-   * @param {Object} options
+   * @param {Object} [options]
    * @param {Tandem} tandem
    * @constructor
    */

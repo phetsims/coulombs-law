@@ -30,7 +30,7 @@ define( require => {
      * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
      * @param {Range} valueRange - max and min values for the object Property, used for display and as NumberControl argument
      * @param {number} scaleFactor - multiplicative constant for getting proper readouts/positions on Macro and Atomic screens
-     * @param {Object} options
+     * @param {Object} [options]
      * @constructor
      */
     function ChargeControl( titleString, unitString, objectProperty, valueRange, scaleFactor, options ) {

@@ -26,7 +26,7 @@ define( require => {
 
   /**
    * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
-   * @param {Object} options
+   * @param {Object} [options]
    * @constructor
    */
   function ChargeControlSliderThumb( objectProperty, options ) {

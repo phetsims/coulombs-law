@@ -33,7 +33,7 @@ define( require => {
    * @param {ISLCAlertManager} alertManager
    * @param {ForceDescriber} forceDescriber
    * @param {PositionDescriber} positionDescriber
-   * @param {Object} options
+   * @param {Object} [options]
    * @constructor
    */
   function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager,

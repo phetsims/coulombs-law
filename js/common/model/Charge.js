@@ -26,7 +26,7 @@ define( require => {
      * @param {number} initialPosition - only for the x coordinate
      * @param {Range} valueRange - only for the x coordinate
      * @param {Tandem} tandem
-     * @param {Object} options
+     * @param {Object} [options]
      */
     constructor( initialCharge, initialPosition, valueRange, tandem, options ) {
 
