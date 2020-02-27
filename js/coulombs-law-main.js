@@ -7,45 +7,40 @@
  * @author Jesse Greenberg (PhET Interactive Simulations)
  */
 
-define( require => {
-  'use strict';
+import Sim from '../../joist/js/Sim.js';
+import SimLauncher from '../../joist/js/SimLauncher.js';
+import Tandem from '../../tandem/js/Tandem.js';
+import CoulombsLawAtomicScreen from './atomic/CoulombsLawAtomicScreen.js';
+import CoulombsLawGlobalOptionsNode from './common/view/CoulombsLawGlobalOptionsNode.js';
+import CoulombsLawKeyboardHelpContent from './common/view/CoulombsLawKeyboardHelpContent.js';
+import coulombsLawStrings from './coulombs-law-strings.js';
+import CoulombsLawMacroScreen from './macro/CoulombsLawMacroScreen.js';
 
-  // modules
-  const CoulombsLawAtomicScreen = require( 'COULOMBS_LAW/atomic/CoulombsLawAtomicScreen' );
-  const CoulombsLawGlobalOptionsNode = require( 'COULOMBS_LAW/common/view/CoulombsLawGlobalOptionsNode' );
-  const CoulombsLawKeyboardHelpContent = require( 'COULOMBS_LAW/common/view/CoulombsLawKeyboardHelpContent' );
-  const CoulombsLawMacroScreen = require( 'COULOMBS_LAW/macro/CoulombsLawMacroScreen' );
-  const Sim = require( 'JOIST/Sim' );
-  const SimLauncher = require( 'JOIST/SimLauncher' );
-  const Tandem = require( 'TANDEM/Tandem' );
+const coulombsLawTitleString = coulombsLawStrings[ 'coulombs-law' ].title;
 
-  // strings
-  const coulombsLawTitleString = require( 'string!COULOMBS_LAW/coulombs-law.title' );
+const tandem = Tandem.ROOT;
 
-  const tandem = Tandem.ROOT;
+const simOptions = {
+  credits: {
+    leadDesign: 'Amy Rouinfar',
+    softwareDevelopment: 'Jesse Greenberg, Michael Barlow',
+    team: 'Amy Hanson, Ariel Paul, Kathy Perkins',
+    qualityAssurance: 'Steele Dalton, Liam Mulhall, Laura Rea, Jacob Romero, Katie Woessner, Kelly Wurtz',
+    graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
+    thanks: ''
+  },
 
-  const simOptions = {
-    credits: {
-      leadDesign: 'Amy Rouinfar',
-      softwareDevelopment: 'Jesse Greenberg, Michael Barlow',
-      team: 'Amy Hanson, Ariel Paul, Kathy Perkins',
-      qualityAssurance: 'Steele Dalton, Liam Mulhall, Laura Rea, Jacob Romero, Katie Woessner, Kelly Wurtz',
-      graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
-      thanks: ''
-    },
+  // Creates content for the Options dialog
+  createOptionsDialogContent: tandem => new CoulombsLawGlobalOptionsNode( tandem ),
+  accessibility: true,
+  keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
+};
 
-    // Creates content for the Options dialog
-    createOptionsDialogContent: tandem => new CoulombsLawGlobalOptionsNode( tandem ),
-    accessibility: true,
-    keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
-  };
-
-  SimLauncher.launch( function() {
-    const screens = [
-      new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
-      new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
-    ];
-    const sim = new Sim( coulombsLawTitleString, screens, simOptions );
-    sim.start();
-  } );
+SimLauncher.launch( function() {
+  const screens = [
+    new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
+    new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
+  ];
+  const sim = new Sim( coulombsLawTitleString, screens, simOptions );
+  sim.start();
 } );

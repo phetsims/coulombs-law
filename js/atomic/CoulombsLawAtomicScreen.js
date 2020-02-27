@@ -4,49 +4,45 @@
  * @author Jesse Greenberg
  * @author Michael Barlow
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  const CoulombsLawAtomicModel = require( 'COULOMBS_LAW/atomic/model/CoulombsLawAtomicModel' );
-  const CoulombsLawAtomicView = require( 'COULOMBS_LAW/atomic/view/CoulombsLawAtomicView' );
-  const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  const Image = require( 'SCENERY/nodes/Image' );
-  const inherit = require( 'PHET_CORE/inherit' );
-  const Screen = require( 'JOIST/Screen' );
+import Screen from '../../../joist/js/Screen.js';
+import inherit from '../../../phet-core/js/inherit.js';
+import Image from '../../../scenery/js/nodes/Image.js';
+import atomicScaleScreenIconNavbar from '../../images/atomic_scale_screen_icon_navbar_png.js';
+import atomicScaleScreenIcon from '../../images/atomic_scale_screen_icon_png.js';
+import CoulombsLawColorProfile from '../common/CoulombsLawColorProfile.js';
+import coulombsLawStrings from '../coulombs-law-strings.js';
+import coulombsLaw from '../coulombsLaw.js';
+import CoulombsLawAtomicModel from './model/CoulombsLawAtomicModel.js';
+import CoulombsLawAtomicView from './view/CoulombsLawAtomicView.js';
 
-  // strings
-  const screenAtomicScaleString = require( 'string!COULOMBS_LAW/screen.atomicScale' );
+const screenAtomicScaleString = coulombsLawStrings.screen.atomicScale;
 
-  // images
-  const atomicScaleScreenIcon = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon.png' );
-  const atomicScaleScreenIconNavbar = require( 'image!COULOMBS_LAW/atomic_scale_screen_icon_navbar.png' );
 
-  /**
-   * @param {Tandem} tandem
-   * @constructor
-   */
-  function CoulombsLawAtomicScreen( tandem ) {
+/**
+ * @param {Tandem} tandem
+ * @constructor
+ */
+function CoulombsLawAtomicScreen( tandem ) {
 
-    const options = {
-      backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
-      name: screenAtomicScaleString,
-      homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
-      navigationBarIcon: new Image( atomicScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ),
-      tandem: tandem
-    };
+  const options = {
+    backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
+    name: screenAtomicScaleString,
+    homeScreenIcon: new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
+    navigationBarIcon: new Image( atomicScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ),
+    tandem: tandem
+  };
 
-    const atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
+  const atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
 
-    Screen.call( this,
-      function() { return new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ); },
-      function( model ) { return new CoulombsLawAtomicView( model, atomicScreenTandem.createTandem( 'view' ) ); },
-      options
-    );
-  }
+  Screen.call( this,
+    function() { return new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ); },
+    function( model ) { return new CoulombsLawAtomicView( model, atomicScreenTandem.createTandem( 'view' ) ); },
+    options
+  );
+}
 
-  coulombsLaw.register( 'CoulombsLawAtomicScreen', CoulombsLawAtomicScreen );
+coulombsLaw.register( 'CoulombsLawAtomicScreen', CoulombsLawAtomicScreen );
 
-  return inherit( Screen, CoulombsLawAtomicScreen );
-} );
+inherit( Screen, CoulombsLawAtomicScreen );
+export default CoulombsLawAtomicScreen;

@@ -6,54 +6,51 @@
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const BooleanProperty = require( 'AXON/BooleanProperty' );
-  const Color = require( 'SCENERY/util/Color' );
-  const ColorIO = require( 'SCENERY/util/ColorIO' );
-  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  const DerivedProperty = require( 'AXON/DerivedProperty' );
-  const DerivedPropertyIO = require( 'AXON/DerivedPropertyIO' );
-  const ISLCObject = require( 'INVERSE_SQUARE_LAW_COMMON/model/ISLCObject' );
-  const merge = require( 'PHET_CORE/merge' );
+import BooleanProperty from '../../../../axon/js/BooleanProperty.js';
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
+import DerivedPropertyIO from '../../../../axon/js/DerivedPropertyIO.js';
+import ISLCObject from '../../../../inverse-square-law-common/js/model/ISLCObject.js';
+import merge from '../../../../phet-core/js/merge.js';
+import Color from '../../../../scenery/js/util/Color.js';
+import ColorIO from '../../../../scenery/js/util/ColorIO.js';
+import coulombsLaw from '../../coulombsLaw.js';
 
-  class Charge extends ISLCObject {
+class Charge extends ISLCObject {
 
-    /**
-     * @param {number} initialCharge
-     * @param {number} initialPosition - only for the x coordinate
-     * @param {Range} valueRange - only for the x coordinate
-     * @param {Tandem} tandem
-     * @param {Object} [options]
-     */
-    constructor( initialCharge, initialPosition, valueRange, tandem, options ) {
+  /**
+   * @param {number} initialCharge
+   * @param {number} initialPosition - only for the x coordinate
+   * @param {Range} valueRange - only for the x coordinate
+   * @param {Tandem} tandem
+   * @param {Object} [options]
+   */
+  constructor( initialCharge, initialPosition, valueRange, tandem, options ) {
 
-      options = merge( {
-        constantRadius: 6.75E-3, // ensure this is in meters (0.675cm)
-        valueUnits: 'coulombs'
-      }, options );
+    options = merge( {
+      constantRadius: 6.75E-3, // ensure this is in meters (0.675cm)
+      valueUnits: 'coulombs'
+    }, options );
 
-      const constantRadiusProperty = new BooleanProperty( true, {
-        tandem: tandem.createTandem( 'constantRadiusProperty' )
-      } );
+    const constantRadiusProperty = new BooleanProperty( true, {
+      tandem: tandem.createTandem( 'constantRadiusProperty' )
+    } );
 
-      const negativeColor = new Color( '#00f' );
-      const positiveColor = new Color( '#f00' );
+    const negativeColor = new Color( '#00f' );
+    const positiveColor = new Color( '#f00' );
 
-      super( initialCharge, initialPosition, valueRange, constantRadiusProperty,
-        () => this.radiusProperty.get(), tandem, options );
+    super( initialCharge, initialPosition, valueRange, constantRadiusProperty,
+      () => this.radiusProperty.get(), tandem, options );
 
-      // see ISLCObject
-      this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], value => {
-          const newBaseColor = value < 0 ? negativeColor : positiveColor;
-          return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
-        },
-        { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedPropertyIO( ColorIO ) }
-      );
-    }
+    // see ISLCObject
+    this.baseColorProperty = new DerivedProperty( [ this.valueProperty ], value => {
+        const newBaseColor = value < 0 ? negativeColor : positiveColor;
+        return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
+      },
+      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedPropertyIO( ColorIO ) }
+    );
   }
+}
 
-  return coulombsLaw.register( 'Charge', Charge );
-} );
+coulombsLaw.register( 'Charge', Charge );
+export default Charge;

@@ -6,11 +6,7 @@
  * @author Jesse Greenberg
  * @author Michael Barlow
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const Namespace = require( 'PHET_CORE/Namespace' );
+import Namespace from '../../phet-core/js/Namespace.js';
 
-  return new Namespace( 'coulombsLaw' );
-} );
+export default new Namespace( 'coulombsLaw' );

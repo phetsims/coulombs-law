@@ -10,31 +10,28 @@
  *
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  const ISLCDescriber = require( 'INVERSE_SQUARE_LAW_COMMON/view/describers/ISLCDescriber' );
+import ISLCDescriber from '../../../../../inverse-square-law-common/js/view/describers/ISLCDescriber.js';
+import coulombsLaw from '../../../coulombsLaw.js';
 
-  class CoulombsLawRulerDescriber extends ISLCDescriber {
+class CoulombsLawRulerDescriber extends ISLCDescriber {
 
-    onDrag() {}
+  onDrag() {}
 
-    getRegionAndDistance() {return ''; }
+  getRegionAndDistance() {return ''; }
 
-    getRulerGrabbedAlertable() {return ''; }
+  getRulerGrabbedAlertable() {return ''; }
 
-    onGrab() { }
+  onGrab() { }
 
-    alertJumpHome() { }
+  alertJumpHome() { }
 
-    getJumpCenterMassAlert() { return ''; }
+  getJumpCenterMassAlert() { return ''; }
 
-    alertJumpCenterMass() { }
+  alertJumpCenterMass() { }
 
-    reset() { }
-  }
+  reset() { }
+}
 
-  return coulombsLaw.register( 'CoulombsLawRulerDescriber', CoulombsLawRulerDescriber );
-} );
+coulombsLaw.register( 'CoulombsLawRulerDescriber', CoulombsLawRulerDescriber );
+export default CoulombsLawRulerDescriber;

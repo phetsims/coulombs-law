@@ -9,122 +9,117 @@
  *
  */
 
-define( require => {
-  'use strict';
+import ForceValuesDisplayEnum from '../../../../inverse-square-law-common/js/model/ForceValuesDisplayEnum.js';
+import ISLCObjectNode from '../../../../inverse-square-law-common/js/view/ISLCObjectNode.js';
+import inherit from '../../../../phet-core/js/inherit.js';
+import merge from '../../../../phet-core/js/merge.js';
+import RadialGradient from '../../../../scenery/js/util/RadialGradient.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
+import coulombsLaw from '../../coulombsLaw.js';
+import CoulombsLawColorProfile from '../CoulombsLawColorProfile.js';
 
-  // modules
-  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  const ForceValuesDisplayEnum = require( 'INVERSE_SQUARE_LAW_COMMON/model/ForceValuesDisplayEnum' );
-  const inherit = require( 'PHET_CORE/inherit' );
-  const ISLCObjectNode = require( 'INVERSE_SQUARE_LAW_COMMON/view/ISLCObjectNode' );
-  const merge = require( 'PHET_CORE/merge' );
-  const RadialGradient = require( 'SCENERY/util/RadialGradient' );
-  const Tandem = require( 'TANDEM/Tandem' );
+// constants
+const CHARGE_NODE_Y_POSITION = 205;
 
-  // constants
-  const CHARGE_NODE_Y_POSITION = 205;
+/**
+ * @param {CoulombsLawCommonModel} model
+ * @param {Charge} chargeObjectModel
+ * @param {Bounds2} layoutBounds
+ * @param {ModelViewTransform2} modelViewTransform
+ * @param {ISLCAlertManager} alertManager
+ * @param {ForceDescriber} forceDescriber
+ * @param {PositionDescriber} positionDescriber
+ * @param {Object} [options]
+ * @constructor
+ */
+function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager,
+                     forceDescriber, positionDescriber, options ) {
 
-  /**
-   * @param {CoulombsLawCommonModel} model
-   * @param {Charge} chargeObjectModel
-   * @param {Bounds2} layoutBounds
-   * @param {ModelViewTransform2} modelViewTransform
-   * @param {ISLCAlertManager} alertManager
-   * @param {ForceDescriber} forceDescriber
-   * @param {PositionDescriber} positionDescriber
-   * @param {Object} [options]
-   * @constructor
-   */
-  function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager,
-                       forceDescriber, positionDescriber, options ) {
+  options = merge( {
+    label: 'This Charge', // TODO: factor out into strings files
+    otherObjectLabel: 'Other Charge',
+    scientificNotationMode: true,
+    snapToNearest: model.snapObjectsToNearest,
+    attractNegative: true,
+    y: CHARGE_NODE_Y_POSITION,
 
-    options = merge( {
-      label: 'This Charge', // TODO: factor out into strings files
-      otherObjectLabel: 'Other Charge',
-      scientificNotationMode: true,
-      snapToNearest: model.snapObjectsToNearest,
-      attractNegative: true,
-      y: CHARGE_NODE_Y_POSITION,
-
-      pullerNodeOptions: {
-        displayShadow: false
-      },
-
-      arrowNodeOptions: {
-        maxArrowWidth: 50,
-        forceReadoutDecimalPlaces: 9,
-
-        // colors for projector and default modes
-        labelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
-        arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
-        arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
-        arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
-        labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
-        backgroundFill: CoulombsLawColorProfile.backgroundProperty
-      },
-      labelOptions: {
-        fill: CoulombsLawColorProfile.forceArrowLabelFillProperty
-      },
-
-      // phet-io
-      tandem: Tandem.REQUIRED,
-
-      // TODO: proper sting usage
-      a11yCreateAriaValueText: function( formattedValue ) {
-        return '{{formattedValue}} coulombs';
-      }
-    }, options );
-
-    // @private - Used for incrementing the radius to prevent division by zero in RadialGradient
-    this.snapToNearest = options.snapToNearest;
-
-    ISLCObjectNode.call(
-      this,
-      model,
-      chargeObjectModel,
-      layoutBounds,
-      modelViewTransform,
-      alertManager,
-      forceDescriber,
-      positionDescriber,
-      options
-    );
-
-    // force display Property is never removed/destroyed, no disposal required
-    model.forceValuesDisplayProperty.lazyLink( this.redrawForce.bind( this ) );
-
-    // stroke added here for projector mode and white bg printing options
-    this.objectCircle.stroke = 'black';
-    this.objectCircle.lineWidth = 0.5;
-  }
-
-  coulombsLaw.register( 'ChargeNode', ChargeNode );
-
-  return inherit( ISLCObjectNode, ChargeNode, {
-
-    /**
-     * Alter the radial gradient based on the radius of the charge object
-     * @param  {Color} baseColor
-     */
-    updateGradient: function( baseColor ) {
-      let radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
-
-      // if the radius = 1, radial gradient will throw an divide-by-zero error
-      // ensure inequality
-      radius = radius === 1 ? radius + this.snapToNearest : radius;
-
-      this.objectCircle.fill = new RadialGradient( -radius * 0.6, -radius * 0.6, 1, -radius * 0.6, -radius * 0.6, radius )
-        .addColorStop( 0, baseColor.colorUtilsBrighter( 0.5 ).toCSS() )
-        .addColorStop( 1, baseColor.toCSS() );
+    pullerNodeOptions: {
+      displayShadow: false
     },
 
-    /**
-     * Updates the node's arrow length, force readout, and puller image.
-     */
-    redrawForce: function() {
-      this.arrowNode.scientificNotationMode = this.model.forceValuesDisplayProperty.value === ForceValuesDisplayEnum.SCIENTIFIC;
-      ISLCObjectNode.prototype.redrawForce.call( this );
+    arrowNodeOptions: {
+      maxArrowWidth: 50,
+      forceReadoutDecimalPlaces: 9,
+
+      // colors for projector and default modes
+      labelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
+      arrowLabelFill: CoulombsLawColorProfile.forceArrowLabelFillProperty,
+      arrowFill: CoulombsLawColorProfile.forceArrowFillProperty,
+      arrowStroke: CoulombsLawColorProfile.forceArrowStrokeProperty,
+      labelShadowFill: CoulombsLawColorProfile.labelShadowFillProperty,
+      backgroundFill: CoulombsLawColorProfile.backgroundProperty
+    },
+    labelOptions: {
+      fill: CoulombsLawColorProfile.forceArrowLabelFillProperty
+    },
+
+    // phet-io
+    tandem: Tandem.REQUIRED,
+
+    // TODO: proper sting usage
+    a11yCreateAriaValueText: function( formattedValue ) {
+      return '{{formattedValue}} coulombs';
     }
-  } );
+  }, options );
+
+  // @private - Used for incrementing the radius to prevent division by zero in RadialGradient
+  this.snapToNearest = options.snapToNearest;
+
+  ISLCObjectNode.call(
+    this,
+    model,
+    chargeObjectModel,
+    layoutBounds,
+    modelViewTransform,
+    alertManager,
+    forceDescriber,
+    positionDescriber,
+    options
+  );
+
+  // force display Property is never removed/destroyed, no disposal required
+  model.forceValuesDisplayProperty.lazyLink( this.redrawForce.bind( this ) );
+
+  // stroke added here for projector mode and white bg printing options
+  this.objectCircle.stroke = 'black';
+  this.objectCircle.lineWidth = 0.5;
+}
+
+coulombsLaw.register( 'ChargeNode', ChargeNode );
+
+export default inherit( ISLCObjectNode, ChargeNode, {
+
+  /**
+   * Alter the radial gradient based on the radius of the charge object
+   * @param  {Color} baseColor
+   */
+  updateGradient: function( baseColor ) {
+    let radius = this.modelViewTransform.modelToViewDeltaX( this.objectModel.radiusProperty.get() );
+
+    // if the radius = 1, radial gradient will throw an divide-by-zero error
+    // ensure inequality
+    radius = radius === 1 ? radius + this.snapToNearest : radius;
+
+    this.objectCircle.fill = new RadialGradient( -radius * 0.6, -radius * 0.6, 1, -radius * 0.6, -radius * 0.6, radius )
+      .addColorStop( 0, baseColor.colorUtilsBrighter( 0.5 ).toCSS() )
+      .addColorStop( 1, baseColor.toCSS() );
+  },
+
+  /**
+   * Updates the node's arrow length, force readout, and puller image.
+   */
+  redrawForce: function() {
+    this.arrowNode.scientificNotationMode = this.model.forceValuesDisplayProperty.value === ForceValuesDisplayEnum.SCIENTIFIC;
+    ISLCObjectNode.prototype.redrawForce.call( this );
+  }
 } );

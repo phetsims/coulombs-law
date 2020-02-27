@@ -6,76 +6,75 @@
  * @author  Jesse Greenberg
  * @author  Michael Barlow
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const Color = require( 'SCENERY/util/Color' );
-  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  const DerivedProperty = require( 'AXON/DerivedProperty' );
-  const Dimension2 = require( 'DOT/Dimension2' );
-  const inherit = require( 'PHET_CORE/inherit' );
-  const merge = require( 'PHET_CORE/merge' );
-  const SliderThumb = require( 'SUN/SliderThumb' );
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
+import Dimension2 from '../../../../dot/js/Dimension2.js';
+import inherit from '../../../../phet-core/js/inherit.js';
+import merge from '../../../../phet-core/js/merge.js';
+import Color from '../../../../scenery/js/util/Color.js';
+import SliderThumb from '../../../../sun/js/SliderThumb.js';
+import coulombsLaw from '../../coulombsLaw.js';
 
-  // constants
-  const THUMB_SIZE = new Dimension2( 10, 18 );
-  const NEGATIVE_FILL = new Color( '#00f' );
-  const POSITIVE_FILL = new Color( '#f00' );
-  const ZERO_FILL = new Color( 'gray' );
+// constants
+const THUMB_SIZE = new Dimension2( 10, 18 );
+const NEGATIVE_FILL = new Color( '#00f' );
+const POSITIVE_FILL = new Color( '#f00' );
+const ZERO_FILL = new Color( 'gray' );
 
-  /**
-   * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
-   * @param {Object} [options]
-   * @constructor
-   */
-  function ChargeControlSliderThumb( objectProperty, options ) {
+/**
+ * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
+ * @param {Object} [options]
+ * @constructor
+ */
+function ChargeControlSliderThumb( objectProperty, options ) {
 
-    // {Property.<Color>}
-    // fills are axon Properties because they need to change with the objectProperty
-    // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
-    const fillProperty = new DerivedProperty( [ objectProperty ], function( value ) {
-      return getUpdatedFill( value );
-    } );
+  // {Property.<Color>}
+  // fills are axon Properties because they need to change with the objectProperty
+  // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
+  const fillProperty = new DerivedProperty( [ objectProperty ], function( value ) {
+    return getUpdatedFill( value );
+  } );
 
-    // {Property.<Color>}
-    const fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
-      return getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
-    } );
+  // {Property.<Color>}
+  const fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
+    return getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
+  } );
 
-    options = merge( {
-      size: THUMB_SIZE,
-      fill: fillProperty,
-      fillHighlighted: fillHighlightedProperty
-    }, options );
+  options = merge( {
+    size: THUMB_SIZE,
+    fill: fillProperty,
+    fillHighlighted: fillHighlightedProperty
+  }, options );
 
-    SliderThumb.call( this, options );
+  SliderThumb.call( this, options );
 
-    this.mouseArea = this.localBounds;
-    this.touchArea = this.mouseArea.dilated( 6 );
+  this.mouseArea = this.localBounds;
+  this.touchArea = this.mouseArea.dilated( 6 );
+}
+
+/**
+ * Helper function to get a color based on a linked Property's value
+ *
+ * @param {number} propertyValue
+ * @returns {Color}
+ */
+function getUpdatedFill( propertyValue ) {
+
+  let fill;
+  if ( propertyValue < 0 ) {
+    fill = NEGATIVE_FILL;
+  }
+  else if ( propertyValue > 0 ) {
+    fill = POSITIVE_FILL;
+  }
+  else {
+    fill = ZERO_FILL;
   }
 
-  /**
-   * Helper function to get a color based on a linked Property's value
-   *
-   * @param {number} propertyValue
-   * @returns {Color}
-   */
-  function getUpdatedFill( propertyValue ) {
+  return fill;
+}
 
-    let fill;
-    if ( propertyValue < 0 ) {
-      fill = NEGATIVE_FILL;
-    } else if ( propertyValue > 0 ) {
-      fill = POSITIVE_FILL;
-    } else {
-      fill = ZERO_FILL;
-    }
+coulombsLaw.register( 'ChargeControlSliderThumb', ChargeControlSliderThumb );
 
-    return fill;
-  }
-
-  coulombsLaw.register( 'ChargeControlSliderThumb', ChargeControlSliderThumb );
-
-  return inherit( SliderThumb, ChargeControlSliderThumb );
-} );
+inherit( SliderThumb, ChargeControlSliderThumb );
+export default ChargeControlSliderThumb;

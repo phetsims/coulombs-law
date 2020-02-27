@@ -5,36 +5,33 @@
  *
  * @author Michael Barlow (PhET Interactive Simulations)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  const CoulombsLawColorProfile = require( 'COULOMBS_LAW/common/CoulombsLawColorProfile' );
-  const inherit = require( 'PHET_CORE/inherit' );
-  const LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
-  const OptionsDialog = require( 'JOIST/OptionsDialog' );
-  const ProjectorModeCheckbox = require( 'JOIST/ProjectorModeCheckbox' );
+import OptionsDialog from '../../../../joist/js/OptionsDialog.js';
+import ProjectorModeCheckbox from '../../../../joist/js/ProjectorModeCheckbox.js';
+import inherit from '../../../../phet-core/js/inherit.js';
+import LayoutBox from '../../../../scenery/js/nodes/LayoutBox.js';
+import coulombsLaw from '../../coulombsLaw.js';
+import CoulombsLawColorProfile from '../CoulombsLawColorProfile.js';
 
-  /**
-   * @param {Tandem} tandem
-   */
-  function CoulombsLawGlobalOptionsNode( tandem ) {
+/**
+ * @param {Tandem} tandem
+ */
+function CoulombsLawGlobalOptionsNode( tandem ) {
 
-    const projectorModeCheckbox = new ProjectorModeCheckbox( CoulombsLawColorProfile, {
-      tandem: tandem.createTandem( 'projectorCheckbox' ),
-      phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
-    } );
+  const projectorModeCheckbox = new ProjectorModeCheckbox( CoulombsLawColorProfile, {
+    tandem: tandem.createTandem( 'projectorCheckbox' ),
+    phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
+  } );
 
-    LayoutBox.call( this, {
-      children: [ projectorModeCheckbox ],
-      spacing: OptionsDialog.DEFAULT_SPACING,
-      align: 'left',
-      tandem: tandem
-    } );
-  }
+  LayoutBox.call( this, {
+    children: [ projectorModeCheckbox ],
+    spacing: OptionsDialog.DEFAULT_SPACING,
+    align: 'left',
+    tandem: tandem
+  } );
+}
 
-  coulombsLaw.register( 'CoulombsLawGlobalOptionsNode', CoulombsLawGlobalOptionsNode );
+coulombsLaw.register( 'CoulombsLawGlobalOptionsNode', CoulombsLawGlobalOptionsNode );
 
-  return inherit( LayoutBox, CoulombsLawGlobalOptionsNode );
-} );
+inherit( LayoutBox, CoulombsLawGlobalOptionsNode );
+export default CoulombsLawGlobalOptionsNode;

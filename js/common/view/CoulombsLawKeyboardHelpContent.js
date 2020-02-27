@@ -6,132 +6,128 @@
  *
  * @author Michael Barlow (PhET Interactive Simulations)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const coulombsLaw = require( 'COULOMBS_LAW/coulombsLaw' );
-  const CoulombsLawA11yStrings = require( 'COULOMBS_LAW/common/CoulombsLawA11yStrings' );
-  const EndKeyNode = require( 'SCENERY_PHET/keyboard/EndKeyNode' );
-  const GeneralKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/GeneralKeyboardHelpSection' );
-  const HomeKeyNode = require( 'SCENERY_PHET/keyboard/HomeKeyNode' );
-  const KeyboardHelpIconFactory = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpIconFactory' );
-  const KeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpSection' );
-  const merge = require( 'PHET_CORE/merge' );
-  const TwoColumnKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/TwoColumnKeyboardHelpContent' );
+import merge from '../../../../phet-core/js/merge.js';
+import EndKeyNode from '../../../../scenery-phet/js/keyboard/EndKeyNode.js';
+import GeneralKeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/GeneralKeyboardHelpSection.js';
+import KeyboardHelpIconFactory from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpIconFactory.js';
+import KeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSection.js';
+import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/help/TwoColumnKeyboardHelpContent.js';
+import HomeKeyNode from '../../../../scenery-phet/js/keyboard/HomeKeyNode.js';
+import coulombsLawStrings from '../../coulombs-law-strings.js';
+import coulombsLaw from '../../coulombsLaw.js';
+import CoulombsLawA11yStrings from '../CoulombsLawA11yStrings.js';
 
-  // strings
-  const adjustAmountLabelString = require( 'string!COULOMBS_LAW/adjustAmountLabel' );
-  const adjustInLargerStepsLabelString = require( 'string!COULOMBS_LAW/adjustInLargerStepsLabel' );
-  const chargeAmountHeadingString = require( 'string!COULOMBS_LAW/chargeAmountHeading' );
-  const chargePositionsHeadingString = require( 'string!COULOMBS_LAW/chargePositionsHeading' );
-  const jumpLeftLabelString = require( 'string!COULOMBS_LAW/jumpLeftLabel' );
-  const jumpRightLabelString = require( 'string!COULOMBS_LAW/jumpRightLabel' );
-  const jumpToMaximumLabelString = require( 'string!COULOMBS_LAW/jumpToMaximumLabel' );
-  const jumpToMinimumLabelString = require( 'string!COULOMBS_LAW/jumpToMinimumLabel' );
-  const moveChargesLabelString = require( 'string!COULOMBS_LAW/moveChargesLabel' );
-  const moveInLargerStepsLabelString = require( 'string!COULOMBS_LAW/moveInLargerStepsLabel' );
-  const moveInSmallerStepsLabelString = require( 'string!COULOMBS_LAW/moveInSmallerStepsLabel' );
-  const moveRulerHeadingString = require( 'string!COULOMBS_LAW/moveRulerHeading' );
-  const moveRulerLabelString = require( 'string!COULOMBS_LAW/moveRulerLabel' );
+const adjustAmountLabelString = coulombsLawStrings.adjustAmountLabel;
+const adjustInLargerStepsLabelString = coulombsLawStrings.adjustInLargerStepsLabel;
+const chargeAmountHeadingString = coulombsLawStrings.chargeAmountHeading;
+const chargePositionsHeadingString = coulombsLawStrings.chargePositionsHeading;
+const jumpLeftLabelString = coulombsLawStrings.jumpLeftLabel;
+const jumpRightLabelString = coulombsLawStrings.jumpRightLabel;
+const jumpToMaximumLabelString = coulombsLawStrings.jumpToMaximumLabel;
+const jumpToMinimumLabelString = coulombsLawStrings.jumpToMinimumLabel;
+const moveChargesLabelString = coulombsLawStrings.moveChargesLabel;
+const moveInLargerStepsLabelString = coulombsLawStrings.moveInLargerStepsLabel;
+const moveInSmallerStepsLabelString = coulombsLawStrings.moveInSmallerStepsLabel;
+const moveRulerHeadingString = coulombsLawStrings.moveRulerHeading;
+const moveRulerLabelString = coulombsLawStrings.moveRulerLabel;
 
-  // a11y strings
-  const moveChargesDescriptionString = CoulombsLawA11yStrings.moveChargesDescription.value;
-  const smallStepsMoveChargesDescriptionString = CoulombsLawA11yStrings.smallStepsMoveChargesDescription.value;
-  const largeStepsMoveChargesDescriptionString = CoulombsLawA11yStrings.largeStepsMoveChargesDescription.value;
-  const jumpHomeDescriptionString = CoulombsLawA11yStrings.jumpHomeDescription.value;
-  const jumpEndDescriptionString = CoulombsLawA11yStrings.jumpEndDescription.value;
-  const moveRulerDescriptionString = CoulombsLawA11yStrings.moveRulerDescription.value;
-  const adjustChargeAmountDescriptionString = CoulombsLawA11yStrings.adjustChargeAmountDescription.value;
-  const largeStepsAdjustAmountDescriptionString = CoulombsLawA11yStrings.largeStepsAdjustAmountDescription.value;
-  const jumpToMinimumDescriptionString = CoulombsLawA11yStrings.jumpToMinimumDescription.value;
-  const jumpToMaximumDescriptionString = CoulombsLawA11yStrings.jumpToMaximumDescription.value;
+// a11y strings
+const moveChargesDescriptionString = CoulombsLawA11yStrings.moveChargesDescription.value;
+const smallStepsMoveChargesDescriptionString = CoulombsLawA11yStrings.smallStepsMoveChargesDescription.value;
+const largeStepsMoveChargesDescriptionString = CoulombsLawA11yStrings.largeStepsMoveChargesDescription.value;
+const jumpHomeDescriptionString = CoulombsLawA11yStrings.jumpHomeDescription.value;
+const jumpEndDescriptionString = CoulombsLawA11yStrings.jumpEndDescription.value;
+const moveRulerDescriptionString = CoulombsLawA11yStrings.moveRulerDescription.value;
+const adjustChargeAmountDescriptionString = CoulombsLawA11yStrings.adjustChargeAmountDescription.value;
+const largeStepsAdjustAmountDescriptionString = CoulombsLawA11yStrings.largeStepsAdjustAmountDescription.value;
+const jumpToMinimumDescriptionString = CoulombsLawA11yStrings.jumpToMinimumDescription.value;
+const jumpToMaximumDescriptionString = CoulombsLawA11yStrings.jumpToMaximumDescription.value;
 
-  class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
+class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
 
-    constructor() {
+  constructor() {
 
-      const helpContentOptions = {
+    const helpContentOptions = {
 
-        // i18n, restricts both labelText and maxWidth, see KeyboardHelpSection
-        labelMaxWidth: 130
-      };
+      // i18n, restricts both labelText and maxWidth, see KeyboardHelpSection
+      labelMaxWidth: 130
+    };
 
-      const chargeContent = new ChargePositionsContent( helpContentOptions );
-      const rulerContent = new MoveRulerContent( helpContentOptions );
-      KeyboardHelpSection.alignHelpSectionIcons( [ chargeContent, rulerContent ] );
-      const leftHelpContent = [ chargeContent, rulerContent ];
+    const chargeContent = new ChargePositionsContent( helpContentOptions );
+    const rulerContent = new MoveRulerContent( helpContentOptions );
+    KeyboardHelpSection.alignHelpSectionIcons( [ chargeContent, rulerContent ] );
+    const leftHelpContent = [ chargeContent, rulerContent ];
 
-      const generalNavigationHelpContent = new GeneralKeyboardHelpSection( merge( helpContentOptions, {
-        withGroupContent: true,
-        withCheckboxContent: true
-      } ) );
-      const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
-      KeyboardHelpSection.alignHelpSectionIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
-      const rightHelpContent = [ adjustChargeContent, generalNavigationHelpContent ];
+    const generalNavigationHelpContent = new GeneralKeyboardHelpSection( merge( helpContentOptions, {
+      withGroupContent: true,
+      withCheckboxContent: true
+    } ) );
+    const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
+    KeyboardHelpSection.alignHelpSectionIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
+    const rightHelpContent = [ adjustChargeContent, generalNavigationHelpContent ];
 
-      super( leftHelpContent, rightHelpContent );
-    }
+    super( leftHelpContent, rightHelpContent );
   }
+}
 
-  coulombsLaw.register( 'CoulombsLawKeyboardHelpContent', CoulombsLawKeyboardHelpContent );
+coulombsLaw.register( 'CoulombsLawKeyboardHelpContent', CoulombsLawKeyboardHelpContent );
 
-  class ChargePositionsContent extends KeyboardHelpSection {
+class ChargePositionsContent extends KeyboardHelpSection {
 
-    /**
-     * @param {Object} [options]
-     */
-    constructor( options ) {
-      const arrowsIcon = KeyboardHelpIconFactory.leftRightArrowKeysRowIcon();
-      const shiftPlusArrowsIcon = KeyboardHelpIconFactory.shiftPlusIcon( KeyboardHelpIconFactory.leftRightArrowKeysRowIcon() );
-      const pgUpDownIcon = KeyboardHelpIconFactory.pageUpPageDownRowIcon();
-      const homeKeyIcon = new HomeKeyNode();
-      const endKeyIcon = new EndKeyNode();
-      const rows = [
-        createRow( moveChargesLabelString, arrowsIcon, moveChargesDescriptionString ),
-        createRow( moveInSmallerStepsLabelString, shiftPlusArrowsIcon, smallStepsMoveChargesDescriptionString ),
-        createRow( moveInLargerStepsLabelString, pgUpDownIcon, largeStepsMoveChargesDescriptionString ),
-        createRow( jumpLeftLabelString, homeKeyIcon, jumpHomeDescriptionString ),
-        createRow( jumpRightLabelString, endKeyIcon, jumpEndDescriptionString )
-      ];
-      super( chargePositionsHeadingString, rows, options );
-    }
+  /**
+   * @param {Object} [options]
+   */
+  constructor( options ) {
+    const arrowsIcon = KeyboardHelpIconFactory.leftRightArrowKeysRowIcon();
+    const shiftPlusArrowsIcon = KeyboardHelpIconFactory.shiftPlusIcon( KeyboardHelpIconFactory.leftRightArrowKeysRowIcon() );
+    const pgUpDownIcon = KeyboardHelpIconFactory.pageUpPageDownRowIcon();
+    const homeKeyIcon = new HomeKeyNode();
+    const endKeyIcon = new EndKeyNode();
+    const rows = [
+      createRow( moveChargesLabelString, arrowsIcon, moveChargesDescriptionString ),
+      createRow( moveInSmallerStepsLabelString, shiftPlusArrowsIcon, smallStepsMoveChargesDescriptionString ),
+      createRow( moveInLargerStepsLabelString, pgUpDownIcon, largeStepsMoveChargesDescriptionString ),
+      createRow( jumpLeftLabelString, homeKeyIcon, jumpHomeDescriptionString ),
+      createRow( jumpRightLabelString, endKeyIcon, jumpEndDescriptionString )
+    ];
+    super( chargePositionsHeadingString, rows, options );
   }
+}
 
-  class MoveRulerContent extends KeyboardHelpSection {
-    constructor( options ) {
-      assert && assert( !options || options.a11yContentTagName === undefined, 'MoveRulerContent sets a11yContentTagName' );
+class MoveRulerContent extends KeyboardHelpSection {
+  constructor( options ) {
+    assert && assert( !options || options.a11yContentTagName === undefined, 'MoveRulerContent sets a11yContentTagName' );
 
-      const icon = KeyboardHelpIconFactory.arrowOrWasdKeysRowIcon();
-      super(
-        moveRulerHeadingString,
-        [ createRow( moveRulerLabelString, icon, moveRulerDescriptionString, { tagName: 'p' } ) ],
-        merge( {}, options, { a11yContentTagName: null } )
-      );
-    }
+    const icon = KeyboardHelpIconFactory.arrowOrWasdKeysRowIcon();
+    super(
+      moveRulerHeadingString,
+      [ createRow( moveRulerLabelString, icon, moveRulerDescriptionString, { tagName: 'p' } ) ],
+      merge( {}, options, { a11yContentTagName: null } )
+    );
   }
+}
 
-  class AdjustChargeContent extends KeyboardHelpSection {
-    constructor( options ) {
-      const leftRightArrowIcon = KeyboardHelpIconFactory.leftRightArrowKeysRowIcon();
-      const upDownArrowIcon = KeyboardHelpIconFactory.upDownArrowKeysRowIcon();
-      const leftRightOrUpDownIcon = KeyboardHelpIconFactory.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
-      const pgUpDownIcon = KeyboardHelpIconFactory.pageUpPageDownRowIcon();
+class AdjustChargeContent extends KeyboardHelpSection {
+  constructor( options ) {
+    const leftRightArrowIcon = KeyboardHelpIconFactory.leftRightArrowKeysRowIcon();
+    const upDownArrowIcon = KeyboardHelpIconFactory.upDownArrowKeysRowIcon();
+    const leftRightOrUpDownIcon = KeyboardHelpIconFactory.iconOrIcon( leftRightArrowIcon, upDownArrowIcon );
+    const pgUpDownIcon = KeyboardHelpIconFactory.pageUpPageDownRowIcon();
 
-      const rows = [
-        createRow( adjustAmountLabelString, leftRightOrUpDownIcon, adjustChargeAmountDescriptionString ),
-        createRow( adjustInLargerStepsLabelString, pgUpDownIcon, largeStepsAdjustAmountDescriptionString ),
-        createRow( jumpToMinimumLabelString, new HomeKeyNode(), jumpToMinimumDescriptionString ),
-        createRow( jumpToMaximumLabelString, new EndKeyNode(), jumpToMaximumDescriptionString )
-      ];
+    const rows = [
+      createRow( adjustAmountLabelString, leftRightOrUpDownIcon, adjustChargeAmountDescriptionString ),
+      createRow( adjustInLargerStepsLabelString, pgUpDownIcon, largeStepsAdjustAmountDescriptionString ),
+      createRow( jumpToMinimumLabelString, new HomeKeyNode(), jumpToMinimumDescriptionString ),
+      createRow( jumpToMaximumLabelString, new EndKeyNode(), jumpToMaximumDescriptionString )
+    ];
 
-      super( chargeAmountHeadingString, rows, options );
-    }
+    super( chargeAmountHeadingString, rows, options );
   }
+}
 
-  function createRow( labelText, icon, description, iconOptions ) {
-    return KeyboardHelpSection.labelWithIcon( labelText, icon, description, iconOptions ? { iconOptions: iconOptions } : null );
-  }
+function createRow( labelText, icon, description, iconOptions ) {
+  return KeyboardHelpSection.labelWithIcon( labelText, icon, description, iconOptions ? { iconOptions: iconOptions } : null );
+}
 
-  return CoulombsLawKeyboardHelpContent;
-} );
+export default CoulombsLawKeyboardHelpContent;
