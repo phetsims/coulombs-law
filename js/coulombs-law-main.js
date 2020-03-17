@@ -32,7 +32,6 @@ const simOptions = {
 
   // Creates content for the Options dialog
   createOptionsDialogContent: tandem => new CoulombsLawGlobalOptionsNode( tandem ),
-  accessibility: true,
   keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
 };
 
