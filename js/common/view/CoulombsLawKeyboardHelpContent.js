@@ -16,7 +16,6 @@ import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/h
 import HomeKeyNode from '../../../../scenery-phet/js/keyboard/HomeKeyNode.js';
 import coulombsLawStrings from '../../coulombs-law-strings.js';
 import coulombsLaw from '../../coulombsLaw.js';
-import CoulombsLawA11yStrings from '../CoulombsLawA11yStrings.js';
 
 const adjustAmountLabelString = coulombsLawStrings.adjustAmountLabel;
 const adjustInLargerStepsLabelString = coulombsLawStrings.adjustInLargerStepsLabel;
@@ -31,18 +30,16 @@ const moveInLargerStepsLabelString = coulombsLawStrings.moveInLargerStepsLabel;
 const moveInSmallerStepsLabelString = coulombsLawStrings.moveInSmallerStepsLabel;
 const moveRulerHeadingString = coulombsLawStrings.moveRulerHeading;
 const moveRulerLabelString = coulombsLawStrings.moveRulerLabel;
-
-// a11y strings
-const moveChargesDescriptionString = CoulombsLawA11yStrings.moveChargesDescription.value;
-const smallStepsMoveChargesDescriptionString = CoulombsLawA11yStrings.smallStepsMoveChargesDescription.value;
-const largeStepsMoveChargesDescriptionString = CoulombsLawA11yStrings.largeStepsMoveChargesDescription.value;
-const jumpHomeDescriptionString = CoulombsLawA11yStrings.jumpHomeDescription.value;
-const jumpEndDescriptionString = CoulombsLawA11yStrings.jumpEndDescription.value;
-const moveRulerDescriptionString = CoulombsLawA11yStrings.moveRulerDescription.value;
-const adjustChargeAmountDescriptionString = CoulombsLawA11yStrings.adjustChargeAmountDescription.value;
-const largeStepsAdjustAmountDescriptionString = CoulombsLawA11yStrings.largeStepsAdjustAmountDescription.value;
-const jumpToMinimumDescriptionString = CoulombsLawA11yStrings.jumpToMinimumDescription.value;
-const jumpToMaximumDescriptionString = CoulombsLawA11yStrings.jumpToMaximumDescription.value;
+const moveChargesDescriptionString = coulombsLawStrings.a11y.moveChargesDescription;
+const smallStepsMoveChargesDescriptionString = coulombsLawStrings.a11y.smallStepsMoveChargesDescription;
+const largeStepsMoveChargesDescriptionString = coulombsLawStrings.a11y.largeStepsMoveChargesDescription;
+const jumpHomeDescriptionString = coulombsLawStrings.a11y.jumpHomeDescription;
+const jumpEndDescriptionString = coulombsLawStrings.a11y.jumpEndDescription;
+const moveRulerDescriptionString = coulombsLawStrings.a11y.moveRulerDescription;
+const adjustChargeAmountDescriptionString = coulombsLawStrings.a11y.adjustChargeAmountDescription;
+const largeStepsAdjustAmountDescriptionString = coulombsLawStrings.a11y.largeStepsAdjustAmountDescription;
+const jumpToMinimumDescriptionString = coulombsLawStrings.a11y.jumpToMinimumDescription;
+const jumpToMaximumDescriptionString = coulombsLawStrings.a11y.jumpToMaximumDescription;
 
 class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
 
