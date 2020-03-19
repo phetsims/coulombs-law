@@ -6047,7 +6047,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "LinkedElementIO"
     },
     "coulombsLaw.general.view.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.content.projectorCheckbox.toggleAction": {
-      "phetioDocumentation": "Emits when user input causes the checkbox to toggle, emitting a single arg: the new boolean value of the checkbox state. The arguments are:<br/><ol><li>isChecked: BooleanIO</li></ol>",
+      "phetioDocumentation": "Emits when user input causes the checkbox to toggle, emitting a single arg: the new boolean value of the checkbox state. No arguments.",
       "phetioDynamicElement": false,
       "phetioEventType": "USER",
       "phetioFeatured": false,
@@ -6057,7 +6057,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO<BooleanIO>"
+      "phetioTypeName": "ActionIO<>"
     },
     "coulombsLaw.general.view.navigationBar.phetButton.phetMenu.optionsDialogCapsule.archetype.content.projectorCheckbox.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
