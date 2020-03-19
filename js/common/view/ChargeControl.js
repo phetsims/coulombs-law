@@ -47,7 +47,9 @@ class ChargeControl extends ISLCObjectControlPanel {
         },
         titleNodeOptions: { font: new PhetFont( 16 ) },
         numberDisplayOptions: {
-          font: new PhetFont( 12 ),
+          textOptions: {
+            font: new PhetFont( 12 )
+          },
           xMargin: 4,
           yMargin: 2
         },
