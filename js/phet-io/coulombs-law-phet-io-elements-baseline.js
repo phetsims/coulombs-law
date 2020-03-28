@@ -2835,6 +2835,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioStudioControl": true,
       "phetioTypeName": "PropertyIO<BooleanIO>"
     },
+    "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.enabledProperty": {
+      "phetioDocumentation": "When disabled, the component is grayed out and cannot be interacted with.",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": true,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<BooleanIO>"
+    },
     "coulombsLaw.atomicScreen.coulombsLawAtomicScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.hiddenRadioButton": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
@@ -9792,6 +9805,19 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     },
     "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.decimalNotationRadioButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
+      "phetioDynamicElement": false,
+      "phetioEventType": "MODEL",
+      "phetioFeatured": true,
+      "phetioHighFrequency": false,
+      "phetioIsArchetype": false,
+      "phetioPlayback": false,
+      "phetioReadOnly": false,
+      "phetioState": true,
+      "phetioStudioControl": true,
+      "phetioTypeName": "PropertyIO<BooleanIO>"
+    },
+    "coulombsLaw.macroScreen.coulombsLawMacroScreen.view.forceValuesDisplayControl.forceValuesRadioButtonGroup.enabledProperty": {
+      "phetioDocumentation": "When disabled, the component is grayed out and cannot be interacted with.",
       "phetioDynamicElement": false,
       "phetioEventType": "MODEL",
       "phetioFeatured": true,
