@@ -17,7 +17,7 @@ import ChargeNode from '../../common/view/ChargeNode.js';
 import CoulombsLawCommonView from '../../common/view/CoulombsLawCommonView.js';
 import CoulombsLawForceDescriber from '../../common/view/describers/CoulombsLawForceDescriber.js';
 import CoulombsLawPositionDescriber from '../../common/view/describers/CoulombsLawPositionDescriber.js';
-import coulombsLawStrings from '../../coulombs-law-strings.js';
+import coulombsLawStrings from '../../coulombsLawStrings.js';
 import coulombsLaw from '../../coulombsLaw.js';
 
 const charge1AbbreviatedString = coulombsLawStrings.charge1Abbreviated;

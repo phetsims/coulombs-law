@@ -22,7 +22,7 @@ import inherit from '../../../../phet-core/js/inherit.js';
 import merge from '../../../../phet-core/js/merge.js';
 import ModelViewTransform2 from '../../../../phetcommon/js/view/ModelViewTransform2.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
-import coulombsLawStrings from '../../coulombs-law-strings.js';
+import coulombsLawStrings from '../../coulombsLawStrings.js';
 import coulombsLaw from '../../coulombsLaw.js';
 import ChargeControl from './ChargeControl.js';
 import CoulombsLawRulerDescriber from './describers/CoulombsLawRulerDescriber.js';

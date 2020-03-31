@@ -11,7 +11,7 @@ import Image from '../../../scenery/js/nodes/Image.js';
 import atomicScaleScreenIconNavbar from '../../images/atomic_scale_screen_icon_navbar_png.js';
 import atomicScaleScreenIcon from '../../images/atomic_scale_screen_icon_png.js';
 import CoulombsLawColorProfile from '../common/CoulombsLawColorProfile.js';
-import coulombsLawStrings from '../coulombs-law-strings.js';
+import coulombsLawStrings from '../coulombsLawStrings.js';
 import coulombsLaw from '../coulombsLaw.js';
 import CoulombsLawAtomicModel from './model/CoulombsLawAtomicModel.js';
 import CoulombsLawAtomicView from './view/CoulombsLawAtomicView.js';

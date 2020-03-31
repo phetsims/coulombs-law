@@ -13,7 +13,7 @@ import Tandem from '../../tandem/js/Tandem.js';
 import CoulombsLawAtomicScreen from './atomic/CoulombsLawAtomicScreen.js';
 import CoulombsLawGlobalOptionsNode from './common/view/CoulombsLawGlobalOptionsNode.js';
 import CoulombsLawKeyboardHelpContent from './common/view/CoulombsLawKeyboardHelpContent.js';
-import coulombsLawStrings from './coulombs-law-strings.js';
+import coulombsLawStrings from './coulombsLawStrings.js';
 import CoulombsLawMacroScreen from './macro/CoulombsLawMacroScreen.js';
 
 const coulombsLawTitleString = coulombsLawStrings[ 'coulombs-law' ].title;
