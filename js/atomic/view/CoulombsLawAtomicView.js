@@ -8,8 +8,7 @@
  * @author Michael Barlow
  */
 
-import inverseSquareLawCommonStrings
-  from '../../../../inverse-square-law-common/js/inverseSquareLawCommonStrings.js';
+import inverseSquareLawCommonStrings from '../../../../inverse-square-law-common/js/inverseSquareLawCommonStrings.js';
 import ISLCConstants from '../../../../inverse-square-law-common/js/ISLCConstants.js';
 import DefaultDirection from '../../../../inverse-square-law-common/js/view/DefaultDirection.js';
 import ISLCAlertManager from '../../../../inverse-square-law-common/js/view/ISLCAlertManager.js';
@@ -22,8 +21,8 @@ import ChargeNode from '../../common/view/ChargeNode.js';
 import CoulombsLawCommonView from '../../common/view/CoulombsLawCommonView.js';
 import CoulombsLawForceDescriber from '../../common/view/describers/CoulombsLawForceDescriber.js';
 import CoulombsLawPositionDescriber from '../../common/view/describers/CoulombsLawPositionDescriber.js';
-import coulombsLawStrings from '../../coulombsLawStrings.js';
 import coulombsLaw from '../../coulombsLaw.js';
+import coulombsLawStrings from '../../coulombsLawStrings.js';
 
 const charge1AbbreviatedString = coulombsLawStrings.charge1Abbreviated;
 const charge2AbbreviatedString = coulombsLawStrings.charge2Abbreviated;

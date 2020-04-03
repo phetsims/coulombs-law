@@ -12,8 +12,7 @@
 import Bounds2 from '../../../../dot/js/Bounds2.js';
 import Vector2 from '../../../../dot/js/Vector2.js';
 import ISLCQueryParameters from '../../../../inverse-square-law-common/js/ISLCQueryParameters.js';
-import ISLCForceValuesDisplayControl
-  from '../../../../inverse-square-law-common/js/view/ISLCForceValuesDisplayControl.js';
+import ISLCForceValuesDisplayControl from '../../../../inverse-square-law-common/js/view/ISLCForceValuesDisplayControl.js';
 import ISLCGridNode from '../../../../inverse-square-law-common/js/view/ISLCGridNode.js';
 import ISLCPanel from '../../../../inverse-square-law-common/js/view/ISLCPanel.js';
 import ISLCRulerNode from '../../../../inverse-square-law-common/js/view/ISLCRulerNode.js';
@@ -22,8 +21,8 @@ import inherit from '../../../../phet-core/js/inherit.js';
 import merge from '../../../../phet-core/js/merge.js';
 import ModelViewTransform2 from '../../../../phetcommon/js/view/ModelViewTransform2.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
-import coulombsLawStrings from '../../coulombsLawStrings.js';
 import coulombsLaw from '../../coulombsLaw.js';
+import coulombsLawStrings from '../../coulombsLawStrings.js';
 import ChargeControl from './ChargeControl.js';
 import CoulombsLawRulerDescriber from './describers/CoulombsLawRulerDescriber.js';
 
