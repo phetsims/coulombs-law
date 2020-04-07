@@ -146,7 +146,7 @@ function CoulombsLawAtomicView( coulombsLawModel, tandem ) {
   // a11y - charges are first in focus order
   const charges = [ chargeNode1, chargeNode2 ];
 
-  // a11y - tab order for the screenview (ParallelPDOM.js setter)
+  // a11y - tab order for the screenview (ParallelDOM.js setter)
   this.pdomPlayAreaNode.accessibleOrder = charges.concat( this.pdomPlayAreaNode.accessibleOrder );
 }
 
