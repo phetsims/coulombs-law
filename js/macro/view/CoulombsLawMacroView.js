@@ -113,7 +113,7 @@ function CoulombsLawMacroView( coulombsLawModel, tandem ) {
 
   this.addChild( legendNode );
 
-  // a11y - charges are first in accessible order, followed by control panel in supertype
+  // pdom - charges are first in accessible order, followed by control panel in supertype
   const charges = [ chargeNode1, chargeNode2 ];
   this.pdomPlayAreaNode.accessibleOrder = charges.concat( this.pdomPlayAreaNode.accessibleOrder );
 }

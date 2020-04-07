@@ -145,7 +145,7 @@ function CoulombsLawCommonView( coulombsLawModel, scaleFactor, unitString, model
     resetAllButton
   ];
 
-  // a11y - accessible order of controls, charge objects will come first in subtypes
+  // pdom - accessible order of controls, charge objects will come first in subtypes
   this.pdomPlayAreaNode.accessibleOrder = [
     coulombsLawRuler,
     charge1Control,
