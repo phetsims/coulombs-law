@@ -9,7 +9,6 @@
 
 import ColorProfile from '../../../scenery-phet/js/ColorProfile.js';
 import Color from '../../../scenery/js/util/Color.js';
-import Tandem from '../../../tandem/js/Tandem.js';
 import coulombsLaw from '../coulombsLaw.js';
 
 // constants
@@ -46,8 +45,6 @@ const CoulombsLawColorProfile = new ColorProfile( [ 'default', 'projector' ], {
     default: BLACK,
     projector: WHITE
   }
-}, {
-  tandem: Tandem.GLOBAL.createTandem( 'colorProfile' )
 } );
 
 coulombsLaw.register( 'CoulombsLawColorProfile', CoulombsLawColorProfile );
