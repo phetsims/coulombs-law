@@ -57,7 +57,7 @@ function CoulombsLawCommonModel( charge1, charge2, positionRange, tandem, option
 
 coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );
 
-export default inherit( ISLCModel, CoulombsLawCommonModel, {
+inherit( ISLCModel, CoulombsLawCommonModel, {
 
   /**
    * @override
@@ -93,3 +93,5 @@ export default inherit( ISLCModel, CoulombsLawCommonModel, {
     ISLCModel.prototype.reset.call( this );
   }
 } );
+
+export default CoulombsLawCommonModel;

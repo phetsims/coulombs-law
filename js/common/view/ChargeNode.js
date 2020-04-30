@@ -97,7 +97,7 @@ function ChargeNode( model, chargeObjectModel, layoutBounds, modelViewTransform,
 
 coulombsLaw.register( 'ChargeNode', ChargeNode );
 
-export default inherit( ISLCObjectNode, ChargeNode, {
+inherit( ISLCObjectNode, ChargeNode, {
 
   /**
    * Alter the radial gradient based on the radius of the charge object
@@ -123,3 +123,5 @@ export default inherit( ISLCObjectNode, ChargeNode, {
     ISLCObjectNode.prototype.redrawForce.call( this );
   }
 } );
+
+export default ChargeNode;
