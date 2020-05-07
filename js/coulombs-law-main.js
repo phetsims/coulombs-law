@@ -8,7 +8,7 @@
  */
 
 import Sim from '../../joist/js/Sim.js';
-import SimLauncher from '../../joist/js/SimLauncher.js';
+import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import CoulombsLawAtomicScreen from './atomic/CoulombsLawAtomicScreen.js';
 import CoulombsLawGlobalOptionsNode from './common/view/CoulombsLawGlobalOptionsNode.js';
@@ -35,7 +35,7 @@ const simOptions = {
   keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
 };
 
-SimLauncher.launch( function() {
+simLauncher.launch( function() {
   const screens = [
     new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
     new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
