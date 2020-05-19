@@ -7,6 +7,7 @@
  */
 
 import Screen from '../../../joist/js/Screen.js';
+import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import inherit from '../../../phet-core/js/inherit.js';
 import Image from '../../../scenery/js/nodes/Image.js';
 import macroScaleScreenIconNavbar from '../../images/macro_scale_screen_icon_navbar_png.js';
@@ -29,7 +30,10 @@ function CoulombsLawMacroScreen( tandem ) {
   const options = {
     backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
     name: screenMacroScaleString,
-    homeScreenIcon: new Image( macroScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ),
+    homeScreenIcon: new ScreenIcon( new Image( macroScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ), {
+      maxIconWidthProportion: 1,
+      maxIconHeightProportion: 1
+    } ),
     navigationBarIcon: new Image( macroScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ),
     tandem: tandem
   };
