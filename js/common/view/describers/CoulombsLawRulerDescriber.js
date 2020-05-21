@@ -16,20 +16,28 @@ import coulombsLaw from '../../../coulombsLaw.js';
 
 class CoulombsLawRulerDescriber extends ISLCDescriber {
 
+  // @private
   onDrag() {}
 
+  // @private
   getRegionAndDistance() {return ''; }
 
+  // @private
   getRulerGrabbedAlertable() {return ''; }
 
+  // @private
   onGrab() { }
 
+  // @private
   alertJumpHome() { }
 
+  // @private
   getJumpCenterMassAlert() { return ''; }
 
+  // @private
   alertJumpCenterMass() { }
 
+  // @private
   reset() { }
 }
 
