@@ -8,30 +8,45 @@
 
 import OptionsDialog from '../../../../joist/js/OptionsDialog.js';
 import ProjectorModeCheckbox from '../../../../joist/js/ProjectorModeCheckbox.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import LayoutBox from '../../../../scenery/js/nodes/LayoutBox.js';
 import coulombsLaw from '../../coulombsLaw.js';
 import CoulombsLawColorProfile from '../CoulombsLawColorProfile.js';
 
-/**
- * @param {Tandem} tandem
- */
-function CoulombsLawGlobalOptionsNode( tandem ) {
+class CoulombsLawGlobalOptionsNode extends LayoutBox {
 
-  const projectorModeCheckbox = new ProjectorModeCheckbox( CoulombsLawColorProfile, {
-    tandem: tandem.createTandem( 'projectorCheckbox' ),
-    phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
-  } );
+  /**
+   * @param {Tandem} tandem
+   */
+  constructor( tandem ) {
 
-  LayoutBox.call( this, {
-    children: [ projectorModeCheckbox ],
-    spacing: OptionsDialog.DEFAULT_SPACING,
-    align: 'left',
-    tandem: tandem
-  } );
+    const projectorModeCheckbox = new ProjectorModeCheckbox( CoulombsLawColorProfile, {
+      tandem: tandem.createTandem( 'projectorCheckbox' ),
+      phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
+    } );
+
+    super( {
+      children: [ projectorModeCheckbox ],
+      spacing: OptionsDialog.DEFAULT_SPACING,
+      align: 'left',
+      tandem: tandem
+    } );
+
+    // @private
+    this.disposeGlobalOptionsNode = () => {
+      projectorModeCheckbox.dispose();
+    };
+  }
+
+  /**
+   * @public
+   * @override
+   */
+  dispose() {
+    this.disposeGlobalOptionsNode();
+    super.dispose();
+  }
 }
 
 coulombsLaw.register( 'CoulombsLawGlobalOptionsNode', CoulombsLawGlobalOptionsNode );
 
-inherit( LayoutBox, CoulombsLawGlobalOptionsNode );
 export default CoulombsLawGlobalOptionsNode;
