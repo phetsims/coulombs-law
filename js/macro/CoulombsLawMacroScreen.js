@@ -13,8 +13,8 @@ import Image from '../../../scenery/js/nodes/Image.js';
 import macroScaleScreenIconNavbar from '../../images/macro_scale_screen_icon_navbar_png.js';
 import macroScaleScreenIcon from '../../images/macro_scale_screen_icon_png.js';
 import CoulombsLawColorProfile from '../common/CoulombsLawColorProfile.js';
-import coulombsLawStrings from '../coulombsLawStrings.js';
 import coulombsLaw from '../coulombsLaw.js';
+import coulombsLawStrings from '../coulombsLawStrings.js';
 import CoulombsLawMacroModel from './model/CoulombsLawMacroModel.js';
 import CoulombsLawMacroView from './view/CoulombsLawMacroView.js';
 
@@ -34,7 +34,10 @@ function CoulombsLawMacroScreen( tandem ) {
       maxIconWidthProportion: 1,
       maxIconHeightProportion: 1
     } ),
-    navigationBarIcon: new Image( macroScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ),
+    navigationBarIcon: new ScreenIcon( new Image( macroScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ), {
+      maxIconWidthProportion: 1,
+      maxIconHeightProportion: 1
+    } ),
     tandem: tandem
   };
 
