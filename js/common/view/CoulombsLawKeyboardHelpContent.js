@@ -48,7 +48,7 @@ class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
     const helpContentOptions = {
 
       // i18n, restricts both labelText and maxWidth, see KeyboardHelpSection
-      labelMaxWidth: 130
+      labelMaxWidth: 250
     };
 
     const chargeContent = new ChargePositionsContent( helpContentOptions );
