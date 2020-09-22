@@ -9,7 +9,6 @@
 
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import Dimension2 from '../../../../dot/js/Dimension2.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import merge from '../../../../phet-core/js/merge.js';
 import Color from '../../../../scenery/js/util/Color.js';
 import SliderThumb from '../../../../sun/js/SliderThumb.js';
@@ -21,35 +20,37 @@ const NEGATIVE_FILL = new Color( '#00f' );
 const POSITIVE_FILL = new Color( '#f00' );
 const ZERO_FILL = new Color( 'gray' );
 
-/**
- * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
- * @param {Object} [options]
- * @constructor
- */
-function ChargeControlSliderThumb( objectProperty, options ) {
+class ChargeControlSliderThumb extends SliderThumb {
 
-  // {Property.<Color>}
-  // fills are axon Properties because they need to change with the objectProperty
-  // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
-  const fillProperty = new DerivedProperty( [ objectProperty ], function( value ) {
-    return getUpdatedFill( value );
-  } );
+  /**
+   * @param {Property.<number>} objectProperty - the number Property associated with the ISLCObject
+   * @param {Object} [options]
+   */
+  constructor( objectProperty, options ) {
 
-  // {Property.<Color>}
-  const fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
-    return getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
-  } );
+    // {Property.<Color>}
+    // fills are axon Properties because they need to change with the objectProperty
+    // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
+    const fillProperty = new DerivedProperty( [ objectProperty ], function( value ) {
+      return getUpdatedFill( value );
+    } );
 
-  options = merge( {
-    size: THUMB_SIZE,
-    fill: fillProperty,
-    fillHighlighted: fillHighlightedProperty
-  }, options );
+    // {Property.<Color>}
+    const fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
+      return getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
+    } );
 
-  SliderThumb.call( this, options );
+    options = merge( {
+      size: THUMB_SIZE,
+      fill: fillProperty,
+      fillHighlighted: fillHighlightedProperty
+    }, options );
 
-  this.mouseArea = this.localBounds;
-  this.touchArea = this.mouseArea.dilated( 6 );
+    super( options );
+
+    this.mouseArea = this.localBounds;
+    this.touchArea = this.mouseArea.dilated( 6 );
+  }
 }
 
 /**
@@ -75,6 +76,4 @@ function getUpdatedFill( propertyValue ) {
 }
 
 coulombsLaw.register( 'ChargeControlSliderThumb', ChargeControlSliderThumb );
-
-inherit( SliderThumb, ChargeControlSliderThumb );
 export default ChargeControlSliderThumb;
