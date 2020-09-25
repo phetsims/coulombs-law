@@ -7,7 +7,6 @@
 
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
-import inherit from '../../../phet-core/js/inherit.js';
 import Image from '../../../scenery/js/nodes/Image.js';
 import atomicScaleScreenIconNavbar from '../../images/atomic_scale_screen_icon_navbar_png.js';
 import atomicScaleScreenIcon from '../../images/atomic_scale_screen_icon_png.js';
@@ -17,39 +16,36 @@ import coulombsLawStrings from '../coulombsLawStrings.js';
 import CoulombsLawAtomicModel from './model/CoulombsLawAtomicModel.js';
 import CoulombsLawAtomicView from './view/CoulombsLawAtomicView.js';
 
-const screenAtomicScaleString = coulombsLawStrings.screen.atomicScale;
+class CoulombsLawAtomicScreen extends Screen {
 
+  /**
+   * @param {Tandem} tandem
+   */
+  constructor( tandem ) {
 
-/**
- * @param {Tandem} tandem
- * @constructor
- */
-function CoulombsLawAtomicScreen( tandem ) {
+    const options = {
+      backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
+      name: coulombsLawStrings.screen.atomicScale,
+      homeScreenIcon: new ScreenIcon( new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ), {
+        maxIconWidthProportion: 1,
+        maxIconHeightProportion: 1
+      } ),
+      navigationBarIcon: new ScreenIcon( new Image( atomicScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ), {
+        maxIconWidthProportion: 1,
+        maxIconHeightProportion: 1
+      } ),
+      tandem: tandem
+    };
 
-  const options = {
-    backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
-    name: screenAtomicScaleString,
-    homeScreenIcon: new ScreenIcon( new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ), {
-      maxIconWidthProportion: 1,
-      maxIconHeightProportion: 1
-    } ),
-    navigationBarIcon: new ScreenIcon( new Image( atomicScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ), {
-      maxIconWidthProportion: 1,
-      maxIconHeightProportion: 1
-    } ),
-    tandem: tandem
-  };
+    const atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
 
-  const atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
-
-  Screen.call( this,
-    function() { return new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ); },
-    function( model ) { return new CoulombsLawAtomicView( model, atomicScreenTandem.createTandem( 'view' ) ); },
-    options
-  );
+    super(
+      function() { return new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ); },
+      function( model ) { return new CoulombsLawAtomicView( model, atomicScreenTandem.createTandem( 'view' ) ); },
+      options
+    );
+  }
 }
 
 coulombsLaw.register( 'CoulombsLawAtomicScreen', CoulombsLawAtomicScreen );
-
-inherit( Screen, CoulombsLawAtomicScreen );
 export default CoulombsLawAtomicScreen;
