@@ -12,7 +12,6 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import ISLCObject from '../../../../inverse-square-law-common/js/model/ISLCObject.js';
 import merge from '../../../../phet-core/js/merge.js';
 import Color from '../../../../scenery/js/util/Color.js';
-import ColorIO from '../../../../scenery/js/util/ColorIO.js';
 import coulombsLaw from '../../coulombsLaw.js';
 
 class Charge extends ISLCObject {
@@ -46,7 +45,7 @@ class Charge extends ISLCObject {
         const newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
       },
-      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedProperty.DerivedPropertyIO( ColorIO ) }
+      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedProperty.DerivedPropertyIO( Color.ColorIO ) }
     );
   }
 }
