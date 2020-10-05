@@ -11,6 +11,7 @@ import Image from '../../../scenery/js/nodes/Image.js';
 import atomicScaleScreenIconNavbar from '../../images/atomic_scale_screen_icon_navbar_png.js';
 import atomicScaleScreenIcon from '../../images/atomic_scale_screen_icon_png.js';
 import CoulombsLawColorProfile from '../common/CoulombsLawColorProfile.js';
+import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLaw from '../coulombsLaw.js';
 import coulombsLawStrings from '../coulombsLawStrings.js';
 import CoulombsLawAtomicModel from './model/CoulombsLawAtomicModel.js';
@@ -34,7 +35,8 @@ class CoulombsLawAtomicScreen extends Screen {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
       } ),
-      tandem: tandem
+      tandem: tandem,
+      keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
     };
 
     const atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );

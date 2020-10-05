@@ -12,7 +12,6 @@ import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import CoulombsLawAtomicScreen from './atomic/CoulombsLawAtomicScreen.js';
 import CoulombsLawGlobalOptionsNode from './common/view/CoulombsLawGlobalOptionsNode.js';
-import CoulombsLawKeyboardHelpContent from './common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLawStrings from './coulombsLawStrings.js';
 import CoulombsLawMacroScreen from './macro/CoulombsLawMacroScreen.js';
 
@@ -32,7 +31,7 @@ const simOptions = {
 
   // Creates content for the Options dialog
   createOptionsDialogContent: tandem => new CoulombsLawGlobalOptionsNode( tandem ),
-  keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
+  hasKeyboardHelpContent: true
 };
 
 simLauncher.launch( function() {

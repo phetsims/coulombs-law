@@ -12,6 +12,7 @@ import Image from '../../../scenery/js/nodes/Image.js';
 import macroScaleScreenIconNavbar from '../../images/macro_scale_screen_icon_navbar_png.js';
 import macroScaleScreenIcon from '../../images/macro_scale_screen_icon_png.js';
 import CoulombsLawColorProfile from '../common/CoulombsLawColorProfile.js';
+import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLaw from '../coulombsLaw.js';
 import coulombsLawStrings from '../coulombsLawStrings.js';
 import CoulombsLawMacroModel from './model/CoulombsLawMacroModel.js';
@@ -35,7 +36,8 @@ class CoulombsLawMacroScreen extends Screen {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
       } ),
-      tandem: tandem
+      tandem: tandem,
+      keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
     };
 
     const macroScreenTandem = tandem.createTandem( 'coulombsLawMacroScreen' );

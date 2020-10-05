@@ -14,8 +14,8 @@ import KeyboardHelpIconFactory from '../../../../scenery-phet/js/keyboard/help/K
 import KeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSection.js';
 import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/help/TwoColumnKeyboardHelpContent.js';
 import HomeKeyNode from '../../../../scenery-phet/js/keyboard/HomeKeyNode.js';
-import coulombsLawStrings from '../../coulombsLawStrings.js';
 import coulombsLaw from '../../coulombsLaw.js';
+import coulombsLawStrings from '../../coulombsLawStrings.js';
 
 const adjustAmountLabelString = coulombsLawStrings.adjustAmountLabel;
 const adjustInLargerStepsLabelString = coulombsLawStrings.adjustInLargerStepsLabel;
