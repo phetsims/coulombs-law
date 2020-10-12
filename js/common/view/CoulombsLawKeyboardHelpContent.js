@@ -57,7 +57,6 @@ class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
     const leftHelpContent = [ chargeContent, rulerContent ];
 
     const generalNavigationHelpContent = new GeneralKeyboardHelpSection( merge( helpContentOptions, {
-      withGroupContent: true,
       withCheckboxContent: true
     } ) );
     const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
