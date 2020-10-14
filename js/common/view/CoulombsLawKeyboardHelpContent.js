@@ -8,12 +8,11 @@
  */
 
 import merge from '../../../../phet-core/js/merge.js';
-import EndKeyNode from '../../../../scenery-phet/js/keyboard/EndKeyNode.js';
 import GeneralKeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/GeneralKeyboardHelpSection.js';
 import KeyboardHelpIconFactory from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpIconFactory.js';
 import KeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSection.js';
 import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/help/TwoColumnKeyboardHelpContent.js';
-import HomeKeyNode from '../../../../scenery-phet/js/keyboard/HomeKeyNode.js';
+import TextKeyNode from '../../../../scenery-phet/js/keyboard/TextKeyNode.js';
 import coulombsLaw from '../../coulombsLaw.js';
 import coulombsLawStrings from '../../coulombsLawStrings.js';
 
@@ -78,8 +77,8 @@ class ChargePositionsContent extends KeyboardHelpSection {
     const arrowsIcon = KeyboardHelpIconFactory.leftRightArrowKeysRowIcon();
     const shiftPlusArrowsIcon = KeyboardHelpIconFactory.shiftPlusIcon( KeyboardHelpIconFactory.leftRightArrowKeysRowIcon() );
     const pgUpDownIcon = KeyboardHelpIconFactory.pageUpPageDownRowIcon();
-    const homeKeyIcon = new HomeKeyNode();
-    const endKeyIcon = new EndKeyNode();
+    const homeKeyIcon = TextKeyNode.home();
+    const endKeyIcon = TextKeyNode.end();
     const rows = [
       createRow( moveChargesLabelString, arrowsIcon, moveChargesDescriptionString ),
       createRow( moveInSmallerStepsLabelString, shiftPlusArrowsIcon, smallStepsMoveChargesDescriptionString ),
@@ -114,8 +113,8 @@ class AdjustChargeContent extends KeyboardHelpSection {
     const rows = [
       createRow( adjustAmountLabelString, leftRightOrUpDownIcon, adjustChargeAmountDescriptionString ),
       createRow( adjustInLargerStepsLabelString, pgUpDownIcon, largeStepsAdjustAmountDescriptionString ),
-      createRow( jumpToMinimumLabelString, new HomeKeyNode(), jumpToMinimumDescriptionString ),
-      createRow( jumpToMaximumLabelString, new EndKeyNode(), jumpToMaximumDescriptionString )
+      createRow( jumpToMinimumLabelString, TextKeyNode.home(), jumpToMinimumDescriptionString ),
+      createRow( jumpToMaximumLabelString, TextKeyNode.end(), jumpToMaximumDescriptionString )
     ];
 
     super( chargeAmountHeadingString, rows, options );
