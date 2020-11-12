@@ -125,7 +125,7 @@ class CoulombsLawCommonView extends ScreenView {
     // Reset All button
     // buttons are never disposed in this sim
     const resetAllButton = new ResetAllButton( {
-      listener: function() {
+      listener: () => {
         coulombsLawModel.reset();
         charge1Control.reset();
         charge2Control.reset();

@@ -34,7 +34,7 @@ const simOptions = {
   hasKeyboardHelpContent: true
 };
 
-simLauncher.launch( function() {
+simLauncher.launch( () => {
   const screens = [
     new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
     new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )

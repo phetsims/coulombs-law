@@ -14,84 +14,83 @@ import Vector2Property from '../../../../dot/js/Vector2Property.js';
 import ISLCConstants from '../../../../inverse-square-law-common/js/ISLCConstants.js';
 import ForceValuesDisplayEnum from '../../../../inverse-square-law-common/js/model/ForceValuesDisplayEnum.js';
 import ISLCModel from '../../../../inverse-square-law-common/js/model/ISLCModel.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import merge from '../../../../phet-core/js/merge.js';
 import coulombsLaw from '../../coulombsLaw.js';
 
-/**
- * @param {Charge} charge1 - The left charge
- * @param {Charge} charge2 - The right charge
- * @param {Range} positionRange
- * @param {Tandem} tandem
- * @param {Object} [options]
- * @constructor
- */
-function CoulombsLawCommonModel( charge1, charge2, positionRange, tandem, options ) {
-
-  options = merge( {
-    snapObjectsToNearest: 0.1,
-    displayScientificNotation: true,
-    initialRulerPosition: new Vector2( 0, -1.1E-2 )
-  }, options );
-
-  // @public - the position of the ruler in the model
-  this.rulerPositionProperty = new Vector2Property( options.initialRulerPosition, {
-    tandem: tandem.createTandem( 'rulerPositionProperty' )
-  } );
-
-  ISLCModel.call( this, ISLCConstants.k, charge1, charge2, positionRange, tandem, options );
-
-  // @public
-  this.forceValuesDisplayProperty = new EnumerationProperty( ForceValuesDisplayEnum, ForceValuesDisplayEnum.DECIMAL, {
-    tandem: tandem.createTandem( 'forceValuesDisplayProperty' ),
-    phetioDocumentation: 'This determines the display type for the force values: in decimal or scientific ' +
-                         'notation, and also hidden.'
-  } );
-
-  // ISLC code listens substantially to showForceValuesProperty, so keep that in sync as the display type changes.
-  this.forceValuesDisplayProperty.lazyLink( newValue => {
-    this.showForceValuesProperty.value = newValue === ForceValuesDisplayEnum.DECIMAL ||
-                                         newValue === ForceValuesDisplayEnum.SCIENTIFIC;
-  } );
-}
-
-coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );
-
-inherit( ISLCModel, CoulombsLawCommonModel, {
+class CoulombsLawCommonModel extends ISLCModel {
 
   /**
+   * @param {Charge} charge1 - The left charge
+   * @param {Charge} charge2 - The right charge
+   * @param {Range} positionRange
+   * @param {Tandem} tandem
+   * @param {Object} [options]
+   */
+  constructor( charge1, charge2, positionRange, tandem, options ) {
+
+    options = merge( {
+      snapObjectsToNearest: 0.1,
+      displayScientificNotation: true,
+      initialRulerPosition: new Vector2( 0, -1.1E-2 )
+    }, options );
+
+    super( ISLCConstants.k, charge1, charge2, positionRange, tandem, options );
+
+    // @public - the position of the ruler in the model
+    this.rulerPositionProperty = new Vector2Property( options.initialRulerPosition, {
+      tandem: tandem.createTandem( 'rulerPositionProperty' )
+    } );
+
+    // @public
+    this.forceValuesDisplayProperty = new EnumerationProperty( ForceValuesDisplayEnum, ForceValuesDisplayEnum.DECIMAL, {
+      tandem: tandem.createTandem( 'forceValuesDisplayProperty' ),
+      phetioDocumentation: 'This determines the display type for the force values: in decimal or scientific ' +
+                           'notation, and also hidden.'
+    } );
+
+    // ISLC code listens substantially to showForceValuesProperty, so keep that in sync as the display type changes.
+    this.forceValuesDisplayProperty.lazyLink( newValue => {
+      this.showForceValuesProperty.value = newValue === ForceValuesDisplayEnum.DECIMAL ||
+                                           newValue === ForceValuesDisplayEnum.SCIENTIFIC;
+    } );
+  }
+
+  /**
+   * @protected
    * @override
    * @returns {number}
    */
-  getMinForce: function() {
+  getMinForce() {
     return -this.getMaxForce();
-  },
+  }
 
   /**
+   * @public
    * @override
    * @returns {number}
    */
-  getMaxForce: function() {
+  getMaxForce() {
 
     // TODO: should this call snapToGrid?
     // inherited object node accepts the entire force range. (NOTE: necessary to calculate here as Coulomb's Law allows
     // negative forces while Gravity Force Lab does not.)
     return this.calculateForce( this.object1.valueRange.max, this.object1.valueRange.max,
       this.getMinDistance( this.object1.valueProperty.get() ) ); // This assumes constant radius for Coulombs law
-  },
+  }
 
   /**
    * Resets the model.
-   *
    * @public
    */
-  reset: function() {
+  reset() {
 
     // As of writing this, all (both) subtypes have a rulerPositionProperty, so it is easy enough to just reset this here.
     this.rulerPositionProperty.reset();
     this.forceValuesDisplayProperty.reset();
-    ISLCModel.prototype.reset.call( this );
+    super.reset();
   }
-} );
+}
+
+coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );
 
 export default CoulombsLawCommonModel;

@@ -9,44 +9,44 @@
 
 import Range from '../../../../dot/js/Range.js';
 import ISLCConstants from '../../../../inverse-square-law-common/js/ISLCConstants.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import Charge from '../../common/model/Charge.js';
 import CoulombsLawCommonModel from '../../common/model/CoulombsLawCommonModel.js';
 import coulombsLaw from '../../coulombsLaw.js';
 
-/**
- * @param {Tandem} tandem
- * @constructor
- */
-function CoulombsLawMacroModel( tandem ) {
+class CoulombsLawMacroModel extends CoulombsLawCommonModel {
 
-  // set initial charge values
-  const chargeValue1 = -4E-6; // -4 microcoulombs in Coulombs
-  const chargeValue2 = 8E-6; // 8 microcoulombs in Coulombs
+  /**
+   * @param {Tandem} tandem
+   */
+  constructor( tandem ) {
 
-  const position1 = -1E-2; // initial position from center in m
-  const position2 = 2E-2; // initial position from center in m
+    // set initial charge values
+    const chargeValue1 = -4E-6; // -4 microcoulombs in Coulombs
+    const chargeValue2 = 8E-6; // 8 microcoulombs in Coulombs
 
-  const minChargeValue = -10E-6; // in Coulombs
-  const maxChargeValue = 10E-6; // in Coulombs
+    const position1 = -1E-2; // initial position from center in m
+    const position2 = 2E-2; // initial position from center in m
 
-  const valueRange = new Range( minChargeValue, maxChargeValue );
+    const minChargeValue = -10E-6; // in Coulombs
+    const maxChargeValue = 10E-6; // in Coulombs
 
-  const charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ) );
-  const charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ) );
+    const valueRange = new Range( minChargeValue, maxChargeValue );
 
-  // boundary constants are in "X meters", convert to "X cm" but still in the unit of meters
-  const leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
-  const rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
+    const charge1 = new Charge( chargeValue1, position1, valueRange, tandem.createTandem( 'charge1' ) );
+    const charge2 = new Charge( chargeValue2, position2, valueRange, tandem.createTandem( 'charge2' ) );
 
-  CoulombsLawCommonModel.call( this, charge1, charge2, new Range( leftBoundary, rightBoundary ), tandem, {
-    snapObjectsToNearest: 0.001,
-    minSeparationBetweenObjects: 0.001,
-    displayScientificNotation: false
-  } );
+    // boundary constants are in "X meters", convert to "X cm" but still in the unit of meters
+    const leftBoundary = ISLCConstants.LEFT_OBJECT_BOUNDARY * 1E-2;
+    const rightBoundary = ISLCConstants.RIGHT_OBJECT_BOUNDARY * 1E-2;
+
+    super( charge1, charge2, new Range( leftBoundary, rightBoundary ), tandem, {
+      snapObjectsToNearest: 0.001,
+      minSeparationBetweenObjects: 0.001,
+      displayScientificNotation: false
+    } );
+  }
 }
 
 coulombsLaw.register( 'CoulombsLawMacroModel', CoulombsLawMacroModel );
 
-inherit( CoulombsLawCommonModel, CoulombsLawMacroModel );
 export default CoulombsLawMacroModel;

@@ -31,14 +31,10 @@ class ChargeControlSliderThumb extends SliderThumb {
     // {Property.<Color>}
     // fills are axon Properties because they need to change with the objectProperty
     // Since sliders are never disposed in the sim, there's no need to unlink the derived properties' functions
-    const fillProperty = new DerivedProperty( [ objectProperty ], function( value ) {
-      return getUpdatedFill( value );
-    } );
+    const fillProperty = new DerivedProperty( [ objectProperty ], value => getUpdatedFill( value ) );
 
     // {Property.<Color>}
-    const fillHighlightedProperty = new DerivedProperty( [ objectProperty ], function( value ) {
-      return getUpdatedFill( value ).colorUtilsBrighter( 0.25 );
-    } );
+    const fillHighlightedProperty = new DerivedProperty( [ objectProperty ], value => getUpdatedFill( value ).colorUtilsBrighter( 0.25 ) );
 
     options = merge( {
       size: THUMB_SIZE,

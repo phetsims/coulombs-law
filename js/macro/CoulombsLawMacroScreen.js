@@ -43,8 +43,8 @@ class CoulombsLawMacroScreen extends Screen {
     const macroScreenTandem = tandem.createTandem( 'coulombsLawMacroScreen' );
 
     super(
-      function() { return new CoulombsLawMacroModel( macroScreenTandem.createTandem( 'model' ) ); },
-      function( model ) { return new CoulombsLawMacroView( model, macroScreenTandem.createTandem( 'view' ) ); },
+      () => new CoulombsLawMacroModel( macroScreenTandem.createTandem( 'model' ) ),
+      model => new CoulombsLawMacroView( model, macroScreenTandem.createTandem( 'view' ) ),
       options
     );
   }

@@ -42,8 +42,8 @@ class CoulombsLawAtomicScreen extends Screen {
     const atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );
 
     super(
-      function() { return new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ); },
-      function( model ) { return new CoulombsLawAtomicView( model, atomicScreenTandem.createTandem( 'view' ) ); },
+      () => new CoulombsLawAtomicModel( atomicScreenTandem.createTandem( 'model' ) ),
+      model => new CoulombsLawAtomicView( model, atomicScreenTandem.createTandem( 'view' ) ),
       options
     );
   }
