@@ -146,7 +146,7 @@ class CoulombsLawCommonView extends ScreenView {
     ];
 
     // pdom - accessible order of controls, charge objects will come first in subtypes
-    this.pdomPlayAreaNode.accessibleOrder = [
+    this.pdomPlayAreaNode.pdomOrder = [
       coulombsLawRuler,
       charge1Control,
       charge2Control,

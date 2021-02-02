@@ -115,7 +115,7 @@ class CoulombsLawMacroView extends CoulombsLawCommonView {
 
     // pdom - charges are first in accessible order, followed by control panel in supertype
     const charges = [ chargeNode1, chargeNode2 ];
-    this.pdomPlayAreaNode.accessibleOrder = charges.concat( this.pdomPlayAreaNode.accessibleOrder );
+    this.pdomPlayAreaNode.pdomOrder = charges.concat( this.pdomPlayAreaNode.pdomOrder );
   }
 }
 

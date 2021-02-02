@@ -147,7 +147,7 @@ class CoulombsLawAtomicView extends CoulombsLawCommonView {
     const charges = [ chargeNode1, chargeNode2 ];
 
     // pdom - tab order for the screenview (ParallelDOM.js setter)
-    this.pdomPlayAreaNode.accessibleOrder = charges.concat( this.pdomPlayAreaNode.accessibleOrder );
+    this.pdomPlayAreaNode.pdomOrder = charges.concat( this.pdomPlayAreaNode.pdomOrder );
   }
 }
 
