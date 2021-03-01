@@ -43,7 +43,10 @@ class CoulombsLawCommonView extends ScreenView {
    */
   constructor( coulombsLawModel, scaleFactor, unitString, modelViewTransformScale, options, tandem ) {
 
-    super( { layoutBounds: new Bounds2( 0, 0, 768, 464 ) } );
+    super( {
+      tandem: tandem,
+      layoutBounds: new Bounds2( 0, 0, 768, 464 )
+    } );
 
     const rightAlignment = this.layoutBounds.maxX - 10;
     const bottomAlignment = this.layoutBounds.maxY - 10;
