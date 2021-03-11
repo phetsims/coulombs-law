@@ -27,7 +27,7 @@ class Charge extends ISLCObject {
 
     options = merge( {
       constantRadius: 6.75E-3, // ensure this is in meters (0.675cm)
-      valueUnits: 'coulombs'
+      valueUnits: 'C' // coulombs, from units.js
     }, options );
 
     const constantRadiusProperty = new BooleanProperty( true, {
