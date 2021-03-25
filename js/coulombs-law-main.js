@@ -24,7 +24,7 @@ const simOptions = {
     leadDesign: 'Amy Rouinfar',
     softwareDevelopment: 'Jesse Greenberg, Michael Barlow',
     team: 'Amy Hanson, Ariel Paul, Kathy Perkins',
-    qualityAssurance: 'Steele Dalton, Liam Mulhall, Laura Rea, Jacob Romero, Katie Woessner, Kelly Wurtz',
+    qualityAssurance: 'Steele Dalton, Liam Mulhall, Laura Rea, Jacob Romero, Kathryn Woessner, Kelly Wurtz',
     graphicArts: 'Mariah Hermsmeyer, Cheryl McCutchan',
     thanks: ''
   },
