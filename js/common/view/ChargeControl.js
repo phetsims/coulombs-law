@@ -13,6 +13,7 @@ import Range from '../../../../dot/js/Range.js';
 import ISLCObjectControlPanel from '../../../../inverse-square-law-common/js/view/ISLCObjectControlPanel.js';
 import merge from '../../../../phet-core/js/merge.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
+import Slider from '../../../../sun/js/Slider.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import coulombsLaw from '../../coulombsLaw.js';
 import ChargeControlSliderThumb from './ChargeControlSliderThumb.js';
@@ -79,7 +80,7 @@ class ChargeControl extends ISLCObjectControlPanel {
     // add custom thumb to the slider
     options.numberControlOptions.sliderOptions.thumbNode = new ChargeControlSliderThumb( objectProperty,
       merge( {}, options, {
-        tandem: options.tandem.createTandem( 'numberControl' ).createTandem( 'slider' ).createTandem( 'thumbNode' )
+        tandem: options.tandem.createTandem( 'numberControl' ).createTandem( 'slider' ).createTandem( Slider.THUMB_NODE_TANDEM_NAME )
       } ) );
 
     super( titleString, unitString, chargeControlProperty, chargeControlRange, options );
