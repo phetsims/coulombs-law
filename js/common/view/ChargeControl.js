@@ -79,7 +79,7 @@ class ChargeControl extends ISLCObjectControlPanel {
     // add custom thumb to the slider
     options.numberControlOptions.sliderOptions.thumbNode = new ChargeControlSliderThumb( objectProperty,
       merge( {}, options, {
-        tandem: options.tandem.createTandem( 'chargeControlsSliderThumb' )
+        tandem: options.tandem.createTandem( 'numberControl' ).createTandem( 'slider' ).createTandem( 'thumb' )
       } ) );
 
     super( titleString, unitString, chargeControlProperty, chargeControlRange, options );
