@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.9 Thu Apr 22 2021 11:48:52 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# coulombs-law 1.0.10-rc.1 Fri Apr 23 2021 12:17:10 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "2bcf2097e0f7ee0b516102682b81001d18f81b23",
+    "sha": "2bf461d3d43fa55241924f2573e5aaa3ec5e1997",
     "branch": "1.0"
   },
   "dot": {
@@ -62,7 +62,7 @@
   },
   "scenery": {
     "sha": "7cd0e871cc405076b5cf6d46d74c469d7f962ec2",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "scenery-phet": {
     "sha": "33ce1272a641fd3ee2bd2617a166032a37bef429",
