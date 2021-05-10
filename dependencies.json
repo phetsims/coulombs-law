@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.10-rc.1 Sat May 08 2021 21:15:16 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# coulombs-law 1.0.10-rc.1 Mon May 10 2021 14:19:12 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "9f92e85fa9ff49c339c5d302fe81e5b6972a5bb7",
+    "sha": "82549f787d98080896cc31049b4fd593101938cb",
     "branch": "1.0"
   },
   "dot": {
@@ -54,15 +54,15 @@
   },
   "phetmarks": {
     "sha": "5ea3e608ca6a6f2d04c84adb539a8b029cbf6580",
-    "branch": "coulombs-law-1.0"
+    "branch": "HEAD"
   },
   "query-string-machine": {
     "sha": "9ae63aab514937ff2119f5844c1da37db0ba49d5",
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "7cd0e871cc405076b5cf6d46d74c469d7f962ec2",
-    "branch": "HEAD"
+    "sha": "14c7c0b801eb725a8d2d9455936a2c63a402385e",
+    "branch": "coulombs-law-1.0"
   },
   "scenery-phet": {
     "sha": "33ce1272a641fd3ee2bd2617a166032a37bef429",
