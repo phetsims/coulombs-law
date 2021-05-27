@@ -1,4 +1,4 @@
-// Copyright 2019, University of Colorado Boulder
+// Copyright 2019-2020, University of Colorado Boulder
 
 
 import ForceDescriber from '../../../../../inverse-square-law-common/js/view/describers/ForceDescriber.js';

@@ -1,4 +1,4 @@
-// Copyright 2019, University of Colorado Boulder
+// Copyright 2020, University of Colorado Boulder
 
 /**
  * NOTE: This is just a stub because coulombs law is not yet implemented with interactive
