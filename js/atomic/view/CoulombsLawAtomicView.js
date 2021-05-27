@@ -146,7 +146,7 @@ class CoulombsLawAtomicView extends CoulombsLawCommonView {
     // pdom - charges are first in focus order
     const charges = [ chargeNode1, chargeNode2 ];
 
-    // pdom - tab order for the screenview (ParallelDOM.js setter)
+    // pdom - traversal order for the screenview (ParallelDOM.js setter)
     this.pdomPlayAreaNode.pdomOrder = charges.concat( this.pdomPlayAreaNode.pdomOrder );
   }
 }
