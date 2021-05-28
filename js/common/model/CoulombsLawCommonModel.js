@@ -1,4 +1,4 @@
-// Copyright 2017-2020, University of Colorado Boulder
+// Copyright 2017-2021, University of Colorado Boulder
 
 /**
  * Base model for all Coulombs Law sim screens. Allows for distinct instantiation details for both atomic and macro scales.
