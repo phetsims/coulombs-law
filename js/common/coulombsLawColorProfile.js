@@ -7,8 +7,8 @@
  * @author Michael Barlow (PhET Interactive Simulations)
  */
 
-import ColorProfile from '../../../scenery-phet/js/ColorProfile.js';
 import Color from '../../../scenery/js/util/Color.js';
+import ProfileColorProperty from '../../../scenery/js/util/ProfileColorProperty.js';
 import coulombsLaw from '../coulombsLaw.js';
 
 // constants
@@ -16,36 +16,36 @@ const BLACK = new Color( 0, 0, 0 );
 const WHITE = new Color( 255, 255, 255 );
 const GREEN = new Color( 0, 255, 0 );
 
-const coulombsLawColorProfile = new ColorProfile( [ 'default', 'projector' ], {
-  background: {
+const coulombsLawColorProfile = {
+  backgroundProperty: new ProfileColorProperty( 'background', {
     default: BLACK,
     projector: WHITE
-  },
-  forceArrowFill: {
+  } ),
+  forceArrowFillProperty: new ProfileColorProperty( 'forceArrowFill', {
     default: WHITE,
     projector: BLACK
-  },
-  forceArrowStroke: {
+  } ),
+  forceArrowStrokeProperty: new ProfileColorProperty( 'forceArrowStroke', {
     default: BLACK,
     projector: WHITE
-  },
-  forceArrowLabelFill: {
+  } ),
+  forceArrowLabelFillProperty: new ProfileColorProperty( 'forceArrowLabelFill', {
     default: WHITE,
     projector: BLACK
-  },
-  labelShadowFill: {
+  } ),
+  labelShadowFillProperty: new ProfileColorProperty( 'labelShadowFill', {
     default: BLACK,
     projector: WHITE
-  },
-  legendNodeFill: {
+  } ),
+  legendNodeFillProperty: new ProfileColorProperty( 'legendNodeFill', {
     default: GREEN,
     projector: BLACK
-  },
-  legendNodeStroke: {
+  } ),
+  legendNodeStrokeProperty: new ProfileColorProperty( 'legendNodeStroke', {
     default: BLACK,
     projector: WHITE
-  }
-} );
+  } )
+};
 
 coulombsLaw.register( 'coulombsLawColorProfile', coulombsLawColorProfile );
 
