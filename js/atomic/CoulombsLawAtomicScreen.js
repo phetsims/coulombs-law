@@ -10,7 +10,7 @@ import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Image from '../../../scenery/js/nodes/Image.js';
 import atomicScaleScreenIconNavbar from '../../images/atomic_scale_screen_icon_navbar_png.js';
 import atomicScaleScreenIcon from '../../images/atomic_scale_screen_icon_png.js';
-import CoulombsLawColorProfile from '../common/CoulombsLawColorProfile.js';
+import coulombsLawColorProfile from '../common/coulombsLawColorProfile.js';
 import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLaw from '../coulombsLaw.js';
 import coulombsLawStrings from '../coulombsLawStrings.js';
@@ -25,7 +25,7 @@ class CoulombsLawAtomicScreen extends Screen {
   constructor( tandem ) {
 
     const options = {
-      backgroundColorProperty: CoulombsLawColorProfile.backgroundProperty,
+      backgroundColorProperty: coulombsLawColorProfile.backgroundProperty,
       name: coulombsLawStrings.screen.atomicScale,
       homeScreenIcon: new ScreenIcon( new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ), {
         maxIconWidthProportion: 1,

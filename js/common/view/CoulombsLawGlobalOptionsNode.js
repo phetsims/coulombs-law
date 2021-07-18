@@ -10,7 +10,7 @@ import OptionsDialog from '../../../../joist/js/OptionsDialog.js';
 import ProjectorModeCheckbox from '../../../../joist/js/ProjectorModeCheckbox.js';
 import LayoutBox from '../../../../scenery/js/nodes/LayoutBox.js';
 import coulombsLaw from '../../coulombsLaw.js';
-import CoulombsLawColorProfile from '../CoulombsLawColorProfile.js';
+import coulombsLawColorProfile from '../coulombsLawColorProfile.js';
 
 class CoulombsLawGlobalOptionsNode extends LayoutBox {
 
@@ -19,7 +19,7 @@ class CoulombsLawGlobalOptionsNode extends LayoutBox {
    */
   constructor( tandem ) {
 
-    const projectorModeCheckbox = new ProjectorModeCheckbox( CoulombsLawColorProfile, {
+    const projectorModeCheckbox = new ProjectorModeCheckbox( coulombsLawColorProfile, {
       tandem: tandem.createTandem( 'projectorCheckbox' ),
       phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
     } );
