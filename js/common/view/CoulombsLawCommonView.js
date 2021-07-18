@@ -6,7 +6,7 @@
  *
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Barlow (PhET Interactive Simulations)
- * @author Sam Reid Î(PhET Interactive Simulations)
+ * @author Sam Reid (PhET Interactive Simulations)
  */
 
 import Bounds2 from '../../../../dot/js/Bounds2.js';
