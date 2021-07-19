@@ -18,7 +18,7 @@ class CoulombsLawGlobalOptionsNode extends LayoutBox {
    */
   constructor( tandem ) {
 
-    const projectorModeCheckbox = new ProjectorModeCheckbox( null, {
+    const projectorModeCheckbox = new ProjectorModeCheckbox( {
       tandem: tandem.createTandem( 'projectorCheckbox' ),
       phetioDocumentation: 'The checkbox that toggles if projector mode is enabled.'
     } );
