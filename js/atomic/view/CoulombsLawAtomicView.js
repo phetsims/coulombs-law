@@ -15,7 +15,7 @@ import ISLCAlertManager from '../../../../inverse-square-law-common/js/view/ISLC
 import ISLCLegendNode from '../../../../inverse-square-law-common/js/view/ISLCLegendNode.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
-import coulombsLawColorProfile from '../../common/coulombsLawColorProfile.js';
+import CoulombsLawColors from '../../common/CoulombsLawColors.js';
 import ChargeNode from '../../common/view/ChargeNode.js';
 import CoulombsLawCommonView from '../../common/view/CoulombsLawCommonView.js';
 import CoulombsLawForceDescriber from '../../common/view/describers/CoulombsLawForceDescriber.js';
@@ -123,7 +123,7 @@ class CoulombsLawAtomicView extends CoulombsLawCommonView {
       legendNodeLineLength, // length of the line
       unitsAtomicLegendScaleString, // unit string
       {
-        fill: coulombsLawColorProfile.legendNodeFillProperty,
+        fill: CoulombsLawColors.legendNodeFillProperty,
         bottom: this.layoutBounds.maxY - 10,
         left: this.layoutBounds.minX + 9.35,
         tandem: tandem.createTandem( 'atomicLegendNode' )
@@ -133,7 +133,7 @@ class CoulombsLawAtomicView extends CoulombsLawCommonView {
 
     // add picometer conversion string
     const picometerScaleNode = new RichText( pmScaleString, {
-      fill: coulombsLawColorProfile.legendNodeFillProperty,
+      fill: CoulombsLawColors.legendNodeFillProperty,
       font: new PhetFont( 12 ),
       maxWidth: 180,
       centerY: legendNode.localToParentPoint( legendNode.legendArrowLine.center ).y,

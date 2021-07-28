@@ -16,7 +16,7 @@ const BLACK = new Color( 0, 0, 0 );
 const WHITE = new Color( 255, 255, 255 );
 const GREEN = new Color( 0, 255, 0 );
 
-const coulombsLawColorProfile = {
+const CoulombsLawColors = {
   backgroundProperty: new ProfileColorProperty( 'background', {
     default: BLACK,
     projector: WHITE
@@ -47,6 +47,6 @@ const coulombsLawColorProfile = {
   } )
 };
 
-coulombsLaw.register( 'coulombsLawColorProfile', coulombsLawColorProfile );
+coulombsLaw.register( 'CoulombsLawColors', CoulombsLawColors );
 
-export default coulombsLawColorProfile;
+export default CoulombsLawColors;

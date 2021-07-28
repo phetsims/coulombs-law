@@ -11,7 +11,7 @@ import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Image from '../../../scenery/js/nodes/Image.js';
 import macroScaleScreenIconNavbar from '../../images/macro_scale_screen_icon_navbar_png.js';
 import macroScaleScreenIcon from '../../images/macro_scale_screen_icon_png.js';
-import coulombsLawColorProfile from '../common/coulombsLawColorProfile.js';
+import CoulombsLawColors from '../common/CoulombsLawColors.js';
 import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLaw from '../coulombsLaw.js';
 import coulombsLawStrings from '../coulombsLawStrings.js';
@@ -26,7 +26,7 @@ class CoulombsLawMacroScreen extends Screen {
   constructor( tandem ) {
 
     const options = {
-      backgroundColorProperty: coulombsLawColorProfile.backgroundProperty,
+      backgroundColorProperty: CoulombsLawColors.backgroundProperty,
       name: coulombsLawStrings.screen.macroScale,
       homeScreenIcon: new ScreenIcon( new Image( macroScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ), {
         maxIconWidthProportion: 1,

@@ -15,7 +15,7 @@ import merge from '../../../../phet-core/js/merge.js';
 import RadialGradient from '../../../../scenery/js/util/RadialGradient.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import coulombsLaw from '../../coulombsLaw.js';
-import coulombsLawColorProfile from '../coulombsLawColorProfile.js';
+import CoulombsLawColors from '../CoulombsLawColors.js';
 
 // constants
 const CHARGE_NODE_Y_POSITION = 205;
@@ -51,15 +51,15 @@ class ChargeNode extends ISLCObjectNode {
         forceReadoutDecimalPlaces: 9,
 
         // colors for projector and default modes
-        labelFill: coulombsLawColorProfile.forceArrowLabelFillProperty,
-        arrowLabelFill: coulombsLawColorProfile.forceArrowLabelFillProperty,
-        arrowFill: coulombsLawColorProfile.forceArrowFillProperty,
-        arrowStroke: coulombsLawColorProfile.forceArrowStrokeProperty,
-        labelShadowFill: coulombsLawColorProfile.labelShadowFillProperty,
-        backgroundFill: coulombsLawColorProfile.backgroundProperty
+        labelFill: CoulombsLawColors.forceArrowLabelFillProperty,
+        arrowLabelFill: CoulombsLawColors.forceArrowLabelFillProperty,
+        arrowFill: CoulombsLawColors.forceArrowFillProperty,
+        arrowStroke: CoulombsLawColors.forceArrowStrokeProperty,
+        labelShadowFill: CoulombsLawColors.labelShadowFillProperty,
+        backgroundFill: CoulombsLawColors.backgroundProperty
       },
       labelOptions: {
-        fill: coulombsLawColorProfile.forceArrowLabelFillProperty
+        fill: CoulombsLawColors.forceArrowLabelFillProperty
       },
 
       // phet-io
