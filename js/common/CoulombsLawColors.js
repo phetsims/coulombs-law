@@ -17,31 +17,31 @@ const WHITE = new Color( 255, 255, 255 );
 const GREEN = new Color( 0, 255, 0 );
 
 const CoulombsLawColors = {
-  backgroundProperty: new ProfileColorProperty( 'background', {
+  backgroundProperty: new ProfileColorProperty( coulombsLaw, 'background', {
     default: BLACK,
     projector: WHITE
   } ),
-  forceArrowFillProperty: new ProfileColorProperty( 'forceArrowFill', {
+  forceArrowFillProperty: new ProfileColorProperty( coulombsLaw, 'forceArrowFill', {
     default: WHITE,
     projector: BLACK
   } ),
-  forceArrowStrokeProperty: new ProfileColorProperty( 'forceArrowStroke', {
+  forceArrowStrokeProperty: new ProfileColorProperty( coulombsLaw, 'forceArrowStroke', {
     default: BLACK,
     projector: WHITE
   } ),
-  forceArrowLabelFillProperty: new ProfileColorProperty( 'forceArrowLabelFill', {
+  forceArrowLabelFillProperty: new ProfileColorProperty( coulombsLaw, 'forceArrowLabelFill', {
     default: WHITE,
     projector: BLACK
   } ),
-  labelShadowFillProperty: new ProfileColorProperty( 'labelShadowFill', {
+  labelShadowFillProperty: new ProfileColorProperty( coulombsLaw, 'labelShadowFill', {
     default: BLACK,
     projector: WHITE
   } ),
-  legendNodeFillProperty: new ProfileColorProperty( 'legendNodeFill', {
+  legendNodeFillProperty: new ProfileColorProperty( coulombsLaw, 'legendNodeFill', {
     default: GREEN,
     projector: BLACK
   } ),
-  legendNodeStrokeProperty: new ProfileColorProperty( 'legendNodeStroke', {
+  legendNodeStrokeProperty: new ProfileColorProperty( coulombsLaw, 'legendNodeStroke', {
     default: BLACK,
     projector: WHITE
   } )
