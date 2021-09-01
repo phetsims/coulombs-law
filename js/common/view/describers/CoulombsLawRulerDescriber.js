@@ -11,10 +11,20 @@
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
 
-import ISLCDescriber from '../../../../../inverse-square-law-common/js/view/describers/ISLCDescriber.js';
+import Alerter from '../../../../../scenery-phet/js/accessibility/describers/Alerter.js';
 import coulombsLaw from '../../../coulombsLaw.js';
 
-class CoulombsLawRulerDescriber extends ISLCDescriber {
+class CoulombsLawRulerDescriber extends Alerter {
+
+  /**
+   * @param {CoulombsLawCommonModel} model
+   * @param {string} object1Label
+   * @param {string} object2Label
+   * @param {Object} [options]
+   */
+  constructor( model, object1Label, object2Label, options ) {
+    super( options );
+  }
 
   // @private
   onDrag() {}

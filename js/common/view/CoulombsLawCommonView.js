@@ -23,7 +23,7 @@ import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.j
 import coulombsLaw from '../../coulombsLaw.js';
 import coulombsLawStrings from '../../coulombsLawStrings.js';
 import ChargeControl from './ChargeControl.js';
-import CoulombsLawRulerDescriber from './describers/CoulombsLawRulerDescriber.js';
+import CoulombsLawRulerAlerter from './describers/CoulombsLawRulerDescriber.js';
 
 const charge1String = coulombsLawStrings.charge1;
 const charge2String = coulombsLawStrings.charge2;
@@ -98,7 +98,9 @@ class CoulombsLawCommonView extends ScreenView {
     charge2Control.left = this.layoutBounds.centerX + 5;
     charge2Control.top = coulombsLawParameterPanel.top;
 
-    const rulerDescriber = new CoulombsLawRulerDescriber( coulombsLawModel, 'label1', 'label2' );
+    const rulerDescriber = new CoulombsLawRulerAlerter( coulombsLawModel, 'label1', 'label2', {
+      descriptionAlertNode: this
+    } );
 
     // ruler drag bounds (in model coordinate frame) - assumes a single point scale inverted Y mapping
     const minX = coulombsLawModel.leftObjectBoundary;
