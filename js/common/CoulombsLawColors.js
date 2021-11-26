@@ -7,8 +7,8 @@
  * @author Michael Barlow (PhET Interactive Simulations)
  */
 
-import Color from '../../../scenery/js/util/Color.js';
-import ProfileColorProperty from '../../../scenery/js/util/ProfileColorProperty.js';
+import { Color } from '../../../scenery/js/imports.js';
+import { ProfileColorProperty } from '../../../scenery/js/imports.js';
 import coulombsLaw from '../coulombsLaw.js';
 
 // constants

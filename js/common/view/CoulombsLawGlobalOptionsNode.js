@@ -8,7 +8,7 @@
 
 import OptionsDialog from '../../../../joist/js/OptionsDialog.js';
 import ProjectorModeCheckbox from '../../../../joist/js/ProjectorModeCheckbox.js';
-import LayoutBox from '../../../../scenery/js/nodes/LayoutBox.js';
+import { LayoutBox } from '../../../../scenery/js/imports.js';
 import coulombsLaw from '../../coulombsLaw.js';
 
 class CoulombsLawGlobalOptionsNode extends LayoutBox {
