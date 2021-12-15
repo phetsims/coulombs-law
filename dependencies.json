@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.12-rc.1 Tue Dec 14 2021 12:18:25 GMT-0500 (Eastern Standard Time)",
+  "comment": "# coulombs-law 1.0.12 Wed Dec 15 2021 16:11:29 GMT-0500 (Eastern Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "28c1ba442b26e3a749fcf81c62f2b72578603e55",
+    "sha": "ee331f1f634dc2eff8d306c111d82c7ee40bd11b",
     "branch": "1.0"
   },
   "dot": {
