@@ -8,8 +8,8 @@
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import { Image } from '../../../scenery/js/imports.js';
-import atomicScaleScreenIconNavbar from '../../images/atomic_scale_screen_icon_navbar_png.js';
-import atomicScaleScreenIcon from '../../images/atomic_scale_screen_icon_png.js';
+import atomicScaleScreenIconNavbar_png from '../../images/atomicScaleScreenIconNavbar_png.js';
+import atomicScaleScreenIcon_png from '../../images/atomicScaleScreenIcon_png.js';
 import CoulombsLawColors from '../common/CoulombsLawColors.js';
 import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLaw from '../coulombsLaw.js';
@@ -27,11 +27,11 @@ class CoulombsLawAtomicScreen extends Screen {
     const options = {
       backgroundColorProperty: CoulombsLawColors.backgroundProperty,
       name: coulombsLawStrings.screen.atomicScale,
-      homeScreenIcon: new ScreenIcon( new Image( atomicScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ), {
+      homeScreenIcon: new ScreenIcon( new Image( atomicScaleScreenIcon_png, { tandem: tandem.createTandem( 'icon' ) } ), {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
       } ),
-      navigationBarIcon: new ScreenIcon( new Image( atomicScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ), {
+      navigationBarIcon: new ScreenIcon( new Image( atomicScaleScreenIconNavbar_png, { tandem: tandem.createTandem( 'navbarIcon' ) } ), {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
       } ),

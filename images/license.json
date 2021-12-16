@@ -1,34 +1,34 @@
 {
-  "atomic_scale_screen_icon.png": {
+  "atomicScaleScreenIcon.png": {
     "text": [
       "Copyright 2002-2015 University of Colorado Boulder"
     ],
     "projectURL": "https://phet.colorado.edu",
     "license": "contact phethelp@colorado.edu",
-    "notes": "atomic_scale_screen_icon.png created by Cheryl McCutchan"
+    "notes": "atomicScaleScreenIcon.png created by Cheryl McCutchan"
   },
-  "atomic_scale_screen_icon_navbar.png": {
+  "atomicScaleScreenIconNavbar.png": {
     "text": [
       "Copyright 2002-2015 University of Colorado Boulder"
     ],
     "projectURL": "https://phet.colorado.edu",
     "license": "contact phethelp@colorado.edu",
-    "notes": "atomic_scale_screen_icon_navbar.png created by Cheryl McCutchan"
+    "notes": "atomicScaleScreenIconNavbar.png created by Cheryl McCutchan"
   },
-  "macro_scale_screen_icon.png": {
+  "macroScaleScreenIcon.png": {
     "text": [
       "Copyright 2002-2015 University of Colorado Boulder"
     ],
     "projectURL": "https://phet.colorado.edu",
     "license": "contact phethelp@colorado.edu",
-    "notes": "macro_scale_screen_icon.png created by Amy Rouinfar"
+    "notes": "macroScaleScreenIcon.png created by Amy Rouinfar"
   },
-  "macro_scale_screen_icon_navbar.png": {
+  "macroScaleScreenIconNavbar.png": {
     "text": [
       "Copyright 2002-2015 University of Colorado Boulder"
     ],
     "projectURL": "https://phet.colorado.edu",
     "license": "contact phethelp@colorado.edu",
-    "notes": "macro_scale_screen_icon_navbar.png created by Amy Rouinfar"
+    "notes": "macroScaleScreenIconNavbar.png created by Amy Rouinfar"
   }
 }

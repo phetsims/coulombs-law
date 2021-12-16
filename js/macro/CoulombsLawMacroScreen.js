@@ -9,8 +9,8 @@
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import { Image } from '../../../scenery/js/imports.js';
-import macroScaleScreenIconNavbar from '../../images/macro_scale_screen_icon_navbar_png.js';
-import macroScaleScreenIcon from '../../images/macro_scale_screen_icon_png.js';
+import macroScaleScreenIconNavbar_png from '../../images/macroScaleScreenIconNavbar_png.js';
+import macroScaleScreenIcon_png from '../../images/macroScaleScreenIcon_png.js';
 import CoulombsLawColors from '../common/CoulombsLawColors.js';
 import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLaw from '../coulombsLaw.js';
@@ -28,11 +28,11 @@ class CoulombsLawMacroScreen extends Screen {
     const options = {
       backgroundColorProperty: CoulombsLawColors.backgroundProperty,
       name: coulombsLawStrings.screen.macroScale,
-      homeScreenIcon: new ScreenIcon( new Image( macroScaleScreenIcon, { tandem: tandem.createTandem( 'icon' ) } ), {
+      homeScreenIcon: new ScreenIcon( new Image( macroScaleScreenIcon_png, { tandem: tandem.createTandem( 'icon' ) } ), {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
       } ),
-      navigationBarIcon: new ScreenIcon( new Image( macroScaleScreenIconNavbar, { tandem: tandem.createTandem( 'navbarIcon' ) } ), {
+      navigationBarIcon: new ScreenIcon( new Image( macroScaleScreenIconNavbar_png, { tandem: tandem.createTandem( 'navbarIcon' ) } ), {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
       } ),
