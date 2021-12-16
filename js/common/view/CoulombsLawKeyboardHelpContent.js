@@ -8,7 +8,7 @@
  */
 
 import merge from '../../../../phet-core/js/merge.js';
-import GeneralKeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/GeneralKeyboardHelpSection.js';
+import BasicActionsKeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/BasicActionsKeyboardHelpSection.js';
 import KeyboardHelpIconFactory from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpIconFactory.js';
 import KeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSection.js';
 import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/help/TwoColumnKeyboardHelpContent.js';
@@ -55,12 +55,12 @@ class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
     KeyboardHelpSection.alignHelpSectionIcons( [ chargeContent, rulerContent ] );
     const leftHelpContent = [ chargeContent, rulerContent ];
 
-    const generalNavigationHelpContent = new GeneralKeyboardHelpSection( merge( helpContentOptions, {
+    const basicActionsHelpContent = new BasicActionsKeyboardHelpSection( merge( helpContentOptions, {
       withCheckboxContent: true
     } ) );
     const adjustChargeContent = new AdjustChargeContent( helpContentOptions );
-    KeyboardHelpSection.alignHelpSectionIcons( [ adjustChargeContent, generalNavigationHelpContent ] );
-    const rightHelpContent = [ adjustChargeContent, generalNavigationHelpContent ];
+    KeyboardHelpSection.alignHelpSectionIcons( [ adjustChargeContent, basicActionsHelpContent ] );
+    const rightHelpContent = [ adjustChargeContent, basicActionsHelpContent ];
 
     super( leftHelpContent, rightHelpContent );
   }
