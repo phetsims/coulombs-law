@@ -122,7 +122,9 @@ class AdjustChargeContent extends KeyboardHelpSection {
 }
 
 function createRow( labelText, icon, description, iconOptions ) {
-  return KeyboardHelpSection.labelWithIcon( labelText, icon, description, iconOptions ? { iconOptions: iconOptions } : null );
+  const options = iconOptions ? { iconOptions: iconOptions } : {};
+  options.labelInnerContent = description;
+  return KeyboardHelpSection.labelWithIcon( labelText, icon, options );
 }
 
 export default CoulombsLawKeyboardHelpContent;
