@@ -8,7 +8,7 @@
  * @author Michael Barlow (PhET Interactive Simulations)
  */
 
-import EnumerationProperty from '../../../../axon/js/EnumerationProperty.js';
+import EnumerationDeprecatedProperty from '../../../../axon/js/EnumerationDeprecatedProperty.js';
 import Vector2 from '../../../../dot/js/Vector2.js';
 import Vector2Property from '../../../../dot/js/Vector2Property.js';
 import ISLCConstants from '../../../../inverse-square-law-common/js/ISLCConstants.js';
@@ -42,7 +42,7 @@ class CoulombsLawCommonModel extends ISLCModel {
     } );
 
     // @public
-    this.forceValuesDisplayProperty = new EnumerationProperty( ForceValuesDisplayEnum, ForceValuesDisplayEnum.DECIMAL, {
+    this.forceValuesDisplayProperty = new EnumerationDeprecatedProperty( ForceValuesDisplayEnum, ForceValuesDisplayEnum.DECIMAL, {
       tandem: tandem.createTandem( 'forceValuesDisplayProperty' ),
       phetioDocumentation: 'This determines the display type for the force values: in decimal or scientific ' +
                            'notation, and also hidden.'
