@@ -66,7 +66,7 @@ class ChargeNode extends ISLCObjectNode {
       tandem: Tandem.REQUIRED,
 
       // TODO: proper sting usage
-      a11yCreateAriaValueText: formattedValue => '{{formattedValue}} coulombs'
+      a11yCreateAriaValueText: formattedValue => `${formattedValue} coulombs`
     }, options );
 
     super(
