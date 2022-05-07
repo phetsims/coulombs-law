@@ -8,48 +8,48 @@ import getStringModule from '../../chipper/js/getStringModule.js';
 import coulombsLaw from './coulombsLaw.js';
 
 type StringsType = {
-  'charge1': string,
-  'charge2': string,
-  'charge1Abbreviated': string,
-  'charge2Abbreviated': string,
+  'charge1': string;
+  'charge2': string;
+  'charge1Abbreviated': string;
+  'charge2Abbreviated': string;
   'coulombs-law': {
-    'title': string
-  },
-  'pmScale': string,
+    'title': string;
+  };
+  'pmScale': string;
   'screen': {
-    'macroScale': string,
-    'atomicScale': string
-  },
+    'macroScale': string;
+    'atomicScale': string;
+  };
   'units': {
-    'atomicUnits': string,
-    'atomicLegendScale': string,
-    'macroLegendScale': string,
-    'microcoulombs': string
-  },
-  'chargePositionsHeading': string,
-  'moveChargesLabel': string,
-  'moveInLargerStepsLabel': string,
-  'moveInSmallerStepsLabel': string,
-  'jumpLeftLabel': string,
-  'jumpRightLabel': string,
-  'moveRulerHeading': string,
-  'moveRulerLabel': string,
-  'chargeAmountHeading': string,
-  'adjustAmountLabel': string,
-  'adjustInLargerStepsLabel': string,
-  'jumpToMinimumLabel': string,
-  'jumpToMaximumLabel': string,
+    'atomicUnits': string;
+    'atomicLegendScale': string;
+    'macroLegendScale': string;
+    'microcoulombs': string;
+  };
+  'chargePositionsHeading': string;
+  'moveChargesLabel': string;
+  'moveInLargerStepsLabel': string;
+  'moveInSmallerStepsLabel': string;
+  'jumpLeftLabel': string;
+  'jumpRightLabel': string;
+  'moveRulerHeading': string;
+  'moveRulerLabel': string;
+  'chargeAmountHeading': string;
+  'adjustAmountLabel': string;
+  'adjustInLargerStepsLabel': string;
+  'jumpToMinimumLabel': string;
+  'jumpToMaximumLabel': string;
   'a11y': {
-    'moveChargesDescription': string,
-    'smallStepsMoveChargesDescription': string,
-    'largeStepsMoveChargesDescription': string,
-    'jumpHomeDescription': string,
-    'jumpEndDescription': string,
-    'moveRulerDescription': string,
-    'adjustChargeAmountDescription': string,
-    'largeStepsAdjustAmountDescription': string,
-    'jumpToMinimumDescription': string,
-    'jumpToMaximumDescription': string
+    'moveChargesDescription': string;
+    'smallStepsMoveChargesDescription': string;
+    'largeStepsMoveChargesDescription': string;
+    'jumpHomeDescription': string;
+    'jumpEndDescription': string;
+    'moveRulerDescription': string;
+    'adjustChargeAmountDescription': string;
+    'largeStepsAdjustAmountDescription': string;
+    'jumpToMinimumDescription': string;
+    'jumpToMaximumDescription': string;
   }
 };
 
