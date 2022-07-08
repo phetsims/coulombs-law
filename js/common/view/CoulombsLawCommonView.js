@@ -115,7 +115,6 @@ class CoulombsLawCommonView extends ScreenView {
       this.modelViewTransform,
       () => coulombsLawModel.object1.positionProperty.value, // wrap this in a closure instead of exposing this all to the ruler.
       rulerDescriber,
-      tandem.createTandem( 'ruler' ),
       merge( _.pick( options, [
         'snapToNearest',
         'majorTickLabels',
@@ -124,7 +123,8 @@ class CoulombsLawCommonView extends ScreenView {
         'moveOnHoldDelay',
         'moveOnHoldInterval'
       ] ), {
-        grabDragInteractionOptions: { grabCueOptions: { x: 155 } }
+        grabDragInteractionOptions: { grabCueOptions: { x: 155 } },
+        tandem: tandem.createTandem( 'rulerNode' )
       } ) );
 
     // Reset All button
