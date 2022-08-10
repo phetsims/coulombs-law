@@ -45,7 +45,7 @@ class Charge extends ISLCObject {
         const newBaseColor = value < 0 ? negativeColor : positiveColor;
         return newBaseColor.colorUtilsBrighter( 1 - Math.abs( value ) / valueRange.max );
       },
-      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioType: DerivedProperty.DerivedPropertyIO( Color.ColorIO ) }
+      { tandem: tandem.createTandem( 'baseColorProperty' ), phetioValueType: Color.ColorIO }
     );
   }
 }
