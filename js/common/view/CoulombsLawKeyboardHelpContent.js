@@ -9,6 +9,7 @@
 
 import merge from '../../../../phet-core/js/merge.js';
 import BasicActionsKeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/BasicActionsKeyboardHelpSection.js';
+import KeyboardHelpSectionRow from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSectionRow.js';
 import KeyboardHelpIconFactory from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpIconFactory.js';
 import KeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSection.js';
 import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/help/TwoColumnKeyboardHelpContent.js';
@@ -124,7 +125,7 @@ class AdjustChargeContent extends KeyboardHelpSection {
 function createRow( labelText, icon, description, iconOptions ) {
   const options = iconOptions ? { iconOptions: iconOptions } : {};
   options.labelInnerContent = description;
-  return KeyboardHelpSection.labelWithIcon( labelText, icon, options );
+  return KeyboardHelpSectionRow.labelWithIcon( labelText, icon, options );
 }
 
 export default CoulombsLawKeyboardHelpContent;
