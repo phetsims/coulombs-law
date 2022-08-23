@@ -7,11 +7,11 @@
  * @author Jesse Greenberg (PhET Interactive Simulations)
  */
 
+import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import CoulombsLawAtomicScreen from './atomic/CoulombsLawAtomicScreen.js';
-import CoulombsLawGlobalOptionsNode from './common/view/CoulombsLawGlobalOptionsNode.js';
 import coulombsLawStrings from './coulombsLawStrings.js';
 import CoulombsLawMacroScreen from './macro/CoulombsLawMacroScreen.js';
 
@@ -29,9 +29,13 @@ const simOptions = {
     thanks: ''
   },
 
-  // Creates content for the Options dialog
-  createOptionsDialogContent: tandem => new CoulombsLawGlobalOptionsNode( tandem ),
-  hasKeyboardHelpContent: true
+  hasKeyboardHelpContent: true,
+
+  preferencesModel: new PreferencesModel( {
+    visualOptions: {
+      supportsProjectorMode: true
+    }
+  } )
 };
 
 simLauncher.launch( () => {
