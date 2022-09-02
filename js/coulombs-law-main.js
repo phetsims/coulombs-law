@@ -15,7 +15,7 @@ import CoulombsLawAtomicScreen from './atomic/CoulombsLawAtomicScreen.js';
 import coulombsLawStrings from './coulombsLawStrings.js';
 import CoulombsLawMacroScreen from './macro/CoulombsLawMacroScreen.js';
 
-const coulombsLawTitleString = coulombsLawStrings[ 'coulombs-law' ].title;
+const coulombsLawTitleStringProperty = coulombsLawStrings[ 'coulombs-law' ].titleStringProperty;
 
 const tandem = Tandem.ROOT;
 
@@ -43,6 +43,6 @@ simLauncher.launch( () => {
     new CoulombsLawMacroScreen( tandem.createTandem( 'macroScreen' ) ),
     new CoulombsLawAtomicScreen( tandem.createTandem( 'atomicScreen' ) )
   ];
-  const sim = new Sim( coulombsLawTitleString, screens, simOptions );
+  const sim = new Sim( coulombsLawTitleStringProperty, screens, simOptions );
   sim.start();
 } );
