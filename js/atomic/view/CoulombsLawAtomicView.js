@@ -8,7 +8,7 @@
  * @author Michael Barlow
  */
 
-import inverseSquareLawCommonStrings from '../../../../inverse-square-law-common/js/inverseSquareLawCommonStrings.js';
+import InverseSquareLawCommonStrings from '../../../../inverse-square-law-common/js/InverseSquareLawCommonStrings.js';
 import ISLCConstants from '../../../../inverse-square-law-common/js/ISLCConstants.js';
 import DefaultDirection from '../../../../inverse-square-law-common/js/view/DefaultDirection.js';
 import ISLCAlertManager from '../../../../inverse-square-law-common/js/view/ISLCAlertManager.js';
@@ -28,7 +28,7 @@ const charge2AbbreviatedString = coulombsLawStrings.charge2Abbreviated;
 const pmScaleString = coulombsLawStrings.pmScale;
 const unitsAtomicLegendScaleString = coulombsLawStrings.units.atomicLegendScale;
 const unitsAtomicUnitsString = coulombsLawStrings.units.atomicUnits;
-const unitsPicometersString = inverseSquareLawCommonStrings.units.picometers;
+const unitsPicometersString = InverseSquareLawCommonStrings.units.picometers;
 
 // constants
 const SCALE_FACTOR = 1 / ISLCConstants.coulombsPerAtomicUnit;  // number of e in one C
