@@ -17,13 +17,13 @@ import CoulombsLawCommonView from '../../common/view/CoulombsLawCommonView.js';
 import CoulombsLawForceDescriber from '../../common/view/describers/CoulombsLawForceDescriber.js';
 import CoulombsLawPositionDescriber from '../../common/view/describers/CoulombsLawPositionDescriber.js';
 import coulombsLaw from '../../coulombsLaw.js';
-import coulombsLawStrings from '../../coulombsLawStrings.js';
+import CoulombsLawStrings from '../../CoulombsLawStrings.js';
 
-const charge1AbbreviatedString = coulombsLawStrings.charge1Abbreviated;
-const charge2AbbreviatedString = coulombsLawStrings.charge2Abbreviated;
-const unitsMacroLegendScaleString = coulombsLawStrings.units.macroLegendScale;
+const charge1AbbreviatedString = CoulombsLawStrings.charge1Abbreviated;
+const charge2AbbreviatedString = CoulombsLawStrings.charge2Abbreviated;
+const unitsMacroLegendScaleString = CoulombsLawStrings.units.macroLegendScale;
 
-const unitsMicrocoulombsString = coulombsLawStrings.units.microcoulombs;
+const unitsMicrocoulombsString = CoulombsLawStrings.units.microcoulombs;
 
 // constants
 const SCALE_FACTOR = 1E6;  // number of microcoulombs in one C

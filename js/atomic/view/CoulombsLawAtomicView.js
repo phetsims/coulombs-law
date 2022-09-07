@@ -21,13 +21,13 @@ import CoulombsLawCommonView from '../../common/view/CoulombsLawCommonView.js';
 import CoulombsLawForceDescriber from '../../common/view/describers/CoulombsLawForceDescriber.js';
 import CoulombsLawPositionDescriber from '../../common/view/describers/CoulombsLawPositionDescriber.js';
 import coulombsLaw from '../../coulombsLaw.js';
-import coulombsLawStrings from '../../coulombsLawStrings.js';
+import CoulombsLawStrings from '../../CoulombsLawStrings.js';
 
-const charge1AbbreviatedString = coulombsLawStrings.charge1Abbreviated;
-const charge2AbbreviatedString = coulombsLawStrings.charge2Abbreviated;
-const pmScaleString = coulombsLawStrings.pmScale;
-const unitsAtomicLegendScaleString = coulombsLawStrings.units.atomicLegendScale;
-const unitsAtomicUnitsString = coulombsLawStrings.units.atomicUnits;
+const charge1AbbreviatedString = CoulombsLawStrings.charge1Abbreviated;
+const charge2AbbreviatedString = CoulombsLawStrings.charge2Abbreviated;
+const pmScaleString = CoulombsLawStrings.pmScale;
+const unitsAtomicLegendScaleString = CoulombsLawStrings.units.atomicLegendScale;
+const unitsAtomicUnitsString = CoulombsLawStrings.units.atomicUnits;
 const unitsPicometersString = InverseSquareLawCommonStrings.units.picometers;
 
 // constants

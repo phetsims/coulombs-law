@@ -13,7 +13,7 @@ import atomicScaleScreenIconNavbar_png from '../../images/atomicScaleScreenIconN
 import CoulombsLawColors from '../common/CoulombsLawColors.js';
 import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLaw from '../coulombsLaw.js';
-import coulombsLawStrings from '../coulombsLawStrings.js';
+import CoulombsLawStrings from '../CoulombsLawStrings.js';
 import CoulombsLawAtomicModel from './model/CoulombsLawAtomicModel.js';
 import CoulombsLawAtomicView from './view/CoulombsLawAtomicView.js';
 
@@ -26,7 +26,7 @@ class CoulombsLawAtomicScreen extends Screen {
 
     const options = {
       backgroundColorProperty: CoulombsLawColors.backgroundProperty,
-      name: coulombsLawStrings.screen.atomicScale,
+      name: CoulombsLawStrings.screen.atomicScale,
       homeScreenIcon: new ScreenIcon( new Image( atomicScaleScreenIcon_png, { tandem: tandem.createTandem( 'icon' ) } ), {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1

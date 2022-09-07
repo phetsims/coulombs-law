@@ -89,8 +89,8 @@ type StringsType = {
   }
 };
 
-const coulombsLawStrings = getStringModule( 'COULOMBS_LAW' ) as StringsType;
+const CoulombsLawStrings = getStringModule( 'COULOMBS_LAW' ) as StringsType;
 
-coulombsLaw.register( 'coulombsLawStrings', coulombsLawStrings );
+coulombsLaw.register( 'CoulombsLawStrings', CoulombsLawStrings );
 
-export default coulombsLawStrings;
+export default CoulombsLawStrings;

@@ -15,31 +15,31 @@ import KeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/Keybo
 import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/help/TwoColumnKeyboardHelpContent.js';
 import TextKeyNode from '../../../../scenery-phet/js/keyboard/TextKeyNode.js';
 import coulombsLaw from '../../coulombsLaw.js';
-import coulombsLawStrings from '../../coulombsLawStrings.js';
+import CoulombsLawStrings from '../../CoulombsLawStrings.js';
 
-const adjustAmountLabelString = coulombsLawStrings.adjustAmountLabel;
-const adjustInLargerStepsLabelString = coulombsLawStrings.adjustInLargerStepsLabel;
-const chargeAmountHeadingString = coulombsLawStrings.chargeAmountHeading;
-const chargePositionsHeadingString = coulombsLawStrings.chargePositionsHeading;
-const jumpLeftLabelString = coulombsLawStrings.jumpLeftLabel;
-const jumpRightLabelString = coulombsLawStrings.jumpRightLabel;
-const jumpToMaximumLabelString = coulombsLawStrings.jumpToMaximumLabel;
-const jumpToMinimumLabelString = coulombsLawStrings.jumpToMinimumLabel;
-const moveChargesLabelString = coulombsLawStrings.moveChargesLabel;
-const moveInLargerStepsLabelString = coulombsLawStrings.moveInLargerStepsLabel;
-const moveInSmallerStepsLabelString = coulombsLawStrings.moveInSmallerStepsLabel;
-const moveRulerHeadingString = coulombsLawStrings.moveRulerHeading;
-const moveRulerLabelString = coulombsLawStrings.moveRulerLabel;
-const moveChargesDescriptionString = coulombsLawStrings.a11y.moveChargesDescription;
-const smallStepsMoveChargesDescriptionString = coulombsLawStrings.a11y.smallStepsMoveChargesDescription;
-const largeStepsMoveChargesDescriptionString = coulombsLawStrings.a11y.largeStepsMoveChargesDescription;
-const jumpHomeDescriptionString = coulombsLawStrings.a11y.jumpHomeDescription;
-const jumpEndDescriptionString = coulombsLawStrings.a11y.jumpEndDescription;
-const moveRulerDescriptionString = coulombsLawStrings.a11y.moveRulerDescription;
-const adjustChargeAmountDescriptionString = coulombsLawStrings.a11y.adjustChargeAmountDescription;
-const largeStepsAdjustAmountDescriptionString = coulombsLawStrings.a11y.largeStepsAdjustAmountDescription;
-const jumpToMinimumDescriptionString = coulombsLawStrings.a11y.jumpToMinimumDescription;
-const jumpToMaximumDescriptionString = coulombsLawStrings.a11y.jumpToMaximumDescription;
+const adjustAmountLabelString = CoulombsLawStrings.adjustAmountLabel;
+const adjustInLargerStepsLabelString = CoulombsLawStrings.adjustInLargerStepsLabel;
+const chargeAmountHeadingString = CoulombsLawStrings.chargeAmountHeading;
+const chargePositionsHeadingString = CoulombsLawStrings.chargePositionsHeading;
+const jumpLeftLabelString = CoulombsLawStrings.jumpLeftLabel;
+const jumpRightLabelString = CoulombsLawStrings.jumpRightLabel;
+const jumpToMaximumLabelString = CoulombsLawStrings.jumpToMaximumLabel;
+const jumpToMinimumLabelString = CoulombsLawStrings.jumpToMinimumLabel;
+const moveChargesLabelString = CoulombsLawStrings.moveChargesLabel;
+const moveInLargerStepsLabelString = CoulombsLawStrings.moveInLargerStepsLabel;
+const moveInSmallerStepsLabelString = CoulombsLawStrings.moveInSmallerStepsLabel;
+const moveRulerHeadingString = CoulombsLawStrings.moveRulerHeading;
+const moveRulerLabelString = CoulombsLawStrings.moveRulerLabel;
+const moveChargesDescriptionString = CoulombsLawStrings.a11y.moveChargesDescription;
+const smallStepsMoveChargesDescriptionString = CoulombsLawStrings.a11y.smallStepsMoveChargesDescription;
+const largeStepsMoveChargesDescriptionString = CoulombsLawStrings.a11y.largeStepsMoveChargesDescription;
+const jumpHomeDescriptionString = CoulombsLawStrings.a11y.jumpHomeDescription;
+const jumpEndDescriptionString = CoulombsLawStrings.a11y.jumpEndDescription;
+const moveRulerDescriptionString = CoulombsLawStrings.a11y.moveRulerDescription;
+const adjustChargeAmountDescriptionString = CoulombsLawStrings.a11y.adjustChargeAmountDescription;
+const largeStepsAdjustAmountDescriptionString = CoulombsLawStrings.a11y.largeStepsAdjustAmountDescription;
+const jumpToMinimumDescriptionString = CoulombsLawStrings.a11y.jumpToMinimumDescription;
+const jumpToMaximumDescriptionString = CoulombsLawStrings.a11y.jumpToMaximumDescription;
 
 class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
 

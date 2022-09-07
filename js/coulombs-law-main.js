@@ -12,10 +12,10 @@ import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import CoulombsLawAtomicScreen from './atomic/CoulombsLawAtomicScreen.js';
-import coulombsLawStrings from './coulombsLawStrings.js';
+import CoulombsLawStrings from './CoulombsLawStrings.js';
 import CoulombsLawMacroScreen from './macro/CoulombsLawMacroScreen.js';
 
-const coulombsLawTitleStringProperty = coulombsLawStrings[ 'coulombs-law' ].titleStringProperty;
+const coulombsLawTitleStringProperty = CoulombsLawStrings[ 'coulombs-law' ].titleStringProperty;
 
 const tandem = Tandem.ROOT;
 

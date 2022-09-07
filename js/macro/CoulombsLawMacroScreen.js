@@ -14,7 +14,7 @@ import macroScaleScreenIconNavbar_png from '../../images/macroScaleScreenIconNav
 import CoulombsLawColors from '../common/CoulombsLawColors.js';
 import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
 import coulombsLaw from '../coulombsLaw.js';
-import coulombsLawStrings from '../coulombsLawStrings.js';
+import CoulombsLawStrings from '../CoulombsLawStrings.js';
 import CoulombsLawMacroModel from './model/CoulombsLawMacroModel.js';
 import CoulombsLawMacroView from './view/CoulombsLawMacroView.js';
 
@@ -27,7 +27,7 @@ class CoulombsLawMacroScreen extends Screen {
 
     const options = {
       backgroundColorProperty: CoulombsLawColors.backgroundProperty,
-      name: coulombsLawStrings.screen.macroScale,
+      name: CoulombsLawStrings.screen.macroScale,
       homeScreenIcon: new ScreenIcon( new Image( macroScaleScreenIcon_png, { tandem: tandem.createTandem( 'icon' ) } ), {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1

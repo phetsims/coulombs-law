@@ -21,12 +21,12 @@ import merge from '../../../../phet-core/js/merge.js';
 import ModelViewTransform2 from '../../../../phetcommon/js/view/ModelViewTransform2.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
 import coulombsLaw from '../../coulombsLaw.js';
-import coulombsLawStrings from '../../coulombsLawStrings.js';
+import CoulombsLawStrings from '../../CoulombsLawStrings.js';
 import ChargeControl from './ChargeControl.js';
 import CoulombsLawRulerDescriber from './describers/CoulombsLawRulerDescriber.js';
 
-const charge1String = coulombsLawStrings.charge1;
-const charge2String = coulombsLawStrings.charge2;
+const charge1String = CoulombsLawStrings.charge1;
+const charge2String = CoulombsLawStrings.charge2;
 
 // constants
 const SHOW_GRID = ISLCQueryParameters.showGrid;
