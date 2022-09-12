@@ -132,16 +132,16 @@ class CoulombsLawAtomicView extends CoulombsLawCommonView {
     this.addChild( legendNode );
 
     // add picometer conversion string
-    const picometerScaleNode = new RichText( pmScaleString, {
+    const picometerScaleText = new RichText( pmScaleString, {
       fill: CoulombsLawColors.legendNodeFillProperty,
       font: new PhetFont( 12 ),
       maxWidth: 180,
       centerY: legendNode.localToParentPoint( legendNode.legendArrowLine.center ).y,
       left: legendNode.right + 10,
-      tandem: tandem.createTandem( 'picometerScaleString' )
+      tandem: tandem.createTandem( 'picometerScaleText' )
     } );
 
-    this.addChild( picometerScaleNode );
+    this.addChild( picometerScaleText );
 
     // pdom - charges are first in focus order
     const charges = [ chargeNode1, chargeNode2 ];
