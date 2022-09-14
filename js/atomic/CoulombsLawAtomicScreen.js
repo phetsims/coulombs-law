@@ -26,7 +26,7 @@ class CoulombsLawAtomicScreen extends Screen {
 
     const options = {
       backgroundColorProperty: CoulombsLawColors.backgroundProperty,
-      name: CoulombsLawStrings.screen.atomicScale,
+      name: CoulombsLawStrings.screen.atomicScaleStringProperty,
       homeScreenIcon: new ScreenIcon( new Image( atomicScaleScreenIcon_png, { tandem: tandem.createTandem( 'icon' ) } ), {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1

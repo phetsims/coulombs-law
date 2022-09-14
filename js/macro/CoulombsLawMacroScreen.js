@@ -27,7 +27,7 @@ class CoulombsLawMacroScreen extends Screen {
 
     const options = {
       backgroundColorProperty: CoulombsLawColors.backgroundProperty,
-      name: CoulombsLawStrings.screen.macroScale,
+      name: CoulombsLawStrings.screen.macroScaleStringProperty,
       homeScreenIcon: new ScreenIcon( new Image( macroScaleScreenIcon_png, { tandem: tandem.createTandem( 'icon' ) } ), {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
