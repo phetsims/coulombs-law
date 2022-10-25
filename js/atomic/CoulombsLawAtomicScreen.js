@@ -36,7 +36,7 @@ class CoulombsLawAtomicScreen extends Screen {
         maxIconHeightProportion: 1
       } ),
       tandem: tandem,
-      keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
+      createKeyboardHelpNode: () => new CoulombsLawKeyboardHelpContent()
     };
 
     const atomicScreenTandem = tandem.createTandem( 'coulombsLawAtomicScreen' );

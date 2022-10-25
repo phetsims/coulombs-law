@@ -37,7 +37,7 @@ class CoulombsLawMacroScreen extends Screen {
         maxIconHeightProportion: 1
       } ),
       tandem: tandem,
-      keyboardHelpNode: new CoulombsLawKeyboardHelpContent()
+      createKeyboardHelpNode: () => new CoulombsLawKeyboardHelpContent()
     };
 
     const macroScreenTandem = tandem.createTandem( 'coulombsLawMacroScreen' );
