@@ -29,8 +29,6 @@ const simOptions = {
     thanks: ''
   },
 
-  hasKeyboardHelpContent: true,
-
   preferencesModel: new PreferencesModel( {
     visualOptions: {
       supportsProjectorMode: true
