@@ -13,11 +13,11 @@
     "branch": "HEAD"
   },
   "chipper": {
-    "sha": "3b1b38cdb1a2a80d5a0230996ecd9280440e5271",
+    "sha": "c14b3d8de40d3fe8640fd555415dd546872097e1",
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "b4b0e69d5a9e44864884d71b50ddbf9a9c5ef4c7",
+    "sha": "e48b8fda9d696d3068896705437ed26413e0022b",
     "branch": "1.0"
   },
   "dot": {
