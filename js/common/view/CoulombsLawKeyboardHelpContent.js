@@ -9,9 +9,9 @@
 
 import merge from '../../../../phet-core/js/merge.js';
 import BasicActionsKeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/BasicActionsKeyboardHelpSection.js';
-import KeyboardHelpSectionRow from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSectionRow.js';
 import KeyboardHelpIconFactory from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpIconFactory.js';
 import KeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSection.js';
+import KeyboardHelpSectionRow from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSectionRow.js';
 import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/help/TwoColumnKeyboardHelpContent.js';
 import TextKeyNode from '../../../../scenery-phet/js/keyboard/TextKeyNode.js';
 import coulombsLaw from '../../coulombsLaw.js';
@@ -88,6 +88,7 @@ class ChargePositionsContent extends KeyboardHelpSection {
       createRow( jumpRightLabelString, endKeyIcon, jumpEndDescriptionString )
     ];
     super( chargePositionsHeadingString, rows, options );
+    this.disposeEmitter.addListener( () => rows.forEach( row => row.dispose() ) );
   }
 }
 
@@ -96,11 +97,13 @@ class MoveRulerContent extends KeyboardHelpSection {
     assert && assert( !options || options.a11yContentTagName === undefined, 'MoveRulerContent sets a11yContentTagName' );
 
     const icon = KeyboardHelpIconFactory.arrowOrWasdKeysRowIcon();
+    const moveRulerRow = createRow( moveRulerLabelString, icon, moveRulerDescriptionString, { tagName: 'p' } );
     super(
       moveRulerHeadingString,
-      [ createRow( moveRulerLabelString, icon, moveRulerDescriptionString, { tagName: 'p' } ) ],
+      [ moveRulerRow ],
       merge( {}, options, { a11yContentTagName: null } )
     );
+    this.disposeEmitter.addListener( () => moveRulerRow.dispose() );
   }
 }
 
@@ -119,6 +122,7 @@ class AdjustChargeContent extends KeyboardHelpSection {
     ];
 
     super( chargeAmountHeadingString, rows, options );
+    this.disposeEmitter.addListener( () => rows.forEach( row => row.dispose() ) );
   }
 }
 
