@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "931f7323b7d33d4afdb69e171c48e18a057b588a",
+    "sha": "9ec067171788fbd996a1e646cb0e46add2913e83",
     "branch": "1.0"
   },
   "dot": {
@@ -61,7 +61,7 @@
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "08f78f044f5befc65d47407d7680c649c433ef04",
+    "sha": "c0043acb22feaaf9cc304bd6e81a698dd2ecabc0",
     "branch": "HEAD"
   },
   "scenery-phet": {
