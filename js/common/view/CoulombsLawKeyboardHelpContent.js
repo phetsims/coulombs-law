@@ -88,7 +88,6 @@ class ChargePositionsContent extends KeyboardHelpSection {
       createRow( jumpRightLabelString, endKeyIcon, jumpEndDescriptionString )
     ];
     super( chargePositionsHeadingString, rows, options );
-    this.disposeEmitter.addListener( () => rows.forEach( row => row.dispose() ) );
   }
 }
 
@@ -103,7 +102,6 @@ class MoveRulerContent extends KeyboardHelpSection {
       [ moveRulerRow ],
       merge( {}, options, { a11yContentTagName: null } )
     );
-    this.disposeEmitter.addListener( () => moveRulerRow.dispose() );
   }
 }
 
@@ -122,7 +120,6 @@ class AdjustChargeContent extends KeyboardHelpSection {
     ];
 
     super( chargeAmountHeadingString, rows, options );
-    this.disposeEmitter.addListener( () => rows.forEach( row => row.dispose() ) );
   }
 }
 
