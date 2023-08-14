@@ -8,7 +8,7 @@ Coulomb's law is one of two inverse square laws that defines the force that two 
 
 F = k( q1 * q2 / d<sup>2</sup>)
 
-Note: See the [Inverse Square Law Common](https://github.com/phetsims/inverse-square-law-common/blob/master/doc/model.md) library for model details.
+Note: See the [Inverse Square Law Common](https://github.com/phetsims/inverse-square-law-common/blob/main/doc/model.md) library for model details.
 
 ## Macro Scale
 
