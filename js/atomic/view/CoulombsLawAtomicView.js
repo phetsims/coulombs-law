@@ -119,7 +119,7 @@ class CoulombsLawAtomicView extends CoulombsLawCommonView {
     // create a line the length of 1 picometer
     const legendNodeLineLength = this.modelViewTransform.modelToViewDeltaX( 10E-12 );
 
-    const legendNode = new ISLCLegendNode(
+    const atomicLegendNode = new ISLCLegendNode(
       legendNodeLineLength, // length of the line
       unitsAtomicLegendScaleString, // unit string
       {
@@ -129,15 +129,15 @@ class CoulombsLawAtomicView extends CoulombsLawCommonView {
         tandem: tandem.createTandem( 'atomicLegendNode' )
       } );
 
-    this.addChild( legendNode );
+    this.addChild( atomicLegendNode );
 
     // add picometer conversion string
     const picometerScaleText = new RichText( pmScaleString, {
       fill: CoulombsLawColors.legendNodeFillProperty,
       font: new PhetFont( 12 ),
       maxWidth: 180,
-      centerY: legendNode.localToParentPoint( legendNode.legendArrowLine.center ).y,
-      left: legendNode.right + 10,
+      centerY: atomicLegendNode.localToParentPoint( atomicLegendNode.legendArrowLine.center ).y,
+      left: atomicLegendNode.right + 10,
       tandem: tandem.createTandem( 'picometerScaleText' )
     } );
 
