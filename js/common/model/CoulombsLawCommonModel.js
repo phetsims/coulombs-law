@@ -71,7 +71,7 @@ class CoulombsLawCommonModel extends ISLCModel {
    */
   getMaxForce() {
 
-    // TODO: should this call snapToGrid?
+    // TODO: should this call snapToGrid? https://github.com/phetsims/tasks/issues/1129
     // inherited object node accepts the entire force range. (NOTE: necessary to calculate here as Coulomb's Law allows
     // negative forces while Gravity Force Lab does not.)
     return this.calculateForce( this.object1.valueRange.max, this.object1.valueRange.max,

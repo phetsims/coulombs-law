@@ -66,7 +66,7 @@ class ChargeControl extends ISLCObjectControlPanel {
     // {Property.<number>} - intermediate Property to allow for scaling between atomic units and microcoulombs
     //  - value ranges from -10 to 10
     //  - unit can be e or mc
-    // TODO: make this DynamicProperty to support PhET-iO LinkedElement, or eliminate altogether
+    // TODO: make this DynamicProperty to support PhET-iO LinkedElement, or eliminate altogether https://github.com/phetsims/tasks/issues/1129
     const chargeControlProperty = new NumberProperty( objectProperty.get() * scaleFactor, {
       range: new Range( -10, 10 )
     } );

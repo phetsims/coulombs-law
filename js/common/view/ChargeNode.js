@@ -35,7 +35,7 @@ class ChargeNode extends ISLCObjectNode {
   constructor( model, chargeObjectModel, layoutBounds, modelViewTransform, alertManager, forceDescriber, positionDescriber, options ) {
 
     options = merge( {
-      label: 'This Charge', // TODO: factor out into strings files
+      label: 'This Charge', // TODO: factor out into strings files https://github.com/phetsims/tasks/issues/1129
       otherObjectLabel: 'Other Charge',
       scientificNotationMode: true,
       snapToNearest: model.snapObjectsToNearest,
@@ -65,7 +65,7 @@ class ChargeNode extends ISLCObjectNode {
       // phet-io
       tandem: Tandem.REQUIRED,
 
-      // TODO: proper sting usage
+      // TODO: proper sting usage https://github.com/phetsims/tasks/issues/1129
       a11yCreateAriaValueText: formattedValue => `${formattedValue} coulombs`
     }, options );
 
