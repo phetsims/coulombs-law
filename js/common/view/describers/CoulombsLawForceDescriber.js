@@ -25,7 +25,7 @@ class CoulombsLawForceDescriber extends ForceDescriber {
    */
   getForceVectorIndex( force, numberOfRegions ) {
 
-    // TODO: implement when working on CL descriptions. https://github.com/phetsims/tasks/issues/1129
+    // TODO: implement when working on CL descriptions. https://github.com/phetsims/coulombs-law/issues/134
     return 0;
   }
 }
