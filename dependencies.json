@@ -1,5 +1,5 @@
 {
-  "comment": "# coulombs-law 1.0.23-rc.1 Wed Sep 20 2023 20:32:04 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# coulombs-law 1.0.23 Mon Sep 25 2023 17:14:37 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "d69d58ca68ce391b52b0612a358cdcb51a989776",
+    "sha": "7b468c7c6ffd067d7c49a0668936d026ec69921f",
     "branch": "1.0"
   },
   "dot": {
