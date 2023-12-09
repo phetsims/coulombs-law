@@ -1,4 +1,4 @@
-// Copyright 2017-2022, University of Colorado Boulder
+// Copyright 2017-2023, University of Colorado Boulder
 
 /**
  * Parent screen view that allows for different model to view scaling for each child sim. Adds controls, checkboxes, and
