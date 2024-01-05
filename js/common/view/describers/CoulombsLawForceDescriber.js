@@ -1,4 +1,5 @@
 // Copyright 2019-2023, University of Colorado Boulder
+// @author Michael Kauzmann (PhET Interactive Simulations)
 
 
 import ForceDescriber from '../../../../../inverse-square-law-common/js/view/describers/ForceDescriber.js';
