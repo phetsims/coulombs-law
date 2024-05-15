@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "348b4ec8d33523f3b9530af8a712d53178cdd434",
+    "sha": "05973effa98d9bdae8c8c816ee1a5491d4cb1b78",
     "branch": "1.0"
   },
   "dot": {
@@ -49,7 +49,7 @@
     "branch": "HEAD"
   },
   "phetcommon": {
-    "sha": "226463ddbe46330ba6c4b11c3e647b4dc6f772c6",
+    "sha": "57e890ef2ccab1718dc30f8692a41ec2e1d6a51b",
     "branch": "HEAD"
   },
   "phetmarks": {
