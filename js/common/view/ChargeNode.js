@@ -66,7 +66,7 @@ class ChargeNode extends ISLCObjectNode {
       tandem: Tandem.REQUIRED,
 
       // TODO: proper sting usage https://github.com/phetsims/coulombs-law/issues/134
-      a11yCreateAriaValueText: formattedValue => `${formattedValue} coulombs`
+      pdomCreateAriaValueText: formattedValue => `${formattedValue} coulombs`
     }, options );
 
     super(
