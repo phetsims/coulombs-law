@@ -44,7 +44,7 @@
         ],
         "parserOptions": {
           "project": [
-            "../coulombs-law/tsconfig.json"
+            "../chipper/tsconfig/eslint-all/tsconfig.json"
           ]
         }
       }
