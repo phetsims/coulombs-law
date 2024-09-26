@@ -34,8 +34,5 @@
       "COULOMBS_LAW/screen.macroScale",
       "COULOMBS_LAW/screen.atomicScale"
     ]
-  },
-  "eslintConfig": {
-    "extends": "../chipper/eslint/sim_eslintrc.js"
   }
 }
