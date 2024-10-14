@@ -20,6 +20,7 @@ import ScreenView from '../../../../joist/js/ScreenView.js';
 import merge from '../../../../phet-core/js/merge.js';
 import ModelViewTransform2 from '../../../../phetcommon/js/view/ModelViewTransform2.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
+import { Node } from '../../../../scenery/js/imports.js';
 import coulombsLaw from '../../coulombsLaw.js';
 import CoulombsLawStrings from '../../CoulombsLawStrings.js';
 import ChargeControl from './ChargeControl.js';
@@ -112,6 +113,9 @@ class CoulombsLawCommonView extends ScreenView {
     const maxX = coulombsLawModel.rightObjectBoundary;
     const maxY = -modelViewTransform.viewToModelDeltaY( this.layoutBounds.height / 2 ); // top bound because Y is inverted
 
+    // A layer for the interaction cues that the ruler uses for GrabDragInteraction.
+    const interactionCueLayer = new Node();
+
     // create and add macro ruler
     const coulombsLawRuler = new ISLCRulerNode(
       coulombsLawModel.rulerPositionProperty,
@@ -119,6 +123,7 @@ class CoulombsLawCommonView extends ScreenView {
       this.modelViewTransform,
       () => coulombsLawModel.object1.positionProperty.value, // wrap this in a closure instead of exposing this all to the ruler.
       rulerDescriber,
+      interactionCueLayer,
       merge( _.pick( options, [
         'snapToNearest',
         'majorTickLabels',
@@ -127,7 +132,6 @@ class CoulombsLawCommonView extends ScreenView {
         'moveOnHoldDelay',
         'moveOnHoldInterval'
       ] ), {
-        grabDragInteractionOptions: { grabCueOptions: { x: 155 } },
         tandem: tandem.createTandem( 'rulerNode' )
       } ) );
 
@@ -151,7 +155,8 @@ class CoulombsLawCommonView extends ScreenView {
       coulombsLawParameterPanel,
       charge1Control,
       charge2Control,
-      resetAllButton
+      resetAllButton,
+      interactionCueLayer
     ];
 
     // pdom - accessible order of controls, charge objects will come first in subtypes
