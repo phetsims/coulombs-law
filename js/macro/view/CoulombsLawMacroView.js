@@ -23,10 +23,11 @@ const charge1AbbreviatedString = CoulombsLawStrings.charge1Abbreviated;
 const charge2AbbreviatedString = CoulombsLawStrings.charge2Abbreviated;
 const unitsMacroLegendScaleString = CoulombsLawStrings.units.macroLegendScale;
 
-const unitsMicrocoulombsString = CoulombsLawStrings.units.microcoulombs;
+// const unitsMicrocoulombsString = CoulombsLawStrings.units.microcoulombs;
+const unitsNanocoulombsString = CoulombsLawStrings.units.nanocoulombs;
 
 // constants
-const SCALE_FACTOR = 1E6;  // number of microcoulombs in one C
+const SCALE_FACTOR = 1E9;  // number of nanocoulombs in one C
 const MODEL_VIEW_TRANSFORM_SCALE = 5000;
 
 class CoulombsLawMacroView extends CoulombsLawCommonView {
@@ -45,7 +46,7 @@ class CoulombsLawMacroView extends CoulombsLawCommonView {
     const forceDescriber = new CoulombsLawForceDescriber( coulombsLawModel, 'label1', 'label2', positionDescriber );
     const alertManager = new ISLCAlertManager( coulombsLawModel, forceDescriber );
 
-    super( coulombsLawModel, SCALE_FACTOR, unitsMicrocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
+    super( coulombsLawModel, SCALE_FACTOR, unitsNanocoulombsString, MODEL_VIEW_TRANSFORM_SCALE, rulerOptions, tandem );
 
     // charge nodes added in each screen to allow for different decimal precision and arrow height
     const chargeNode1 = new ChargeNode(
@@ -63,7 +64,7 @@ class CoulombsLawMacroView extends CoulombsLawCommonView {
         arrowColor: '#66f',
         forceArrowHeight: 70,
         arrowNodeOptions: {
-          forceReadoutDecimalPlaces: 3
+          forceReadoutDecimalPlaces: 6
         },
         tandem: tandem.createTandem( 'chargeNode1' )
       } );
@@ -83,7 +84,7 @@ class CoulombsLawMacroView extends CoulombsLawCommonView {
         arrowColor: '#f66',
         forceArrowHeight: 120,
         arrowNodeOptions: {
-          forceReadoutDecimalPlaces: 3
+          forceReadoutDecimalPlaces: 6
         },
         tandem: tandem.createTandem( 'chargeNode2' )
       } );

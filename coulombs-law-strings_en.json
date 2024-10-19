@@ -35,6 +35,9 @@
   "units.microcoulombs": {
     "value": "\u03BCC"
   },
+  "units.nanocoulombs": {
+    "value": "nC"
+  },
   "chargePositionsHeading": {
     "value": "Charge Positions"
   },

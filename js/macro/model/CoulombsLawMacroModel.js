@@ -20,15 +20,16 @@ class CoulombsLawMacroModel extends CoulombsLawCommonModel {
    */
   constructor( tandem ) {
 
+
     // set initial charge values
-    const chargeValue1 = -4E-6; // -4 microcoulombs in Coulombs
-    const chargeValue2 = 8E-6; // 8 microcoulombs in Coulombs
+    const chargeValue1 = -4E-9; // -4 nanocoulombs in Coulombs
+    const chargeValue2 = 8E-9; // 8 nanocoulombs in Coulombs
 
     const position1 = -1E-2; // initial position from center in m
     const position2 = 2E-2; // initial position from center in m
 
-    const minChargeValue = -10E-6; // in Coulombs
-    const maxChargeValue = 10E-6; // in Coulombs
+    const minChargeValue = -10E-9; // in Coulombs
+    const maxChargeValue = 10E-9; // in Coulombs
 
     const valueRange = new Range( minChargeValue, maxChargeValue );
 

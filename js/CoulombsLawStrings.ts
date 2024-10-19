@@ -39,6 +39,8 @@ type StringsType = {
     'macroLegendScaleStringProperty': LocalizedStringProperty;
     'microcoulombs': string;
     'microcoulombsStringProperty': LocalizedStringProperty;
+    'nanocoulombs': string;
+    'nanocoulombsStringProperty': LocalizedStringProperty;
   };
   'chargePositionsHeading': string;
   'chargePositionsHeadingStringProperty': LocalizedStringProperty;

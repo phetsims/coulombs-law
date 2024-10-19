@@ -63,7 +63,7 @@ class ChargeControl extends ISLCObjectControlPanel {
       tandem: Tandem.REQUIRED
     }, options );
 
-    // {Property.<number>} - intermediate Property to allow for scaling between atomic units and microcoulombs
+    // {Property.<number>} - intermediate Property to allow for scaling between atomic units and nanocoulombs
     //  - value ranges from -10 to 10
     //  - unit can be e or mc
     // TODO: make this DynamicProperty to support PhET-iO LinkedElement, or eliminate altogether https://github.com/phetsims/coulombs-law/issues/134
