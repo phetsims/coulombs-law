@@ -44,6 +44,7 @@ class CoulombsLawCommonModel extends ISLCModel {
     // @public
     this.forceValuesDisplayProperty = new EnumerationDeprecatedProperty( ForceValuesDisplayEnum, ForceValuesDisplayEnum.DECIMAL, {
       tandem: tandem.createTandem( 'forceValuesDisplayProperty' ),
+      phetioFeatured: true,
       phetioDocumentation: 'This determines the display type for the force values: in decimal or scientific ' +
                            'notation, and also hidden.'
     } );
