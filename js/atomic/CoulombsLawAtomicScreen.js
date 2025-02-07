@@ -7,7 +7,7 @@
 
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
-import { Image } from '../../../scenery/js/imports.js';
+import Image from '../../../scenery/js/nodes/Image.js';
 import atomicScaleScreenIcon_png from '../../images/atomicScaleScreenIcon_png.js';
 import atomicScaleScreenIconNavbar_png from '../../images/atomicScaleScreenIconNavbar_png.js';
 import CoulombsLawColors from '../common/CoulombsLawColors.js';

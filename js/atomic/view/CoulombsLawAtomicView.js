@@ -14,7 +14,7 @@ import DefaultDirection from '../../../../inverse-square-law-common/js/view/Defa
 import ISLCAlertManager from '../../../../inverse-square-law-common/js/view/ISLCAlertManager.js';
 import ISLCLegendNode from '../../../../inverse-square-law-common/js/view/ISLCLegendNode.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
-import { RichText } from '../../../../scenery/js/imports.js';
+import RichText from '../../../../scenery/js/nodes/RichText.js';
 import CoulombsLawColors from '../../common/CoulombsLawColors.js';
 import ChargeNode from '../../common/view/ChargeNode.js';
 import CoulombsLawCommonView from '../../common/view/CoulombsLawCommonView.js';

@@ -12,7 +12,7 @@
 import ForceValuesDisplayEnum from '../../../../inverse-square-law-common/js/model/ForceValuesDisplayEnum.js';
 import ISLCObjectNode from '../../../../inverse-square-law-common/js/view/ISLCObjectNode.js';
 import merge from '../../../../phet-core/js/merge.js';
-import { RadialGradient } from '../../../../scenery/js/imports.js';
+import RadialGradient from '../../../../scenery/js/util/RadialGradient.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import coulombsLaw from '../../coulombsLaw.js';
 import CoulombsLawColors from '../CoulombsLawColors.js';
