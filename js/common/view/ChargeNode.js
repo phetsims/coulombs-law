@@ -1,4 +1,4 @@
-// Copyright 2017-2024, University of Colorado Boulder
+// Copyright 2017-2025, University of Colorado Boulder
 
 /**
  * Scenery node for the charge object. Children include the pusher/pullers, the circular charge, the force arrow, and
