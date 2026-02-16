@@ -125,7 +125,7 @@ class AdjustChargeContent extends KeyboardHelpSection {
 
 function createRow( labelText, icon, description, iconOptions ) {
   const options = iconOptions ? { iconOptions: iconOptions } : {};
-  options.labelInnerContent = description;
+  options.accessibleRowDescriptionProperty = description;
   return KeyboardHelpSectionRow.labelWithIcon( labelText, icon, options );
 }
 
