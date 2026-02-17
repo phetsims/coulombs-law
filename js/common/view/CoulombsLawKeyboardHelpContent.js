@@ -1,4 +1,4 @@
-// Copyright 2018-2023, University of Colorado Boulder
+// Copyright 2018-2026, University of Colorado Boulder
 
 /**
  * Creates the content (key icons and help text) displayed within the keyboard help dialog. The dialog is added in
