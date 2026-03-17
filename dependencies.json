@@ -9,7 +9,7 @@
     "branch": "HEAD"
   },
   "brand": {
-    "sha": "0682b96493639aa7576a21310e701c874f435f54",
+    "sha": "c6663c891829aae4e30b538aa40255b029b1382e",
     "branch": "HEAD"
   },
   "chipper": {
@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "893eb7097e7861290c2b3e1047c4fbcd4ded3e4a",
+    "sha": "567b313d31e403ca8a60b09673ff7be7fc95f017",
     "branch": "1.0"
   },
   "dot": {
