@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "coulombs-law": {
-    "sha": "e1e09df19ed8c870ebbfaac300c7c37b688f2af0",
+    "sha": "29353c95e2389344cb5998130419e3d54735423b",
     "branch": "1.0"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "1f4c641d2da9dbc0f5885f22f07101373bc52e24",
+    "sha": "cfd1e27b41bfffc6022f8324ef05a31d7d2ba1d7",
     "branch": "HEAD"
   },
   "kite": {
