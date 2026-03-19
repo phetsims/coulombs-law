@@ -3,7 +3,6 @@
 
 
 import ForceDescriber from '../../../../../inverse-square-law-common/js/view/describers/ForceDescriber.js';
-import coulombsLaw from '../../../coulombsLaw.js';
 
 class CoulombsLawForceDescriber extends ForceDescriber {
 
@@ -31,5 +30,4 @@ class CoulombsLawForceDescriber extends ForceDescriber {
   }
 }
 
-coulombsLaw.register( 'CoulombsLawForceDescriber', CoulombsLawForceDescriber );
 export default CoulombsLawForceDescriber;

@@ -14,7 +14,6 @@ import KeyboardHelpSection from '../../../../scenery-phet/js/keyboard/help/Keybo
 import KeyboardHelpSectionRow from '../../../../scenery-phet/js/keyboard/help/KeyboardHelpSectionRow.js';
 import TwoColumnKeyboardHelpContent from '../../../../scenery-phet/js/keyboard/help/TwoColumnKeyboardHelpContent.js';
 import TextKeyNode from '../../../../scenery-phet/js/keyboard/TextKeyNode.js';
-import coulombsLaw from '../../coulombsLaw.js';
 import CoulombsLawStrings from '../../CoulombsLawStrings.js';
 
 const adjustAmountLabelString = CoulombsLawStrings.adjustAmountLabel;
@@ -66,8 +65,6 @@ class CoulombsLawKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
     super( leftHelpContent, rightHelpContent );
   }
 }
-
-coulombsLaw.register( 'CoulombsLawKeyboardHelpContent', CoulombsLawKeyboardHelpContent );
 
 class ChargePositionsContent extends KeyboardHelpSection {
 

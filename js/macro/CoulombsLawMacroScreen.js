@@ -13,7 +13,6 @@ import macroScaleScreenIcon_png from '../../images/macroScaleScreenIcon_png.js';
 import macroScaleScreenIconNavbar_png from '../../images/macroScaleScreenIconNavbar_png.js';
 import CoulombsLawColors from '../common/CoulombsLawColors.js';
 import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
-import coulombsLaw from '../coulombsLaw.js';
 import CoulombsLawStrings from '../CoulombsLawStrings.js';
 import CoulombsLawMacroModel from './model/CoulombsLawMacroModel.js';
 import CoulombsLawMacroView from './view/CoulombsLawMacroView.js';
@@ -50,5 +49,4 @@ class CoulombsLawMacroScreen extends Screen {
   }
 }
 
-coulombsLaw.register( 'CoulombsLawMacroScreen', CoulombsLawMacroScreen );
 export default CoulombsLawMacroScreen;

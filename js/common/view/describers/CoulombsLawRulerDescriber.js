@@ -12,7 +12,6 @@
  */
 
 import Alerter from '../../../../../scenery-phet/js/accessibility/describers/Alerter.js';
-import coulombsLaw from '../../../coulombsLaw.js';
 
 class CoulombsLawRulerDescriber extends Alerter {
 
@@ -51,5 +50,4 @@ class CoulombsLawRulerDescriber extends Alerter {
   reset() { }
 }
 
-coulombsLaw.register( 'CoulombsLawRulerDescriber', CoulombsLawRulerDescriber );
 export default CoulombsLawRulerDescriber;

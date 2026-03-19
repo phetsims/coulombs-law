@@ -3,7 +3,6 @@
 
 
 import PositionDescriber from '../../../../../inverse-square-law-common/js/view/describers/PositionDescriber.js';
-import coulombsLaw from '../../../coulombsLaw.js';
 
 class CoulombsLawPositionDescriber extends PositionDescriber {
 
@@ -17,5 +16,4 @@ class CoulombsLawPositionDescriber extends PositionDescriber {
   }
 }
 
-coulombsLaw.register( 'CoulombsLawPositionDescriber', CoulombsLawPositionDescriber );
 export default CoulombsLawPositionDescriber;

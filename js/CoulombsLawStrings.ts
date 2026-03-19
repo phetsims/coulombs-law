@@ -94,6 +94,4 @@ type StringsType = {
 
 const CoulombsLawStrings = getStringModule( 'COULOMBS_LAW' ) as StringsType;
 
-coulombsLaw.register( 'CoulombsLawStrings', CoulombsLawStrings );
-
 export default CoulombsLawStrings;

@@ -15,7 +15,6 @@ import ISLCConstants from '../../../../inverse-square-law-common/js/ISLCConstant
 import ForceValuesDisplayEnum from '../../../../inverse-square-law-common/js/model/ForceValuesDisplayEnum.js';
 import ISLCModel from '../../../../inverse-square-law-common/js/model/ISLCModel.js';
 import merge from '../../../../phet-core/js/merge.js';
-import coulombsLaw from '../../coulombsLaw.js';
 
 class CoulombsLawCommonModel extends ISLCModel {
 
@@ -91,7 +90,5 @@ class CoulombsLawCommonModel extends ISLCModel {
     super.reset();
   }
 }
-
-coulombsLaw.register( 'CoulombsLawCommonModel', CoulombsLawCommonModel );
 
 export default CoulombsLawCommonModel;

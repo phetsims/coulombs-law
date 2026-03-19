@@ -47,6 +47,4 @@ const CoulombsLawColors = {
   } )
 };
 
-coulombsLaw.register( 'CoulombsLawColors', CoulombsLawColors );
-
 export default CoulombsLawColors;

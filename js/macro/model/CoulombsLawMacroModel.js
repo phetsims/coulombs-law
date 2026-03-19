@@ -11,7 +11,6 @@ import Range from '../../../../dot/js/Range.js';
 import ISLCConstants from '../../../../inverse-square-law-common/js/ISLCConstants.js';
 import Charge from '../../common/model/Charge.js';
 import CoulombsLawCommonModel from '../../common/model/CoulombsLawCommonModel.js';
-import coulombsLaw from '../../coulombsLaw.js';
 
 class CoulombsLawMacroModel extends CoulombsLawCommonModel {
 
@@ -46,7 +45,5 @@ class CoulombsLawMacroModel extends CoulombsLawCommonModel {
     } );
   }
 }
-
-coulombsLaw.register( 'CoulombsLawMacroModel', CoulombsLawMacroModel );
 
 export default CoulombsLawMacroModel;

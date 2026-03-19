@@ -14,7 +14,6 @@ import ISLCObjectNode from '../../../../inverse-square-law-common/js/view/ISLCOb
 import merge from '../../../../phet-core/js/merge.js';
 import RadialGradient from '../../../../scenery/js/util/RadialGradient.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import coulombsLaw from '../../coulombsLaw.js';
 import CoulombsLawColors from '../CoulombsLawColors.js';
 
 // constants
@@ -122,7 +121,5 @@ class ChargeNode extends ISLCObjectNode {
     super.redrawForce();
   }
 }
-
-coulombsLaw.register( 'ChargeNode', ChargeNode );
 
 export default ChargeNode;

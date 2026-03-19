@@ -12,7 +12,6 @@ import Vector2 from '../../../../dot/js/Vector2.js';
 import ISLCConstants from '../../../../inverse-square-law-common/js/ISLCConstants.js';
 import Charge from '../../common/model/Charge.js';
 import CoulombsLawCommonModel from '../../common/model/CoulombsLawCommonModel.js';
-import coulombsLaw from '../../coulombsLaw.js';
 
 class CoulombsLawAtomicModel extends CoulombsLawCommonModel {
 
@@ -55,7 +54,5 @@ class CoulombsLawAtomicModel extends CoulombsLawCommonModel {
     } );
   }
 }
-
-coulombsLaw.register( 'CoulombsLawAtomicModel', CoulombsLawAtomicModel );
 
 export default CoulombsLawAtomicModel;

@@ -12,7 +12,6 @@ import Dimension2 from '../../../../dot/js/Dimension2.js';
 import merge from '../../../../phet-core/js/merge.js';
 import Color from '../../../../scenery/js/util/Color.js';
 import SliderThumb from '../../../../sun/js/SliderThumb.js';
-import coulombsLaw from '../../coulombsLaw.js';
 
 // constants
 const THUMB_SIZE = new Dimension2( 10, 18 );
@@ -71,5 +70,4 @@ function getUpdatedFill( propertyValue ) {
   return fill;
 }
 
-coulombsLaw.register( 'ChargeControlSliderThumb', ChargeControlSliderThumb );
 export default ChargeControlSliderThumb;

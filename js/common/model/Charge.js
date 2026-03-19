@@ -12,7 +12,6 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import ISLCObject from '../../../../inverse-square-law-common/js/model/ISLCObject.js';
 import merge from '../../../../phet-core/js/merge.js';
 import Color from '../../../../scenery/js/util/Color.js';
-import coulombsLaw from '../../coulombsLaw.js';
 
 class Charge extends ISLCObject {
 
@@ -50,5 +49,4 @@ class Charge extends ISLCObject {
   }
 }
 
-coulombsLaw.register( 'Charge', Charge );
 export default Charge;

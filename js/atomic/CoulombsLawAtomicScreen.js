@@ -12,7 +12,6 @@ import atomicScaleScreenIcon_png from '../../images/atomicScaleScreenIcon_png.js
 import atomicScaleScreenIconNavbar_png from '../../images/atomicScaleScreenIconNavbar_png.js';
 import CoulombsLawColors from '../common/CoulombsLawColors.js';
 import CoulombsLawKeyboardHelpContent from '../common/view/CoulombsLawKeyboardHelpContent.js';
-import coulombsLaw from '../coulombsLaw.js';
 import CoulombsLawStrings from '../CoulombsLawStrings.js';
 import CoulombsLawAtomicModel from './model/CoulombsLawAtomicModel.js';
 import CoulombsLawAtomicView from './view/CoulombsLawAtomicView.js';
@@ -49,5 +48,4 @@ class CoulombsLawAtomicScreen extends Screen {
   }
 }
 
-coulombsLaw.register( 'CoulombsLawAtomicScreen', CoulombsLawAtomicScreen );
 export default CoulombsLawAtomicScreen;

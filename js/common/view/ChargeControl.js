@@ -16,7 +16,6 @@ import NumberControl from '../../../../scenery-phet/js/NumberControl.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import Slider from '../../../../sun/js/Slider.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import coulombsLaw from '../../coulombsLaw.js';
 import ChargeControlSliderThumb from './ChargeControlSliderThumb.js';
 
 // constants
@@ -97,5 +96,4 @@ class ChargeControl extends ISLCObjectControlPanel {
   }
 }
 
-coulombsLaw.register( 'ChargeControl', ChargeControl );
 export default ChargeControl;
