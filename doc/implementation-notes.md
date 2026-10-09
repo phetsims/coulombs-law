@@ -4,12 +4,12 @@ This document contains notes that will be helpful to developers and future maint
 
 ## Model
 
-Start by reading the model description in https://github.com/phetsims/coulombs-law/blob/main/doc/model.md
+Start by reading the model description in [model.md](model.md)
 
 Following that, almost all types in the model and view are inherited from the Inverse Square Law Common library. It will
 be useful to become familiar with
-its [model](https://github.com/phetsims/inverse-square-law-common/blob/main/doc/model.md)
-and [implementation](https://github.com/phetsims/inverse-square-law-common/blob/main/doc/implementation-notes.md)
+its [model](../../inverse-square-law-common/doc/model.md)
+and [implementation](../../inverse-square-law-common/doc/implementation-notes.md)
 
 The primary type in this sim is the `Charge`. It handles all positioning as well as the charge values needed to
 calculate the displayed force. It is an ISLCObject with constant radius & density.
@@ -21,7 +21,7 @@ Here the force can be attractive or repulsive, and it is measured from the objec
 
 The user will mainly be interacting with the ruler, the charge objects, and their control panel. The user can drag the
 charges by clicking either the charge itself or its respective puller/pusher (the attached robot figure -
-see [ISLCObjectNode](https://github.com/phetsims/inverse-square-law-common/blob/main/js/view/ISLCObjectNode.js) for more
+see [ISLCObjectNode](../../inverse-square-law-common/js/view/ISLCObjectNode.js) for more
 details). Additionally, the charge objects have a minimum separation that is always maintained. When dragging one
 charge, the other's position will never change. Finally, the arrows are added to the screenviews as siblings of the
 charge nodes themselves. This ensures that both arrows appear in the top layer of the scene graph.
@@ -36,5 +36,5 @@ accuracy.
 ### Charge Nodes
 
 These are instances of ISLCObjectNodes with constant radius and the ability for different arrow directions. See
-the [ISLC implementation](https://github.com/phetsims/inverse-square-law-common/blob/main/doc/implementation-notes.md)
+the [ISLC implementation](../../inverse-square-law-common/doc/implementation-notes.md)
 for the details on updating pullers, force values, and arrows.
